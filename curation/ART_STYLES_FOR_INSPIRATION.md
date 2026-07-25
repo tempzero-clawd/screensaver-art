@@ -19,6 +19,7 @@ When you add a new style, append it under the section it best fits.
 - International Gothic (Limbourg brothers)
 - Illuminated Manuscript
 - Mille-fleurs Tapestry
+- Bayeux Tapestry (Norman narrative wool embroidery on linen)
 - Carolingian Illumination
 - Carolingian Minuscule Calligraphy
 - Carolingian Ivory Carving
@@ -140,6 +141,7 @@ When you add a new style, append it under the section it best fits.
 - Nihonga (Meiji-era Japanese mineral-pigment painting on silk)
 - Gondarine Ethiopian Church Wall Painting (17th c., distemper on cloth)
 - Song Dynasty Landscape Painting
+- Song Dynasty Gongbi Figure/Genre Painting (court scenes — e.g. Sericulture / weaving handscrolls)
 - Yuan Dynasty Landscape
 - Ming Dynasty Silk Painting
 - Ming Bird-and-Flower Painting
@@ -242,6 +244,7 @@ When you add a new style, append it under the section it best fits.
 - Roman Villa Figural Fresco (Villa of the Mysteries — Dionysian dance/mystery scenes)
 - Hellenistic Mosaic
 - Attic Red-Figure Vase Painting (Kleophrades / Berlin Painter)
+- Attic Black-Figure Vase Painting (Exekias / Amasis Painter — black silhouette on terracotta)
 - Macedonian Court Mosaic
 - Roman Nilotic Mosaic (Palestrina)
 - Etruscan Tomb Painting
@@ -266,6 +269,7 @@ When you add a new style, append it under the section it best fits.
 - Aztec Temple Mural Painting
 - Inca Textile Pattern
 - Moche Ceramics
+- Moche Fineline Painting (reddish-brown line drawing on cream slip — runners, warriors, ritual scenes)
 - Moche Polychrome Adobe Mural
 - Nazca Lines
 - Olmec Colossal Heads
