@@ -213,10 +213,10 @@ describe('cache-sync', () => {
         .mockResolvedValueOnce(makeJsonResponse(fakeApiResponse(apiItems)))
         .mockResolvedValueOnce(makeStreamResponse(Buffer.from('x')))
 
-      await syncGallery('https://api/gallery?collection=classic', 'tok', null)
+      await syncGallery('https://api/gallery', 'tok', null)
 
       const galleryCall = fetchMock.mock.calls[0]
-      expect(galleryCall[0]).toBe('https://api/gallery?collection=classic')
+      expect(galleryCall[0]).toBe('https://api/gallery')
       expect(galleryCall[1]).toMatchObject({ headers: { Authorization: 'Bearer tok' } })
       expect(galleryCall[1].signal).toBeInstanceOf(AbortSignal)
 

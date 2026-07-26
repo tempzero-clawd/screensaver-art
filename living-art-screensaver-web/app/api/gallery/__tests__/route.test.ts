@@ -6,10 +6,13 @@ import { NextRequest } from 'next/server'
 // Free-ness is per-item (each item's `free` flag), so this route's job is
 // narrow: fetch the playlist, resolve the subscription, and hand back
 // { items, isSubscribed }. These tests mock both verifyNativeAuth (the auth
-// check) and the upstream GitHub Pages fetch (the playlist source). They cover:
+// check) and the upstream GitHub Contents API fetch (the playlist source, read
+// off master with GITHUB_RELEASE_TOKEN). They cover:
 //   - subscribers and non-subscribers both get the whole list (no slice)
 //   - isSubscribed reflects the auth result
 //   - a missing Authorization header never 401s (returns the list as a guest)
+//   - the playlist is read from the repo ref, token-authed (never a public URL)
+//   - a missing GITHUB_RELEASE_TOKEN surfaces as 500, never a public fallback
 //   - upstream fetch failure surfaces as 502
 //   - the response shape is exactly { isSubscribed, items }
 
@@ -33,11 +36,12 @@ const FAKE_GALLERY = [
   { src: 'https://r2/e.mp4', title: 'E', type: 'video' },
 ]
 
+// The route reads gallery.json as raw text off the Contents API, then parses it.
 function makeFetchOk(body: unknown): Response {
-  return { ok: true, status: 200, json: () => Promise.resolve(body) } as unknown as Response
+  return { ok: true, status: 200, text: () => Promise.resolve(JSON.stringify(body)) } as unknown as Response
 }
 function makeFetchFail(status = 500): Response {
-  return { ok: false, status, json: () => Promise.resolve({}) } as unknown as Response
+  return { ok: false, status, text: () => Promise.resolve('') } as unknown as Response
 }
 
 function makeReq(query = ''): NextRequest {
@@ -51,10 +55,12 @@ describe('GET /api/gallery', () => {
   beforeEach(() => {
     fetchSpy = vi.fn().mockResolvedValue(makeFetchOk(FAKE_GALLERY))
     vi.stubGlobal('fetch', fetchSpy)
+    vi.stubEnv('GITHUB_RELEASE_TOKEN', 'test-token')
   })
 
   afterEach(() => {
     vi.unstubAllGlobals()
+    vi.unstubAllEnvs()
     authMock.mockReset()
   })
 
@@ -108,8 +114,38 @@ describe('GET /api/gallery', () => {
     })
   })
 
+  describe('playlist source (private-repo safe)', () => {
+    it('reads gallery.json off the repo ref through the token, not a public URL', async () => {
+      authMock.mockResolvedValue({ user: null, isSubscribed: false, subscription: null })
+
+      await GET(makeReq())
+
+      const [url, init] = fetchSpy.mock.calls[0]
+      expect(url).toBe(
+        'https://api.github.com/repos/zerolocker/screensaver-art/contents/gallery.json?ref=master',
+      )
+      // Token-authed + raw media type: works on a private repo, and dodges the
+      // Contents API's 1 MB base64-JSON ceiling.
+      expect(init.headers.Authorization).toBe('Bearer test-token')
+      expect(init.headers.Accept).toBe('application/vnd.github.raw')
+      // Nothing may reach for the old public GitHub Pages copy.
+      expect(url).not.toContain('github.io')
+    })
+
+    it('returns 500 when GITHUB_RELEASE_TOKEN is missing (never a public fallback)', async () => {
+      vi.stubEnv('GITHUB_RELEASE_TOKEN', '')
+      authMock.mockResolvedValue({ user: null, isSubscribed: false, subscription: null })
+
+      const res = await GET(makeReq())
+
+      expect(res.status).toBe(500)
+      // Must fail loudly rather than quietly serving a stale/public playlist.
+      expect(fetchSpy).not.toHaveBeenCalled()
+    })
+  })
+
   describe('upstream errors', () => {
-    it('returns 502 when the GitHub Pages gallery fetch fails', async () => {
+    it('returns 502 when the gallery fetch fails', async () => {
       fetchSpy.mockResolvedValue(makeFetchFail(500))
       authMock.mockResolvedValue({ user: null, isSubscribed: false, subscription: null })
       const res = await GET(makeReq())

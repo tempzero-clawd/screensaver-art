@@ -1,12 +1,13 @@
-// Shared GitHub-release proxy used by both /download/[os] and /updates/[...path].
+// Shared GitHub API proxy: release assets for /download/[os] + /updates/[...path],
+// and repo file contents for /api/gallery.
 //
-// Both routes resolve "latest" from this repo's GitHub Releases at request time
-// and serve assets through a server-side token (GITHUB_RELEASE_TOKEN, a
-// fine-grained PAT with Contents: Read-only) — never a public asset URL. Asking
-// the API for an asset with `Accept: application/octet-stream` yields a
-// short-lived SIGNED objects.githubusercontent.com URL that downloads fine for
-// anonymous users on a public OR private repo. So going public → private is a
-// zero-change event for both the manual download and the auto-updater.
+// Everything here goes through a server-side token (GITHUB_RELEASE_TOKEN, a
+// fine-grained PAT with Contents: Read-only) — never a public URL. Asking the API
+// for a release asset with `Accept: application/octet-stream` yields a short-lived
+// SIGNED objects.githubusercontent.com URL that downloads fine for anonymous users
+// on a public OR private repo; `fetchRepoFile` reads tracked files the same way.
+// So going public → private is a zero-change event for downloads, auto-update,
+// and the gallery playlist alike.
 
 export const REPO = 'zerolocker/screensaver-art'
 export const REVALIDATE_SECONDS = 120
@@ -74,4 +75,27 @@ export async function fetchAssetBody(assetApiUrl: string, token: string): Promis
     headers: { ...githubHeaders(token), Accept: 'application/octet-stream' },
     cache: 'no-store',
   })
+}
+
+/**
+ * Read a tracked file from the repo at `ref`, as text. Throws on a non-OK response.
+ *
+ * Uses the `raw` media type deliberately: the Contents API's well-known 1 MB
+ * ceiling applies to the default base64-JSON response, while raw serves up to
+ * 100 MB — so a growing playlist won't quietly hit a wall.
+ */
+export async function fetchRepoFile(
+  path: string,
+  token: string,
+  opts: { ref?: string; revalidate?: number } = {},
+): Promise<string> {
+  const ref = opts.ref ?? 'master'
+  const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}?ref=${ref}`, {
+    headers: { ...githubHeaders(token), Accept: 'application/vnd.github.raw' },
+    ...(opts.revalidate === undefined
+      ? { cache: 'no-store' as const }
+      : { next: { revalidate: opts.revalidate } }),
+  })
+  if (!res.ok) throw new Error(`GitHub contents/${path} → ${res.status}`)
+  return res.text()
 }

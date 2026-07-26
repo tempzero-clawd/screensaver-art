@@ -30,7 +30,7 @@ A **pnpm workspace** monorepo containing:
 | `electron-app/electron-builder.cjs` | DMG (universal) / NSIS distribution config — **JS, env-driven**: ad-hoc unless `LART_CODESIGN_IDENTITY` selects Developer ID (then hardened runtime + notarization). Wires both signing hooks. |
 | `electron-app/build/entitlements.mac.plist` + `.inherit.plist` | Hardened-runtime entitlements for the outer Electron app + its helper processes (Developer ID builds). The appex has its own entitlements. |
 | `index.html` | Standalone web preview (HTML+CSS+JS, no build step) |
-| `gallery.json` | Playlist — all art items with `src`, `title`, `type`, `collection`, `date`, prompts |
+| `gallery.json` | Playlist — all art items with `src`, `title`, `type`, `date`, `tags`, prompts |
 | `R2 Bucket` | `https://screensaver-assets.living-art-asset.com/gallery/` — MP4 assets, served via a **Cloudflare custom domain** on the `screensaver-assets` bucket (`gallery/` prefix). **Never use the `*.r2.dev` URL** — it bypasses the CDN cache and is rate-limited / not-for-production. Every object carries a 1-year immutable `Cache-Control`, and cacheable GETs return `cf-cache-status: HIT`. (Gotcha: `curl -I`/HEAD shows `DYNAMIC` — Cloudflare caches/serves on **GET** only; test with a GET.) |
 | `screensaver-macos/project.yml` | xcodegen spec — generates `ScreensaverArt.xcodeproj` (DevHost scaffold + the `.appex` extension target) |
 | `screensaver-macos/ScreensaverArtExtension/*.swift` | The screensaver extension — pure player, see split below |
@@ -38,7 +38,7 @@ A **pnpm workspace** monorepo containing:
 | `screensaver-macos/build.sh` | Regenerates the project (xcodegen) and builds the `.appex` (Release = universal) |
 | `screensaver-helper/` | SwiftPM package for `lart-screensaver-helper` (PaperSaver-backed `status`/`activate`/`register`/`unregister`/`find`) |
 | `living-art-screensaver-web/` | Next.js website (marketing, auth, billing, gallery API) |
-| `living-art-screensaver-web/app/api/gallery/route.ts` | **The gating endpoint** — serves gallery to the Electron app |
+| `living-art-screensaver-web/app/api/gallery/route.ts` | **The gating endpoint** — serves gallery to the Electron app. Reads `gallery.json` off the `master` ref through the GitHub Contents API (`lib/github-release.ts` → `fetchRepoFile`, token-authed), **not** GitHub Pages — Pages dies on a private repo (Free plan), and a wedged Pages build once froze the playlist for a day. |
 | `living-art-screensaver-web/app/api/subscription/verify/route.ts` | Subscription status check |
 | `living-art-screensaver-web/app/api/webhooks/stripe/route.ts` | Stripe → Supabase sync |
 | `living-art-screensaver-web/app/api/error-report/route.ts` | Stores Electron-app debug reports (Bearer-auth) in the Supabase `user-error-reports` bucket via the service role |
@@ -110,14 +110,14 @@ Without this, classes like `bg-primary` used only in `packages/ui` components wo
 | **Stripe** | Payments — two offers: $0.99/month billed quarterly ($2.97 every 3 months, to cut per-transaction fees) via `STRIPE_PRICE_ID`, and a $15.99 one-time "Own it forever" lifetime purchase via `STRIPE_LIFETIME_PRICE_ID` (both Vercel env vars, per-mode test/live IDs) |
 | **Cloudflare R2** | Hosts MP4 video assets (public, no auth) |
 | **Vercel** | Hosts the Next.js website |
-| **GitHub Pages** | Hosts `gallery.json` and `index.html` at `https://zerolocker.github.io/screensaver-art/` — deployed natively from `master` (Settings → Pages → "Deploy from a branch") |
+| **GitHub Pages** | Hosts the standalone web preview (`index.html`) at `https://zerolocker.github.io/screensaver-art/` — deployed natively from `master` (Settings → Pages → "Deploy from a branch"). **Nothing in the product depends on it**: `/api/gallery` reads `gallery.json` from the GitHub API, not Pages (see below). Pages is public-repo-only on a Free plan, so this preview is the one thing that would go dark if the repo went private. |
 
 The Apple (6-month) and Microsoft/Azure (24-month) sign-in secrets **expire** and must be rotated. Dates + procedure live in `docs/secret-rotation.md`; `.github/secret-rotation.json` is the source of truth and `.github/workflows/secret-rotation-reminder.yml` auto-opens a reminder issue before each due date.
 
 ## Add new art pieces
 1. Upload MP4 to Cloudflare R2 bucket `screensaver-assets` under the `gallery/` prefix. Set a long, immutable `Cache-Control` on the object at upload time (`wrangler r2 object put … --cache-control "public, max-age=31536000, immutable"`) — gallery keys are never overwritten, so caching them hard is safe and stops repeat re-fetches (the curation `upload()` helper already does this).
-2. Add an entry to `gallery.json` — include `src` (full custom-domain URL, `https://screensaver-assets.living-art-asset.com/gallery/…`), `title`, `type`, `date`, `collection`, `image_prompt`, `video_prompt`. **Do not set `free`** — new pieces are **locked (subscriber-only) by default**, which is intentional: fresh art is the recurring perk that justifies a subscription, and it keeps the free tier pinned at exactly `FREE_ITEM_COUNT` pieces as the catalog grows. (The free pieces are a fixed, interleaved set chosen once; see *Where gating happens*.)
-3. Push to `master` — GitHub Pages auto-deploys `gallery.json`. Subscribers' Electron apps pick up the new piece on their next sync.
+2. Add an entry to `gallery.json` — include `src` (full custom-domain URL, `https://screensaver-assets.living-art-asset.com/gallery/…`), `title`, `type`, `date`, `image_prompt`, `video_prompt`. **Do not set `free`** — new pieces are **locked (subscriber-only) by default**, which is intentional: fresh art is the recurring perk that justifies a subscription, and it keeps the free tier pinned at exactly `FREE_ITEM_COUNT` pieces as the catalog grows. (The free pieces are a fixed, interleaved set chosen once; see *Where gating happens*.)
+3. Push to `master` — that's the whole deploy. `/api/gallery` reads `gallery.json` off the `master` ref via the GitHub API (~5 min response cache), so there is no build/deploy step in between. Subscribers' Electron apps pick up the new piece on their next sync.
 
 ---
 
@@ -196,11 +196,6 @@ This replaced the old approach where the legacy `.saver` ran inside `legacyScree
 - The screensaver re-reads `gallery.json` every time `startAnimation` fires, so a fresh sync is picked up the next time the screensaver kicks in — no reboot needed
 - The Electron app can be quit; the screensaver keeps working from the existing cache
 - If the cache is empty (user hasn't synced yet) the screensaver shows a black screen with "Open the Living Art Screensaver app to sync your gallery."
-
-### Collection support (future-proofing)
-- Every `gallery.json` entry has a `collection` field (currently all `"classic"`)
-- `/api/gallery?collection=<name>` filters server-side
-- The Electron app currently passes `collection=classic`. Add a UI selector when more collections exist.
 
 ### Supabase `subscriptions` table schema
 ```
@@ -319,17 +314,19 @@ Prereqs: `release.env` present, `gh` authed (repo scope), Xcode + xcodegen.
   Vercel) before the first release link works. Per-release, no website change.
 
 ### The `GITHUB_RELEASE_TOKEN` (always required)
-Both `/download` and `/updates` **always** go through the GitHub API with a
-server-side token rather than a public asset URL — so the repo can go private
+`/download`, `/updates`, and `/api/gallery` **always** go through the GitHub API
+with a server-side token rather than a public URL — so the repo can go private
 with zero changes. The token is **`GITHUB_RELEASE_TOKEN`**, a fine-grained PAT
 with `Contents: Read-only` on this repo, set in two places:
 - **Vercel** project env (Production + Preview + Development) — for the deployed site.
 - **`living-art-screensaver-web/.env.local`** (gitignored) — for `pnpm dev`.
 
-Given the token, the route requests the asset with `Accept: application/octet-stream`
-and 302s to the short-lived **signed** `objects.githubusercontent.com` URL (bytes
-never flow through Vercel; works for anonymous users on a private repo). Missing
-token → 500 by design, so a private repo can't silently hand out broken links.
+Given the token, the release routes request the asset with `Accept: application/octet-stream`
+and 302 to the short-lived **signed** `objects.githubusercontent.com` URL (bytes
+never flow through Vercel; works for anonymous users on a private repo).
+`/api/gallery` uses the same token on the Contents API (`fetchRepoFile`) to read
+`gallery.json` off `master`. Missing token → 500 by design, so a private repo
+can't silently hand out broken links or an empty gallery.
 
 ### Auto-update (electron-updater)
 
