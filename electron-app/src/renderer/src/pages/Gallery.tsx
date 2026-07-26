@@ -82,7 +82,7 @@ export function GalleryPage({ session }: GalleryPageProps) {
     setError(null)
     try {
       const token = session.access_token
-      const res = await fetch(`${GALLERY_ENDPOINT}?collection=classic`, {
+      const res = await fetch(GALLERY_ENDPOINT, {
         headers: { Authorization: `Bearer ${token}` },
       })
       if (!res.ok) throw new Error(`HTTP ${res.status}`)

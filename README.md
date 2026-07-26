@@ -65,8 +65,9 @@ default** — fresh art is the recurring perk that justifies the subscription.
 ## Technical architecture
 
 ```
-Cloudflare R2          GitHub Pages           Vercel
+Cloudflare R2          GitHub API             Vercel
 (MP4 assets)  ←──────  gallery.json  ←──────  /api/gallery
+                       (master ref)
                                                     │
                                                Supabase
                                            (auth + subscriptions)
@@ -97,7 +98,7 @@ Cloudflare R2          GitHub Pages           Vercel
 
 - **Auth:** Passwordless Supabase auth — email one-time code or Apple / Google / Microsoft OAuth (PKCE flow) — handled in the Electron app. Sessions persist in Chromium localStorage.
 - **Billing:** Stripe — $0.99/month, billed quarterly ($2.97 every 3 months, to cut per-transaction fees). Webhooks sync subscription status to Supabase. The website hosts the Stripe portal; the Electron app deep-links to it.
-- **Gallery API:** `GET /api/gallery?collection=classic` returns the **full** gallery to everyone, each item carrying a per-item `free` flag — gating is client-side. Non-subscribers can browse every piece but only unlock the ones flagged `free` (currently 50); the Electron app refuses to download locked pieces and evicts any that later become locked. Subscribers unlock the whole gallery.
+- **Gallery API:** `GET /api/gallery` returns the **full** gallery to everyone, each item carrying a per-item `free` flag — gating is client-side. Non-subscribers can browse every piece but only unlock the ones flagged `free` (currently 50); the Electron app refuses to download locked pieces and evicts any that later become locked. Subscribers unlock the whole gallery.
 - **Cache obfuscation:** every video is XOR'd byte-by-byte with a fixed 32-byte cycling key plus an 8-byte magic header (`LARTV001`), and stored on disk as `<hash>.bin`. The same key + algorithm lives in both `electron-app/src/main/obfuscation.ts` and `screensaver-macos/ScreensaverArtExtension/Constants.swift`. This is not cryptography — anyone willing to disassemble either binary can recover the key. The intent is to deter the casual "drag the MP4 out of the cache and post it" path. Anything stronger would be over-engineered for a $0.99 product.
 
 ---
@@ -148,7 +149,7 @@ pnpm dev                  # → localhost:3000
 
 **Add new artworks:**
 1. Upload MP4 to Cloudflare R2 under the `gallery/` prefix
-2. Add an entry to `gallery.json` (include `src`, `title`, `type`, `collection`, `date`, prompts)
-3. Push to `master` — GitHub Pages auto-deploys `gallery.json`
+2. Add an entry to `gallery.json` (include `src`, `title`, `type`, `date`, prompts)
+3. Push to `master` — `/api/gallery` reads it straight off the ref, no deploy step
 
 See `CLAUDE.md` for full architectural details and decision rationale.

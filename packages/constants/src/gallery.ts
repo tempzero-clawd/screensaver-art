@@ -3,9 +3,9 @@
 // shared by the website, the Electron app (main + renderer), and the backend.
 
 // Shape of a gallery item as served by /api/gallery (the route passes through
-// the raw gallery.json entry, so `date`, `tags`, and `collection` ride along
-// when present). Curation-only fields like image_prompt/video_prompt are
-// intentionally omitted — clients never read them.
+// the raw gallery.json entry, so `date` and `tags` ride along when present).
+// Curation-only fields like image_prompt/video_prompt are intentionally
+// omitted — clients never read them.
 export interface ArtItem {
   src: string
   title: string
@@ -15,7 +15,6 @@ export interface ArtItem {
   // vocabulary — see curation/PROMPT_GUIDANCE.md "Gallery tags"). Optional: any
   // item without it falls back to a single "Misc" tag.
   tags?: string[]
-  collection?: string
   // Free-tier flag. `true` → unlocked for everyone (counts toward the advertised
   // free tier); absent/false → subscriber-only ("locked" for non-subscribers).
   // Source of truth is gallery.json. New pieces default to locked (no flag) so
