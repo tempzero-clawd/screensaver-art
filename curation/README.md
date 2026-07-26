@@ -119,7 +119,9 @@ Claude then:
 2. Builds **labeled contact sheets** of *both* kinds' first frames
    (`node curation/cleanup-tool/contact-sheets.mjs`) so it can *see* the patterns —
    dozens of videos are too many to view one-by-one, so their frames are tiled
-   16-per-image (sheets prefixed `undesirable_*` / `great_*`).
+   4-per-image (sheets prefixed `undesirable_*` / `great_*`). It also writes each
+   frame at **full resolution** under `.analysis/frames/`, which Claude opens when
+   a note hinges on fine detail ("cracks on the faces") that a tile can't show.
 3. Cross-references each piece's **prompt + first frame** (leading with your
    free-form **note** when you left one) in *both* directions — the failure
    patterns to **avoid** (undesirable) and the traits to **make more of** (great) —
@@ -145,7 +147,7 @@ tightens the guidance, and the agent produces fewer bad pieces.
 | `server.mjs` | Zero-dep local server. `node curation/cleanup-tool/server.mjs` to launch. |
 | `index.html` | The browse + flag UI. |
 | `apply.mjs` | Removes `undesirable` pieces from `gallery.json` (with backup); records removed + kept-great. |
-| `contact-sheets.mjs` | Extracts both kinds' first frames + tiles them into labeled contact sheets (ffmpeg, `undesirable_*` / `great_*`) for Claude's vision analysis. |
+| `contact-sheets.mjs` | Extracts both kinds' first frames (full-res, under `.analysis/frames/`) + tiles downscaled copies into labeled contact sheets (ffmpeg, `undesirable_*` / `great_*`) for Claude's vision analysis. |
 | `selections.json` | Your current flags (autosaved by the UI), each `{ src, title, reason, note? }` — `reason` is `undesirable` or `great`; `note` is the optional free-form reason on either. *Gitignored.* |
 | `last-removed.json` | The most recent removed (undesirable) items — what to avoid. *Gitignored.* |
 | `last-loved.json` | The most recent kept (great) items — what to make more of. *Gitignored.* |

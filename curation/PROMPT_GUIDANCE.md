@@ -20,21 +20,65 @@ loves.
 This gallery is **art history brought to life** — the full breadth you'd find
 walking the wings of a great encyclopedic museum, from prehistoric cave paintings
 and bronze-age artifacts through Ukiyo-e, Persian miniatures, Renaissance frescoes
-and Impressionism to the modern masters. Aim for **museum-grade** work: pieces with
-real cultural and historical pedigree, beautiful enough to hang on a gallery wall.
+and Impressionism to the modern masters and beyond. Aim for **museum-grade** work:
+pieces beautiful enough to hang on a gallery wall.
 
-**Range widely and be creative** — every culture and era is fair game, and variety
-is good. `ART_STYLES_FOR_INSPIRATION.md` is a starting menu, not a cage; the Gallery
-"wings" (see *Gallery tags* below) are a good map of the territory worth exploring.
+**Range widely and be creative** — `ART_STYLES_FOR_INSPIRATION.md` is a starting
+menu, not a cage; the Gallery "wings" (see *Gallery tags* below) are a good map of
+the territory worth exploring. But range is **not** a mandate to spread evenly
+across all of art history — see **Era mix** immediately below, which is now a hard
+constraint.
 
-The one thing to avoid: **internet / gaming / digital-subculture aesthetics**
-(cyberpunk, vaporwave, synthwave, pixel/voxel/low-poly, glitch, Y2K, "-core" looks,
-AI/fractal/generative art) and loud graphic-design trends — they read as AI slop and
-were deliberately cut from the menu.
+**Recent and contemporary styles are allowed** (rule lifted 2026-07-25). The old
+"pre-21st-century only" ban is gone: the reviewer looked at the `Contemporary` wing
+and judged those pieces genuinely beautiful. Modern illustration, contemporary fine
+art, and atmospheric genre looks (solarpunk, steampunk, dark academia, mid-century
+modern, noir, eco-brutalism, papercut, Ghibli-esque…) are **on the menu**.
 
-**Taste test:** would this look at home in a serious museum, or as a plate in an
-art-history book? If it instead feels like a video-game asset, a stock vector, or an
-album cover, pick something else.
+The bar is no longer *era*, it's **AI-cliché**. What was actually wrong with the
+banned list was never its recency — it was that a handful of those looks are the
+default output of every AI image generator. Still off the menu:
+
+> neon-rain cyberpunk street, vaporwave/synthwave sunset (grid + palm trees +
+> magenta gradient), fractal / generative / "AI art", pixel / voxel / low-poly,
+> glitch art, Y2K / Frutiger Aero, and loud graphic-design trends.
+
+**Taste test (apply to every era equally):** does this look like a piece an artist
+made — something you'd find in a serious gallery, a good illustration annual, or an
+art-history plate? Or does it look like the first thing an image generator produces
+when you type the style name? If the latter, pick something else. A contemporary
+piece that passes this test is worth more than an ancient one that doesn't.
+
+---
+
+## Era mix (hard constraint — added 2026-07-25)
+
+**Lean recent. Cap the archaeological look at ~1 piece in 4.**
+
+The reviewer's standing note: recent rounds featured too many ancient styles, and
+they read as *"less polished, kind of worn out, less sophisticated."* Six of the
+seven pieces cut on 2026-07-25 were ancient/traditional. Fewer of them — **not
+zero**, they're still part of the museum's breadth, but they must earn their slot.
+
+The useful split is **not** the tag or the century — it's **what the work survives
+on**, because the support is where the decay lives:
+
+| | Support | Reads as | Quota |
+|---|---|---|---|
+| **Archaeological** | plaster wall, cave rock, fired clay/pot, carved stone, excavated metal | cracked, pitted, faded, dug-up | **≤1 of the 4 nightly pieces** |
+| **Intact-medium** | silk, paper, panel, canvas, print, manuscript vellum, tapestry | as the artist left it | unlimited |
+
+So a Song silk handscroll, a Mughal miniature on paper, a Shin-hanga woodblock and
+an Ottoman illuminated manuscript are all "old" but **not** archaeological — they
+arrive pristine and don't trip this rule. A Pompeian fresco, a Dunhuang cave mural,
+a Greek vase painting and a Moche pot **do**.
+
+When you do spend the archaeological slot, pick the **best-preserved, most
+polychrome** example of the style, and follow the *patina* rule below.
+
+Beyond the cap, actively favour: `19th Century`, `Modern`, `Renaissance & Baroque`,
+`Contemporary`, and the later, refined end of the Asian/Islamic traditions
+(Shin-hanga, Nihonga, Rinpa, Qajar, Lingnan, Vietnamese silk painting).
 
 ---
 
@@ -157,6 +201,67 @@ them even before any round-specific learnings exist.
   made "frame" draw a frame (2026-06-28). The fix is simply to **never mention
   surface condition at all**; the step-2 self-review vision gate is the backstop
   for any aging the model adds unbidden.
+- **The patina must never upstage the art.** (The 2026-07-25 round; the reviewer's
+  words: the piece feels *"too old, too worn out"*, and the **年代感** — the *look
+  of age* — *"currently feels more prominent than the art itself"*, 喧宾夺主, the
+  guest upstaging the host.) The rule above bans *describing* aging, and these
+  prompts obeyed it — yet decay still arrived, through **two side doors the rule
+  didn't close**:
+  1. **The style name itself carries ruin.** "Pompeian fresco", "Mogao cave mural",
+     "black-figure amphora" — the model's prior for these *is* the excavated,
+     damaged survivor. Naming the style is enough to summon cracks and grime; you
+     do not have to ask for them.
+  2. **The in-situ rule dragged the support into frame.** Written to kill
+     museum-catalog shots, it pushed prompts toward "a villa triclinium wall", "a
+     cave wall", "the pot surface" — and the rough rock, broken plaster margins and
+     mottled terracotta *are* the decay. The art was fine; its backing ruined it.
+
+  **The fix — show the painted image, not the object it survives on.** State
+  positively that the work is **new**: *"freshly painted, pigments brilliant and
+  unfaded, the painted surface smooth, clean and unbroken, as on the day it was
+  finished."* Then **keep the support out of frame**: no rough rock edges, no
+  broken or crumbling plaster margins, no exposed pot curvature, no excavation
+  lighting, no votive candles or oil lamps set in front of the art. The painted
+  scene fills all four edges by itself. (Positive phrasing, not negative — per the
+  rule above, naming "no cracks" risks summoning cracks.)
+- **Light the art, not the room. The product showcases the artwork — atmosphere is
+  never worth losing it to.** (Reviewer, 2026-07-25, on the Dunhuang reject: *"it's
+  too dark, not very well lit. I know this might be due to the intention of creating
+  the 'atmosphere' of being old (using only 3 oil lamps). But the main product need
+  of this app is to showcase the art, not the atmosphere."*)
+
+  **The numbers.** Mean luminance (0–255) of the first frame, across 40 recent
+  pieces: **median 133**. Six sat under 100 — and **five of those six** had explicit
+  dim-light vocabulary in the image prompt (*lamplight, candlelit, torch-lit,
+  nocturne, moonlit, firelight, brazier*). The two pieces the reviewer called worn
+  out were also the two darkest of the round: Dunhuang **79**, Pompeian **85**.
+  Writing "lit by oil lamps" reliably costs ~50 luma against the gallery norm.
+
+  **The rule:** the default is **bright, generous, even illumination** — full
+  daylight, broad window light, or simply well-lit interior. Treat **luma ≈ 120+**
+  as the target and **under 100 as a reroll**, not a style choice.
+  - **Do not make the light source a subject.** No candles, oil lamps, torches,
+    braziers or lanterns placed in the scene as the only illumination — those
+    render as small bright blobs in a dark field, and everything you actually came
+    to look at falls into shadow.
+  - **Genuinely nocturnal subjects are still allowed** (a Baroque fire scene, a
+    Shin-hanga night festival, a Dutch nocturne) — but the *painted surface must
+    still read*: faces, colour and detail legible across the whole frame, not just
+    in a pool around the flame. If you cannot have both, choose the daylit subject.
+  - Avoid *"dim"*, *"flickering"*, *"devotional"*, *"raking"* and *"moody"* as
+    lighting descriptors. Prefer *"bright even daylight"*, *"clear soft daylight
+    filling the scene"*, *"luminous and evenly lit"*.
+- **Give the screen something to look at — mind palette and density.** Three of the
+  2026-07-25 rejects (Moche fineline runners, Greek black-figure chariot, Song
+  sericulture) failed on visual *thinness*: two-tone line-on-ground styles and pale
+  washed grounds leave most of a 4K screen as empty beige. This is the same
+  complaint as the earlier *"not much stuff, wouldn't say it's art"*. So:
+  **two-colour line-on-ground styles** (black-figure / red-figure vase painting,
+  Moche fineline slip painting, bare monochrome ink outline) and **pale, low-chroma
+  grounds** are weak choices for a full-screen screensaver. If you use one anyway,
+  it must be **densely composed** — figures and ornament filling the frame — never
+  a sparse frieze floating on empty ground. Prefer full polychrome palettes with
+  real tonal range.
 - **Render the artwork in-situ, filling the whole image — NOT as a museum object.**
   This is the single biggest source of undesirable pieces (see 2026-06-12 round).
   Prompting only the artifact ("a highly detailed bronze plaque, 2nd century BC")
@@ -165,8 +270,10 @@ them even before any round-specific learnings exist.
   a spotlight, sometimes a visible label. It looks like stock photography, not
   "art brought to life", and nothing in it can animate. Instead describe the
   piece **edge-to-edge, in its own world** (carved into a cliff that fills the
-  whole image; a torch-lit temple interior; a tight raking-light macro of the
-  surface with no background).
+  whole image; a temple interior in full daylight; a tight macro of the surface
+  with no background). Keep the setting **brightly and evenly lit** — see the
+  lighting rule below; the old wording here suggested a *"torch-lit"* interior and
+  was directly feeding the too-dark failure.
 - **Say "fills the whole image / edge to edge" — avoid the word "frame", and
   forbid a painted border.** Image prompts that piled on "fills the frame" were
   producing the literal opposite (2026-06-28 round): the painting rendered *small,
@@ -218,12 +325,13 @@ one** tag from this list, and **never invent a new value**:
 | `Renaissance & Baroque` | 15th–18th c. European — Renaissance, Mannerism, Flemish/Dutch, Baroque, Rococo |
 | `19th Century` | Neoclassicism, Romanticism, Realism, Barbizon/Hudson River, Impressionism, Symbolism, Art Nouveau |
 | `Modern` | 20th-c. movements — Cubism, Surrealism, Bauhaus, Abstract/Expressionism, Futurism, Art Deco |
-| `Contemporary` | Recent / digital / genre looks. **Legacy only** — those styles were cut from the menu, so you won't generate them; the tag stays for pieces already in the gallery. |
+| `Contemporary` | Recent / contemporary fine art + atmospheric genre and illustration looks — solarpunk, steampunk, dark academia, mid-century modern, noir, eco-brutalism, papercut, Ghibli-esque, contemporary realism/abstraction. **Open for new pieces as of 2026-07-25.** Subject to the AI-cliché exclusions in *Brand & taste*. |
 
 Rule of thumb: **assign by culture/region for ancient & non-Western pieces, by era
 for European ones.** Pick the single best-fitting wing. Some wings have few or no
 pieces yet (`Ancient Near East`, `Arts of Africa & Oceania`, `Islamic`) — that's
-fine, they fill as you curate. A new piece you curate is never `Contemporary`.
+fine, they fill as you curate. `Contemporary` is **no longer legacy-only**: it was
+reopened on 2026-07-25 and new pieces may use it.
 
 ---
 
@@ -389,5 +497,116 @@ a full wingbeat, a full bow returns the body to its own start pose).
   vehicles, machines, cloth) and list elements second, with an explicit cap.
 - Clarified **"one clear subject, one clear motion"**: one *focal action*, not a
   frozen tableau — secondary figures may move naturally.
+
+### 2026-07-25 — removed 7 undesirable, kept 0 great
+
+A small round, but it came with a **standing direction from the reviewer that
+outweighs the seven pieces**: too much ancient art lately, and the ban on
+contemporary styles should go. Both are now encoded as rules above (*Era mix*;
+*Brand & taste*).
+
+**Reviewer's direction (verbatim, the important part of this round):**
+> *"Recent curations feature too many 'ancient art styles' — that's why I marked a
+> lot of them undesirable. We should create fewer of them (but not completely
+> zero), because they look less polished, kind of 'worn out', and less
+> sophisticated. Maybe lean into more recent art styles. […] I think it's now a
+> good time to remove the rule forbidding contemporary art styles. The existing
+> pieces in the 'Contemporary' tab are kind of beautiful art. We shouldn't shy away
+> from them as long as it doesn't give the 'AI slop' / 'AI cliché' feeling."*
+
+**Avoid (undesirable — patterns from prompts + frames + notes):**
+- **Patina upstaging the art — 3 of 7** (Pompeian maenads, Dunhuang apsaras, Greek
+  black-figure). Notes: *"too much dirt / cracks on the 2 women's face… this entire
+  painting is too deep in a state of decay"*; *"the painting feels too old, too worn
+  out… the 年代感 feels more prominent than the art itself"*, 喧宾夺主. **Neither
+  prompt asked for aging** — the existing "freshly made" rule was obeyed to the
+  letter. Decay came in through the *style name* (the model's prior for "Pompeian
+  fresco" / "Mogao cave mural" is the damaged survivor) and through the *in-situ
+  rule* dragging the support into frame (rough cave rock, broken plaster margins,
+  mottled terracotta, votive lamps set in front of the art). Fixed by the new
+  **patina** hard rule: assert freshness positively, keep the support out of frame.
+- **Too dark — the reviewer's primary reason for the Dunhuang reject**, and it
+  turned out to be measurable and systemic. *"It's too dark, not very well lit. I
+  know this might be due to the intention of creating the 'atmosphere' of being old
+  (using only 3 oil lamps). But the main product need of this app is to showcase
+  the art, not the atmosphere."* Mean first-frame luminance across 40 recent
+  pieces: **median 133/255**; 6 under 100, **5 of those 6** carrying explicit
+  dim-light vocabulary in the prompt (58 *Burning of Troy*, 61 *Rainy Night on the
+  Waterfront*, 61 *Rose Garden Fountain at Night*, 76 *Night Fire Festival*, 77
+  *Diwali Lamps on the River*). This round's two decay rejects were also its two
+  darkest — **Dunhuang 79, Pompeian 85**. Note the overlap with the patina finding:
+  *the same prompt move causes both.* "Render it in situ, lit by period light
+  sources" simultaneously drags the ruined support into frame **and** drops the
+  scene 50 luma below the gallery norm. And the in-situ rule was recommending a
+  *"torch-lit temple interior"* as a positive example — the same
+  guidance-caused-the-failure pattern as the 2026-07-19 round. Fixed by the new
+  **lighting** hard rule + a numeric brightness gate in the runbook.
+- **Visually thin — 3 of 7** (Moche fineline runners, Greek black-figure chariot,
+  Song sericulture). Two-tone line-on-ground styles and pale silk-toned grounds
+  leave most of a 4K screen as empty beige. Same complaint as the earlier *"not
+  much stuff, wouldn't say it's art"*. Fixed by the new **palette & density** rule.
+- **Era fatigue — 6 of 7 were ancient/traditional**, and the single non-ancient
+  reject (Pre-Raphaelite) was cut for a *technical* defect, not its looks. The
+  numbers back the reviewer's read exactly. Fixed by the new **Era mix** cap.
+- **One-off render defect — 1 of 7** (Pre-Raphaelite woodland brook). Note:
+  *"white semi-transparent overlay on the sides of the video in the first 1 second
+  for no apparent reason."* Diagnosed by pulling the source still: the defect is in
+  the 4K still, not Veo — Nano Banana composed a narrow centre panel and outpainted
+  hazy filler to reach 16:9, which Veo then dissolved in over the first ~1 s. From
+  ~2 s on the clip is genuinely beautiful. **Recorded as a one-off, deliberately
+  not turned into a rule** (reviewer's call — don't over-generalize a single render
+  glitch); the existing vision gate already covers "reroll a bad still".
+- **No note, no obvious defect — 2 of 7** (Ottoman whirling dervishes, and the
+  Song piece above beyond its paleness). Clean frames, rules all followed. Read
+  these as the era-fatigue signal rather than craft failures: flat court-miniature
+  and muted court-painting looks are exactly the *"less polished, less
+  sophisticated"* register the reviewer is tired of.
+
+**Make more of (great — traits the reviewer wants repeated):**
+- Nothing was flagged `great` this round, so there is no new positive signal from
+  frames. The **stated** positive direction is the era shift: more recent work,
+  more polish, more colour — and the `Contemporary` wing reopened.
+
+**New / reinforced rules** (folded into the sections above):
+- **Lifted the "pre-21st-century only" ban.** `Contemporary` is reopened for new
+  pieces; `AUTOMATED_CURATION.md` step 2 no longer restricts the era. The bar moved
+  from *recency* to *AI-cliché* — a short, specific exclusion list (neon-rain
+  cyberpunk, vaporwave sunset, fractal/generative, pixel/voxel/low-poly, glitch,
+  Y2K/Frutiger Aero) replaces the blanket ban, plus a taste test applied equally to
+  every era.
+- **New hard constraint — Era mix.** Cap the *archaeological look* at **≤1 of the 4
+  nightly pieces**, split by **support**, not by century: plaster/rock/fired
+  clay/stone/excavated metal is capped; silk, paper, panel, canvas, print, vellum
+  and tapestry are not (a Song handscroll is old but arrives pristine). Favour
+  `19th Century`, `Modern`, `Renaissance & Baroque`, `Contemporary`, and the later
+  refined end of the Asian/Islamic traditions.
+- **New hard rule — the patina must never upstage the art.** Positively assert a
+  freshly-finished surface; keep the support (rock edges, broken plaster, pot
+  curvature, excavation lighting, lamps in front of the art) out of frame.
+- **New hard rule — light the art, not the room.** Bright, even, generous
+  illumination is the default; target luma **120+**, treat **under 100 as a
+  reroll**. The light source is never a subject (no candle/lamp/torch-lit-only
+  scenes). Nocturnal subjects stay allowed only when the painted surface still
+  reads across the whole frame. Removed *"torch-lit temple interior"* from the
+  in-situ rule's positive examples, which had been endorsing the failure.
+- **New runbook step — numeric brightness gate.** The step-2 vision gate now runs
+  an `ffmpeg signalstats` luminance measurement, because vision review reliably
+  waves through images that are too dark to enjoy full-screen.
+- **New hard rule — palette & density floor.** Two-colour line-on-ground styles and
+  pale low-chroma grounds are weak full-screen choices; if used, compose densely.
+- **Tool fix:** `contact-sheets.mjs` joined flags against `gallery.json`, which
+  `apply.mjs` has *already* stripped by the time it runs — so `image_prompt` /
+  `video_prompt` came back empty for every undesirable piece, exactly the ones whose
+  prompts matter. It now reads `last-removed.json` / `last-loved.json` first and
+  falls back to the gallery. Every round before this one analysed the undesirable
+  pieces with **no prompt text at all**.
+- **Tool fix — frame resolution.** Frames were extracted straight to 480×270 tile
+  size, so detail was destroyed *before* the sheet was built and a note like
+  *"too much dirt / cracks on the 2 women's face"* could not be verified, only
+  taken on trust. Now each first frame is written at **full resolution**
+  (`frames/<reason>/NNN.png`, 1920×1080) for close reading, and the sheet is a
+  separate downscale at **2×2 / 768px tiles**. Two columns is the useful maximum:
+  vision downsamples any image to ~1568px on its long edge, so per-tile detail is
+  `1568/COLS` no matter what size the tiles are rendered at.
 
 <!-- Claude appends new rounds above this line. -->
