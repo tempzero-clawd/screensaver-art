@@ -86,11 +86,11 @@ export function PricingSection() {
             className="m-0 mb-[14px] font-serif font-bold leading-[1.05] tracking-[-0.01em] text-foreground"
             style={{ fontSize: "clamp(30px,4vw,54px)" }}
           >
-            Start free. Upgrade when you&apos;re hooked.
+            Free forever. Upgrade when you&apos;re hooked.
           </h2>
           <p className="m-0 text-[17px] leading-[1.55] text-muted-foreground">
-            One small payment unlocks the entire ever-growing collection — and a fresh piece every
-            night.
+            Free plan includes {PRICING.freeItemCount} artworks already. One small payment unlocks
+            the entire collection — and a fresh piece every night.
           </p>
         </div>
 
