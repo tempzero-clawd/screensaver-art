@@ -234,8 +234,8 @@ them even before any round-specific learnings exist.
   Writing "lit by oil lamps" reliably costs ~50 luma against the gallery norm.
 
   **The rule:** the default is **bright, generous, even illumination** — full
-  daylight, broad window light, or simply well-lit interior. Treat **luma ≈ 120+**
-  as the target and **under 100 as a reroll**, not a style choice.
+  daylight, broad window light, or simply a well-lit interior. Dimness is not a
+  style choice here; if the still comes back murky, reroll it brighter.
   - **Do not make the light source a subject.** No candles, oil lamps, torches,
     braziers or lanterns placed in the scene as the only illumination — those
     render as small bright blobs in a dark field, and everything you actually came
@@ -536,7 +536,9 @@ contemporary styles should go. Both are now encoded as rules above (*Era mix*;
   scene 50 luma below the gallery norm. And the in-situ rule was recommending a
   *"torch-lit temple interior"* as a positive example — the same
   guidance-caused-the-failure pattern as the 2026-07-19 round. Fixed by the new
-  **lighting** hard rule + a numeric brightness gate in the runbook.
+  **lighting** hard rule. (The luminance figures above are recorded as *evidence*
+  for the rule — the bot is not asked to measure anything; a numeric brightness
+  gate was tried and dropped as over-engineering.)
 - **Visually thin — 3 of 7** (Moche fineline runners, Greek black-figure chariot,
   Song sericulture). Two-tone line-on-ground styles and pale silk-toned grounds
   leave most of a 4K screen as empty beige. Same complaint as the earlier *"not
@@ -577,14 +579,11 @@ contemporary styles should go. Both are now encoded as rules above (*Era mix*;
   freshly-finished surface; keep the support (rock edges, broken plaster, pot
   curvature, excavation lighting, lamps in front of the art) out of frame.
 - **New hard rule — light the art, not the room.** Bright, even, generous
-  illumination is the default; target luma **120+**, treat **under 100 as a
-  reroll**. The light source is never a subject (no candle/lamp/torch-lit-only
-  scenes). Nocturnal subjects stay allowed only when the painted surface still
-  reads across the whole frame. Removed *"torch-lit temple interior"* from the
-  in-situ rule's positive examples, which had been endorsing the failure.
-- **New runbook step — numeric brightness gate.** The step-2 vision gate now runs
-  an `ffmpeg signalstats` luminance measurement, because vision review reliably
-  waves through images that are too dark to enjoy full-screen.
+  illumination is the default. The light source is never a subject (no
+  candle/lamp/torch-lit-only scenes). Nocturnal subjects stay allowed only when the
+  painted surface still reads across the whole frame. Removed *"torch-lit temple
+  interior"* from the in-situ rule's positive examples, which had been endorsing
+  the failure.
 - **New hard rule — palette & density floor.** Two-colour line-on-ground styles and
   pale low-chroma grounds are weak full-screen choices; if used, compose densely.
 - **Tool fix:** `contact-sheets.mjs` joined flags against `gallery.json`, which

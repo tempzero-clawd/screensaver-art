@@ -29,7 +29,7 @@ A scheduled AI agent that commissions **four new pieces every night** so the
 gallery always has fresh art. Its full runbook is
 [`AUTOMATED_CURATION.md`](AUTOMATED_CURATION.md); in short, for each piece it:
 
-1. Picks a pre-21st-century theme/style.
+1. Picks a theme/style (any era, per the "Brand & taste" + "Era mix" rules).
 2. Generates a 4K still (text-to-image, Nano Banana Pro) and **self-reviews** it —
    re-rolling anything that looks like a catalog photo, has AI artifacts, or
    wouldn't look good framed (the "vision gate") *before* spending a video gen.
