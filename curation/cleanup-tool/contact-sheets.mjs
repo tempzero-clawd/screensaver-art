@@ -8,8 +8,10 @@
 //   node curation/cleanup-tool/contact-sheets.mjs
 //
 // Outputs under curation/cleanup-tool/.analysis/:
-//   frames/<reason>/NNN.png    one labeled 16:9 frame per flagged piece
-//   sheets/<reason>_NN.png     frames tiled 4x4 (16 per sheet), index burned in
+//   frames/<reason>/NNN.png    one labeled FULL-RESOLUTION frame per flagged piece
+//                              — read these when a note turns on fine detail
+//   sheets/<reason>_NN.png     frames tiled 2x2 (4 per sheet), index burned in
+//                              — the overview; see the TILE_W note on why 2 cols
 //   index.json                 { undesirable:[…], great:[…] } -> {n, sheet, src, title, note, prompts}
 //   index.md                   same mapping, human/Claude-readable, grouped by reason
 
@@ -23,12 +25,25 @@ const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, '..', '..');
 const GALLERY = join(ROOT, 'gallery.json');
 const SELECTIONS = join(HERE, 'selections.json');
+const LAST_REMOVED = join(HERE, 'last-removed.json');
+const LAST_LOVED = join(HERE, 'last-loved.json');
 const OUT = join(HERE, '.analysis');
 const FRAMES = join(OUT, 'frames');
 const SHEETS = join(OUT, 'sheets');
 
-const TILE_W = 480, TILE_H = 270;     // 16:9 tile
-const COLS = 4, ROWS = 4;             // 16 frames per sheet
+// Sheet tiles. Vision downsamples any image to ~1568px on its long edge, so a
+// tile's *effective* resolution is 1568/COLS regardless of what we render here —
+// rendering 1280px tiles would just double the file for no extra detail. Keeping
+// the sheet ~1568 wide at 2 columns is therefore the most detail a grid can carry
+// (~768px/tile). At the old 4x4 @ 480 tiles arrived ~390px, far too coarse to
+// check a note like "too much dirt / cracks on the faces".
+// For real detail, read frames/<reason>/NNN.png (full-res) instead of the sheet.
+const TILE_W = 768, TILE_H = 432;     // 16:9 tile
+const COLS = 2, ROWS = 2;             // 4 frames per sheet
+// Full-resolution frames are written alongside the sheets (frames/<reason>/NNN.png)
+// at the video's native size, capped here. The sheet is the overview; when a
+// reviewer note turns on fine detail, read the full-res frame instead.
+const FRAME_MAX_W = 1920;
 const CONCURRENCY = 6;
 const FONT = [
   '/System/Library/Fonts/Supplemental/Arial.ttf',
@@ -65,11 +80,25 @@ async function pool(items, n, fn) {
   return results;
 }
 
-// --- gather flagged pieces by reason (join selections -> gallery for prompts) ---
+// --- gather flagged pieces by reason (join selections -> item records for prompts) ---
 if (!existsSync(SELECTIONS)) { console.error('No curation/cleanup-tool/selections.json. Run the tool first.'); process.exit(1); }
 const sel = JSON.parse(await readFile(SELECTIONS, 'utf8'));
-const gallery = JSON.parse(await readFile(GALLERY, 'utf8'));
-const bySrc = new Map(gallery.map((g) => [g.src, g]));
+
+// Prompt lookup. This normally runs *after* apply.mjs, which has already deleted
+// the undesirable pieces from gallery.json — so looking them up there yields
+// nothing, blanking the prompts for exactly the pieces we most need to analyse.
+// apply.mjs's records keep the full items (prompts + note), so read those first
+// and fall back to the live gallery (covers a standalone run before apply).
+const readItems = async (path) =>
+  existsSync(path) ? (JSON.parse(await readFile(path, 'utf8')).items || []) : [];
+
+const bySrc = new Map(
+  [
+    JSON.parse(await readFile(GALLERY, 'utf8')),
+    await readItems(LAST_LOVED),
+    await readItems(LAST_REMOVED),
+  ].flat().map((g) => [g.src, g]),
+);
 
 const buckets = {};
 for (const reason of REASONS) {
@@ -89,8 +118,8 @@ await rm(OUT, { recursive: true, force: true });
 await mkdir(SHEETS, { recursive: true });
 
 const pad = (n) => String(n).padStart(3, '0');
-const drawtext = (label) => {
-  const base = `text='${label}':x=8:y=6:fontsize=34:fontcolor=yellow:box=1:boxcolor=black@0.65:boxborderw=8`;
+const drawtext = (label, fontsize = '34') => {
+  const base = `text='${label}':x=8:y=6:fontsize=${fontsize}:fontcolor=yellow:box=1:boxcolor=black@0.65:boxborderw=8`;
   return FONT ? `drawtext=fontfile='${FONT}':${base}` : `drawtext=${base}`;
 };
 
@@ -101,15 +130,28 @@ async function buildBucket(reason, pieces) {
   const framesDir = join(FRAMES, reason);
   await mkdir(framesDir, { recursive: true });
 
+  const tilesDir = join(OUT, '.tiles', reason);
+  await mkdir(tilesDir, { recursive: true });
+
   const ok = await pool(pieces, CONCURRENCY, async (p, idx) => {
-    const vf = [
-      `scale=${TILE_W}:${TILE_H}:force_original_aspect_ratio=decrease`,
-      `pad=${TILE_W}:${TILE_H}:(ow-iw)/2:(oh-ih)/2:color=black`,
-      drawtext(idx),
+    // 1. Full-resolution frame, for reading a single piece up close. Labelled at a
+    //    size relative to the frame so it stays unobtrusive at native resolution.
+    const fullVf = [
+      `scale='min(${FRAME_MAX_W},iw)':-2`,
+      drawtext(idx, 'h/28'),
     ].join(',');
     // -frames:v 1 from the start: ffmpeg reads only enough of the remote stream to
     // decode the first frame, so this does not download the whole MP4.
-    await run('ffmpeg', ['-y', '-i', p.src, '-frames:v', '1', '-vf', vf, join(framesDir, `${pad(idx)}.png`)]);
+    await run('ffmpeg', ['-y', '-i', p.src, '-frames:v', '1', '-vf', fullVf, join(framesDir, `${pad(idx)}.png`)]);
+
+    // 2. Downscaled tile for the contact sheet, labelled after the downscale so the
+    //    index stays readable in the grid.
+    const tileVf = [
+      `scale=${TILE_W}:${TILE_H}:force_original_aspect_ratio=decrease`,
+      `pad=${TILE_W}:${TILE_H}:(ow-iw)/2:(oh-ih)/2:color=black`,
+      drawtext(idx, '34'),
+    ].join(',');
+    await run('ffmpeg', ['-y', '-i', join(framesDir, `${pad(idx)}.png`), '-vf', tileVf, join(tilesDir, `${pad(idx)}.png`)]);
   });
   console.log(`  ${reason}: extracted ${ok.filter(Boolean).length}/${pieces.length} frames.`);
 
@@ -117,7 +159,7 @@ async function buildBucket(reason, pieces) {
   // per full grid; trailing cells on the last sheet are filled with the pad color.
   // ffmpeg's image2 muxer numbers sheets from 01, so +1 below to match <reason>_NN.png.
   await run('ffmpeg', [
-    '-y', '-framerate', '1', '-start_number', '0', '-i', join(framesDir, '%03d.png'),
+    '-y', '-framerate', '1', '-start_number', '0', '-i', join(tilesDir, '%03d.png'),
     '-vf', `tile=${COLS}x${ROWS}:padding=10:margin=10:color=0x1d2029`,
     join(SHEETS, `${reason}_%02d.png`),
   ]);

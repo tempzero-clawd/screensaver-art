@@ -114,6 +114,24 @@ When you add a new style, append it under the section it best fits.
 - Psychedelic Art
 - Afrofuturism
 
+## Contemporary & atmospheric genre looks (reopened 2026-07-25)
+
+The "pre-21st-century only" rule was lifted — these are on the menu again. The bar
+is the **AI-cliché** test in `PROMPT_GUIDANCE.md` ("Brand & taste"), not recency.
+
+- Contemporary Realism (large-scale figurative oil)
+- Contemporary Ink Painting (post-war Chinese/Japanese experimental ink)
+- Dark Academia
+- Solarpunk
+- Eco-Brutalism
+- Steampunk
+- Dieselpunk
+- Retro-Futurism
+- Modern Nordic / Scandinavian Landscape Illustration
+- Contemporary Botanical Illustration
+- Light and Space (Turrell / Irwin — luminous colour-field environments)
+- Contemporary Stained Glass
+
 ## Techniques, media & cross-cutting visual styles
 
 - Fresco

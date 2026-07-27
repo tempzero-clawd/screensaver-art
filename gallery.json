@@ -2327,19 +2327,6 @@
     "looping": true
   },
   {
-    "src": "https://screensaver-assets.living-art-asset.com/gallery/preraphaelite_woodland_brook_animated.mp4",
-    "img": "https://screensaver-assets.living-art-asset.com/gallery/preraphaelite_woodland_brook_4k.webp",
-    "title": "Woodland Brook in Spring - Pre-Raphaelite Brotherhood (AI Animated)",
-    "type": "video",
-    "date": "2026-07-12",
-    "tags": [
-      "19th Century"
-    ],
-    "image_prompt": "A Pre-Raphaelite Brotherhood oil painting in the style of 1850s England, jewel-bright and minutely detailed: a clear woodland brook tumbling in a small waterfall over moss-covered rocks, the foreground crowded with botanically precise wildflowers — bluebells, foxgloves, forget-me-nots, ferns and reeds — dense green undergrowth and slender silver birch trunks catching dappled sunlight, a deep verdant glade receding behind. Luminous naturalistic daylight, saturated enamel-like colour, razor-sharp botanical detail throughout, oil on canvas. The scene fills the entire image, extending to all four edges, viewed straight-on. No people, no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame around it.",
-    "video_prompt": "The woodland brook flows and the small waterfall tumbles continuously over the mossy rocks, clear water rushing and splashing with realistic ripples and white foam in the pool below; a gentle breeze stirs the wildflowers, ferns and birch leaves, and dappled sunlight flickers softly across the glade. The camera slowly pushes in. Everything holds its painted Pre-Raphaelite form — only water, foliage and light move.",
-    "looping": false
-  },
-  {
     "src": "https://screensaver-assets.living-art-asset.com/gallery/heidelberg_school_river_bend_animated.mp4",
     "img": "https://screensaver-assets.living-art-asset.com/gallery/heidelberg_school_river_bend_4k.webp",
     "title": "Sunlit River Bend - Heidelberg School (AI Animated)",
@@ -2704,32 +2691,6 @@
     "looping": false
   },
   {
-    "src": "https://screensaver-assets.living-art-asset.com/gallery/dunhuang_apsara_dance_animated.mp4",
-    "img": "https://screensaver-assets.living-art-asset.com/gallery/dunhuang_apsara_dance_4k.webp",
-    "title": "Celestial Dancers of the Grottoes - Dunhuang Mogao Cave Mural (AI Animated)",
-    "type": "video",
-    "date": "2026-07-24",
-    "tags": [
-      "Chinese & Korean"
-    ],
-    "image_prompt": "A Tang-dynasty Dunhuang Mogao cave Buddhist paradise mural, mineral pigments on lime plaster, in the classic feitian style: a graceful celestial apsara dancer at the centre twirling with two long trailing silk ribbons, flanked by seated heavenly musicians playing a curved pipa lute and a transverse flute, lotus blossoms and scattered flower petals floating in the air, a shallow lotus pond below, warm ochre and cinnabar red, malachite green and azurite blue with gold-leaf haloes, flowing calligraphic outlines, soft warm devotional lamplight. No museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge, viewed straight-on.",
-    "video_prompt": "The central floating apsara sways and slowly turns in her dance, keeping her exact painted shape, colours and features while her two long trailing silk ribbons and her flowing skirt ripple and sweep through the air. The seated musician on the left plucks her pipa lute, her fingers moving over the strings; the seated flute player on the right raises and lowers his fingers on the transverse flute. Lotus petals drift gently downward through the air and the small oil-lamp flames flicker at the base. The painted swirling clouds, the lotus pond and the rock wall hold their positions. Warm devotional lamplight, calm graceful physically natural motion.",
-    "looping": false
-  },
-  {
-    "src": "https://screensaver-assets.living-art-asset.com/gallery/roman_maenad_dance_animated.mp4",
-    "img": "https://screensaver-assets.living-art-asset.com/gallery/roman_maenad_dance_4k.webp",
-    "title": "Dance of the Maenads - Pompeian Fresco (AI Animated)",
-    "type": "video",
-    "date": "2026-07-24",
-    "tags": [
-      "Greek & Roman"
-    ],
-    "image_prompt": "An ancient Roman wall fresco in the Second-Style Pompeian manner, pigment on lime plaster, a Dionysian dance scene: at the centre a young maenad caught mid-spin, her body arched back, a swirling saffron-yellow mantle and translucent chiton streaming around her and her dark hair flying, both arms raised striking a pair of small bronze cymbals; beside her a second maenad plays a double aulos flute, a fallen thyrsus wand and grape vines at their feet, set against the deep glowing 'Pompeian red' and black painted wall panels of a villa triclinium, warm even lamplight, luminous saturated mineral pigments, confident flowing fresco brushwork. No museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge, viewed straight-on.",
-    "video_prompt": "The central maenad dances, spinning and swaying with her body arched, keeping her exact painted face, figure and colours while her billowing saffron mantle, white chiton and long dark hair stream and flutter through the air and she brings the two bronze cymbals together. Beside her the second maenad sways gently as she blows the double aulos, her fingers shifting on the pipes. The two candle flames flicker at the base. The red-and-black painted wall panel, the grape vine and the thyrsus wand on the ground stay fixed. Warm flickering lamplight, lively but graceful physically natural motion.",
-    "looping": false
-  },
-  {
     "src": "https://screensaver-assets.living-art-asset.com/gallery/maya_dance_procession_animated.mp4",
     "img": "https://screensaver-assets.living-art-asset.com/gallery/maya_dance_procession_4k.webp",
     "title": "Festival Dancer and Musicians - Maya Polychrome Mural (AI Animated)",
@@ -2743,45 +2704,6 @@
     "looping": false
   },
   {
-    "src": "https://screensaver-assets.living-art-asset.com/gallery/ottoman_whirling_dervishes_looping.mp4",
-    "img": "https://screensaver-assets.living-art-asset.com/gallery/ottoman_whirling_dervishes_4k.webp",
-    "title": "The Whirling Dervishes - Ottoman Miniature (AI Animated)",
-    "type": "video",
-    "date": "2026-07-24",
-    "tags": [
-      "Islamic"
-    ],
-    "image_prompt": "A classic Ottoman miniature painting of a Mevlevi sema ceremony, gouache and gold on paper, in the flat stylised court-miniature manner (no realistic perspective, even flat colour fields, fine dark outlines, tilted-up ground plane): three whirling dervishes at the centre in long white flaring skirts and tall honey-brown camel-hair hats, each with arms outstretched, one palm up and one palm down, caught mid-spin so their white skirts flare out into wide smooth cones; seated cross-legged on a patterned carpet to the left, a small group of dervish musicians play the ney reed-flute and a round frame drum, holding only their instruments; the interior of a domed ceremonial hall with a blue-tiled mihrab niche, hanging glass mosque lamps on chains and slender pointed arches, a rich palette of deep red, gold, teal and cream. Historically accurate 17th-century setting with no modern objects, no microphones, no metal stands, no wires. No museum, no display case, no glass vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge, viewed straight-on.",
-    "video_prompt": "The three whirling dervishes spin steadily and gracefully, each turning on the spot and completing one full slow rotation so they return to face exactly as they began; their white skirts stay flared out into smooth wide cones and sweep around with them, and their outstretched arms turn with the spin. Keep each dervish's exact painted shape, white robe, brown camel-hair hat and count. The seated musicians play — fingers moving on the ney reed-flutes, a hand tapping the round frame drum. The blue-tiled mihrab niche, the hanging mosque lamps, the arches and the patterned carpet stay fixed. Warm even light, calm continuous whirling motion.",
-    "looping": true
-  },
-  {
-    "src": "https://screensaver-assets.living-art-asset.com/gallery/greek_chariot_race_animated.mp4",
-    "img": "https://screensaver-assets.living-art-asset.com/gallery/greek_chariot_race_4k.webp",
-    "title": "The Chariot Race - Greek Black-Figure Vase Painting (AI Animated)",
-    "type": "video",
-    "date": "2026-07-25",
-    "tags": [
-      "Greek & Roman"
-    ],
-    "image_prompt": "An extreme flat close-up of the painted surface of an ancient Greek black-figure amphora, Attic style c. 530 BC — showing ONLY the painting itself, no pot: a four-horse chariot team at full gallop. Glossy black silhouetted figures with fine incised interior detail on a warm terracotta-orange clay ground — four horses in profile, forelegs and hindlegs extended mid-stride, manes and tails flying; a bearded charioteer in a long belted robe leaning forward, reins taut; a few added white and purple-red accents. The painted frieze completely fills the frame and extends past all four edges, as if the terracotta surface were flattened out. No pot rim, no shoulder curve, no handles, no vessel edge, no background wall, no grey studio backdrop; no museum, no display case, no glass, no pedestal, no spotlight, no label, no painted border or mat around it. Flat frontal view, strong even daylight.",
-    "video_prompt": "The four black horses gallop at full stretch across the terracotta ground — legs churning through the running stride, hooves lifting and striking, manes and tails streaming back, the chariot wheel turning; the bearded charioteer leans into the run, reins taut, his robe rippling with the speed. Each figure keeps its exact black silhouette shape, incised detail and colour while it moves. The terracotta surface holds its tone. Warm even daylight, a slow steady push in, no camera shake.",
-    "looping": false
-  },
-  {
-    "src": "https://screensaver-assets.living-art-asset.com/gallery/moche_runners_looping.mp4",
-    "img": "https://screensaver-assets.living-art-asset.com/gallery/moche_runners_4k.webp",
-    "title": "Ritual Runners - Moche Fineline Painting (AI Animated)",
-    "type": "video",
-    "date": "2026-07-25",
-    "tags": [
-      "Arts of the Americas"
-    ],
-    "image_prompt": "An extreme flat close-up of a Moche fineline painting from ancient Peru (Moche culture, c. 400 AD) — showing ONLY the painting itself, no pot: a procession of swift ritual runners racing across the desert. Slender profile figures painted in fine reddish-brown lines on a cream-slip ground, each runner in full sprint — one leg thrown forward, arms pumping, carrying small bags, feathered headdresses and sashes streaming; rounded cactus, low hills and small plants dotted between them in the same fineline style. The painted frieze completely fills the frame and extends past all four edges, as if the cream surface were flattened out. No pot rim, no shoulder curve, no vessel edge, no background wall, no grey studio backdrop; no museum, no display case, no glass, no pedestal, no spotlight, no label, no painted border or mat around it. Flat frontal view, clean linear silhouettes, bright even daylight.",
-    "video_prompt": "The line of ritual runners sprints steadily to the right across the pale desert — legs pumping through the full running stride, sashes and headdress feathers streaming back, one runner leaving the right edge as another enters from the left so the frieze stays full and returns to its opening state. Each figure keeps its exact fineline shape, reddish-brown colour and count while it runs. The cream ground, cactus and hills hold still. Bright even daylight, a slow steady pan following the runners.",
-    "looping": true
-  },
-  {
     "src": "https://screensaver-assets.living-art-asset.com/gallery/bayeux_cavalry_charge_animated.mp4",
     "img": "https://screensaver-assets.living-art-asset.com/gallery/bayeux_cavalry_charge_4k.webp",
     "title": "Cavalry Charge at Hastings - Bayeux Tapestry (AI Animated)",
@@ -2793,19 +2715,6 @@
     "image_prompt": "A scene in the style of the Bayeux Tapestry (11th-century Norman embroidery): a charge of Norman knights at the Battle of Hastings. Mounted knights in conical helmets and mail hauberks gallop forward, kite shields raised and lances couched, their horses in bay, chestnut and blue-grey wool. Worked in flat blocks of coloured wool — terracotta-red, sage-green, mustard-gold, slate-blue — with dark outline stitching, on a plain unbleached linen ground. Flat frontal view, clean profile figures, even daylight. The scene fills the entire image, extending to all four edges; no museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame, viewed straight-on.",
     "video_prompt": "The Norman knights charge forward at a gallop — the horses' legs extend and gather through the stride, hooves lifting off the ground, the couched lances leveling and the kite shields shifting, the riders' cloaks and the horses' manes and tails streaming back. Each figure keeps its exact embroidered wool shape, colours and count while it moves. The linen ground holds still. Even daylight, a slow steady push forward with the charge, no camera shake.",
     "looping": false
-  },
-  {
-    "src": "https://screensaver-assets.living-art-asset.com/gallery/song_silk_weavers_looping.mp4",
-    "img": "https://screensaver-assets.living-art-asset.com/gallery/song_silk_weavers_4k.webp",
-    "title": "Silk Weavers at the Loom - Song Dynasty Painting (AI Animated)",
-    "type": "video",
-    "date": "2026-07-25",
-    "tags": [
-      "Chinese & Korean"
-    ],
-    "image_prompt": "A freshly painted Song Dynasty Chinese silk court painting in the tradition of the 'Sericulture' weaving scrolls, c. 12th century: the interior of a weaving workshop. A seated woman weaver at a large wooden treadle loom passes the shuttle across the warp; a second woman crouches reeling silk thread from a spinning frame; a small child watches at her side; bolts of finished silk, baskets and mulberry leaves around them. Delicate fine ink outlines with soft mineral-pigment colour — muted indigo, ochre, pale green robes — on a clean warm silk-toned ground, refined court-painting detail, soft even indoor daylight. The painting completely fills the frame and extends to all four edges. No scroll edges, no roller, no creases, no stains, no aging, no torn or curled paper, no background wall, no grey studio backdrop; no museum, no display case, no glass, no pedestal, no spotlight, no label, no painted border or mat. Flat frontal view, viewed straight-on.",
-    "video_prompt": "The seated weaver slides the shuttle across the loom's warp and draws it back through one full pass, her hands and the taut warp threads moving; the crouching woman turns the silk-reeling frame so the skein rotates and the drawn thread feeds out; the small child shifts his weight and looks on. The motion completes one cycle and returns exactly to the opening pose. Each figure keeps its exact painted shape, colours and count. The loom frame, baskets, bolts of silk and mulberry leaves hold their position. Soft even indoor daylight, a still camera.",
-    "looping": true
   },
   {
     "src": "https://screensaver-assets.living-art-asset.com/gallery/minoan_bullleaping_animated.mp4",
