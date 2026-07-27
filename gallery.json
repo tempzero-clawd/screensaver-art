@@ -2715,18 +2715,5 @@
     "image_prompt": "A scene in the style of the Bayeux Tapestry (11th-century Norman embroidery): a charge of Norman knights at the Battle of Hastings. Mounted knights in conical helmets and mail hauberks gallop forward, kite shields raised and lances couched, their horses in bay, chestnut and blue-grey wool. Worked in flat blocks of coloured wool — terracotta-red, sage-green, mustard-gold, slate-blue — with dark outline stitching, on a plain unbleached linen ground. Flat frontal view, clean profile figures, even daylight. The scene fills the entire image, extending to all four edges; no museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame, viewed straight-on.",
     "video_prompt": "The Norman knights charge forward at a gallop — the horses' legs extend and gather through the stride, hooves lifting off the ground, the couched lances leveling and the kite shields shifting, the riders' cloaks and the horses' manes and tails streaming back. Each figure keeps its exact embroidered wool shape, colours and count while it moves. The linen ground holds still. Even daylight, a slow steady push forward with the charge, no camera shake.",
     "looping": false
-  },
-  {
-    "src": "https://screensaver-assets.living-art-asset.com/gallery/dragon_boat_race_animated.mp4",
-    "img": "https://screensaver-assets.living-art-asset.com/gallery/dragon_boat_race_4k.webp",
-    "title": "The Dragon Boat Race - Chinese Court Silk Painting (AI Animated)",
-    "type": "video",
-    "date": "2026-07-26",
-    "tags": [
-      "Chinese & Korean"
-    ],
-    "image_prompt": "A Chinese court painting in the Song-dynasty blue-and-green gongbi style, ink and mineral colour on silk, depicting the Duanwu Dragon Boat Festival on a broad river. Two long dragon boats race side by side across the water, their carved dragon prows rearing up with painted scales and whiskers; rows of oarsmen in bright tunics lean into their paddle strokes in unison, a standing drummer at the centre of each boat beating a great red drum, a helmsman steering at the stern, colourful pennants and parasols streaming. Spectators in robes crowd a willow-lined riverbank pavilion. Fine detailed brushwork, luminous azurite and malachite palette with gold accents, soft even daylight, gentle river with a few painted ripples. Flat elevated Chinese-scroll perspective. The scene fills the entire image edge to edge, viewed straight-on. No museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain background, no painted border, no mat, no decorative frame around it.",
-    "video_prompt": "The rows of oarsmen in both dragon boats pull their paddles through full strokes in unison, leaning back and dipping the blades so the boats surge forward across the river; the standing drummers swing their sticks and beat the big red drums; the helmsmen work their steering oars at the sterns; the carved dragon prows push through the water, pennants and parasols fluttering, and the river churns into white wake around the hulls. On the bank the willow fronds sway and a few spectators shift and wave. Each figure and boat keeps its exact painted shape, flat mineral colours and fine outlines while it moves; the pavilion stays still. Soft even daylight. Smooth, physically plausible motion; no morphing, melting, or extra limbs.",
-    "looping": false
   }
 ]
