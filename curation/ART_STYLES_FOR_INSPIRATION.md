@@ -32,6 +32,7 @@ When you add a new style, append it under the section it best fits.
 - Flemish Primitives
 - Flemish Winter Landscape
 - Hieronymus Bosch
+- Flemish Peasant Genre (Bruegel — village kermis, wedding feasts, round dances)
 - Renaissance art
 - Renaissance oil painting
 - Renaissance Fresco

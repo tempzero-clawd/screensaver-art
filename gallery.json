@@ -2715,5 +2715,57 @@
     "image_prompt": "A scene in the style of the Bayeux Tapestry (11th-century Norman embroidery): a charge of Norman knights at the Battle of Hastings. Mounted knights in conical helmets and mail hauberks gallop forward, kite shields raised and lances couched, their horses in bay, chestnut and blue-grey wool. Worked in flat blocks of coloured wool — terracotta-red, sage-green, mustard-gold, slate-blue — with dark outline stitching, on a plain unbleached linen ground. Flat frontal view, clean profile figures, even daylight. The scene fills the entire image, extending to all four edges; no museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame, viewed straight-on.",
     "video_prompt": "The Norman knights charge forward at a gallop — the horses' legs extend and gather through the stride, hooves lifting off the ground, the couched lances leveling and the kite shields shifting, the riders' cloaks and the horses' manes and tails streaming back. Each figure keeps its exact embroidered wool shape, colours and count while it moves. The linen ground holds still. Even daylight, a slow steady push forward with the charge, no camera shake.",
     "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/impressionist_regatta_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/impressionist_regatta_4k.webp",
+    "title": "Summer Regatta on the River - Impressionism (AI Animated)",
+    "type": "video",
+    "date": "2026-07-27",
+    "tags": [
+      "19th Century"
+    ],
+    "image_prompt": "A vibrant French Impressionist oil painting, oil on canvas in the plein-air manner of the 1870s, of a summer sailing regatta on a wide sunlit river. Several white-sailed racing yachts with taut triangular sails lean into a fresh breeze and cut across sparkling blue water dappled with sunlight; small rowing skiffs and a crowd of spectators in bright summer dress line the near bank beneath leafy green trees. Loose broken brushwork, high-key palette of cobalt blue, emerald green, sunlit white and warm ochre, brilliant clear midday summer light filling the whole scene, freshly painted, pigments brilliant and unfaded. Viewed straight-on, flat to the picture plane. No painted border, no mat, no decorative frame, no signature; the scene fills the entire image edge to edge.",
+    "video_prompt": "The white-sailed racing yachts glide steadily across the sparkling river, taut sails full of the breeze and hulls heeling gently as they cut leftward through the water; in the foreground a rower pulls a full stroke on his oars and his skiff eases forward, small wakes rippling out; the crowd of spectators on the bank shifts and mingles, parasols and summer dresses stirring, leaves fluttering overhead. Each boat and figure keeps its exact painted Impressionist shape and colours while it moves. Bright clear midday summer daylight.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/solarpunk_skytram_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/solarpunk_skytram_4k.webp",
+    "title": "The Green City Skytram - Solarpunk (AI Animated)",
+    "type": "video",
+    "date": "2026-07-27",
+    "tags": [
+      "Contemporary"
+    ],
+    "image_prompt": "A lush solarpunk cityscape, contemporary digital concept-art illustration with crisp clean rendering, of a verdant green-tech city on a bright clear day. Elegant white towers with curved organic Art-Nouveau-inspired forms are draped in cascading gardens, hanging vines and terraced greenery, dotted with wind sculptures and gleaming solar sails; a slender aerial cable line carries a row of streamlined glass gondola cabins gliding across the scene, tiny passengers visible inside; swifts wheel through warm sunlit air, banners and flowering vines stir. Saturated lush palette of emerald and jade green, warm ivory white, sky blue and gold, brilliant clear afternoon sunlight, luminous and evenly lit. Viewed straight-on. No painted border, no mat, no frame, no signature; the scene fills the entire image edge to edge.",
+    "video_prompt": "The streamlined glass gondola cabins glide smoothly along the cables across the frame, tiny passengers inside; flocks of swifts wheel and stream through the sunlit air; hanging vines, flowering creepers and small banners on the green towers sway gently in the breeze, and the golden solar sails turn slowly. Every building, gondola and tree keeps its exact shape, colours and clean line-art while it moves. Bright clear afternoon daylight, luminous and evenly lit.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/art_deco_ski_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/art_deco_ski_4k.webp",
+    "title": "Downhill Racer - Art Deco (AI Animated)",
+    "type": "video",
+    "date": "2026-07-27",
+    "tags": [
+      "Modern"
+    ],
+    "image_prompt": "A 1930s Art Deco winter-sports illustration in the streamlined style of golden-age alpine travel art, of a skier carving down a brilliant sunlit mountain slope, rendered full-bleed off all four edges with no border, margin or frame. Bold geometric stylization with flat crisp planes of colour and a strong dynamic diagonal composition: a stylish skier in a scarlet-and-cream outfit sweeps down a pristine white snow slope in a fast carving turn, throwing up a clean fan of powder spray; sharp stylized blue-and-violet mountain peaks and a deep cobalt sky rise behind, tiny dark pines, long clean geometric shadows. Brilliant crisp high-altitude sunlight, luminous and evenly lit. Limited high-contrast Deco palette of scarlet red, cream white, cobalt and sky blue, violet and gold. Freshly rendered, colours brilliant and clean. Straight-on. No border, no frame, no signature, no text; the scene fills the entire image edge to edge.",
+    "video_prompt": "The skier carves fast down the snow slope, body sweeping smoothly downhill and forward as his skis cut a turn, throwing up a continuous bright fan of powder spray that streams off the skis and drifts on the wind; fine loose snow blows in ribbons across the slope. The skier keeps his exact flat Art-Deco shape, scarlet-and-cream colours and clean geometric planes while he moves; the mountains, pines and sky hold still. Brilliant crisp alpine sunlight, luminous and evenly lit.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/flemish_wedding_dance_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/flemish_wedding_dance_4k.webp",
+    "title": "Village Wedding Dance - Flemish Renaissance (AI Animated)",
+    "type": "video",
+    "date": "2026-07-27",
+    "tags": [
+      "Renaissance & Baroque"
+    ],
+    "image_prompt": "A lively 16th-century Netherlandish Renaissance oil painting on panel, Flemish peasant genre scene in the Bruegel tradition, of a village wedding feast dancing in a sunny open square. Dozens of ruddy-cheeked peasants in bright red, white, ochre, teal and green costume dance in swirling linked-arm rings, skirts and aprons flying, men leaping, a pair of bagpipers playing to one side; long trestle tables of feasters, half-timbered houses, a little brick church, leafy summer trees and fluttering festival banners fill the background. Dense busy composition packed with figures, rich earthy polychrome palette, bright clear outdoor summer daylight evenly lighting the whole square, freshly painted, pigments brilliant and unfaded. Straight-on. No painted border, no mat, no decorative frame, no signature; the scene fills the entire image edge to edge.",
+    "video_prompt": "The peasants dance, whirling in their linked-arm rings: the foreground couples turn and step in a lively round dance, skirts and aprons swinging out, men bobbing and leaping, hands clasped; the two bagpipers sway as they play; the festival banners flutter and leaves stir in the summer breeze; at the long tables the feasters gesture and lift their cups. Every figure keeps its exact painted Renaissance shape, costume colours and count while it moves; the houses, church and trees stay in place. Bright clear summer daylight over the whole square.",
+    "looping": false
   }
 ]
