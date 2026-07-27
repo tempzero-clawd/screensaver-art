@@ -18,9 +18,7 @@ loves.
 ## Brand & taste
 
 This gallery is **art history brought to life** — the full breadth you'd find
-walking the wings of a great encyclopedic museum, from prehistoric cave paintings
-and bronze-age artifacts through Ukiyo-e, Persian miniatures, Renaissance frescoes
-and Impressionism to the modern masters and beyond. Aim for **museum-grade** work:
+walking the wings of a great encyclopedic museum. Aim for **museum-grade** work:
 pieces beautiful enough to hang on a gallery wall.
 
 **Range widely and be creative** — `ART_STYLES_FOR_INSPIRATION.md` is a starting
@@ -39,9 +37,8 @@ The bar is no longer *era*, it's **AI-cliché**. What was actually wrong with th
 banned list was never its recency — it was that a handful of those looks are the
 default output of every AI image generator. Still off the menu:
 
-> neon-rain cyberpunk street, vaporwave/synthwave sunset (grid + palm trees +
-> magenta gradient), fractal / generative / "AI art", pixel / voxel / low-poly,
-> glitch art, Y2K / Frutiger Aero, and loud graphic-design trends.
+> generative / "AI art", 
+> glitch art / Y2K / Frutiger Aero
 
 **Taste test (apply to every era equally):** does this look like a piece an artist
 made — something you'd find in a serious gallery, a good illustration annual, or an
@@ -77,8 +74,7 @@ When you do spend the archaeological slot, pick the **best-preserved, most
 polychrome** example of the style, and follow the *patina* rule below.
 
 Beyond the cap, actively favour: `19th Century`, `Modern`, `Renaissance & Baroque`,
-`Contemporary`, and the later, refined end of the Asian/Islamic traditions
-(Shin-hanga, Nihonga, Rinpa, Qajar, Lingnan, Vietnamese silk painting).
+`Contemporary`.
 
 ---
 
@@ -570,10 +566,7 @@ contemporary styles should go. Both are now encoded as rules above (*Era mix*;
 **New / reinforced rules** (folded into the sections above):
 - **Lifted the "pre-21st-century only" ban.** `Contemporary` is reopened for new
   pieces; `AUTOMATED_CURATION.md` step 2 no longer restricts the era. The bar moved
-  from *recency* to *AI-cliché* — a short, specific exclusion list (neon-rain
-  cyberpunk, vaporwave sunset, fractal/generative, pixel/voxel/low-poly, glitch,
-  Y2K/Frutiger Aero) replaces the blanket ban, plus a taste test applied equally to
-  every era.
+  from *recency* to *AI-cliché* — a short, specific exclusion list replaces the blanket ban, plus a taste test applied equally to every era.
 - **New hard constraint — Era mix.** Cap the *archaeological look* at **≤1 of the 4
   nightly pieces**, split by **support**, not by century: plaster/rock/fired
   clay/stone/excavated metal is capped; silk, paper, panel, canvas, print, vellum
