@@ -114,6 +114,7 @@ When you add a new style, append it under the section it best fits.
 - Graffiti art
 - Psychedelic Art
 - Afrofuturism
+- Ballets Russes / Léon Bakst (early-20th-c theatrical costume & set design — vivid, ornamental, decorative)
 
 ## Contemporary & atmospheric genre looks (reopened 2026-07-25)
 
@@ -132,6 +133,7 @@ is the **AI-cliché** test in `PROMPT_GUIDANCE.md` ("Brand & taste"), not recenc
 - Contemporary Botanical Illustration
 - Light and Space (Turrell / Irwin — luminous colour-field environments)
 - Contemporary Stained Glass
+- Storybook / children's-book gouache illustration (warm, densely-composed narrative scenes)
 
 ## Techniques, media & cross-cutting visual styles
 
