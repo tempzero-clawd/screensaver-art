@@ -2871,5 +2871,57 @@
     "image_prompt": "A charming nostalgic storybook illustration painted in warm gouache, contemporary children's-book style: a village fairground carousel (merry-go-round) with a striped candy-coloured canopy and rows of ornately painted wooden horses on twisting brass poles, turning in a bustling cobbled town square on a bright summer afternoon; families and children ride and watch, colourful bunting strung overhead, flowering chestnut trees and quaint gabled shopfronts behind. Rich saturated storybook palette, soft rounded shapes, warm hand-painted texture, cheerful and inviting, densely composed. Bright, clear, even daylight filling the whole scene, luminous and evenly lit, freshly painted with brilliant unfaded colours, the painted surface smooth, clean and unbroken. The scene fills the entire image, extending to all four edges, viewed straight-on, flat to the picture plane. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame around it; the scene fills the entire image edge to edge, viewed straight-on.",
     "video_prompt": "The fairground carousel turns steadily and continuously clockwise, completing one full smooth 360-degree rotation, its ornately painted wooden horses gently rising and falling on their twisting brass poles as the platform revolves, the children riding around with it; the striped canopy stays fixed above; the colourful triangular bunting flutters lightly in the summer breeze; a few onlookers wave. The carousel, horses and figures keep their exact painted shapes and colours as they rotate — do not reverse direction. The motion completes exactly one full turn and returns precisely to the opening position. Bright even summer daylight. Physically natural continuous rotation, no morphing.",
     "looping": true
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/fauvist_harbour_boat_launch_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/fauvist_harbour_boat_launch_4k.webp",
+    "title": "Launching the Fishing Boat - Fauvism (AI Animated)",
+    "type": "video",
+    "date": "2026-07-30",
+    "tags": [
+      "Modern"
+    ],
+    "image_prompt": "A Fauvist oil painting in the style of André Derain and Henri Matisse at Collioure — a Southern French Mediterranean fishing harbour at brilliant midday. Bold non-naturalistic colour: thick unmodulated blocks of vermilion, cobalt, emerald, orange and pink with expressive dark outlines and flattened joyful shapes. In the foreground three fishermen in striped shirts lean into ropes and haul a bright red wooden fishing boat down a golden beach toward turquoise water; more colourful boats with orange and blue sails cluster in the harbour; pink, ochre and lilac village houses climb the hill behind under a luminous yellow sky. Densely composed, full-frame, rich saturated palette. Freshly painted, pigments brilliant and unfaded, the painted surface smooth, clean and unbroken. Bright even daylight filling the whole scene, luminous and evenly lit. The scene fills the entire image edge to edge, viewed straight-on, flat to the picture plane; no painted border, no mat, no decorative frame; no museum, glass, pedestal, gallery wall, spotlight or label.",
+    "video_prompt": "The three fishermen on the right lean back and haul the rope in unison; the bright red wooden fishing boat slides slowly forward across the golden sand and its bow noses into the turquoise shallows, pushing up a small ripple. The moored sailboats rock gently and their orange and blue sails luff in the sea breeze; the sea surface shimmers. Every boat, figure and house keeps its exact painted Fauvist shape, bold outlines, colours and count. Bright even Mediterranean midday daylight. Camera locked straight-on and flat to the picture plane, an almost imperceptible slow push-in.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/pointillist_boulevard_omnibus_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/pointillist_boulevard_omnibus_4k.webp",
+    "title": "The Grand Boulevard - Pointillism (AI Animated)",
+    "type": "video",
+    "date": "2026-07-30",
+    "tags": [
+      "19th Century"
+    ],
+    "image_prompt": "A Neo-Impressionist Pointillist oil painting in the style of Georges Seurat and Paul Signac — a busy Parisian grand boulevard on a bright spring afternoon. In the foreground a green-and-yellow horse-drawn omnibus pulled by two trotting bay horses crosses from the right, a top-hatted coachman on the box; open cabs and a flower-seller's cart move alongside; elegant top-hatted gentlemen and ladies with parasols and bustled dresses stroll the wide pavement past café awnings, kiosks and plane trees; cream Haussmann facades line the street under a luminous blue sky. Built entirely from tiny distinct dots of pure colour optically blending into luminous form, crisp divisionist stippling across every surface. Densely composed, figures and colour filling the whole frame. Freshly painted, pigments brilliant and unfaded. Bright even daylight, luminous and evenly lit. The scene fills the entire image edge to edge, viewed straight-on; no painted border, no mat, no frame; no museum, glass, pedestal, gallery wall, spotlight or label.",
+    "video_prompt": "The two bay horses trot forward in step, legs striding, pulling the green omnibus toward the camera along the sunlit cobbled boulevard; its tall wheels turn and the coachman holds the reins. Beside it a hansom cab rolls forward on its stepping horse; strolling top-hatted gentlemen and parasol-carrying ladies walk the pavement and the flower-seller tends her cart. Leaves on the plane trees flutter, pointillist light plays over the cobbles. Every horse, carriage and pedestrian keeps its exact painted shape, colours and count. Bright even spring daylight. Camera locked straight-on, flat to the picture plane, a very slow push-in.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/safavid_garden_dancer_looping.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/safavid_garden_dancer_4k.webp",
+    "title": "The Whirling Dancer in the Garden - Safavid Persian Miniature (AI Animated)",
+    "type": "video",
+    "date": "2026-07-30",
+    "tags": [
+      "Islamic"
+    ],
+    "image_prompt": "A Persian Safavid miniature painting in the style of the Isfahan school, opaque watercolour and gold on paper — an entertainment in a flowering palace garden. At centre a whirling female dancer in a swirling crimson and gold robe spins with her arms and scarves flung outward; seated musicians play a lute, a daf tambourine and a ney flute around her; princely figures in jewelled turbans recline on carpets; the garden is dense with cypress trees, blossoming almond and rose bushes, a turquoise tiled fountain and a gold sky. Jewel-bright flat colour, fine delicate line, ornate all-over pattern, no empty ground. The painted scene fills the entire image and bleeds off all four edges — cropped tight so the garden, dancer and musicians extend beyond every edge; no cream paper margin, no manuscript border, no ruled outline, no gold rule, no frame of any kind. Freshly painted, pigments brilliant and unfaded. Bright even garden daylight, luminous and evenly lit. No museum, glass, pedestal, gallery wall, spotlight or label.",
+    "video_prompt": "The dancer at the centre completes one full graceful spin: she turns all the way around once, her crimson-and-gold robe and long pink scarves flaring outward as she rotates, then settling exactly back to her opening pose. Around her the seated musicians play — the lute-player strums, the daf and tambourine players tap their frames, the flute-players' fingers move; the reclining princes sway gently and the tiled fountain's water plays. Every figure keeps its exact painted Safavid shape, jewel-bright colours and count. Bright even garden daylight against the gold ground. Camera perfectly locked, straight-on and flat to the picture plane.",
+    "looping": true
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/ming_magpie_peony_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/ming_magpie_peony_4k.webp",
+    "title": "Magpie Among Peonies - Ming Bird-and-Flower Painting (AI Animated)",
+    "type": "video",
+    "date": "2026-07-30",
+    "tags": [
+      "Chinese & Korean"
+    ],
+    "image_prompt": "A Ming dynasty bird-and-flower painting, ink and brilliant mineral colour on silk in the meticulous gongbi style — a black-and-white magpie spreading its wings to take flight from a blossoming branch at the centre. The composition is packed edge to edge with full-bloom pink, white and deep-red peonies, a flowering red plum branch, camellias and small blue-and-yellow songbirds; deep malachite-green foliage layered front to back fills every part of the frame with almost no bare ground. Fine precise outlines, layered opaque mineral pigment, rich saturated polychrome palette, lush and densely composed. Freshly painted, pigments brilliant and unfaded. Bright even daylight, luminous and evenly lit. The scene fills the entire image edge to edge, viewed straight-on; no painted border, no mat, no frame; no museum, glass, pedestal, gallery wall, spotlight or label.",
+    "video_prompt": "The black-and-white magpie at the centre beats its wings and lifts off the branch, rising a little as its broad wings sweep down and its long tail streams behind — keeping its exact painted markings, shape and colours throughout. The small blue-and-yellow songbirds flit and hop on their branches; the peony and camellia blossoms and green leaves sway very gently as the branch springs back. Everything keeps its exact painted gongbi shape, colours and count. Bright even daylight on the pale silk ground. Camera locked straight-on, flat to the picture plane, an almost imperceptible slow push-in.",
+    "looping": false
   }
 ]
