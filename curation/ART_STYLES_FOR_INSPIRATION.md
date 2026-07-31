@@ -55,6 +55,7 @@ When you add a new style, append it under the section it best fits.
 - Hague School (Dutch tonal landscape — Weissenbruch, Mauve, Gabriël)
 - Skagen School (Danish plein-air coastal painting — Michael Ancher, P.S. Krøyer)
 - Realism
+- Naturalism (French plein-air rural realism — Bastien-Lepage, peasant harvest & farm labour)
 - Macchiaioli
 - Tonalism
 - Academic art
