@@ -64,6 +64,7 @@ When you add a new style, append it under the section it best fits.
 - Ashcan School
 - Impressionism
 - Impressionist landscape
+- Spanish Luminism (Sorolla — sun-drenched beach & garden scenes, dazzling coastal light)
 - Post-Impressionism
 - Symbolism
 - Art Nouveau
@@ -75,6 +76,7 @@ When you add a new style, append it under the section it best fits.
 - Group of Seven (Canadian landscape, Tom Thomson / A.Y. Jackson)
 - American Regionalism (1930s, Thomas Hart Benton / Grant Wood)
 - Mexican Muralism (1920s–40s fresco, Rivera / Orozco / Siqueiros)
+- Harlem Renaissance Narrative (Jacob Lawrence — flat bold-colour migration & labour scenes)
 - Expressionism
 - Fauvism
 - Cubism
@@ -168,6 +170,7 @@ is the **AI-cliché** test in `PROMPT_GUIDANCE.md` ("Brand & taste"), not recenc
 - Ming Dynasty Silk Painting
 - Ming Bird-and-Flower Painting
 - Tang Dynasty Blue-Green Landscape (qinglu shanshui)
+- Qing Dynasty Court Painting (Lang Shining / colourful court, festival & regatta scenes on silk)
 - Nanga
 - Kano School Ink Painting
 - Lingnan School (early-20th-c Chinese — Gao Jianfu, ink-and-colour realism)

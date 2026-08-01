@@ -2975,5 +2975,57 @@
     "image_prompt": "A vintage 1950s airline travel poster in the bold mid-century modern style of David Klein: a gleaming silver four-engined propeller airliner banks gracefully through a bright blue sky above a sun-drenched Mediterranean coastline — turquoise sea, a white hilltown with terracotta roofs, green headlands and a curving sandy bay below, a few crisp stylised white clouds. Flat graphic shapes, clean confident outlines, warm saturated screen-print palette of turquoise, coral, cream and sunshine yellow. Crisp, clean, freshly printed poster surface, colours brilliant and unfaded. Bright even daylight, luminous and evenly lit. The scene fills the entire image, extending to all four edges, viewed straight-on; no painted border, no mat, no decorative frame, no poster text, no lettering or captions of any kind; no museum, no display case, no glass, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background. Mid-century modern screen-print travel poster.",
     "video_prompt": "The silver propeller airliner cruises steadily forward through the bright sky, gliding slowly across the frame while its four propellers spin as fast translucent discs. A few crisp white clouds drift slowly. The turquoise sea shimmers with gentle sunlight and small waves lap the sandy bay below. The aircraft keeps its exact shape, livery and clean flat colours while it flies; the coastline, white hilltown and terracotta roofs stay put. Bright even daylight, luminous and evenly lit. Clean flat mid-century screen-print poster look, confident outlines, no camera shake.",
     "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/sorolla_beach_oxen_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/sorolla_beach_oxen_4k.webp",
+    "title": "Hauling the Boat Ashore - Spanish Luminism (AI Animated)",
+    "type": "video",
+    "date": "2026-08-01",
+    "tags": [
+      "19th Century"
+    ],
+    "image_prompt": "A sunlit Mediterranean beach scene in the style of Joaquín Sorolla, Spanish Luminism, oil on canvas, freshly painted with brilliant unfaded pigments and a smooth clean surface as on the day it was finished. Full dazzling midday sunlight, sparkling turquoise and white surf breaking on a golden Valencian shore. In the foreground three great white oxen strain against wooden yokes, hauling a wooden fishing boat with a tall white lateen sail up out of the shallow breaking waves; a fisherman in a white shirt walks alongside guiding them, and two children in white smocks wade and splash in the bright surf. Vigorous loose impressionist brushwork, brilliant sea-green, cobalt, gold and pink reflections shimmering on wet sand, deep blue sea and clear sky beyond. Bright, luminous and evenly lit, rich full colour filling the whole frame. The scene fills the entire image edge to edge, viewed straight-on. No museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame.",
+    "video_prompt": "The two white oxen plod forward in unison, hauling the wooden fishing boat slowly up out of the surf, their heads swaying gently against the wooden yoke; the fisherman in white walks alongside leading them by the rope. The two children wade and splash in the shallow water, and low waves roll in and break in bright white foam along the wet sand. The oxen, boat, fisherman and children each keep their exact painted shape, colours and markings while they move. Brilliant midday sunlight sparkles on the wet sand and moving water. Camera holds steady, straight-on.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/harlem_migration_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/harlem_migration_4k.webp",
+    "title": "The Migration North - Harlem Renaissance (AI Animated)",
+    "type": "video",
+    "date": "2026-08-01",
+    "tags": [
+      "Modern"
+    ],
+    "image_prompt": "A narrative scene in the style of Jacob Lawrence and the Harlem Renaissance, tempera on smooth hardboard panel, freshly painted with flat brilliant unfaded colour and a clean smooth surface. A long line of Black travelers of the Great Migration walk along a dirt road carrying bundles, suitcases and cloth-wrapped parcels on their shoulders and heads, moving toward a distant railway station and a steam train under a wide pale sky. Bold flat planes of mustard yellow, deep red, olive green, warm brown and cream; simplified angular figures with strong expressive silhouettes, graphic shapes, minimal modelling. Bright, even daylight, luminous flat colour filling the whole frame, densely composed with many figures across the road. The scene fills the entire image edge to edge, viewed straight-on. No museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame.",
+    "video_prompt": "The long line of travelers walks steadily forward along the dirt road, legs striding, bundles and suitcases swaying gently in their hands and balanced on their heads; in the distance the steam train's smoke drifts and rises from its funnel. Each figure keeps its exact flat painted shape and bold colour while walking. Bright even daylight, flat luminous colour. Camera holds steady, straight-on.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/degas_horse_race_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/degas_horse_race_4k.webp",
+    "title": "The Racecourse - Impressionism (AI Animated)",
+    "type": "video",
+    "date": "2026-08-01",
+    "tags": [
+      "19th Century"
+    ],
+    "image_prompt": "A horse-racing scene in the style of Edgar Degas and French Impressionism, oil on canvas, freshly painted with brilliant unfaded pigments and a smooth clean surface. A field of thoroughbred racehorses gallops across bright green turf, jockeys crouched low in vivid silks of scarlet, blue, gold and white, legs and hooves flying, at a sunlit racecourse; beyond them a crowd of elegant spectators with parasols and top hats lines the rail under a clear bright sky, a grandstand and green hills in the distance. Loose lively impressionist brushwork, dappled sunlight, rich greens and bright costume colour. Bright, luminous and evenly lit, full colour filling the whole frame. The scene fills the entire image edge to edge, viewed straight-on. No museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame.",
+    "video_prompt": "The field of racehorses gallops forward across the bright green turf, legs stretching and hooves flying, manes and tails streaming, the crouched jockeys' silks rippling in the wind; a few parasols turn slowly among the crowd along the rail. Each horse and jockey keeps its exact painted shape, colours and silks while galloping. Brilliant sunlight over the green racecourse. Camera holds steady, straight-on.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/qing_dragon_boat_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/qing_dragon_boat_4k.webp",
+    "title": "Dragon Boat Regatta - Qing Court Painting (AI Animated)",
+    "type": "video",
+    "date": "2026-08-01",
+    "tags": [
+      "Chinese & Korean"
+    ],
+    "image_prompt": "A grand dragon-boat regatta in the style of Qing dynasty court painting, ink and brilliant mineral colour on silk, freshly painted with vivid unfaded pigments and a smooth clean surface. Long ornate dragon boats with carved painted dragon prows race across a bright blue lake, rows of oarsmen in red and gold pulling hard at their paddles, standing drummers amidships, colourful banners and pennants streaming; crowds of finely dressed spectators watch from an ornate lakeside pavilion with red pillars and green-tiled roofs, willows and a marble bridge along the shore. Meticulous gongbi detail, rich malachite green, azurite blue, vermilion and gold, densely composed. Bright, luminous full daylight, clear soft light filling the scene, rich colour across the whole frame. The scene fills the entire image edge to edge, viewed straight-on. No museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame.",
+    "video_prompt": "The rows of oarsmen pull hard at their paddles in unison, dipping and sweeping, and the long dragon boats glide steadily forward across the bright blue water; the standing drummers beat their drums, colourful banners and pennants flutter and stream in the breeze, and gentle ripples spread on the lake. Each boat, oarsman, drummer and banner keeps its exact painted shape and colours while moving. Bright clear daylight on the water. Camera holds steady, straight-on.",
+    "looping": false
   }
 ]
