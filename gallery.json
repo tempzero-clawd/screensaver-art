@@ -3027,5 +3027,57 @@
     "image_prompt": "A grand dragon-boat regatta in the style of Qing dynasty court painting, ink and brilliant mineral colour on silk, freshly painted with vivid unfaded pigments and a smooth clean surface. Long ornate dragon boats with carved painted dragon prows race across a bright blue lake, rows of oarsmen in red and gold pulling hard at their paddles, standing drummers amidships, colourful banners and pennants streaming; crowds of finely dressed spectators watch from an ornate lakeside pavilion with red pillars and green-tiled roofs, willows and a marble bridge along the shore. Meticulous gongbi detail, rich malachite green, azurite blue, vermilion and gold, densely composed. Bright, luminous full daylight, clear soft light filling the scene, rich colour across the whole frame. The scene fills the entire image edge to edge, viewed straight-on. No museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame.",
     "video_prompt": "The rows of oarsmen pull hard at their paddles in unison, dipping and sweeping, and the long dragon boats glide steadily forward across the bright blue water; the standing drummers beat their drums, colourful banners and pennants flutter and stream in the breeze, and gentle ripples spread on the lake. Each boat, oarsman, drummer and banner keeps its exact painted shape and colours while moving. Bright clear daylight on the water. Camera holds steady, straight-on.",
     "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/heidelberg_muster_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/heidelberg_muster_4k.webp",
+    "title": "The Muster - Heidelberg School (AI Animated)",
+    "type": "video",
+    "date": "2026-08-02",
+    "tags": [
+      "19th Century"
+    ],
+    "image_prompt": "A late-19th-century Australian Impressionist oil painting in the Heidelberg School style of Tom Roberts, freshly painted with brilliant unfaded pigments and a smooth, clean, unbroken surface as on the day it was finished. A mounted stockman in a wide-brimmed hat gallops hard across a sun-baked outback plain to head off a mob of merino sheep breaking into a stampede, kicking up a warm cloud of red-gold dust. Tawny paddock grass, scattered eucalyptus gum trees, a vast pale-blue Australian sky. Broad confident brushwork, dazzling bright midday sunlight, warm ochre and eucalyptus-green palette filling the whole picture. The scene fills the entire image, extending to all four edges, viewed straight-on. no museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame.",
+    "video_prompt": "The stockman's horse gallops at full stretch, legs reaching and hooves kicking up a warm cloud of red-gold dust that billows and drifts behind; the mob of merino sheep surges and jostles forward alongside and ahead of it; the rider's hat brim, the horse's mane and its tail all stream back in the wind; the eucalyptus foliage stirs in the breeze. Each animal keeps its exact painted shape, colour and markings while it moves. Bright midday sunlight. Camera holds steady, straight-on.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/nihonga_cranes_marsh_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/nihonga_cranes_marsh_4k.webp",
+    "title": "Cranes over the Marsh - Nihonga (AI Animated)",
+    "type": "video",
+    "date": "2026-08-02",
+    "tags": [
+      "Japanese"
+    ],
+    "image_prompt": "A Meiji-era Nihonga painting on silk, mineral pigments and gold leaf, in the refined manner of Yokoyama Taikan, freshly painted with brilliant unfaded colours and a smooth, clean, unbroken surface. Two red-crowned cranes with snow-white bodies, black wingtips and scarlet crowns lift off from a bright reed marsh, wings spread wide, one just clearing the water; still water reflecting a luminous pale-gold sky, tall green rushes and a few white water plants. Elegant flat decorative composition, generous even daylight, refined jewel-clean palette filling the whole picture edge to edge, viewed straight-on. no museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame.",
+    "video_prompt": "The two red-crowned cranes beat their broad wings in slow, powerful strokes and lift further off the marsh, rising and gliding gently forward and to the right; the tall green reeds sway and the still water ripples softly beneath them, their reflections shifting on the surface. Each crane keeps its exact painted shape, white-and-black plumage and scarlet crown while it flies. Bright soft daylight. Camera holds steady, straight-on.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/cloisonnism_round_dance_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/cloisonnism_round_dance_4k.webp",
+    "title": "The Round Dance - Cloisonnism (AI Animated)",
+    "type": "video",
+    "date": "2026-08-02",
+    "tags": [
+      "19th Century"
+    ],
+    "image_prompt": "A Post-Impressionist Cloisonnist painting in the manner of Émile Bernard and Paul Gauguin, freshly painted with brilliant unfaded colours and a smooth, clean, unbroken surface, built from bold flat areas of pure colour bounded by dark outlines like cloisonné enamel. Seen from a short distance in a sunlit green Breton meadow, a ring of eight young Breton women in black dresses, crisp white lace coifs and white aprons join hands and dance a round; a low grey stone wall and a green apple orchard behind them, wildflowers in the grass. Flat decorative shapes, vivid unmodulated colour, bright even daylight, rich saturated palette. The painted meadow scene itself fills the entire image and extends all the way to every edge. no easel, no canvas edges showing, no studio, no wall behind the artwork, no museum, no display case, no glass, no pedestal, no spotlight, no museum label, no plain background, no painted border, no mat, no decorative frame; the scene fills the whole image edge to edge, viewed straight-on.",
+    "video_prompt": "The ring of Breton women, hands joined, steps and turns together slowly in a circling round dance, their long dark skirts and white aprons swaying, white lace coifs bobbing gently as they move; the apple-tree leaves and the wildflowers in the meadow stir in a light breeze. Each woman keeps her exact painted shape, flat colours and white coif while she dances. Bright even daylight. Camera holds steady, straight-on.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/storybook_kite_festival_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/storybook_kite_festival_4k.webp",
+    "title": "Kite Festival - Storybook Illustration (AI Animated)",
+    "type": "video",
+    "date": "2026-08-02",
+    "tags": [
+      "Contemporary"
+    ],
+    "image_prompt": "A warm, densely-composed contemporary children's-book gouache illustration, freshly painted with bright, clean, unfaded colours and a smooth surface, cheerful and richly detailed. On a breezy green hilltop a crowd of children in bright coats run and laugh as dozens of colourful paper kites — dragons, fish, diamonds and birds — climb and swirl high in a clear blue sky dotted with fluffy white clouds; a little village with red roofs sits below, wildflowers and long grass bending in the wind. Soft rounded storybook shapes, glowing bright daylight, joyful saturated palette filling the whole picture edge to edge, viewed straight-on. no museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame.",
+    "video_prompt": "The colourful paper kites — dragon, fish, birds and diamonds — climb, dip and swirl on the wind high in the blue sky, their long ribbon tails rippling; below, the children run and skip across the flowering hilltop, arms raised, trailing their kite strings; the wildflowers and long grass bend and ripple in the breeze and the white clouds drift slowly. Each kite and each child keeps its exact painted shape and bright colours while it moves. Bright daylight. Camera holds steady, straight-on.",
+    "looping": false
   }
 ]
