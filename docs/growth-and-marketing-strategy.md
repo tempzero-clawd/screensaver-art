@@ -439,11 +439,12 @@ passes `-an`) and silence is a real handicap on Reels/TikTok/Shorts. It fits bec
 **What it does *not* buy:** the trending-sound **discovery** surface — no sound page, no "use this
 sound" chain. That stays closed (§11). This fixes *silence*, not *discovery*.
 
-**For whoever wires it:** generate a small bed library (mood-matched if cheap, else a rotating
-handful) rather than a track per clip; add `--audio` to loop + fade one to length; keep beds
-**quiet and ambient** — much of the audience watches sound-off, so the clip must still work muted.
-Before the first post, confirm **Lyria's commercial-use terms** and how its **SynthID watermark**
-interacts with platform audio-ID. Worth A/B-ing later against the gallery MP4s' own Veo audio.
+**Who builds it: the founder, as a repo skill** (alongside `nano-banana-pro` / `veo3-video-gen`).
+**Agents: do not implement this** — no generator script, no `--audio` flag, and **no audio files
+committed** (see the media rule in `CLAUDE.md`). Note for that skill: keep beds **quiet and
+ambient** — much of the audience watches sound-off, so the clip must still work muted — and
+confirm **Lyria's commercial-use terms** plus how its **SynthID watermark** interacts with
+platform audio-ID before the first post.
 
 ### 11.1 Vendor decision (2026-08-02) — split across two, consolidate later
 
