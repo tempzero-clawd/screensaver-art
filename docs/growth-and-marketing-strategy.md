@@ -19,7 +19,7 @@
 5. **Don't pivot to a wallpaper engine.** Bigger market, but commoditized to free/$5 and moated. Instead *distribute your content into it* (Option B).
 6. **Fix the funnel so traffic doesn't leak** — device-aware capture ("email me the Mac link"), a self-report platform-demand probe, great link previews, brand-name SEO.
 7. **Instrument everything.** You can't improve what you can't see. Set up analytics + a north-star metric before you pour traffic in.
-8. **The launch spikes are spent.** PH returned 5 upvotes (2026-07-26) and Show HN is closed to us — and neither can be re-fired soon, whatever the cause. The plan is now **automated + compounding** channels: nightly auto-posting, programmatic SEO, directories, borrowed audiences. See §4.2.
+8. **The launch spikes are spent.** PH returned 5 upvotes (2026-07-26) and Show HN is closed to us — and neither can be re-fired soon, whatever the cause. The plan is now **automated + visual** channels: nightly auto-posting, directories, borrowed audiences. SEO is dropped — this is a demand-*generation* product, not demand-capture (§4.3). See §4.2.
 
 ---
 
@@ -36,8 +36,9 @@ foundation* is live (PostHog, OG cards, mobile email-link, demand probe), on-pag
 and **the $15.99 lifetime tier shipped** (§10). **The launch bet was run and failed** — PH
 returned 5 upvotes, Show HN is closed to us (§4.2) — so the site still has **~zero traffic and
 zero conversion data**. The bottleneck remains **acquisition**, now attacked through
-**compounding + automated** channels: nightly auto-posting (§11), programmatic SEO off the
-gallery (§4.3), directories (§4.4), borrowed audiences (§4.1).
+**automated + visual** channels: nightly auto-posting (§11), directories (§4.4), borrowed
+audiences (§4.1). **SEO was considered and dropped** (§4.3) — nobody searches for a product
+they don't know exists; demand here has to be *generated*, not captured.
 
 > ⚠️ **Hard planning constraint (2026-08-02): founder marketing time ≈ 0 h/week.** Every
 > recommendation below must survive that filter. A tactic needing a daily or weekly human touch
@@ -182,36 +183,31 @@ variable was traffic, and it was zero. See *A note on validation* in §15.
 - **Anything one-shot is a bonus, not a bet.** The channels below are ranked on whether they
   keep producing after the day you ship them.
 
-### 4.3 SEO & content (compounding, owned) — **now a top priority**
-Traffic that finds you *at their Mac with intent*, and the best fit for a **0 h/week** budget:
-a page you ship once keeps working with no upkeep.
+### 4.3 SEO & content — 🅿️ **dropped 2026-08-03 (founder call)**
 
-**Shipped 2026-07-17:** the on-page basics — keyword title, shared meta description, JSON-LD.
-**Brand-name SEO** ("Living Art Screensaver" should rank #1, since recall fires as a *name
-search*, not a typed URL — §6) is mostly that plus time and backlinks (§4.4).
+**Decision: don't build SEO landing pages or a programmatic gallery corpus.** The reasoning,
+recorded so it isn't re-proposed:
 
-**Still to build — intent pages:**
-- **"Aerial alternative"** — Aerial is the known free incumbent; alternative-seekers are warm.
-- **"best Mac screensaver 2026," "live wallpaper Mac," "AI art wallpaper/screensaver."**
-- **Comparison pages** (you vs Aerial / Wallpaper Engine — honest, highlighting curation +
-  daily-fresh).
+- **The searchable market is small and the intent is wrong.** "Mac screensaver" traffic skews to
+  *how-to* queries (change/disable the screensaver), not shopping; the category's price
+  expectation is free. "Aerial alternative" is lower still.
+- **This is a demand-*generation* product, not demand-capture.** Nobody wakes up searching for an
+  AI-art screensaver — they *see* one and want it. SEO harvests existing demand; our demand has
+  to be created visually. That points at social/visual channels, not search.
+- **The corpus is thinner than it looked.** `gallery.json` holds 262 pieces across **203 distinct
+  movements** — only 9 movements have 3+ pieces and one has 5+. A page per movement would be
+  mostly 1–2 item pages, i.e. exactly what Google discounts as thin. The "self-growing corpus"
+  argument was weaker than it first appeared (measured 2026-08-03).
+- **It's slow.** New domain, no backlinks → months to rank, against a low ceiling. Wrong first
+  channel for a site with zero traffic today.
 
-**Still to build — the programmatic corpus (the underused asset):**
+**What we keep:** ✅ **brand-name SEO** — already shipped (keyword title, meta description,
+JSON-LD, 2026-07-17) and *not* market-size dependent. Someone who sees a clip and later searches
+"living art screensaver" must land on us; that's recall capture, and it's the necessary companion
+to the social channel (§6), not a bet on search volume.
 
-> The sitemap exposes **3 URLs**. `gallery.json` holds **262 pieces** — each with a title, an
-> art movement, a 4K poster, a video and a description — **and the nightly job adds ~4 more,
-> free.**
-
-- **A page per piece and/or per movement** ("Ukiyo-e screensaver", "Art Nouveau live wallpaper")
-  — real media and unique text, internally linked, each an entry point for long-tail art
-  searches nobody is competing for.
-- **A sitemap that grows itself** off `gallery.json`, so every curation run also ships SEO
-  surface area. Zero marginal effort forever.
-- **Guardrails:** genuinely useful pages, not doorway pages; lead with `free: true` pieces so a
-  crawler-sourced visitor can watch what they landed on. (No new piracy exposure — the MP4s are
-  already public; see *Where gating happens* in `CLAUDE.md`.)
-
-The clearest case in the plan of **build once, compounds nightly, needs nobody.**
+**Reopen if** the social channel proves demand exists and a comparison/alternative page starts
+converting the trickle that finds us anyway.
 
 ### 4.4 Press & directories (one-time work, permanent backlinks)
 Screensaver apps are rare enough to be newsworthy, and every listing is both a trickle of intent
@@ -552,7 +548,7 @@ old Phase 1 ("manual posting, then the launch spikes") is retired: the launch is
 once and never touched again.
 - ⏭️ **Posting automation** (§11 B/C) — clips have existed since 2026-07-12 and have **never been
   posted**. The item that most directly answers the 0 h/week constraint.
-- ⏭️ **SEO: intent pages + programmatic gallery corpus + self-growing sitemap** (§4.3).
+- 🅿️ ~~SEO: intent pages + programmatic gallery corpus~~ — **dropped 2026-08-03** (§4.3).
 - ⏭️ **Directory submissions** (§4.4) — agent preps, founder pastes once.
 - ⏭️ **Press + creator outreach** (§4.1/§4.4) — reduce to "review and send."
 - ⏭️ **Reddit** — never run, ~20 min (`launch-kit.md` §3).
