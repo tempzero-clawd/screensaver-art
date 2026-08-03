@@ -77,9 +77,10 @@ Legend: ✅ live · 🔨 built, not yet used · ⏭️ next · 🅿️ parked (n
 2. **Daily social posting** — vendors decided (§11 B): wire **upload-post** (IG + YT) and
    **Zernio** (TikTok + Pinterest) so the asset engine's output auto-posts. Two accounts to
    create, then a glue script. **First action: verify Zernio posts publicly to TikTok** (one
-   test post — if it lands `SELF_ONLY`, move TikTok to upload-post). **Pinterest** runs
-   unattended; **TikTok + Reels + Shorts** use draft mode for the human audio pass — sound is a
-   discovery surface on all three and our clips ship silent (§4.1, §11).
+   test post — if it lands `SELF_ONLY`, move TikTok to upload-post). **All four channels run
+   unattended** — the trending-audio play is closed to commercial accounts (YouTube and TikTok
+   both restrict their trending libraries to personal/non-commercial use), so the ~2 min/day
+   goes to **replying to early comments**, not adding sound (§4.1, §11).
 3. **SEO landing pages** — "Aerial alternative", "best Mac screensaver", comparison pages (§4.3).
 4. **Email list / "art of the week"** — pick a send path, add capture + a simple send (§4.6).
 

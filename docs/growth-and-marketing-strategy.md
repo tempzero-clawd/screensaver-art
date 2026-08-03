@@ -326,19 +326,33 @@ You can largely automate the content flywheel off your existing nightly pipeline
   native/trending audio — music licensing keeps those libraries app-only ([Zernio's docs](https://zernio.com/blog/tiktok-posting-api):
   Creator's Draft exists because "the API can't add those, only the app can"; IG's Graph API
   strips or rejects licensed tracks) — and audio *is* a discovery surface.
-  - **Draft mode → TikTok, Reels, and YouTube Shorts.** Sound is a real discovery surface on all
-    three: YouTube's own Help documents the Shorts **sound page** ("other Shorts using the same
-    audio" + "Use this sound"), and runs a [Top Shorts Songs chart](https://charts.youtube.com/charts/TopShortsSongs/us/daily).
-    ⚠️ *Open question before wiring Shorts this way:* whether a sound can be attached to an
-    already-uploaded Short (upload private → finish in-app), or whether it must be created in
-    the app. Verify before assuming a draft path exists.
-  - **Fully unattended → Pinterest only.** Pinterest tells creators not to rely on audio (much
-    of the audience views sound-off) and has **retired adding music to new Pins** entirely, so
-    there's no audio surface to forfeit — and Pins are evergreen, resurfacing through search
-    long after posting.
-  - ⚠️ **Our clips are silent by design** (`make-social-assets.mjs` drops audio — see
-    `marketing/README.md`). Any channel posted unattended therefore forfeits the sound surface.
-    That's free on Pinterest and a real cost on Shorts/TikTok/Reels.
+  **⚠️ But the trending-audio play is mostly closed to us — we are a commercial account.**
+  Verified 2026-08-02; this is the finding that should drive the workflow:
+  - **YouTube** — *"Channels that upload videos for commercial purposes … may see errors when
+    uploading Shorts containing sounds from the Shorts Audio Library,"* because of *"agreements
+    with some music partners, which restrict use of music in Shorts to personal and
+    non-commercial uses"* ([Common uploading errors](https://support.google.com/youtube/answer/10383400?hl=en)).
+    Independently, the post-upload route is blocked outright: *"You cannot use music or other
+    sounds from our Audio Library on Shorts you create from your videos"*
+    ([Create Shorts from your videos](https://support.google.com/youtube/answer/12836917?hl=en)).
+  - **TikTok** — Business accounts are restricted to the **Commercial Music Library** and cannot
+    use trending sounds in promotional content; the personal-library licences don't extend to
+    commercial use. Assume Reels carries an equivalent restriction (**unverified — check before
+    relying on it**).
+  - What remains available is **commercially-cleared catalogue** music (YouTube's royalty-free
+    Audio Library, TikTok's Commercial Music Library). Legal and free, but it carries **none of
+    the trending-sound discovery benefit** — that surface is exactly the part we can't licence.
+
+  **So the operational answer flips:** run **all four channels unattended**, and spend the ~2
+  min/day on **replying to early comments**, which is unrestricted and is the part with
+  well-evidenced value. Don't build a draft-mode workflow around adding trending audio until
+  someone confirms a commercially-cleared path — the licensing, not the tooling, is the blocker.
+  (Our clips ship silent anyway: `make-social-assets.mjs` drops audio — see `marketing/README.md`.)
+  Sound pages are real — YouTube documents the Shorts **sound page** and runs a
+  [Top Shorts Songs chart](https://charts.youtube.com/charts/TopShortsSongs/us/daily) — we just
+  can't legally reach them at commercial scale. **Pinterest is unaffected either way:** it
+  advises against relying on audio (much of its audience views sound-off) and has retired adding
+  music to new Pins entirely, and Pins are evergreen.
 
 ### 11.1 Vendor decision (2026-08-02) — split across two, consolidate later
 
@@ -605,7 +619,7 @@ quality bar.
 - Posting/asset tooling — **primary sources** for the §11 B vendor table (verified 2026-08-02):
   [upload-post pricing](https://www.upload-post.com/pricing-comparison/) · [upload-post API docs](http://docs.upload-post.com/api/upload-video/) · [Zernio pricing](https://zernio.com/pricing) · [Zernio media uploads](https://docs.zernio.com/guides/media-uploads) · [Blotato pricing](https://www.blotato.com/pricing) · [Postiz pricing](https://postiz.com/pricing) · [Postiz TikTok docs](https://docs.postiz.com/providers/tiktok) (the BYO-app evidence) · [Ayrshare pricing](https://www.ayrshare.com/pricing/)
 - The audit rule itself, from the platform: [TikTok Content Posting API](https://developers.tiktok.com/doc/content-posting-api-get-started/) — *"all content posted by unaudited clients will be restricted to private viewing mode."* Secondary: [PostPeer: TikTok posting API 2026](https://www.postpeer.dev/blog/best-tiktok-posting-api), [Buffer: best social APIs](https://buffer.com/resources/best-social-media-apis/)
-- **Draft-mode / native-audio rationale (§11, verified 2026-08-02 — platform-official where possible):** [YouTube Help — Shorts sound page](https://support.google.com/youtube/answer/10623810?hl=en) (*"other Shorts using the same audio"* + "Use this sound") · [YouTube Top Shorts Songs chart](https://charts.youtube.com/charts/TopShortsSongs/us/daily) · [Pinterest Help — music in Pins is retired](https://help.pinterest.com/en/article/add-music-to-a-pin) · [Pinterest creative best practices](https://business.pinterest.com/creative-best-practices/) (sound-off viewing) · [Zernio — Creator's Draft exists because the API can't add native sounds](https://zernio.com/blog/tiktok-posting-api). Adam Mosseri (Instagram) on scheduling: *"it will not affect your reach in one way or another"* — i.e. **the case for draft mode is audio capability, not an algorithmic penalty.**
+- **Native-audio / unattended-posting rationale (§11, verified 2026-08-02 — platform-official where possible):** [YouTube — commercial channels see errors using Shorts Audio Library sounds](https://support.google.com/youtube/answer/10383400?hl=en) · [YouTube — no Audio Library sounds on Shorts made from your videos](https://support.google.com/youtube/answer/12836917?hl=en) · [YouTube Help — Shorts sound page](https://support.google.com/youtube/answer/10623810?hl=en) (*"other Shorts using the same audio"* + "Use this sound") · [Top Shorts Songs chart](https://charts.youtube.com/charts/TopShortsSongs/us/daily) · [Pinterest — music in Pins retired](https://help.pinterest.com/en/article/add-music-to-a-pin) · [Pinterest creative best practices](https://business.pinterest.com/creative-best-practices/) (sound-off viewing) · [Zernio — Creator's Draft exists because the API can't add native sounds](https://zernio.com/blog/tiktok-posting-api). Adam Mosseri (Instagram) on scheduling: *"it will not affect your reach in one way or another."* **Net: schedulers aren't penalised, and the trending-sound surface we'd have gone in-app for is licence-restricted to non-commercial use — so unattended posting costs us little.**
 
 ---
 
