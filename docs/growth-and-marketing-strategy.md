@@ -305,18 +305,88 @@ You can largely automate the content flywheel off your existing nightly pipeline
   wordmark, loops to length, and writes per-platform starter captions. No npm deps. Run
   `node marketing/make-social-assets.mjs --latest 4` after the nightly curation batch.
   (Captions are template-based today; upgrading to Gemini is a noted easy win.)
-- **(B) Distribution — BUY.** Use a posting aggregator (upload-post, **Ayrshare**, or
-  self-hosted **Postiz**) — one API call fans out to TikTok/Reels/Shorts/Pinterest.
-  **~$0–40/mo.** *Critical reason to buy, not build:* platforms gate posting behind
-  **audits/app-review** (TikTok forces unaudited apps to private-only; Instagram/YouTube/
-  Pinterest need app review) — the aggregators have already passed these. Building the raw
-  posting/OAuth layer = months of compliance for one app's marketing. Don't.
+- **(B) Distribution — BUY. ✅ vendors decided 2026-08-02 — see §11.1.** One API call fans out to
+  TikTok/Reels/Shorts/Pinterest. **$0/mo to start.** *Critical reason to buy, not build:*
+  **TikTok forces `SELF_ONLY` (private, creator-only) on every post from an unaudited API
+  client.** Lifting it needs a separate Content Posting API audit (~1–2 weeks) that requires
+  demonstrating a compliant UI with privacy/comment/duet toggles — a UI we don't have and would
+  have to build. Instagram/YouTube/Pinterest add their own app review on top. Vendors holding
+  their *own* audited client sidestep all of it; building the raw posting/OAuth layer = months
+  of compliance for one app's marketing. Don't.
 - **(C) Agentic layer — optional BUILD.** A nightly Claude call picks the best clip and writes
   per-platform captions/hashtags. ~1 day.
-- **Total: ~3–4 days of build + ~$0–40/mo**, hanging off the nightly job → near-unattended
-  daily multi-platform marketing.
-- **Keep a human in the loop ~2 min/day** (reply to comments, ride trending audio) — native
-  engagement materially boosts reach for almost no effort.
+- **Total: ~3–4 days of build + $0/mo to start, ~$16–24/mo once IG + YT leave the free tier**,
+  hanging off the nightly job → near-unattended daily multi-platform marketing.
+- **Keep a human in the loop ~2 min/day** (reply to comments, add a trending sound). The reason
+  is **capability, not algorithm** — a distinction worth getting right, because the folklore
+  version ("schedulers get throttled") is false. Platforms deny ranking API posts differently:
+  Instagram's head Adam Mosseri, asked directly, said scheduled posts "will not affect your
+  reach in one way or another," and Meta runs the Content Publishing API *as* the supported way
+  to publish from outside the app. What the APIs genuinely **cannot** do is attach a platform's
+  native/trending audio — music licensing keeps those libraries app-only ([Zernio's docs](https://zernio.com/blog/tiktok-posting-api):
+  Creator's Draft exists because "the API can't add those, only the app can"; IG's Graph API
+  strips or rejects licensed tracks) — and audio *is* a discovery surface.
+  **⚠️ But the trending-audio play is mostly closed to us — we are a commercial account.**
+  Verified 2026-08-02; this is the finding that should drive the workflow:
+  - **YouTube** — *"Channels that upload videos for commercial purposes … may see errors when
+    uploading Shorts containing sounds from the Shorts Audio Library,"* because of *"agreements
+    with some music partners, which restrict use of music in Shorts to personal and
+    non-commercial uses"* ([Common uploading errors](https://support.google.com/youtube/answer/10383400?hl=en)).
+    Independently, the post-upload route is blocked outright: *"You cannot use music or other
+    sounds from our Audio Library on Shorts you create from your videos"*
+    ([Create Shorts from your videos](https://support.google.com/youtube/answer/12836917?hl=en)).
+  - **TikTok** — Business accounts are restricted to the **Commercial Music Library** and cannot
+    use trending sounds in promotional content; the personal-library licences don't extend to
+    commercial use. Assume Reels carries an equivalent restriction (**unverified — check before
+    relying on it**).
+  - What remains available is **commercially-cleared catalogue** music (YouTube's royalty-free
+    Audio Library, TikTok's Commercial Music Library). Legal and free, but it carries **none of
+    the trending-sound discovery benefit** — that surface is exactly the part we can't licence.
+
+  **So the operational answer flips:** run **all four channels unattended**, and spend the ~2
+  min/day on **replying to early comments**, which is unrestricted and is the part with
+  well-evidenced value. Don't build a draft-mode workflow around adding trending audio until
+  someone confirms a commercially-cleared path — the licensing, not the tooling, is the blocker.
+  (Our clips ship silent anyway: `make-social-assets.mjs` drops audio — see `marketing/README.md`.)
+  Sound pages are real — YouTube documents the Shorts **sound page** and runs a
+  [Top Shorts Songs chart](https://charts.youtube.com/charts/TopShortsSongs/us/daily) — we just
+  can't legally reach them at commercial scale. **Pinterest is unaffected either way:** it
+  advises against relying on audio (much of its audience views sound-off) and has retired adding
+  music to new Pins entirely, and Pins are evergreen.
+
+### 11.1 Vendor decision (2026-08-02) — split across two, consolidate later
+
+| Channel | Vendor | Cost at our footprint |
+|---|---|---|
+| Instagram Reels + YouTube Shorts | **upload-post** | free tier → $24/mo ($16 annual) |
+| TikTok + Pinterest | **Zernio** (ex-`getlate.dev`) | **$0** — first 2 accounts free, unlimited posts |
+
+**Rationale:** both have a free entry point, so we run them in parallel, learn which API and
+which channels actually earn their keep, and **consolidate onto one later** — the glue is a thin
+REST wrapper either way, so switching costs an afternoon. The split also lines up with each free
+tier: Zernio's 2 free accounts exactly cover TikTok + Pinterest (TikTok being the one channel
+upload-post gates behind a paid plan), while upload-post's free tier covers IG + YT.
+
+Two caveats to plan around, neither a blocker:
+
+- **Only the Zernio half is durably free.** upload-post's free tier is 10 uploads/mo — about
+  five days at nightly cadence — so IG + YT converts to $24/mo ($16 annual, unlimited uploads)
+  almost immediately. Treat it as a trial, not a runway.
+- **Zernio's TikTok audit status is unconfirmed.** Its API exposes `PUBLIC_TO_EVERYONE` and
+  requires TikTok's consent flags (consistent with an audited client), but the docs never say so
+  outright. **Verify with one live post before relying on it** — if it lands `SELF_ONLY`, move
+  TikTok to upload-post, whose public-posting default *is* documented.
+
+**Others researched** — prices verified 2026-08-02 against each vendor's live pricing page
+(several secondary/blog sources were stale by 2–3×):
+
+| Vendor | Entry price | Billing unit | TikTok public post | Verdict |
+|---|---|---|---|---|
+| **upload-post** | free (10 uploads/mo, no TikTok) → **$24/mo**, $16 annual, unlimited | **profile** = one account *per platform*; all platforms included | ✅ own audited client | **chosen** — IG + YT |
+| **Zernio** | **free** for 2 accounts → $6/mo each (3–10), $3 (11–100) | connected account | ⚠️ unconfirmed | **chosen** — TikTok + Pinterest |
+| Blotato | $29/mo (20 accounts) | account | ✅ | ❌ API excluded from the 7-day trial |
+| Postiz | $29/mo hosted; free self-host | channel | ❌ BYO developer app | ❌ we'd inherit the audit |
+| Ayrshare | $149/mo (1 profile) | profile (≤13 networks) | ✅ | ❌ ~4× budget; built for multi-tenant SaaS |
 
 ---
 
@@ -396,7 +466,8 @@ _(✅ done · 🔨 built, not used · ⏭️ next · 🅿️ parked — mirrors 
 - ⏭️ Start the email list / "art of the week" (§4.6).
 
 **Phase 2 — Automate & distribute (weeks):**
-- ⏭️ Agentic marketing engine: asset step ✅ built (§11 A) → add **aggregator posting** (§11 B).
+- ⏭️ Agentic marketing engine: asset step ✅ built (§11 A) → add **aggregator posting** —
+  vendors chosen, glue not yet written (§11 B).
 - 🅿️ Option B ecosystem packs (Appendix A).
 - 🅿️ Lifecycle/retention email + win-back (§9).
 
@@ -413,7 +484,8 @@ _(✅ done · 🔨 built, not used · ⏭️ next · 🅿️ parked — mirrors 
 ## 17. Open decisions for the founder
 1. **Pricing:** add an annual and/or lifetime tier? (Strong recommend to test — §10.)
 2. **Email infra:** existing path (Supabase/Resend/other) to hook capture flows into, or set one up?
-3. **Aggregator choice:** upload-post (cheapest) vs Ayrshare (established) vs self-hosted Postiz?
+3. ~~**Aggregator choice**~~ — ✅ **decided 2026-08-02:** upload-post (IG + YT) + Zernio
+   (TikTok + Pinterest), both starting free, consolidate later (§11 B).
 4. **Brand mark in art:** how visible? (virality vs. purity tradeoff — §12.)
 5. **North-star metric:** confirm "weekly active subscribers" or pick another.
 
@@ -544,7 +616,10 @@ quality bar.
 - Desktop OS share: [StatCounter US](https://gs.statcounter.com/os-market-share/desktop/united-states-of-america), [StatCounter WW](https://gs.statcounter.com/os-market-share/desktop/worldwide/), [macOS trend](https://www.accio.com/business/macos-market-share-trend-over-time)
 - Live wallpaper: [Wallpaper Engine SteamSpy (20–50M)](https://steamspy.com/app/431960), [Lively (GitHub, 14M+)](https://github.com/rocksdanister/lively), [Mac live-wallpaper apps](https://cindori.com/how-to/best-live-wallpaper-apps-mac)
 - Screensaver market: [Screensaver software market report](https://www.marketreportanalytics.com/reports/screensaver-software-54549), [Aerial](https://aerialscreensaver.github.io/), [Best Mac screensavers 2026](https://softorino.com/blog/top-7-screensaver-tools-for-mac-and-windows)
-- Posting/asset tooling: [Ayrshare](https://www.ayrshare.com/), [Postiz alternatives](https://woopsocial.com/blog/postiz-alternatives), [upload-post](https://www.upload-post.com/), [TikTok API audit rules](https://www.postpeer.dev/blog/best-tiktok-posting-api), [Buffer: best social APIs](https://buffer.com/resources/best-social-media-apis/)
+- Posting/asset tooling — **primary sources** for the §11 B vendor table (verified 2026-08-02):
+  [upload-post pricing](https://www.upload-post.com/pricing-comparison/) · [upload-post API docs](http://docs.upload-post.com/api/upload-video/) · [Zernio pricing](https://zernio.com/pricing) · [Zernio media uploads](https://docs.zernio.com/guides/media-uploads) · [Blotato pricing](https://www.blotato.com/pricing) · [Postiz pricing](https://postiz.com/pricing) · [Postiz TikTok docs](https://docs.postiz.com/providers/tiktok) (the BYO-app evidence) · [Ayrshare pricing](https://www.ayrshare.com/pricing/)
+- The audit rule itself, from the platform: [TikTok Content Posting API](https://developers.tiktok.com/doc/content-posting-api-get-started/) — *"all content posted by unaudited clients will be restricted to private viewing mode."* Secondary: [PostPeer: TikTok posting API 2026](https://www.postpeer.dev/blog/best-tiktok-posting-api), [Buffer: best social APIs](https://buffer.com/resources/best-social-media-apis/)
+- **Native-audio / unattended-posting rationale (§11, verified 2026-08-02 — platform-official where possible):** [YouTube — commercial channels see errors using Shorts Audio Library sounds](https://support.google.com/youtube/answer/10383400?hl=en) · [YouTube — no Audio Library sounds on Shorts made from your videos](https://support.google.com/youtube/answer/12836917?hl=en) · [YouTube Help — Shorts sound page](https://support.google.com/youtube/answer/10623810?hl=en) (*"other Shorts using the same audio"* + "Use this sound") · [Top Shorts Songs chart](https://charts.youtube.com/charts/TopShortsSongs/us/daily) · [Pinterest — music in Pins retired](https://help.pinterest.com/en/article/add-music-to-a-pin) · [Pinterest creative best practices](https://business.pinterest.com/creative-best-practices/) (sound-off viewing) · [Zernio — Creator's Draft exists because the API can't add native sounds](https://zernio.com/blog/tiktok-posting-api). Adam Mosseri (Instagram) on scheduling: *"it will not affect your reach in one way or another."* **Net: schedulers aren't penalised, and the trending-sound surface we'd have gone in-app for is licence-restricted to non-commercial use — so unattended posting costs us little.**
 
 ---
 

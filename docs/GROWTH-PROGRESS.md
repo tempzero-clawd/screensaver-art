@@ -50,7 +50,7 @@ Legend: ✅ live · 🔨 built, not yet used · ⏭️ next · 🅿️ parked (n
 | **Launch kit** (Product Hunt / Show HN / Reddit) | ✅ finalized | `docs/launch-kit.md` — copy aligned to live-site voice + **launch-day runbook** (exact clicks/timing/UTMs) added 2026-07-12. |
 | **Run the launch** (Product Hunt) | ⏭️ **SCHEDULED — Sunday** | All media + copy + runbook done. Founder owns: PH account warm-up, 5–10 commenters, the submit clicks. Day 2 = Reddit (r/macapps). |
 | **Show HN** | 🅿️ parked — not a drop | HN currently restricts **new accounts** from Show HN. Deferred to its own spike once the account is eligible; copy is ready in `launch-kit.md` §2. |
-| Daily social posting + aggregator | ⏭️ next | §4.1 + §11 (B) — pick upload-post / Postiz; asset engine feeds it |
+| Daily social posting + aggregator | ⏭️ next — **vendors chosen 2026-08-02** | §4.1 + §11 (B) — **upload-post** (IG + YT) + **Zernio** (TikTok + Pinterest), both start free. Glue script not yet written. |
 | SEO landing pages + brand-name SEO | ⏭️ next | §4.3 ("Aerial alternative", "best Mac screensaver", comparison pages) |
 | "Art of the week" email / newsletter | ⏭️ next | §4.6 — needs an email-send path decision |
 | Option B ecosystem art packs | 🅿️ later | Appendix A (Wallpaper Engine Workshop / Lively) |
@@ -74,8 +74,13 @@ Legend: ✅ live · 🔨 built, not yet used · ⏭️ next · 🅿️ parked (n
 ## Next up (prioritized backlog)
 1. **Execute the launch** — run `node marketing/make-social-assets.mjs --latest 6` for real
    clips, record a hero demo, finalize `docs/launch-kit.md` copy, then Product Hunt + Show HN.
-2. **Daily social posting** — wire an aggregator (upload-post / Postiz) so the asset engine's
-   output auto-posts; Pinterest + YouTube + Reddit emphasis (§4.1).
+2. **Daily social posting** — vendors decided (§11 B): wire **upload-post** (IG + YT) and
+   **Zernio** (TikTok + Pinterest) so the asset engine's output auto-posts. Two accounts to
+   create, then a glue script. **First action: verify Zernio posts publicly to TikTok** (one
+   test post — if it lands `SELF_ONLY`, move TikTok to upload-post). **All four channels run
+   unattended** — the trending-audio play is closed to commercial accounts (YouTube and TikTok
+   both restrict their trending libraries to personal/non-commercial use), so the ~2 min/day
+   goes to **replying to early comments**, not adding sound (§4.1, §11).
 3. **SEO landing pages** — "Aerial alternative", "best Mac screensaver", comparison pages (§4.3).
 4. **Email list / "art of the week"** — pick a send path, add capture + a simple send (§4.6).
 
@@ -83,11 +88,26 @@ Legend: ✅ live · 🔨 built, not yet used · ⏭️ next · 🅿️ parked (n
 - **Pricing tiers** — add annual (~$9.99/yr) and/or lifetime (~$29)? The category pays
   one-time; this is the biggest conversion lever (§10).
 - **Email-send path** — Supabase mailer / Resend / other — for the newsletter + lifecycle email.
-- **Aggregator choice** — upload-post (cheapest) vs Postiz (self-host) vs Ayrshare (§11 B).
+- ~~**Aggregator choice**~~ — ✅ **resolved 2026-08-02:** upload-post (IG + YT) + Zernio
+  (TikTok + Pinterest), both free to start, consolidate onto one later (§11 B). Remaining
+  founder action is just creating the two accounts.
 
 ---
 
 ## Activity log (append-only — newest first)
+- **2026-08-02** — **Posting-aggregator research + decision (§11 B rewritten).** Compared
+  upload-post, Zernio (ex-`getlate.dev`), Blotato, Postiz, Ayrshare on price, billing unit,
+  platform coverage, upload mechanics and — decisively — **TikTok audit status**. All prices
+  re-verified against live pricing pages (several secondary/blog sources were stale or wrong).
+  **Decision: upload-post for IG + YT, Zernio for TikTok + Pinterest**, both starting free, to
+  trial two APIs cheaply and consolidate later; the consolidation trigger is ~5 channels, past
+  which upload-post's flat per-brand pricing beats Zernio's per-account model.
+  _Two corrections to the strategy doc:_ **(1) Postiz was wrongly listed as a pre-audited
+  aggregator** — hosted *and* self-hosted it requires your own TikTok developer app, making you
+  the unaudited client (posts forced `SELF_ONLY`); it's now ruled out in the §11.1 table.
+  **(2) Ayrshare repriced ~$49 → $149/mo minimum**, putting it ~4× over budget.
+  _Open risk:_ Zernio's own TikTok audit status is undocumented — **verify with one live post
+  before relying on it**. No code written; glue script deliberately deferred.
 - **2026-07-15** — **PH launch-submission assets** (PR #63): built a **16:9 hero-section launch
   video WITH sound** (`marketing/out/hero/living-art-launch-video-16x9.mp4`) — the real hero
   section rendered pixel-perfect via headless Chrome (exact text + monitor + pill, no CTA), the 7
