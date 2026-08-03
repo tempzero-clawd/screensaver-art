@@ -180,3 +180,19 @@ export const movements: Movement[] = [
     ],
   },
 ]
+
+// Which pieces actually have a committed first-frame WebP in public/posters/.
+// DERIVED from the showcase lists above rather than hand-listed, because
+// scripts/generate-posters.mjs generates a poster for exactly those pieces — so
+// this set can't drift from the files on disk when a showcase list is edited.
+//
+// The gallery landing pages (lib/gallery-catalog.ts) consult it as the
+// second-choice poster source, after a piece's own `img` on R2. It exists
+// because posters are the one asset the landing pages can't manufacture: media
+// is never committed to this repo (CLAUDE.md → Repo rules), so the 77 pieces
+// with neither `img` nor a file here render on their gradient instead.
+export const LOCAL_POSTER_FILES: ReadonlySet<string> = new Set(
+  [...heroReel, ...carousel, ...movements.flatMap((m) => m.pieces)].map((p) =>
+    (p.src.split("/").pop() ?? "").replace(/\.mp4$/i, ".webp"),
+  ),
+)

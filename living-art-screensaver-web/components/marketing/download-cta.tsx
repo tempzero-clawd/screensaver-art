@@ -32,6 +32,7 @@ export function DownloadCTA({
   label = 'Download for Mac',
   mobileLabel = 'Send it to my Mac',
   iconClassName = 'h-4 w-4',
+  href = '/download/mac',
 }: {
   className?: string
   style?: CSSProperties
@@ -39,6 +40,8 @@ export function DownloadCTA({
   label?: string
   mobileLabel?: string
   iconClassName?: string
+  /** Override to add UTM tags — see `downloadHref` in lib/seo.ts. */
+  href?: string
 }) {
   const isMobile = useIsMobileDevice()
 
@@ -47,7 +50,7 @@ export function DownloadCTA({
   if (!isMobile) {
     return (
       <a
-        href="/download/mac"
+        href={href}
         onClick={() => posthog.capture('download_clicked', { location })}
         className={className}
         style={style}

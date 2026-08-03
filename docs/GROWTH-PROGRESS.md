@@ -64,7 +64,7 @@ Legend: ✅ live · 🔨 built, not yet used · ⏭️ next · 🅿️ parked (n
 | **Daily social posting + aggregator** | ⏭️ **#1 — vendors chosen 2026-08-02** | §4.1 + §11 (B) — **upload-post** (IG + YT) + **Zernio** (TikTok + Pinterest), both start free. Glue script not written. Best fit for 0 h/week: build once, posts nightly forever. |
 | **Clip audio: Lyria music bed** | ⏭️ **founder-owned** | §11.2 — clips will be scored with **Lyria-generated music**; the founder is building it as a repo skill. **Agents: don't implement it, and don't commit audio** (`CLAUDE.md` → Repo rules). |
 | Brand-name / on-page SEO basics | ✅ live | 2026-07-17 (PRs #68, #69): keyword title, shared meta description, JSON-LD. |
-| SEO landing + programmatic gallery pages | 🅿️ **dropped 2026-08-03** | §4.3 — founder call. Small searchable market, wrong intent (how-to, not shopping), slow to rank, and the corpus is thin (262 pieces / **203 movements**). **Brand-name SEO stays** — it serves recall from social, not search volume. |
+| **Gallery landing pages** (`/gallery`, `/art/<slug>`, `/era/<tag>`) | ✅ **shipped 2026-08-03** | §4.3 — dropped then **reversed** the same day, justified as **social landing pages, not SEO**. 262 piece pages + 15 era wings + a 6-page index + a self-growing sitemap, all prerendered from `gallery.json`. `/art/*` is `noindex, follow` behind one constant (`INDEX_ART_PAGES`); `/gallery` + `/era/*` are indexable. `/style/<movement>` still deferred (203 labels, 158 singletons). **Ready for #1's pins.** |
 | **Directory submissions** | ⏭️ **#2** | §4.4 — alternativeto.net, MacUpdate, indie dirs. Agent preps the pack, founder pastes once. |
 | **Press + creator outreach** | ⏭️ **#3** | §4.1/§4.4 — highest-leverage *non-automatable* play; agent builds list + `/press` kit + drafts. |
 | "Art of the week" email / newsletter | 🅿️ needs a send-path call | §4.6 — viable only if the send automates off the nightly job. |
@@ -75,15 +75,16 @@ Legend: ✅ live · 🔨 built, not yet used · ⏭️ next · 🅿️ parked (n
 | Windows / Mac App Store build | 🅿️ pending demand-probe data | §8, §4.7 |
 | Paid ads | 🅿️ not now | §13 — only after a proven funnel |
 
-**One-liner:** foundation live, pricing closed, SEO dropped, **still ~zero traffic and therefore
-zero conversion data**. Next: **automated posting → directories → borrowed audiences → Reddit.**
-⚠️ **#1 is now the entire plan and it's blocked on one founder chore** (create the two vendor
-accounts) — nothing else moves the needle at this scale.
+**One-liner:** foundation live, pricing closed, **the pins now have somewhere to land** (283 new
+gallery routes), **still ~zero traffic and therefore zero conversion data**. Next: **automated
+posting → directories → press/creators → Reddit.** ⚠️ **#1 is the entire plan and it's blocked on
+one founder chore** (create the two vendor accounts) — nothing else moves the needle at this
+scale.
 
 ## In progress (claim here before starting)
 | Task | Agent / branch / PR | Started | Notes |
 |---|---|---|---|
-| Drop the SEO effort; re-rank the backlog | `growth/drop-seo-effort` / PR #80 | 2026-08-03 | Docs only — clear on merge. |
+| _(nothing in flight)_ | | | |
 
 ## Next up (prioritized backlog)
 Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batched last.
@@ -109,6 +110,11 @@ Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batc
 - **One batched chore** — create the upload-post + Zernio accounts, connect IG/YT/TikTok/
   Pinterest; and check whether the PH launch was ever *featured* (unfeatured ⇒ near-invisible,
   which changes how we read 5 upvotes).
+- **Poster stills for 77 pieces** — approve generating first-frame stills and uploading them to
+  **R2** (never git — `CLAUDE.md` → Repo rules), with the URL written into `gallery.json`'s `img`.
+  Those 77 gallery tiles currently render on a colour gradient, and their social cards fall back
+  to the generic site card instead of the artwork. Cheapest fix: have the nightly curation job
+  write `img` for every new piece and backfill the old ones once.
 - ~~Aggregator choice~~ ✅ 2026-08-02 (§11 B) · ~~Pricing~~ ✅ **closed 2026-08-02** — lifetime
   shipped (PR #70) and the founder has **de-prioritized pricing**; don't reopen it without
   traffic (§10).
@@ -116,6 +122,36 @@ Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batc
 ---
 
 ## Activity log (append-only — newest first)
+- **2026-08-03** — **Gallery landing pages shipped — the social channel now has destinations.**
+  283 new prerendered routes: **262** `/art/<slug>`, **15** `/era/<tag>`, a **6-page** `/gallery`
+  index, plus a sitemap generated from `gallery.json` (so the nightly push to `master`, which
+  already auto-deploys, grows the routes and the sitemap by itself). Built as §4.3 argues —
+  **destinations for pins, not an SEO play**. Four calls worth knowing: **(1) slugs are permanent
+  by construction** — derived from the immutable R2 key, never the title or catalog position,
+  because a pin's URL can't be edited after posting; a test fails the build on any collision.
+  **(2) `/art/*` ships `noindex, follow`**, `/gallery` + `/era/*` are indexable — 262 pages of
+  generated art *and* generated prose is the shape Google's scaled-content systems demote, and a
+  penalty would hit brand-name search; Pinterest doesn't care. One constant, `INDEX_ART_PAGES`,
+  flips the meta tag and the sitemap together. **(3) Descriptions are templated from
+  title/movement/era/date plus 15 hand-written era paragraphs — never the `image_prompt`/
+  `video_prompt` fields**, which are machine instructions and missing on 61 pieces; real
+  per-piece prose is a follow-up that belongs in `gallery.json` as data, not a build-time model
+  call. **(4) Image optimisation had to be turned on**: the R2 `img` stills are 4K WebPs of
+  1.4–3.3 MB each, so a 48-tile grid was ~120 MB of images — now ~2 MB, and a full scroll fetches
+  **zero** video bytes (clips load on hover, or on dwell for the 77 poster-less pieces, capped at
+  4 at a time). **No media committed.** Open: the poster gap (founder decision above) and
+  richer per-piece prose. _(This PR.)_
+- **2026-08-03** — **SEO drop reversed — gallery pages are back, reframed.** A second opinion
+  argued for `/art/<slug>` + `/style` + `/era`. Its numbers were half right (era tags **15** ✅,
+  missing posters **126** ✅; but **262** pieces not 223, and **203** movement labels not ~60,
+  **158 of them singletons**) and its SEO claim was overstated — bare movement names are
+  informational queries owned by Wikipedia/museums, and our pieces are AI *homages*. **But its
+  Pinterest point stands and changes the decision:** #1 makes Pinterest the plan, Pinterest needs
+  a destination per pin, and today every clip can only link to the homepage. So the pages are
+  **social infrastructure**, with SEO as a free option — and they can be `noindex`ed if scaled
+  AI content looks risky. Scope: `/gallery` + `/art/<slug>` (262) + `/era/<tag>` (15);
+  `/style/<movement>` deferred until 203 labels are grouped. Posters stay out of git (R2, founder
+  step). **Must land before the first pins** — pins can't be re-pointed. _(PR #82.)_
 - **2026-08-03** — **SEO dropped (founder call); backlog re-ranked.** Reasoning in §4.3: the
   searchable market is small and its intent is *how-to*, not shopping; this is a demand-
   **generation** product (people see it and want it, they don't search for it); and the

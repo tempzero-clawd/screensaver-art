@@ -9,7 +9,12 @@ import { LogoMark } from "@/components/logo-mark"
 import type { User as SupabaseUser } from "@supabase/supabase-js"
 import { greenGlow } from "@/lib/brand"
 
-export function Header() {
+/**
+ * `homeHref` — the homepage scrolls to its own top (`#top`); every standalone
+ * page (the gallery landing pages) must send the logo to `/` instead, or the
+ * one obvious "get me out of here" affordance does nothing.
+ */
+export function Header({ homeHref = '#top' }: { homeHref?: string } = {}) {
   const [user, setUser] = useState<SupabaseUser | null>(null)
 
   useEffect(() => {
@@ -36,7 +41,7 @@ export function Header() {
       }}
     >
       <div className="mx-auto flex h-[68px] max-w-[1340px] items-center justify-between gap-3 px-4 sm:gap-6 sm:px-[30px]">
-        <Link href="#top" className="flex items-center gap-[11px] no-underline">
+        <Link href={homeHref} className="flex items-center gap-[11px] no-underline">
           <span
             className="flex h-[30px] w-[30px] shrink-0 items-center justify-center rounded-[9px] bg-primary"
             style={{ boxShadow: `0 4px 14px -3px ${greenGlow(0.6)}` }}
@@ -47,6 +52,12 @@ export function Header() {
         </Link>
 
         <div className="flex shrink-0 items-center gap-[14px]">
+          <Link
+            href="/gallery"
+            className="hidden whitespace-nowrap text-[14.5px] font-medium text-muted-foreground no-underline transition-colors hover:text-foreground sm:inline"
+          >
+            Gallery
+          </Link>
           {user ? (
             <Link href="/account" className="flex items-center gap-1.5 whitespace-nowrap text-[14.5px] font-medium text-muted-foreground no-underline transition-colors hover:text-foreground">
               <User className="h-4 w-4" />
