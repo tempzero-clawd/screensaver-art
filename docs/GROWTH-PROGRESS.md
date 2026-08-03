@@ -62,7 +62,7 @@ Legend: ✅ live · 🔨 built, not yet used · ⏭️ next · 🅿️ parked (n
 | **Show HN** | ❌ **dropped as a plan item** | Blocked at submission 2026-08-02 (HN not taking new Show HN posts). Copy stays loaded; **nothing may depend on it reopening.** |
 | Reddit (r/macapps + visual subs) | ⏭️ **never run** | Day-2 slot unused. Highest-fit free channel, ~20 min (`launch-kit.md` §3). |
 | **Daily social posting + aggregator** | ⏭️ **#1 — vendors chosen 2026-08-02** | §4.1 + §11 (B) — **upload-post** (IG + YT) + **Zernio** (TikTok + Pinterest), both start free. Glue script not written. Best fit for 0 h/week: build once, posts nightly forever. |
-| **Clip audio: Lyria music bed** | ⏭️ part of #1 | §11.2 — founder decision 2026-08-02: score clips with **Lyria-generated music**. Licence-clean *and* API-postable (a platform-native sound is neither). `make-social-assets.mjs` still passes `-an` — needs an `--audio` flag. |
+| **Clip audio: Lyria music bed** | ⏭️ **founder-owned** | §11.2 — clips will be scored with **Lyria-generated music**; the founder is building it as a repo skill. **Agents: don't implement it, and don't commit audio** (`CLAUDE.md` → Repo rules). |
 | Brand-name / on-page SEO basics | ✅ live | 2026-07-17 (PRs #68, #69): keyword title, shared meta description, JSON-LD. |
 | **SEO landing + programmatic gallery pages** | ⏭️ **#2** | §4.3 — sitemap has **3 URLs**; `gallery.json` has **262 pieces** (poster + video each, ~4/night). Intent pages + a self-growing crawlable corpus. |
 | **Directory submissions** | ⏭️ **#3** | §4.4 — alternativeto.net, MacUpdate, indie dirs. Agent preps the pack, founder pastes once. |
@@ -92,7 +92,7 @@ Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batc
    `SELF_ONLY` (audit status undocumented) — if it is, move TikTok to upload-post. All four run
    unattended (a platform trending sound is both licence-blocked and un-attachable via API, so
    there's no per-post human step). **Include the audio bed** — clips ship silent today; mux a
-   **Lyria-generated music track** (§11.2, `--audio` flag). Add §11 (C) captions in the same pass
+   **Lyria-generated music track** (§11.2). Add §11 (C) captions in the same pass
    if cheap — templates at daily cadence read as spam. Founder: create 2 accounts + connect socials.
 2. **SEO: intent pages + programmatic gallery corpus** (§4.3) — 3 indexed URLs vs. 262 pieces
    growing ~4/night. "Aerial alternative" / "best Mac screensaver" / comparison pages, a
@@ -117,6 +117,13 @@ Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batc
 ---
 
 ## Activity log (append-only — newest first)
+- **2026-08-03** — **Media rule added to `CLAUDE.md`; Lyria stays founder-owned.** An agent
+  overstepped a docs request by *implementing* the §11.2 music bed — a generator script plus four
+  committed MP3s (~2.7 MB). Reverted before merge (PR #78 closed, branch deleted), so **master's
+  history never contained them** and no clone pays for them. New hard rule in `CLAUDE.md` →
+  *Repo rules*: **never commit images/audio/video without the founder's explicit approval**,
+  because a committed blob is permanent — deleting it later doesn't shrink the repo. §11.2 now
+  says the founder builds this as a repo skill and agents must not implement it. _(This PR.)_
 - **2026-08-02** — **Post-launch pivot: re-baselined all three growth docs.** PH **ran 2026-07-26
   and flopped** (5 upvotes, 2 comments, no badge, no traffic — verified live); **Show HN dropped**
   (blocked at submission). §4.2's post-mortem is deliberately thin: PH exposes no impression data,

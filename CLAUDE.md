@@ -11,6 +11,12 @@ A **pnpm workspace** monorepo containing:
 - **Gallery playlist** (`gallery.json`) — single source of truth for all art items
 - **Web preview** (`index.html`) — standalone HTML+CSS+JS, no build step
 
+## Repo rules
+
+**🚫 Never commit media files without the founder's explicit approval.** Images, audio, video
+(`.png`, `.jpg`, `.webp`, `.gif`, `.mp3`, `.wav`, `.mp4`, `.mov`, …) — **ask first, every time.**
+This applies to AI-generated media too, and to "just a few small files."
+
 ## Key paths
 | Path | Purpose |
 |---|---|

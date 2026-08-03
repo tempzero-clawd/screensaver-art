@@ -57,13 +57,12 @@ fills the frame, and the whole piece sits centered on top. A small, gentle
 `marketing/assets/url-pill.png`) sits bottom-center as a subtle CTA back to the
 site — skipped automatically if that asset is missing, or with `--no-wordmark`.
 **Audio — currently dropped (`-an`), and that's a known gap.** Founder decision (2026-08-02):
-score the clips with background music from **Google's Lyria API**, muxed in by this script.
-Self-generated audio is licence-clean (the platforms' trending libraries are restricted to
-personal/non-commercial use — strategy **§11.2**) *and* it survives API posting, since an
-aggregator can't attach a platform-native sound but a baked-in track needs no cooperation.
-Lyria also rides the pipeline's existing Google GenAI credentials (`GEMINI_API_KEY`).
-**Not yet implemented:** needs an `--audio` flag that loops/fades a bed to clip length. Keep beds
-quiet and ambient — much of the audience watches sound-off, so the clip must still work muted.
+score the clips with background music from **Google's Lyria API**. Self-generated audio is
+licence-clean (the platforms' trending libraries are restricted to personal/non-commercial use —
+strategy **§11.2**) *and* it survives API posting, since an aggregator can't attach a
+platform-native sound but a baked-in track needs no cooperation.
+**The founder is building this as a repo skill** — agents should not implement it here, and
+should not commit audio files (see the media rule in `CLAUDE.md`).
 
 ## Hooking it into the nightly pipeline
 Run it right after the nightly curation appends the new pieces — e.g. at the end
