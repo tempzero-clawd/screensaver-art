@@ -62,7 +62,7 @@ Legend: ✅ live · 🔨 built, not yet used · ⏭️ next · 🅿️ parked (n
 | **Show HN** | ❌ **dropped as a plan item** | Blocked at submission 2026-08-02 (HN not taking new Show HN posts). Copy stays loaded; **nothing may depend on it reopening.** |
 | Reddit (r/macapps + visual subs) | ⏭️ **never run** | Day-2 slot unused. Highest-fit free channel, ~20 min (`launch-kit.md` §3). |
 | **Daily social posting + aggregator** | ⏭️ **#1 — vendors chosen 2026-08-02** | §4.1 + §11 (B) — **upload-post** (IG + YT) + **Zernio** (TikTok + Pinterest), both start free. Glue script not written. Best fit for 0 h/week: build once, posts nightly forever. |
-| **Clip audio: Lyria music bed** | ⏭️ part of #1 | §11.2 — founder decision 2026-08-02: score clips with **Lyria-generated music**. Licence-clean *and* API-postable (a platform-native sound is neither). `make-social-assets.mjs` still passes `-an` — needs an `--audio` flag. |
+| **Clip audio: Lyria music bed** | ✅ **built 2026-08-03** | §11.2 — 4 committed beds (`marketing/assets/beds/`, `generate-music-beds.py`); `make-social-assets.mjs` rotates one per piece, -9 dB with a 1.5s fade. Clips are no longer silent. |
 | Brand-name / on-page SEO basics | ✅ live | 2026-07-17 (PRs #68, #69): keyword title, shared meta description, JSON-LD. |
 | **SEO landing + programmatic gallery pages** | ⏭️ **#2** | §4.3 — sitemap has **3 URLs**; `gallery.json` has **262 pieces** (poster + video each, ~4/night). Intent pages + a self-growing crawlable corpus. |
 | **Directory submissions** | ⏭️ **#3** | §4.4 — alternativeto.net, MacUpdate, indie dirs. Agent preps the pack, founder pastes once. |
@@ -81,7 +81,7 @@ conversion data**. Next: **automated posting → compounding SEO → directories
 ## In progress (claim here before starting)
 | Task | Agent / branch / PR | Started | Notes |
 |---|---|---|---|
-| _(none)_ | | | |
+| Posting automation #1 — audio bed done; glue script blocked on vendor accounts | `claude/social-music-bed-lyria` / PR #78 | 2026-08-03 | Clear on merge. |
 
 ## Next up (prioritized backlog)
 Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batched last.
@@ -91,9 +91,9 @@ Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batc
    nightly curation job. **Do first:** one live Zernio post to confirm TikTok isn't forced
    `SELF_ONLY` (audit status undocumented) — if it is, move TikTok to upload-post. All four run
    unattended (a platform trending sound is both licence-blocked and un-attachable via API, so
-   there's no per-post human step). **Include the audio bed** — clips ship silent today; mux a
-   **Lyria-generated music track** (§11.2, `--audio` flag). Add §11 (C) captions in the same pass
-   if cheap — templates at daily cadence read as spam. Founder: create 2 accounts + connect socials.
+   there's no per-post human step). ✅ **Audio is done** — clips now carry a Lyria bed (§11.2).
+   Add §11 (C) captions in the same pass if cheap — templates at daily cadence read as spam.
+   **Blocked on the founder:** create the 2 vendor accounts + connect the socials.
 2. **SEO: intent pages + programmatic gallery corpus** (§4.3) — 3 indexed URLs vs. 262 pieces
    growing ~4/night. "Aerial alternative" / "best Mac screensaver" / comparison pages, a
    crawlable per-piece-or-movement surface off `gallery.json`, and a self-growing sitemap.
@@ -117,6 +117,14 @@ Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batc
 ---
 
 ## Activity log (append-only — newest first)
+- **2026-08-03** — **Social clips have audio** (backlog #1, first half). Lyria 3 reached with the
+  existing `GEMINI_API_KEY` (no Vertex/GCP needed) → `marketing/generate-music-beds.py` writes a
+  committed 4-bed library (warm-piano, airy-strings, soft-synth, quiet-guitar; ~27–30s MP3s), and
+  `make-social-assets.mjs` gained `--audio`/`--no-audio`: it picks a bed **deterministically per
+  piece** (same clip → same bed on re-runs), loops it, drops it to **-9 dB** and fades the last
+  1.5s. Verified on a real gallery piece — mean -23.7 dB over the clip, -36.2 dB in the fade tail.
+  Beds are committed so **posting never needs an API key**. Also corrected README/caption guidance
+  that still told the reader to add a trending sound in-app (ruled out in §11). _(PR #78.)_
 - **2026-08-02** — **Post-launch pivot: re-baselined all three growth docs.** PH **ran 2026-07-26
   and flopped** (5 upvotes, 2 comments, no badge, no traffic — verified live); **Show HN dropped**
   (blocked at submission). §4.2's post-mortem is deliberately thin: PH exposes no impression data,

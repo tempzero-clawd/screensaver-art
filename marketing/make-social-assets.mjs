@@ -22,12 +22,14 @@
 //   --formats <list> comma list of 9x16,1x1 (default: both)
 //   --duration <sec> loop/trim target length (default: 12)
 //   --no-wordmark    don't burn the living-art-screensaver.com URL pill
+//   --audio <path>   use this music bed for every clip (default: rotate marketing/assets/beds)
+//   --no-audio       render silent (the old behaviour)
 //   --out <dir>      output base dir (default: marketing/out)
 //
 // Requires: ffmpeg on PATH. No npm deps (Node ≥18 built-ins + fetch).
 
 import { spawnSync } from 'node:child_process'
-import { mkdtempSync, mkdirSync, writeFileSync, existsSync, rmSync } from 'node:fs'
+import { mkdtempSync, mkdirSync, writeFileSync, existsSync, rmSync, readdirSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -44,6 +46,24 @@ const SITE = 'livingartscreensaver.com'
 const URL_PILL = path.join(__dirname, 'assets', 'url-pill.png')
 const HAS_PILL = existsSync(URL_PILL)
 
+// Committed Lyria-generated music beds (marketing/generate-music-beds.py). A
+// silent clip is a real handicap on Reels/TikTok/Shorts, and the platforms'
+// trending audio is licence-restricted for commercial accounts *and* can't be
+// attached by a posting API — so we bake in our own. See strategy §11.2.
+const BEDS_DIR = path.join(__dirname, 'assets', 'beds')
+function listBeds() {
+  if (!existsSync(BEDS_DIR)) return []
+  return readdirSync(BEDS_DIR).filter((f) => /\.(mp3|m4a|wav)$/i.test(f)).sort().map((f) => path.join(BEDS_DIR, f))
+}
+// Deterministic per-slug pick: the same piece always gets the same bed (so a
+// re-run doesn't reshuffle), but the library still spreads across the catalog.
+function pickBed(beds, slug) {
+  if (!beds.length) return null
+  let h = 5381
+  for (let i = 0; i < slug.length; i++) h = ((h * 33) ^ slug.charCodeAt(i)) >>> 0
+  return beds[h % beds.length]
+}
+
 const FORMATS = {
   '9x16': { w: 1080, h: 1920, pillPad: 150 },
   '1x1': { w: 1080, h: 1080, pillPad: 70 },
@@ -51,7 +71,7 @@ const FORMATS = {
 
 // ── arg parsing ─────────────────────────────────────────────────────────────
 function parseArgs(argv) {
-  const a = { formats: ['9x16', '1x1'], duration: 12, wordmark: true, out: path.join(REPO_ROOT, 'marketing', 'out') }
+  const a = { formats: ['9x16', '1x1'], duration: 12, wordmark: true, audio: true, out: path.join(REPO_ROOT, 'marketing', 'out') }
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i]
     const next = () => argv[++i]
@@ -64,6 +84,8 @@ function parseArgs(argv) {
     else if (arg === '--formats') a.formats = next().split(',').map((s) => s.trim()).filter(Boolean)
     else if (arg === '--duration') a.duration = Math.max(3, parseInt(next(), 10) || 12)
     else if (arg === '--no-wordmark') a.wordmark = false
+    else if (arg === '--audio') a.audio = next()
+    else if (arg === '--no-audio') a.audio = false
     else if (arg === '--out') a.out = path.resolve(next())
     else if (arg === '--help' || arg === '-h') a.help = true
   }
@@ -124,26 +146,32 @@ function buildFilter({ w, h, pill, pillPad, pillWidth }) {
   return chain.join(';')
 }
 
-function renderFormat({ input, fmtKey, outFile, duration, wordmark }) {
+function renderFormat({ input, fmtKey, outFile, duration, wordmark, bed }) {
   const fmt = FORMATS[fmtKey]
   if (!fmt) throw new Error(`unknown format ${fmtKey} (use 9x16 or 1x1)`)
   const usePill = wordmark && HAS_PILL
   const pillWidth = Math.round(fmt.w * 0.46)
-  const filter = buildFilter({ ...fmt, pill: usePill, pillWidth })
+  let filter = buildFilter({ ...fmt, pill: usePill, pillWidth })
+  if (bed) {
+    // The bed is ~30s and the clip is usually shorter, but loop anyway so a
+    // longer --duration can't run off the end into silence. Quiet (-9dB) with a
+    // 1.5s fade-out: the art leads, and a hard audio cut reads as a glitch.
+    const bedIdx = usePill ? 2 : 1
+    const fadeStart = Math.max(0, duration - 1.5)
+    filter += `;[${bedIdx}:a]volume=-9dB,afade=t=out:st=${fadeStart}:d=1.5,atrim=0:${duration},asetpts=N/SR/TB[outa]`
+  }
   const args = [
     '-y', '-hide_banner', '-loglevel', 'error',
     '-stream_loop', '-1', '-i', input,
     ...(usePill ? ['-loop', '1', '-i', URL_PILL] : []),
+    ...(bed ? ['-stream_loop', '-1', '-i', bed] : []),
     '-filter_complex', filter,
     '-map', '[outv]',
+    ...(bed ? ['-map', '[outa]', '-c:a', 'aac', '-b:a', '128k'] : ['-an']),
     '-t', String(duration),
     '-r', '30',
     '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-pix_fmt', 'yuv420p',
     '-movflags', '+faststart',
-    // TODO(--audio): mux a Lyria-generated music bed here (looped + faded to length).
-    // Platform trending libraries are licence-restricted for commercial accounts, and an
-    // API-posted clip can't attach a native sound anyway — see strategy §11.2.
-    '-an',
     outFile,
   ]
   const r = spawnSync('ffmpeg', args, { stdio: ['ignore', 'ignore', 'inherit'] })
@@ -157,9 +185,9 @@ function captionsMarkdown({ title, style }) {
   return `# Social captions — ${title}
 
 _Starter copy. Tweak the hook, keep it human. Post the 9×16 to Reels/TikTok/Shorts,
-the 1×1 to feed/Pinterest. These clips are silent for now — a Lyria-generated music
-bed is planned (strategy §11.2); don't reach for a platform trending sound, it's
-licence-restricted for commercial accounts._
+the 1×1 to feed/Pinterest. These clips carry our own Lyria-generated music bed — do
+**not** swap in a platform trending sound: it's licence-restricted for commercial
+accounts and a posting API can't attach one anyway (strategy §11.2)._
 
 ## Instagram Reels / Facebook
 \`\`\`
@@ -219,6 +247,13 @@ async function main() {
     }
   }
 
+  // Resolve the music bed once: an explicit --audio path wins, otherwise rotate
+  // the committed library (silent if it's empty or --no-audio).
+  const beds = a.audio === false ? [] : typeof a.audio === 'string' ? [path.resolve(a.audio)] : listBeds()
+  if (a.audio === false) process.stdout.write('Audio: off (--no-audio)\n')
+  else if (!beds.length) process.stdout.write('Audio: none — no beds in marketing/assets/beds (see generate-music-beds.py)\n')
+  else if (typeof a.audio === 'string' && !existsSync(beds[0])) throw new Error(`--audio not found: ${beds[0]}`)
+
   process.stdout.write(`Rendering ${jobs.length} piece(s) → ${a.out}\n`)
   let ok = 0
   for (const entry of jobs) {
@@ -230,9 +265,11 @@ async function main() {
     try {
       process.stdout.write(`• ${title}  [${style}]\n`)
       const input = await resolveSource(entry.src, tmp)
+      const bed = pickBed(beds, slug)
+      if (bed) process.stdout.write(`  ♪ ${path.basename(bed)}\n`)
       for (const fmtKey of a.formats) {
         const outFile = path.join(dir, `${slug}_${fmtKey}.mp4`)
-        renderFormat({ input, fmtKey, outFile, duration: a.duration, wordmark: a.wordmark })
+        renderFormat({ input, fmtKey, outFile, duration: a.duration, wordmark: a.wordmark, bed })
         process.stdout.write(`  ✓ ${path.relative(REPO_ROOT, outFile)}\n`)
       }
       writeFileSync(path.join(dir, 'captions.md'), captionsMarkdown({ title, style }))
