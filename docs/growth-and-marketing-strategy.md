@@ -19,7 +19,7 @@
 5. **Don't pivot to a wallpaper engine.** Bigger market, but commoditized to free/$5 and moated. Instead *distribute your content into it* (Option B).
 6. **Fix the funnel so traffic doesn't leak** — device-aware capture ("email me the Mac link"), a self-report platform-demand probe, great link previews, brand-name SEO.
 7. **Instrument everything.** You can't improve what you can't see. Set up analytics + a north-star metric before you pour traffic in.
-8. **The launch spikes are spent.** PH returned 5 upvotes (2026-07-26) and Show HN is closed to us — and neither can be re-fired soon, whatever the cause. The plan is now **automated + visual** channels: nightly auto-posting, directories, borrowed audiences. SEO is dropped — this is a demand-*generation* product, not demand-capture (§4.3). See §4.2.
+8. **The launch spikes are spent.** PH returned 5 upvotes (2026-07-26) and Show HN is closed to us — and neither can be re-fired soon, whatever the cause. The plan is now **automated + visual** channels: nightly auto-posting (§11), the gallery landing pages that channel needs (§4.3), directories, borrowed audiences. See §4.2.
 
 ---
 
@@ -36,9 +36,10 @@ foundation* is live (PostHog, OG cards, mobile email-link, demand probe), on-pag
 and **the $15.99 lifetime tier shipped** (§10). **The launch bet was run and failed** — PH
 returned 5 upvotes, Show HN is closed to us (§4.2) — so the site still has **~zero traffic and
 zero conversion data**. The bottleneck remains **acquisition**, now attacked through
-**automated + visual** channels: nightly auto-posting (§11), directories (§4.4), borrowed
-audiences (§4.1). **SEO was considered and dropped** (§4.3) — nobody searches for a product
-they don't know exists; demand here has to be *generated*, not captured.
+**automated + visual** channels: nightly auto-posting (§11), the **gallery landing pages** that
+channel needs (§4.3), directories (§4.4), borrowed audiences (§4.1). Note the pages are
+*destinations for social*, **not** an SEO bet — nobody searches for a product they don't know
+exists, so demand here has to be *generated*, not captured.
 
 > ⚠️ **Hard planning constraint (2026-08-02): founder marketing time ≈ 0 h/week.** Every
 > recommendation below must survive that filter. A tactic needing a daily or weekly human touch
@@ -183,31 +184,48 @@ variable was traffic, and it was zero. See *A note on validation* in §15.
 - **Anything one-shot is a bonus, not a bet.** The channels below are ranked on whether they
   keep producing after the day you ship them.
 
-### 4.3 SEO & content — 🅿️ **dropped 2026-08-03 (founder call)**
+### 4.3 Gallery pages — ⏭️ **reversed 2026-08-03: build them, as *social landing pages***
 
-**Decision: don't build SEO landing pages or a programmatic gallery corpus.** The reasoning,
-recorded so it isn't re-proposed:
+**Dropped, then un-dropped the same day.** The SEO case for these pages is weak and stays weak.
+The reason to build them is different and stronger: **the social channel has nowhere to send
+people.**
 
-- **The searchable market is small and the intent is wrong.** "Mac screensaver" traffic skews to
-  *how-to* queries (change/disable the screensaver), not shopping; the category's price
-  expectation is free. "Aerial alternative" is lower still.
-- **This is a demand-*generation* product, not demand-capture.** Nobody wakes up searching for an
-  AI-art screensaver — they *see* one and want it. SEO harvests existing demand; our demand has
-  to be created visually. That points at social/visual channels, not search.
-- **The corpus is thinner than it looked.** `gallery.json` holds 262 pieces across **203 distinct
-  movements** — only 9 movements have 3+ pieces and one has 5+. A page per movement would be
-  mostly 1–2 item pages, i.e. exactly what Google discounts as thin. The "self-growing corpus"
-  argument was weaker than it first appeared (measured 2026-08-03).
-- **It's slow.** New domain, no backlinks → months to rank, against a low ceiling. Wrong first
-  channel for a site with zero traffic today.
+**Why they're needed (this is a distribution argument, not a search one):**
+- **Pinterest needs a destination per pin.** #1 makes Pinterest + YouTube the whole plan. 262
+  pins all pointing at one homepage is weak distribution and reads as spam; a page per piece
+  gives every pin a unique, relevant landing spot.
+- **Every clip we post can currently only link to the homepage.** A piece page converts better
+  and is the §5 "instant on-site preview" done properly — see the art before installing.
+- **No new exposure risk:** everyone already browses the full gallery in-app and the MP4s are
+  public on R2 (see *Where gating happens* in `CLAUDE.md`).
 
-**What we keep:** ✅ **brand-name SEO** — already shipped (keyword title, meta description,
-JSON-LD, 2026-07-17) and *not* market-size dependent. Someone who sees a clip and later searches
-"living art screensaver" must land on us; that's recall capture, and it's the necessary companion
-to the social channel (§6), not a bet on search volume.
+**What's still true from the drop (don't re-inflate the SEO case):**
+- We won't rank for "best mac screensaver," and probably not for bare movement names either —
+  "Nihonga", "Peredvizhniki" are informational queries owned by Wikipedia and museums, and our
+  pieces are **AI homages**, not the real works. Expect long-tail modifiers at best
+  ("nihonga wallpaper"), which is a much smaller claim than "the long tail is winnable."
+- **~300 AI-generated pages is close to what Google's scaled-content systems demote**, and a
+  penalty would hit the whole domain — including the brand-name SEO that *does* matter. Pages
+  can serve Pinterest perfectly well while `noindex`ed: **if destinations are the goal, Google's
+  opinion is optional.** Decide indexing deliberately, per tier.
+- Cost isn't zero: descriptions and poster frames add steps to the nightly pipeline that
+  generates the product. New failure modes against a 0 h/week budget.
 
-**Reopen if** the social channel proves demand exists and a comparison/alternative page starts
-converting the trickle that finds us anyway.
+**Scope (measured 2026-08-03 against `gallery.json`):**
+
+| Tier | Count | Verdict |
+|---|---|---|
+| `/art/<slug>` | **262** | ✅ build — the destinations Pinterest and every clip need |
+| `/era/<tag>` | **15** (avg 17 pieces) | ✅ build — solid, non-thin browse surface |
+| `/gallery` index | 1 | ✅ build |
+| `/style/<movement>` | **203 labels, 158 of them singletons** | ⏸️ defer — one page per raw label is thin by construction; needs grouping into ~60 curated buckets first |
+
+**Also:** 126 of 262 pieces have no `img` poster. Posters are needed for OG cards and
+lazy-loading — but **media doesn't get committed** (`CLAUDE.md` → Repo rules); posters belong in
+R2 with the URL in `gallery.json`, and that's a founder-approved step, not an agent one.
+
+**Success metric: Pinterest → site UTM clicks, not rankings.** Sequencing: **build the
+destinations before the first pins go out** — pins can't be re-pointed later.
 
 ### 4.4 Press & directories (one-time work, permanent backlinks)
 Screensaver apps are rare enough to be newsworthy, and every listing is both a trickle of intent
