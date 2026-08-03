@@ -4,9 +4,9 @@
 > plus areas we hadn't yet discussed. The Option B distribution play is folded in as
 > **Appendix A**. **See the Progress snapshot below for what's built vs. next** — the
 > body sections are the *reasoning*; the snapshot is the *state*.
-> **Context:** Solo/indie Mac app, live website, **pre-launch, ~zero users today**.
-> Product: a screensaver (and potentially wallpaper) that streams **curated, daily-fresh
-> AI art**. Free tier (50 pieces) + **$0.99/mo subscription billed quarterly ($2.97/3mo)**.
+> **Context:** Solo/indie Mac app, live website, **launched and ~zero users today** (§4.2).
+> Product: a screensaver streaming **curated, daily-fresh AI art**. Free tier (50 pieces),
+> **$0.99/mo billed quarterly** or **$15.99 lifetime**.
 
 ---
 
@@ -19,7 +19,7 @@
 5. **Don't pivot to a wallpaper engine.** Bigger market, but commoditized to free/$5 and moated. Instead *distribute your content into it* (Option B).
 6. **Fix the funnel so traffic doesn't leak** — device-aware capture ("email me the Mac link"), a self-report platform-demand probe, great link previews, brand-name SEO.
 7. **Instrument everything.** You can't improve what you can't see. Set up analytics + a north-star metric before you pour traffic in.
-8. **Rethink pricing.** This category pays *one-time*, not subscription — your single biggest untested lever (annual/lifetime tier). See §10.
+8. **The launch spikes are spent.** PH returned 5 upvotes (2026-07-26) and Show HN is closed to us — and neither can be re-fired soon, whatever the cause. The plan is now **automated + compounding** channels: nightly auto-posting, programmatic SEO, directories, borrowed audiences. See §4.2.
 
 ---
 
@@ -31,12 +31,20 @@ coordinate through that file — check it before starting, update it when you fi
 It's the single source of truth for state; the sections below explain the *why* behind
 each item (referenced from the hub by number, e.g. "§10").
 
-**Where things stand (summary — the hub has the itemized table):** the *conversion +
-analytics foundation* is live (PostHog, OG cards, mobile email-link, the self-report
-demand probe); the site has **~zero traffic**. The bottleneck is **acquisition, not
-capture** → next up is the **launch** (`docs/launch-kit.md` + the `marketing/` asset
-engine), then daily posting, SEO, and the email list. Pricing (§10) is the biggest lever
-to pull once conversion, not traffic, is the constraint.
+**Where things stand (summary — the hub has the itemized table):** the *conversion + analytics
+foundation* is live (PostHog, OG cards, mobile email-link, demand probe), on-page SEO shipped,
+and **the $15.99 lifetime tier shipped** (§10). **The launch bet was run and failed** — PH
+returned 5 upvotes, Show HN is closed to us (§4.2) — so the site still has **~zero traffic and
+zero conversion data**. The bottleneck remains **acquisition**, now attacked through
+**compounding + automated** channels: nightly auto-posting (§11), programmatic SEO off the
+gallery (§4.3), directories (§4.4), borrowed audiences (§4.1).
+
+> ⚠️ **Hard planning constraint (2026-08-02): founder marketing time ≈ 0 h/week.** Every
+> recommendation below must survive that filter. A tactic needing a daily or weekly human touch
+> is a tactic that will not run — prefer things that **run themselves once built** or are
+> **built once and pay forever**, and batch the irreducibly-human work (account creation,
+> pitches sent in the founder's own name) into rare, bounded sittings. This is why §11's
+> automation now outranks §4.1's manual posting.
 
 > **New agent?** Read `CLAUDE.md` → **`docs/GROWTH-PROGRESS.md`** (state) → this doc
 > (why) → `docs/launch-kit.md` → `marketing/README.md`.
@@ -136,35 +144,89 @@ Your highest-leverage channel because it monetizes your free art.
     your conversion path. Post daily; cost is ~zero.
 - **Volume strategy:** post *every* good piece to *every* platform. Each post is an
   independent shot at virality. Flood the channels — your content is free and infinite.
+  **⚠️ At 0 h/week this only happens if it's automated.** Clips have existed since 2026-07-12
+  and *none* has been posted — the whole argument for making §11's automation priority #1.
+  Manual daily posting is not a plan; it's a wish.
 - **Borrow audiences (the real accelerant):** the slow part is building your *own*
   following. Skip it — get featured by big "aesthetic/AI-art/wallpaper" repost accounts,
   and by "best Mac apps / desk setup" YouTubers/creators. One feature on a 500k account
   ≈ months of your own posting. Send them your best loops, free, credited.
 
-### 4.2 Launch spikes (one-time bursts — schedule deliberately)
-> Copy + checklists are drafted in **`docs/launch-kit.md`** (Product Hunt / Show HN /
-> Reddit). **Live launch status → the hub (`GROWTH-PROGRESS.md`).**
+### 4.2 Launch spikes — ❌ **run, failed, and demoted** (post-mortem)
+> Copy + checklists live in **`docs/launch-kit.md`** — now an **archive/reference**, not a
+> plan. **Live status → the hub (`GROWTH-PROGRESS.md`).**
 
-Won't sustain traffic, but seed your first followers, backlinks, testimonials, and SEO base:
-- **Product Hunt** — ideal for a polished indie Mac app. Great demo video (you have assets),
-  early comments lined up, posted on a planned day.
-- **Show HN (Hacker News)** — lead with the *engineering/AI-pipeline story* ("I built a
-  screensaver that generates new art daily with Veo/Gemini"), not a sales pitch.
-- **Reddit launch posts** — be transparent you made it; lead with a video and the free tier.
+**What happened.** PH launched **2026-07-26** with the full media kit and finalized copy →
+**5 upvotes, 2 comments, no badge, no measurable traffic.** **Show HN never ran** — blocked at
+submission (2026-08-02); HN reported it isn't accepting new Show HN posts amid a flood of
+submissions. (Its published [`showhn.html`](https://news.ycombinator.com/showhn.html) says no
+such thing, so read it as a temporary gate — but **nothing may depend on it reopening.**)
 
-### 4.3 SEO & content (compounding, owned)
-The traffic that finds you *at their Mac with intent*. High-value targets:
+**Why it failed — we don't know.** PH gives us no impression data, so any ranking of causes would
+be invention. Verifiable: we went in **with no audience** (no following anywhere, nothing ever
+posted) and came out with ~0 traffic. Whether it was ever *featured* is worth checking — an
+unfeatured launch is barely shown, the difference between "rejected" and "never seen."
+**Resist tidy narratives; one uninstrumented data point supports none of them.**
+
+**What it does NOT tell us.** It says **nothing about product demand or pricing.** With ~0
+sessions, the funnel (§3, §5) has still never been exercised — no download rate, no activation
+rate, no free→paid rate. Do not "fix" conversion or reprice in response to this; the input
+variable was traffic, and it was zero. See *A note on validation* in §15.
+
+**Consequences** — these hold regardless of *why* it flopped:
+- **Launch spikes leave the critical path** because they're no longer *available*: PH isn't
+  re-runnable for months (a fresh launch needs a substantially updated product, historically
+  ~6 months apart — verify) and Show HN is closed. A channel we can't fire can't be a plan.
+- **Reddit is still un-run** and has neither problem: postable today, repeatable across subs,
+  threads that rank for years (§4.1). ~20 min; do it once the always-on channels are live.
+- **Anything one-shot is a bonus, not a bet.** The channels below are ranked on whether they
+  keep producing after the day you ship them.
+
+### 4.3 SEO & content (compounding, owned) — **now a top priority**
+Traffic that finds you *at their Mac with intent*, and the best fit for a **0 h/week** budget:
+a page you ship once keeps working with no upkeep.
+
+**Shipped 2026-07-17:** the on-page basics — keyword title, shared meta description, JSON-LD.
+**Brand-name SEO** ("Living Art Screensaver" should rank #1, since recall fires as a *name
+search*, not a typed URL — §6) is mostly that plus time and backlinks (§4.4).
+
+**Still to build — intent pages:**
 - **"Aerial alternative"** — Aerial is the known free incumbent; alternative-seekers are warm.
 - **"best Mac screensaver 2026," "live wallpaper Mac," "AI art wallpaper/screensaver."**
-- **Comparison & listicle pages** on your own site (you vs Aerial / Wallpaper Engine — honest,
-  highlighting curation + daily-fresh).
-- **Brand-name SEO:** ensure searching **"Living Art Screensaver"** lands you #1 (title tags,
-  consistent naming) — because recall fires as a *name search*, not a typed URL (§6).
+- **Comparison pages** (you vs Aerial / Wallpaper Engine — honest, highlighting curation +
+  daily-fresh).
 
-### 4.4 Press & directories
-Screensaver apps are rare enough to be newsworthy. Pitch **9to5Mac, MacStories, Cult of Mac,
-MacRumors**; get listed on **MacUpdate, alternativeto.net**, and the **Aerial/PaperSaver
-community** (your exact audience — you already build on their tooling).
+**Still to build — the programmatic corpus (the underused asset):**
+
+> The sitemap exposes **3 URLs**. `gallery.json` holds **262 pieces** — each with a title, an
+> art movement, a 4K poster, a video and a description — **and the nightly job adds ~4 more,
+> free.**
+
+- **A page per piece and/or per movement** ("Ukiyo-e screensaver", "Art Nouveau live wallpaper")
+  — real media and unique text, internally linked, each an entry point for long-tail art
+  searches nobody is competing for.
+- **A sitemap that grows itself** off `gallery.json`, so every curation run also ships SEO
+  surface area. Zero marginal effort forever.
+- **Guardrails:** genuinely useful pages, not doorway pages; lead with `free: true` pieces so a
+  crawler-sourced visitor can watch what they landed on. (No new piracy exposure — the MP4s are
+  already public; see *Where gating happens* in `CLAUDE.md`.)
+
+The clearest case in the plan of **build once, compounds nightly, needs nobody.**
+
+### 4.4 Press & directories (one-time work, permanent backlinks)
+Screensaver apps are rare enough to be newsworthy, and every listing is both a trickle of intent
+traffic *and* a backlink that helps §4.3.
+- **Directories (batchable, first):** **alternativeto.net** (under Aerial — the highest intent
+  here), **MacUpdate**, plus indie/app directories. An agent preps the whole pack — blurbs at
+  each site's length limit, screenshots, categories, links — so the founder pastes it in **one
+  sitting**.
+- **Press:** 9to5Mac, MacStories, Cult of Mac, MacRumors. Pitch the *story* (a screensaver that
+  generates and curates new art nightly), not the product; include the launch video.
+- **Community:** the **Aerial / PaperSaver** community is your ICP and you build on their
+  tooling — show up as a builder, not an advertiser.
+- **Also §4.1's "borrow audiences"** — creators and repost accounts. The one high-leverage
+  channel that can't be automated (it needs the founder's name), so the agent job is reducing it
+  to "review and send": target list, `/press` kit page, drafts.
 
 ### 4.5 Ecosystem distribution — **Option B** (see Appendix A)
 Publish free **curated art sample packs** into Wallpaper Engine Workshop + Lively to borrow
@@ -270,20 +332,30 @@ $0.99/mo product with high churn never compounds.
 
 ---
 
-## 10. Monetization & pricing — your biggest untested lever (think hard here)
+## 10. Monetization & pricing — 🅿️ **settled for now; don't reopen without traffic**
+> **Founder call, 2026-08-02: pricing is no longer a priority** now that the lifetime tier
+> ships. Dropped from the TL;DR. The reasoning below is kept as background for whenever
+> conversion — not acquisition — is the constraint.
 The single clearest signal from all our market research: **this category pays *one-time*,
 not subscription.** Wallpaper Engine = $4.99 once (20–50M owners). Lively = free. Aerial =
-free. Paid Mac screensavers (Bauhaus Clock $19) = **one-time**. Your **$0.99/mo subscription
-is swimming against the category's grain.**
+free. Paid Mac screensavers (Bauhaus Clock $19) = **one-time**. A **$0.99/mo subscription
+swims against the category's grain.**
+
+> ✅ **Shipped 2026-07-18 (PR #70): the $15.99 one-time "Own it forever" tier**, sold beside the
+> $0.99/mo (billed quarterly) subscription; buying lifetime auto-cancels a running subscription
+> so nobody double-pays. **Not being pursued:** the annual plan and the trial idea below.
+>
+> ⚠️ **None of it has been *tested*.** Pricing is a *conversion* lever and there is no
+> conversion data at ~0 sessions (§4.2). **Don't iterate on price in response to the failed
+> launch** — re-open this when a channel actually delivers traffic.
 
 This doesn't mean kill the subscription — it means **test pricing structures**, because it's
-likely your highest-impact conversion lever:
+likely your highest-impact conversion lever *once traffic exists*:
 - **Add an annual plan** (e.g. ~$9.99/yr) — reads as cheaper, cuts churn, fits "I'll pay once
-  a year" psychology.
-- **Add a lifetime / one-time tier** (e.g. ~$29 one-time) — *matches the category's mental
-  model*. Many who'd never start a subscription will happily pay once. (Yes, it forgoes
-  recurring revenue from those users — but you may capture buyers you'd otherwise lose
-  entirely. Test it.)
+  a year" psychology. **Still not built.**
+- ~~**Add a lifetime / one-time tier**~~ — ✅ **done at $15.99.** It *matches the category's
+  mental model*: many who'd never start a subscription will happily pay once. (Yes, it forgoes
+  recurring revenue from those users — but it captures buyers you'd otherwise lose entirely.)
 - **Reconcile with the "daily-fresh" wedge:** the subscription's justification is *ongoing*
   new art; a lifetime tier could still include daily art, or you position lifetime as
   "the app + current gallery" and subscription as "+ new art forever." Design the fence
@@ -344,15 +416,34 @@ You can largely automate the content flywheel off your existing nightly pipeline
     the trending-sound discovery benefit** — that surface is exactly the part we can't licence.
 
   **So the operational answer flips:** run **all four channels unattended**, and spend the ~2
-  min/day on **replying to early comments**, which is unrestricted and is the part with
-  well-evidenced value. Don't build a draft-mode workflow around adding trending audio until
-  someone confirms a commercially-cleared path — the licensing, not the tooling, is the blocker.
-  (Our clips ship silent anyway: `make-social-assets.mjs` drops audio — see `marketing/README.md`.)
-  Sound pages are real — YouTube documents the Shorts **sound page** and runs a
-  [Top Shorts Songs chart](https://charts.youtube.com/charts/TopShortsSongs/us/daily) — we just
-  can't legally reach them at commercial scale. **Pinterest is unaffected either way:** it
-  advises against relying on audio (much of its audience views sound-off) and has retired adding
-  music to new Pins entirely, and Pins are evergreen.
+  min/day on **replying to early comments** — unrestricted, and the part with well-evidenced
+  value. Never build a draft-mode workflow around trending audio: the licensing, not the tooling,
+  is the blocker. Sound pages are real (YouTube runs a
+  [Top Shorts Songs chart](https://charts.youtube.com/charts/TopShortsSongs/us/daily)) — we just
+  can't legally reach them at commercial scale. **Our audio answer is §11.2.**
+  **Pinterest is unaffected either way:** it advises against relying on audio (much of its
+  audience views sound-off), has retired music on new Pins, and Pins are evergreen.
+
+### 11.2 Audio: a Lyria-generated music bed (founder decision, 2026-08-02)
+
+**Decision: score the social clips with background music generated by Google's Lyria API** —
+closing the gap §11 leaves open, since clips ship **silent** today (`make-social-assets.mjs`
+passes `-an`) and silence is a real handicap on Reels/TikTok/Shorts. It fits because it is:
+- **Licence-clean** — self-generated audio sidesteps every commercial-use restriction above.
+- **API-postable** — the one thing aggregators *can't* do is attach a platform-native sound; a
+  muxed track is just part of the video, so **unattended posting stays unattended** (0 h/week).
+- **Already on our rails** — the nightly pipeline is Google GenAI end-to-end (Nano Banana/Gemini
+  for stills, Veo 3.1 for motion) and the curation `.env` already carries `GEMINI_API_KEY`, so
+  Lyria is the same SDK and credential path rather than a new vendor.
+
+**What it does *not* buy:** the trending-sound **discovery** surface — no sound page, no "use this
+sound" chain. That stays closed (§11). This fixes *silence*, not *discovery*.
+
+**For whoever wires it:** generate a small bed library (mood-matched if cheap, else a rotating
+handful) rather than a track per clip; add `--audio` to loop + fade one to length; keep beds
+**quiet and ambient** — much of the audience watches sound-off, so the clip must still work muted.
+Before the first post, confirm **Lyria's commercial-use terms** and how its **SynthID watermark**
+interacts with platform audio-ID. Worth A/B-ing later against the gallery MP4s' own Veo audio.
 
 ### 11.1 Vendor decision (2026-08-02) — split across two, consolidate later
 
@@ -424,6 +515,14 @@ into the product. Amplify it:
   in the quiet weeks; that's normal, not failure.
 - ❌ **Don't pour traffic into an uninstrumented funnel** — set up analytics first.
 - ❌ **Don't let curation quality slip** — stale/ugly art breaks the one promise people pay for.
+- ❌ **Don't stake the plan on a one-shot channel you can only fire once** — PH returned 5
+  upvotes and can't be re-run for months; Show HN closed before we reached it (§4.2).
+- ❌ **Don't read a failed launch as a failed product** — traffic was the zero input; conversion
+  and pricing were never exercised. Fix the input before touching anything downstream.
+- ❌ **Don't over-explain a single uninstrumented data point** — we can't see why PH flopped, so
+  any ranked list of causes is a story, not a finding.
+- ❌ **Don't plan tactics that need a recurring human chore** — at ~0 h/week they silently don't
+  happen. The social clips sat unposted for three weeks; that's the proof, not a hypothetical.
 
 ---
 
@@ -447,47 +546,59 @@ into the product. Amplify it:
 - **Good news:** validating Mac demand needs **zero new build** — the app already ships. Point
   the (free) marketing at it and read the subscribe rate. Desk research and live validation
   aren't substitutes; here, live validation is nearly free anyway.
+- **Update 2026-08-02 — we still haven't validated anything.** The launch (§4.2) delivered no
+  measurable traffic, so the funnel has never been exercised: **no download rate, no activation
+  rate, no free→paid rate.** Until a channel puts real sessions through the site, every
+  downstream question — price, copy, onboarding, Windows — is unanswerable.
 
 ---
 
 ## 16. Phased roadmap (sequencing — impact × effort)
 _(✅ done · 🔨 built, not used · ⏭️ next · 🅿️ parked — mirrors the Progress snapshot.)_
 
-**Phase 0 — Foundations (days, do first, highest ROI):** — ✅ **essentially complete**
-- ✅ Analytics + north-star (§3). ⏭️ *still todo:* a consistent UTM convention on outbound links.
-- ✅ Conversion capture: device-aware CTAs, "email me the Mac link", the self-report demand
-  probe (replaced the Windows-waitlist idea), OG cards (§5–6).
-- ⏭️ Brand-name SEO basics (§4.3).
+**Re-sequenced 2026-08-02** after the launch failed (§4.2), under a **≈ 0 h/week** budget. The
+old Phase 1 ("manual posting, then the launch spikes") is retired: the launch is spent and
+*manual* was never going to happen. New ordering: **automate → compound → batch the human bits.**
 
-**Phase 1 — Turn on organic (weeks):** — ⏭️ **current focus**
-- 🔨→⏭️ Content flywheel: the asset engine is built (§11); *start posting* (manual first),
-  Pinterest + YouTube + Reddit emphasis (§4.1).
-- 🔨→⏭️ Launch spikes: copy drafted in `docs/launch-kit.md`; **execute** Product Hunt + Show HN (§4.2).
-- ⏭️ Start the email list / "art of the week" (§4.6).
+**Phase 0 — Foundations:** — ✅ **complete**
+- ✅ Analytics + north-star (§3). ⏭️ *still todo:* a UTM convention on outbound links.
+- ✅ Conversion capture: device-aware CTAs, "email me the Mac link", demand probe, OG cards (§5–6).
+- ✅ On-page + brand SEO basics (§4.3). ✅ Lifetime pricing tier (§10).
+- ❌ Launch spikes — run and failed; **out of the critical path** (§4.2).
 
-**Phase 2 — Automate & distribute (weeks):**
-- ⏭️ Agentic marketing engine: asset step ✅ built (§11 A) → add **aggregator posting** —
-  vendors chosen, glue not yet written (§11 B).
-- 🅿️ Option B ecosystem packs (Appendix A).
-- 🅿️ Lifecycle/retention email + win-back (§9).
+**Phase 1 — Always-on acquisition (current focus):** everything here runs unattended or is built
+once and never touched again.
+- ⏭️ **Posting automation** (§11 B/C) — clips have existed since 2026-07-12 and have **never been
+  posted**. The item that most directly answers the 0 h/week constraint.
+- ⏭️ **SEO: intent pages + programmatic gallery corpus + self-growing sitemap** (§4.3).
+- ⏭️ **Directory submissions** (§4.4) — agent preps, founder pastes once.
+- ⏭️ **Press + creator outreach** (§4.1/§4.4) — reduce to "review and send."
+- ⏭️ **Reddit** — never run, ~20 min (`launch-kit.md` §3).
 
-**Phase 3 — Optimize & expand (data-driven):**
-- 🅿️ **Pricing experiments** (annual/lifetime/trial) — arguably pull *earlier* if conversion is
-  the bottleneck (§10). Needs a founder decision.
+**Phase 2 — Compound what works (once Phase 1 delivers sessions):**
+- 🅿️ Option B ecosystem packs (Appendix A) — one-time publish into a 20–50M-user surface.
+- 🅿️ Email list / "art of the week" (§4.6) — **only if the send automates off the nightly job.**
+- 🅿️ Lifecycle/retention email + win-back (§9) — needs users first.
+
+**Phase 3 — Optimize & expand (genuinely blocked on traffic):**
+- 🅿️ **Pricing** — closed: lifetime ✅ shipped, further experiments de-prioritized (§10).
 - 🅿️ Referral program + shareable export (§12).
 - 🅿️ Evaluate Mac App Store discovery (§4.7).
 - 🅿️ Build **Windows** *iff* the demand-probe data justifies it (§8).
-- 🅿️ Consider paid-ads test *only* after a higher-value tier + proven funnel (§13).
+- 🅿️ Consider paid-ads test *only* after a proven funnel (§13).
 
 ---
 
 ## 17. Open decisions for the founder
-1. **Pricing:** add an annual and/or lifetime tier? (Strong recommend to test — §10.)
-2. **Email infra:** existing path (Supabase/Resend/other) to hook capture flows into, or set one up?
-3. ~~**Aggregator choice**~~ — ✅ **decided 2026-08-02:** upload-post (IG + YT) + Zernio
-   (TikTok + Pinterest), both starting free, consolidate later (§11 B).
-4. **Brand mark in art:** how visible? (virality vs. purity tradeoff — §12.)
+1. **Email infra:** Supabase/Resend/other? Blocks §4.6 + §9 — and the newsletter only clears the
+   0 h/week bar if the send automates off the nightly job.
+2. **One batched chore:** create the upload-post + Zernio accounts and connect IG/YT/TikTok/
+   Pinterest, so an agent can finish the posting automation.
+3. **Was the PH launch ever *featured*?** — unfeatured is near-invisible; changes how the
+   5-upvote result reads (§4.2).
+4. **Brand mark in art:** how visible? (virality vs. purity — §12.)
 5. **North-star metric:** confirm "weekly active subscribers" or pick another.
+6. ~~Aggregator choice~~ ✅ 2026-08-02 (§11 B) · ~~pricing~~ ✅ closed 2026-08-02 (§10).
 
 ---
 
@@ -637,3 +748,12 @@ quality bar.
   doc into the canonical shared hub **`docs/GROWTH-PROGRESS.md`** (state + backlog +
   read/claim/log protocol), so multiple context-isolated agents coordinate through one
   committed file. This doc now holds the *reasoning* and points at the hub for *state*.
+- **2026-08-02 — post-launch pivot.** The launch bet was executed and failed (PH 2026-07-26:
+  5 upvotes, 2 comments, no badge, no measurable traffic; Show HN blocked at submission), so
+  **§4.2 was rewritten as a post-mortem** and launch spikes were demoted out of the critical
+  path. Added the **0 h/week founder-time constraint** as an explicit planning filter, and
+  re-sequenced §16 around it (**automate → compound → batch the human bits**). Expanded **§4.3**
+  with the programmatic-SEO opportunity (3 indexed URLs vs. 262 gallery pieces growing ~4/night)
+  and **§4.4** with a batchable directory/press/creator playbook. Recorded the shipped
+  **$15.99 lifetime tier** in §10 and the on-page SEO work, and added three anti-patterns to
+  §14. Throughline: **traffic was the zero input — nothing downstream of it has been tested.**
