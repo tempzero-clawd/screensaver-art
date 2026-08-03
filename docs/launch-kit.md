@@ -1,7 +1,25 @@
 # Launch Kit — Product Hunt + Show HN (+ Reddit)
 
-> **Coordinating via the hub:** live launch status + who's-doing-what lives in
-> [`GROWTH-PROGRESS.md`](GROWTH-PROGRESS.md). Update it when you act on this kit.
+> ## 📕 Status: the launch ran, and this kit is now an **archive** — not a plan.
+>
+> | | |
+> |---|---|
+> | **Product Hunt** | ❌ **Launched 2026-07-26 → 5 upvotes, 2 comments, no badge, no measurable traffic.** Not re-runnable for months. |
+> | **Show HN** | ❌ **Never ran** — blocked at submission 2026-08-02 (HN reported it isn't taking new Show HN posts amid a flood of submissions). Copy below stays loaded; fire it opportunistically if it reopens, but **nothing may depend on it**. |
+> | **Reddit** (§3) | ⏭️ **Still un-run — and still worth doing.** The only genuinely live part of this document. |
+>
+> **Read the post-mortem before reusing any of this:**
+> [`growth-and-marketing-strategy.md`](growth-and-marketing-strategy.md) **§4.2**.
+> Short version: **launch platforms amplify an audience, they don't create one** — we ran a
+> distribution event with no distribution. The current plan is automated + compounding
+> channels; live status in [`GROWTH-PROGRESS.md`](GROWTH-PROGRESS.md).
+>
+> **Why keep the file?** The copy, media, and positioning are all still good and all still
+> reusable — for Reddit, directories, press pitches, and any future re-launch. What failed was
+> the *channel bet*, not the words.
+
+**Coordinating via the hub:** live status + who's-doing-what lives in
+[`GROWTH-PROGRESS.md`](GROWTH-PROGRESS.md). Update it when you act on this kit.
 
 Ready-to-use copy and checklists for the one-time launch spikes from the growth
 strategy ([`growth-and-marketing-strategy.md`](growth-and-marketing-strategy.md) §4.2).
@@ -26,9 +44,26 @@ pieces every night") — safest, since that copy is already yours and shipped:
 
 ---
 
-## 1. Product Hunt
+## 1. Product Hunt — ❌ ran 2026-07-26
 
-### Timing — **DECIDED: Sunday** ✅
+### Outcome (recorded 2026-08-02)
+**5 upvotes · 2 comments · no badge · no measurable site traffic.**
+[The launch page.](https://www.producthunt.com/products/living-art-screensaver?launch=living-art-screensaver)
+
+What we'd do differently — beyond "have an audience first," which is the real answer (§4.2):
+- **P-5 never happened.** Nobody was lined up to comment in the first hours. On PH that's not a
+  garnish, it's the ranking mechanism — and everything below assumed it.
+- **The Sunday bet needs seeded engagement to pay off.** A thin field only helps if you can win
+  it; with zero early velocity we got the low-traffic downside and none of the upside.
+- **Check whether the launch was ever *featured*.** An unfeatured launch is close to invisible,
+  and the answer decides whether "5 upvotes" means *rejected* or *never shown*.
+- **Don't stake a single day on a single channel** with nothing else running underneath it.
+
+_Everything below is the original plan, preserved as reference for a future re-launch (PH
+allows one for a substantially updated product — historically ~6 months apart; verify before
+planning around it). Only worth firing with an audience to mobilize._
+
+### Timing — **DECIDED: Sunday** ✅ _(ran; see the retro above)_
 - Launch **12:01 AM PT** (PH's day resets on Pacific). A full day of ranking beats
   a late-morning start. If you can't be up, PH lets you **schedule** it — do that
   the night before.
@@ -101,17 +136,22 @@ ExtensionKit sandboxing, the reframing, whatever. Feedback very welcome. 🙏
 
 ---
 
-## 2. Show HN (Hacker News) — 🅿️ **PARKED for the Sunday launch**
+## 2. Show HN (Hacker News) — ❌ **dropped as a plan item**
 
-> **Why parked:** HN is currently restricting **new accounts** from posting to
-> Show HN, so this can't run alongside the PH launch. **Nothing here is wasted —
-> it's deferred, not dropped.** Show HN is a *separate, independent spike*: it
-> works just as well weeks after launch (arguably better, since you'll have real
-> users and feedback to cite). **Re-entry plan:** age the account and build a
-> little karma by commenting genuinely on HN threads in your wheelhouse
-> (macOS, Swift, AI pipelines) — then post this exact copy once eligible.
-> Do **not** create a throwaway account to get around the limit; HN detects it
-> and it would burn the launch permanently.
+> **What happened (2026-08-02):** the founder was blocked at submission — HN reported it
+> **isn't accepting new Show HN posts** amid a flood of submissions. HN's published
+> [`showhn.html`](https://news.ycombinator.com/showhn.html) carries no such notice, so this
+> reads as a **temporary / volume gate rather than policy** — but the practical effect is the
+> same: it's outside our control and **nothing in the plan may depend on it.**
+>
+> **Status: loaded, not scheduled.** The copy costs nothing to keep. If submissions reopen,
+> fire it — a Show HN actually gets *better* with age, since you can cite real users and real
+> feedback. Just don't treat "when HN reopens" as a growth plan (§4.2).
+>
+> **If/when it reopens:** age the account and build a little karma by commenting genuinely on
+> HN threads in your wheelhouse (macOS, Swift, AI pipelines) first. Do **not** create a
+> throwaway account to get around any limit — HN detects it and it would burn the launch
+> permanently.
 >
 > The founder's own draft (already grammar/fact-checked in conversation) is the
 > version to post — it leads with the museum/Harry-Potter origin story, which is
@@ -164,7 +204,16 @@ the reframing, the economics of a sub-$1 app. What would you have done different
 
 ---
 
-## 3. Reddit (bonus — free, high-fit, but allergic to ads)
+## 3. Reddit — ⏭️ **the live part of this document (never run)**
+
+> **Promoted from "bonus" to the one launch-kit item still worth doing.** The Day-2 slot was
+> never used, so none of these subs are spent. Reddit is a **community, not a leaderboard** —
+> it doesn't require the pre-existing following that sank the PH launch — and threads rank in
+> Google for years, so a good post keeps earning long after the day it's posted (§4.1).
+>
+> **Cost: ~20 minutes.** Media is already produced (§4). **Sequencing:** do it *after* the
+> nightly posting automation is live, so the traffic lands on a site that's actively
+> accumulating other surfaces — but don't let that block it indefinitely.
 
 Lead with a *video*, disclose you made it, engage in comments. One subreddit at a
 time (don't blast).
@@ -213,7 +262,12 @@ Regenerate the social clips: `node marketing/make-social-assets.mjs --latest 6`.
 is rebuilt from a temporary `app/launch-capture` route (headless-Chrome render of the hero + ffmpeg
 composite) — see the PR #63 commits for the recipe.
 
-## 5. Launch-day runbook (exact clicks, order, timing)
+## 5. Launch-day runbook (exact clicks, order, timing) — 📕 **executed 2026-07-26; historical**
+
+> **Retro:** the PH half ran (outcome in §1); **step P-5 — line up 5–10 commenters — was
+> skipped**, which is the step the rest of the day depended on. Day 2 (Reddit) never happened
+> either, so §3 is still fresh. Keep this as the template for any future spike; the sequencing
+> is sound, it just can't manufacture an audience.
 
 > Founder owns: the accounts, the actual submit clicks, and the date. Everything below
 > is sequenced; timings are the only thing that's rigid (**PH's day resets 12:01 AM PT**).
@@ -284,13 +338,23 @@ _(This slot was Show HN; it's parked — see §2. Reddit gets the day instead.)_
 - Post the day's `marketing/out/<slug>/` social clips to X / Pinterest / Reels (add a trending
   audio natively). This is also the start of the ongoing daily-posting habit (backlog item #2).
 
-## 6. After the spike
-Launch traffic decays in ~48h. Convert it before it's gone:
+## 6. After the spike — what actually happened
+
+There was no spike to convert. The plan below assumed traffic; there wasn't any, so none of
+the post-launch machinery (funnel watching, email capture, testimonials, badge embed) had
+anything to act on.
+
+**The real "after the spike" is the pivot** — see the hub's *Next up* backlog
+([`GROWTH-PROGRESS.md`](GROWTH-PROGRESS.md)): automated nightly posting → SEO landing pages +
+a programmatic gallery corpus → directory submissions → press/creator outreach → the Reddit
+post in §3. Reasoning in [`growth-and-marketing-strategy.md` §4.2](growth-and-marketing-strategy.md).
+
+_Original checklist, still valid for any future spike:_
 - Watch the PostHog funnel (download → activate → subscribe) live during the spike.
 - Capture emails (the site's flows) so the spike leaves a list behind.
 - Fold the best PH/Reddit feedback into the roadmap — and quote any nice testimonials
   on the site.
 - **If you get a PH badge, put it on the site** (top-5/product-of-the-day badges are
   durable social proof, and PH gives you the embed).
-- **Then run Show HN** as its own spike once the account is eligible (§2) — with real
+- **Then run Show HN** as its own spike, if submissions reopen (§2) — with real
   users and launch feedback in hand, the post gets *better*, not staler.
