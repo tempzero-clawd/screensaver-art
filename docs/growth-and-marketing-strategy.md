@@ -317,12 +317,28 @@ You can largely automate the content flywheel off your existing nightly pipeline
   per-platform captions/hashtags. ~1 day.
 - **Total: ~3–4 days of build + $0/mo to start, ~$16–24/mo once IG + YT leave the free tier**,
   hanging off the nightly job → near-unattended daily multi-platform marketing.
-- **Keep a human in the loop ~2 min/day** (reply to comments, ride trending audio) — native
-  engagement materially boosts reach for almost no effort. This isn't only politeness: both
-  vendors' docs note that natively-finished posts get better distribution, so **draft mode on
-  TikTok + Reels** (human adds trending audio, taps publish) is likely to out-perform direct
-  posting. **Pinterest + YouTube Shorts** gain nothing from native audio and are evergreen —
-  run those fully unattended.
+- **Keep a human in the loop ~2 min/day** (reply to comments, add a trending sound). The reason
+  is **capability, not algorithm** — a distinction worth getting right, because the folklore
+  version ("schedulers get throttled") is false. Platforms deny ranking API posts differently:
+  Instagram's head Adam Mosseri, asked directly, said scheduled posts "will not affect your
+  reach in one way or another," and Meta runs the Content Publishing API *as* the supported way
+  to publish from outside the app. What the APIs genuinely **cannot** do is attach a platform's
+  native/trending audio — music licensing keeps those libraries app-only ([Zernio's docs](https://zernio.com/blog/tiktok-posting-api):
+  Creator's Draft exists because "the API can't add those, only the app can"; IG's Graph API
+  strips or rejects licensed tracks) — and audio *is* a discovery surface.
+  - **Draft mode → TikTok, Reels, and YouTube Shorts.** Sound is a real discovery surface on all
+    three: YouTube's own Help documents the Shorts **sound page** ("other Shorts using the same
+    audio" + "Use this sound"), and runs a [Top Shorts Songs chart](https://charts.youtube.com/charts/TopShortsSongs/us/daily).
+    ⚠️ *Open question before wiring Shorts this way:* whether a sound can be attached to an
+    already-uploaded Short (upload private → finish in-app), or whether it must be created in
+    the app. Verify before assuming a draft path exists.
+  - **Fully unattended → Pinterest only.** Pinterest tells creators not to rely on audio (much
+    of the audience views sound-off) and has **retired adding music to new Pins** entirely, so
+    there's no audio surface to forfeit — and Pins are evergreen, resurfacing through search
+    long after posting.
+  - ⚠️ **Our clips are silent by design** (`make-social-assets.mjs` drops audio — see
+    `marketing/README.md`). Any channel posted unattended therefore forfeits the sound surface.
+    That's free on Pinterest and a real cost on Shorts/TikTok/Reels.
 
 ### 11.1 Vendor decision (2026-08-02) — split across two, consolidate later
 
@@ -589,6 +605,7 @@ quality bar.
 - Posting/asset tooling — **primary sources** for the §11 B vendor table (verified 2026-08-02):
   [upload-post pricing](https://www.upload-post.com/pricing-comparison/) · [upload-post API docs](http://docs.upload-post.com/api/upload-video/) · [Zernio pricing](https://zernio.com/pricing) · [Zernio media uploads](https://docs.zernio.com/guides/media-uploads) · [Blotato pricing](https://www.blotato.com/pricing) · [Postiz pricing](https://postiz.com/pricing) · [Postiz TikTok docs](https://docs.postiz.com/providers/tiktok) (the BYO-app evidence) · [Ayrshare pricing](https://www.ayrshare.com/pricing/)
 - The audit rule itself, from the platform: [TikTok Content Posting API](https://developers.tiktok.com/doc/content-posting-api-get-started/) — *"all content posted by unaudited clients will be restricted to private viewing mode."* Secondary: [PostPeer: TikTok posting API 2026](https://www.postpeer.dev/blog/best-tiktok-posting-api), [Buffer: best social APIs](https://buffer.com/resources/best-social-media-apis/)
+- **Draft-mode / native-audio rationale (§11, verified 2026-08-02 — platform-official where possible):** [YouTube Help — Shorts sound page](https://support.google.com/youtube/answer/10623810?hl=en) (*"other Shorts using the same audio"* + "Use this sound") · [YouTube Top Shorts Songs chart](https://charts.youtube.com/charts/TopShortsSongs/us/daily) · [Pinterest Help — music in Pins is retired](https://help.pinterest.com/en/article/add-music-to-a-pin) · [Pinterest creative best practices](https://business.pinterest.com/creative-best-practices/) (sound-off viewing) · [Zernio — Creator's Draft exists because the API can't add native sounds](https://zernio.com/blog/tiktok-posting-api). Adam Mosseri (Instagram) on scheduling: *"it will not affect your reach in one way or another"* — i.e. **the case for draft mode is audio capability, not an algorithmic penalty.**
 
 ---
 
