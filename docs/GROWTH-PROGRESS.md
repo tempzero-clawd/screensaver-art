@@ -102,7 +102,7 @@ Legend: ✅ live · 🔨 built, not yet used · ⏭️ next · 🅿️ parked (n
   which upload-post's flat per-brand pricing beats Zernio's per-account model.
   _Two corrections to the strategy doc:_ **(1) Postiz was wrongly listed as a pre-audited
   aggregator** — hosted *and* self-hosted it requires your own TikTok developer app, making you
-  the unaudited client (posts forced `SELF_ONLY`); it's now called out in §14 as an anti-pattern.
+  the unaudited client (posts forced `SELF_ONLY`); it's now ruled out in the §11.1 table.
   **(2) Ayrshare repriced ~$49 → $149/mo minimum**, putting it ~4× over budget.
   _Open risk:_ Zernio's own TikTok audit status is undocumented — **verify with one live post
   before relying on it**. No code written; glue script deliberately deferred.

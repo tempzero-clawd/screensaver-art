@@ -358,18 +358,6 @@ Two caveats to plan around, neither a blocker:
 | Postiz | $29/mo hosted; free self-host | channel | ❌ BYO developer app | ❌ we'd inherit the audit |
 | Ayrshare | $149/mo (1 profile) | profile (≤13 networks) | ✅ | ❌ ~4× budget; built for multi-tenant SaaS |
 
-> **Correction to an earlier version of §11 B:** it listed **Postiz** among aggregators that had
-> "already passed these" audits. It hasn't — **hosted *and* self-hosted, Postiz requires you to
-> register your own TikTok developer app**, making *you* the unaudited client. Choosing it would
-> land us in exactly the trap §14 warns against. Separately, **Ayrshare repriced from ~$49/mo to
-> $149/mo minimum**, putting it ~4× over budget.
-
-The differing **billing units** decide the consolidation trigger. upload-post and Ayrshare bill
-per *brand* (one profile spans every platform); Zernio bills per *connected account*. Zernio is
-cheaper at ≤4 accounts, ties around 5, and loses badly at full footprint — 10 platforms is
-$48/mo on Zernio vs a flat $16 on upload-post. **Once we pass ~5 channels, consolidate onto
-upload-post.**
-
 ---
 
 ## 12. Built-in virality & referral (we hadn't covered this — and it's a natural fit)
@@ -401,9 +389,7 @@ into the product. Amplify it:
   waitlist instead.
 - ❌ **Don't pivot to a wallpaper *engine*** — bigger market, but free/$5 and moated by
   Wallpaper Engine + Lively; your subscription dies there. Distribute *into* it (Option B).
-- ❌ **Don't build the raw social-posting/OAuth/audit layer** — buy an aggregator. **Self-hosting
-  a scheduler counts as building it**: BYO-developer-app tools (Postiz, Mixpost) make *you* the
-  unaudited TikTok client, so your posts stay private until you pass the audit yourself (§11 B).
+- ❌ **Don't build the raw social-posting/OAuth/audit layer** — buy an aggregator.
 - ❌ **Don't expect a smooth organic ramp** — it's slow then non-linear (see §15). Don't quit
   in the quiet weeks; that's normal, not failure.
 - ❌ **Don't pour traffic into an uninstrumented funnel** — set up analytics first.
