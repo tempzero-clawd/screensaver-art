@@ -77,13 +77,13 @@ Legend: ✅ live · 🔨 built, not yet used · ⏭️ next · 🅿️ parked (n
 
 **One-liner:** foundation live, pricing closed, SEO dropped, **still ~zero traffic and therefore
 zero conversion data**. Next: **automated posting → directories → borrowed audiences → Reddit.**
-⚠️ **#1 is now the entire plan and it's blocked on one founder chore** (create the two vendor
-accounts) — nothing else moves the needle at this scale.
+⚠️ **#1 is now the entire plan, and it's blocked on account setup** — the brand has no social
+accounts yet, so this is ~1–2 h of founder time (stageable), not the 30 min first scoped.
 
 ## In progress (claim here before starting)
 | Task | Agent / branch / PR | Started | Notes |
 |---|---|---|---|
-| Drop the SEO effort; re-rank the backlog | `growth/drop-seo-effort` / PR #80 | 2026-08-03 | Docs only — clear on merge. |
+| _(none)_ | | | |
 
 ## Next up (prioritized backlog)
 Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batched last.
@@ -95,7 +95,15 @@ Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batc
    unattended (a platform trending sound is both licence-blocked and un-attachable via API, so
    there's no per-post human step). **Include the audio bed** — clips ship silent today; mux a
    **Lyria-generated music track** (§11.2). Add §11 (C) captions in the same pass
-   if cheap — templates at daily cadence read as spam. Founder: create 2 accounts + connect socials.
+   if cheap — templates at daily cadence read as spam.
+   **⚠️ Founder prerequisite (bigger than first scoped): the brand has NO social accounts yet.**
+   The aggregators only *connect* accounts, they don't create them. Staged so it isn't one
+   sitting: **(a) Pinterest + YouTube first** — lowest friction, most durable, best
+   mobile→desktop bridge for a Mac product; **(b) Instagram later** (needs a Business/Creator
+   account linked to a Facebook Page — the step that actually costs an hour); **(c) TikTok last
+   or never** — least durable for a desktop product, and Zernio's audit is unverified anyway.
+   If one vendor covers both Pinterest + YouTube on its free tier, start with that vendor alone
+   and defer the second (**verify platform coverage at signup** — §11.1 doesn't enumerate it).
 2. **Directory submissions** (§4.4) — agent builds a ready-to-paste pack (blurbs at each site's
    length limit, screenshots, categories, links); founder pastes in one sitting.
 3. **Press + creator outreach** (§4.1/§4.4) — target list, `/press` kit page, personalized
@@ -106,9 +114,11 @@ Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batc
 ## Decisions needed from the founder
 - **Email-send path** — Supabase mailer / Resend / other. Blocks §4.6 + §9; only viable if the
   send automates off the nightly job.
-- **One batched chore** — create the upload-post + Zernio accounts, connect IG/YT/TikTok/
-  Pinterest; and check whether the PH launch was ever *featured* (unfeatured ⇒ near-invisible,
-  which changes how we read 5 upvotes).
+- **The setup chore (~1–2 h, stageable)** — create the *brand's social accounts* (none exist
+  yet: Pinterest + YouTube first, Instagram later, TikTok last), then the aggregator account(s)
+  and connect them. Everything in #1 waits on this.
+- **Check whether the PH launch was ever *featured*** — unfeatured ⇒ near-invisible, which
+  changes how we read 5 upvotes.
 - ~~Aggregator choice~~ ✅ 2026-08-02 (§11 B) · ~~Pricing~~ ✅ **closed 2026-08-02** — lifetime
   shipped (PR #70) and the founder has **de-prioritized pricing**; don't reopen it without
   traffic (§10).
@@ -116,6 +126,15 @@ Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batc
 ---
 
 ## Activity log (append-only — newest first)
+- **2026-08-03** — **Corrected #1's prerequisite: the brand has no social accounts at all.** The
+  backlog said "create 2 vendor accounts + connect socials" (~30 min); the aggregators only
+  *connect* accounts, so the real chore includes creating Pinterest/YouTube/Instagram/TikTok
+  presences — ~1–2 h, and Instagram alone needs a Business/Creator account linked to a Facebook
+  Page. Now **staged** so it isn't one sitting: **Pinterest + YouTube first** (lowest friction,
+  most durable, best mobile→desktop bridge for a Mac product), **Instagram later**, **TikTok last
+  or never** (least durable here, and Zernio's audit is unverified). Open question for signup:
+  whether one vendor covers Pinterest + YouTube on its free tier, which would defer the second
+  vendor entirely. _(This PR.)_
 - **2026-08-03** — **SEO dropped (founder call); backlog re-ranked.** Reasoning in §4.3: the
   searchable market is small and its intent is *how-to*, not shopping; this is a demand-
   **generation** product (people see it and want it, they don't search for it); and the
