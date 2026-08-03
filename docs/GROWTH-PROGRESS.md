@@ -39,8 +39,8 @@ duplicate its arguments here; link to a section (e.g. "§10") instead.
 ## The current bet (read before picking anything up)
 
 **The launch spikes are spent** — PH returned 5 upvotes and can't be re-run for months; Show HN
-is closed to us (§4.2). *Why* PH flopped is unknown and unmeasurable; what matters is that
-neither can be fired again soon. The plan is now channels that **compound** or **run unattended**:
+is closed (§4.2). *Why* PH flopped is unknowable; what matters is that neither can be fired
+again soon. The plan is now channels that **compound** or **run unattended**:
 
 > ⚠️ **Founder marketing time ≈ 0 h/week** (2026-08-02). **Anything needing a recurring human
 > chore will not happen.** Rank by "runs itself once built" / "built once, pays forever" —
@@ -62,6 +62,7 @@ Legend: ✅ live · 🔨 built, not yet used · ⏭️ next · 🅿️ parked (n
 | **Show HN** | ❌ **dropped as a plan item** | Blocked at submission 2026-08-02 (HN not taking new Show HN posts). Copy stays loaded; **nothing may depend on it reopening.** |
 | Reddit (r/macapps + visual subs) | ⏭️ **never run** | Day-2 slot unused. Highest-fit free channel, ~20 min (`launch-kit.md` §3). |
 | **Daily social posting + aggregator** | ⏭️ **#1 — vendors chosen 2026-08-02** | §4.1 + §11 (B) — **upload-post** (IG + YT) + **Zernio** (TikTok + Pinterest), both start free. Glue script not written. Best fit for 0 h/week: build once, posts nightly forever. |
+| **Clip audio: Lyria music bed** | ⏭️ part of #1 | §11.2 — founder decision 2026-08-02: score clips with **Lyria-generated music**. Licence-clean *and* API-postable (a platform-native sound is neither). `make-social-assets.mjs` still passes `-an` — needs an `--audio` flag. |
 | Brand-name / on-page SEO basics | ✅ live | 2026-07-17 (PRs #68, #69): keyword title, shared meta description, JSON-LD. |
 | **SEO landing + programmatic gallery pages** | ⏭️ **#2** | §4.3 — sitemap has **3 URLs**; `gallery.json` has **262 pieces** (poster + video each, ~4/night). Intent pages + a self-growing crawlable corpus. |
 | **Directory submissions** | ⏭️ **#3** | §4.4 — alternativeto.net, MacUpdate, indie dirs. Agent preps the pack, founder pastes once. |
@@ -69,18 +70,18 @@ Legend: ✅ live · 🔨 built, not yet used · ⏭️ next · 🅿️ parked (n
 | "Art of the week" email / newsletter | 🅿️ needs a send-path call | §4.6 — viable only if the send automates off the nightly job. |
 | Option B ecosystem art packs | 🅿️ later | Appendix A — one-time publish into a 20–50M-user surface; revisit after #1–#3. |
 | Retention / lifecycle email | 🅿️ later | §9 — needs users first. |
-| **Pricing: lifetime tier** | ✅ **shipped 2026-07-18** | $15.99 one-time alongside $0.99/mo-quarterly (PR #70). Half of §10 — **annual untested**, and ~0 traffic means no conversion data either way. |
+| **Pricing** | ✅ **closed** | $15.99 lifetime shipped 2026-07-18 (PR #70). **Founder de-prioritized pricing 2026-08-02** — annual stays untested; don't reopen without traffic (§10). |
 | Referral / shareable export | 🅿️ later | §12 |
 | Windows / Mac App Store build | 🅿️ pending demand-probe data | §8, §4.7 |
 | Paid ads | 🅿️ not now | §13 — only after a proven funnel |
 
-**One-liner:** foundation live, pricing half-answered, **still ~zero traffic and therefore zero
+**One-liner:** foundation live, pricing closed, **still ~zero traffic and therefore zero
 conversion data**. Next: **automated posting → compounding SEO → directories → borrowed audiences.**
 
 ## In progress (claim here before starting)
 | Task | Agent / branch / PR | Started | Notes |
 |---|---|---|---|
-| Post-launch pivot: docs re-baselined (PH post-mortem, re-prioritized backlog) | `claude/living-art-marketing-pivot-1f6f24` | 2026-08-02 | Docs only — **clear this row on merge.** |
+| _(none)_ | | | |
 
 ## Next up (prioritized backlog)
 Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batched last.
@@ -89,9 +90,10 @@ Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batc
    `make-social-assets.mjs` → upload-post (IG + YT) + Zernio (TikTok + Pinterest), hung off the
    nightly curation job. **Do first:** one live Zernio post to confirm TikTok isn't forced
    `SELF_ONLY` (audit status undocumented) — if it is, move TikTok to upload-post. All four run
-   unattended (trending audio is licence-blocked for commercial accounts, so there's no per-post
-   human step). Add §11 (C) captions in the same pass if cheap — templates at daily cadence read
-   as spam. Founder: create 2 accounts + connect socials.
+   unattended (a platform trending sound is both licence-blocked and un-attachable via API, so
+   there's no per-post human step). **Include the audio bed** — clips ship silent today; mux a
+   **Lyria-generated music track** (§11.2, `--audio` flag). Add §11 (C) captions in the same pass
+   if cheap — templates at daily cadence read as spam. Founder: create 2 accounts + connect socials.
 2. **SEO: intent pages + programmatic gallery corpus** (§4.3) — 3 indexed URLs vs. 262 pieces
    growing ~4/night. "Aerial alternative" / "best Mac screensaver" / comparison pages, a
    crawlable per-piece-or-movement surface off `gallery.json`, and a self-growing sitemap.
@@ -105,27 +107,30 @@ Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batc
 ## Decisions needed from the founder
 - **Email-send path** — Supabase mailer / Resend / other. Blocks §4.6 + §9; only viable if the
   send automates off the nightly job.
-- **Annual plan?** — lifetime shipped; annual (~$9.99/yr) untested (§10). Low priority until
-  there's traffic to measure with.
 - **One batched chore** — create the upload-post + Zernio accounts, connect IG/YT/TikTok/
   Pinterest; and check whether the PH launch was ever *featured* (unfeatured ⇒ near-invisible,
   which changes how we read 5 upvotes).
-- ~~Aggregator choice~~ ✅ 2026-08-02 (§11 B) · ~~Pricing tiers~~ ✅ 2026-07-18 (PR #70).
+- ~~Aggregator choice~~ ✅ 2026-08-02 (§11 B) · ~~Pricing~~ ✅ **closed 2026-08-02** — lifetime
+  shipped (PR #70) and the founder has **de-prioritized pricing**; don't reopen it without
+  traffic (§10).
 
 ---
 
 ## Activity log (append-only — newest first)
 - **2026-08-02** — **Post-launch pivot: re-baselined all three growth docs.** PH **ran 2026-07-26
-  and flopped** (5 upvotes, 2 comments, no badge, no traffic — verified on the live page); **Show
-  HN dropped** (blocked at submission; HN not taking new Show HN posts). Post-mortem in §4.2 is
-  deliberately thin: PH exposes no impression data, so **why** it flopped is unknowable and no
-  cause list is asserted. What's actionable is that neither channel can be fired again soon.
-  **It says nothing about demand** — at ~0 sessions the funnel is still untested.
+  and flopped** (5 upvotes, 2 comments, no badge, no traffic — verified live); **Show HN dropped**
+  (blocked at submission). §4.2's post-mortem is deliberately thin: PH exposes no impression data,
+  so **why** is unknowable and no cause list is asserted — what's actionable is that neither can
+  be fired again soon. **It says nothing about demand** — at ~0 sessions the funnel is untested.
   New constraint: **founder time ≈ 0 h/week**, so the backlog is ranked by "runs itself once
-  built": **(1)** posting automation (clips have *never* been posted) → **(2)** SEO + a
-  programmatic gallery corpus (3 indexed URLs vs. 262 pieces) → **(3)** directories →
-  **(4)** press/creators → **(5)** the never-run Reddit post. Also folded in two stale wins: the
-  **$15.99 lifetime tier** (2026-07-18, PR #70) and **on-page SEO** (2026-07-17, PRs #68/#69).
+  built": **(1)** posting automation (clips *never* posted) → **(2)** SEO + programmatic gallery
+  corpus (3 indexed URLs vs. 262 pieces) → **(3)** directories → **(4)** press/creators →
+  **(5)** the never-run Reddit post. Folded in two stale wins: the **$15.99 lifetime tier**
+  (PR #70) and **on-page SEO** (PRs #68/#69).
+  Two founder calls landed in review: **pricing is closed** (de-prioritized now that lifetime
+  ships — dropped from the strategy TL;DR), and social clips will carry a **Lyria-generated
+  music bed** (new §11.2 — licence-clean *and* API-postable, unlike a platform trending sound;
+  `make-social-assets.mjs` still needs the `--audio` flag).
   Docs trimmed below their pre-PR size; `launch-kit.md` is now an archive. _(This PR.)_
 - **2026-08-02** — **Posting-aggregator research + decision (§11 B rewritten).** Compared
   upload-post, Zernio (ex-`getlate.dev`), Blotato, Postiz, Ayrshare on price, billing unit,

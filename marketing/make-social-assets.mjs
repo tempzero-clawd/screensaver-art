@@ -140,7 +140,10 @@ function renderFormat({ input, fmtKey, outFile, duration, wordmark }) {
     '-r', '30',
     '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-pix_fmt', 'yuv420p',
     '-movflags', '+faststart',
-    '-an', // art is silent; add trending audio natively in-app when posting
+    // TODO(--audio): mux a Lyria-generated music bed here (looped + faded to length).
+    // Platform trending libraries are licence-restricted for commercial accounts, and an
+    // API-posted clip can't attach a native sound anyway — see strategy §11.2.
+    '-an',
     outFile,
   ]
   const r = spawnSync('ffmpeg', args, { stdio: ['ignore', 'ignore', 'inherit'] })
@@ -154,8 +157,9 @@ function captionsMarkdown({ title, style }) {
   return `# Social captions — ${title}
 
 _Starter copy. Tweak the hook, keep it human. Post the 9×16 to Reels/TikTok/Shorts,
-the 1×1 to feed/Pinterest. Add a trending audio natively in the app when you post —
-native audio meaningfully boosts reach._
+the 1×1 to feed/Pinterest. These clips are silent for now — a Lyria-generated music
+bed is planned (strategy §11.2); don't reach for a platform trending sound, it's
+licence-restricted for commercial accounts._
 
 ## Instagram Reels / Facebook
 \`\`\`
