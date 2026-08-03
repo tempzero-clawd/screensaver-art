@@ -92,7 +92,7 @@ Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batc
    `SELF_ONLY` (audit status undocumented) — if it is, move TikTok to upload-post. All four run
    unattended (a platform trending sound is both licence-blocked and un-attachable via API, so
    there's no per-post human step). **Include the audio bed** — clips ship silent today; mux a
-   **Lyria-generated music track** (§11.2, `--audio` flag). Add §11 (C) captions in the same pass
+   **Lyria-generated music track** (§11.2). Add §11 (C) captions in the same pass
    if cheap — templates at daily cadence read as spam. Founder: create 2 accounts + connect socials.
 2. **SEO: intent pages + programmatic gallery corpus** (§4.3) — 3 indexed URLs vs. 262 pieces
    growing ~4/night. "Aerial alternative" / "best Mac screensaver" / comparison pages, a
