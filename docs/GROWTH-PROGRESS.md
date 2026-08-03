@@ -64,9 +64,9 @@ Legend: ✅ live · 🔨 built, not yet used · ⏭️ next · 🅿️ parked (n
 | **Daily social posting + aggregator** | ⏭️ **#1 — vendors chosen 2026-08-02** | §4.1 + §11 (B) — **upload-post** (IG + YT) + **Zernio** (TikTok + Pinterest), both start free. Glue script not written. Best fit for 0 h/week: build once, posts nightly forever. |
 | **Clip audio: Lyria music bed** | ⏭️ **founder-owned** | §11.2 — clips will be scored with **Lyria-generated music**; the founder is building it as a repo skill. **Agents: don't implement it, and don't commit audio** (`CLAUDE.md` → Repo rules). |
 | Brand-name / on-page SEO basics | ✅ live | 2026-07-17 (PRs #68, #69): keyword title, shared meta description, JSON-LD. |
-| **SEO landing + programmatic gallery pages** | ⏭️ **#2** | §4.3 — sitemap has **3 URLs**; `gallery.json` has **262 pieces** (poster + video each, ~4/night). Intent pages + a self-growing crawlable corpus. |
-| **Directory submissions** | ⏭️ **#3** | §4.4 — alternativeto.net, MacUpdate, indie dirs. Agent preps the pack, founder pastes once. |
-| **Press + creator outreach** | ⏭️ **#4** | §4.1/§4.4 — highest-leverage *non-automatable* play; agent builds list + `/press` kit + drafts. |
+| SEO landing + programmatic gallery pages | 🅿️ **dropped 2026-08-03** | §4.3 — founder call. Small searchable market, wrong intent (how-to, not shopping), slow to rank, and the corpus is thin (262 pieces / **203 movements**). **Brand-name SEO stays** — it serves recall from social, not search volume. |
+| **Directory submissions** | ⏭️ **#2** | §4.4 — alternativeto.net, MacUpdate, indie dirs. Agent preps the pack, founder pastes once. |
+| **Press + creator outreach** | ⏭️ **#3** | §4.1/§4.4 — highest-leverage *non-automatable* play; agent builds list + `/press` kit + drafts. |
 | "Art of the week" email / newsletter | 🅿️ needs a send-path call | §4.6 — viable only if the send automates off the nightly job. |
 | Option B ecosystem art packs | 🅿️ later | Appendix A — one-time publish into a 20–50M-user surface; revisit after #1–#3. |
 | Retention / lifecycle email | 🅿️ later | §9 — needs users first. |
@@ -75,13 +75,15 @@ Legend: ✅ live · 🔨 built, not yet used · ⏭️ next · 🅿️ parked (n
 | Windows / Mac App Store build | 🅿️ pending demand-probe data | §8, §4.7 |
 | Paid ads | 🅿️ not now | §13 — only after a proven funnel |
 
-**One-liner:** foundation live, pricing closed, **still ~zero traffic and therefore zero
-conversion data**. Next: **automated posting → compounding SEO → directories → borrowed audiences.**
+**One-liner:** foundation live, pricing closed, SEO dropped, **still ~zero traffic and therefore
+zero conversion data**. Next: **automated posting → directories → borrowed audiences → Reddit.**
+⚠️ **#1 is now the entire plan and it's blocked on one founder chore** (create the two vendor
+accounts) — nothing else moves the needle at this scale.
 
 ## In progress (claim here before starting)
 | Task | Agent / branch / PR | Started | Notes |
 |---|---|---|---|
-| _(none)_ | | | |
+| Drop the SEO effort; re-rank the backlog | `growth/drop-seo-effort` / PR #80 | 2026-08-03 | Docs only — clear on merge. |
 
 ## Next up (prioritized backlog)
 Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batched last.
@@ -94,14 +96,11 @@ Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batc
    there's no per-post human step). **Include the audio bed** — clips ship silent today; mux a
    **Lyria-generated music track** (§11.2). Add §11 (C) captions in the same pass
    if cheap — templates at daily cadence read as spam. Founder: create 2 accounts + connect socials.
-2. **SEO: intent pages + programmatic gallery corpus** (§4.3) — 3 indexed URLs vs. 262 pieces
-   growing ~4/night. "Aerial alternative" / "best Mac screensaver" / comparison pages, a
-   crawlable per-piece-or-movement surface off `gallery.json`, and a self-growing sitemap.
-3. **Directory submissions** (§4.4) — agent builds a ready-to-paste pack (blurbs at each site's
+2. **Directory submissions** (§4.4) — agent builds a ready-to-paste pack (blurbs at each site's
    length limit, screenshots, categories, links); founder pastes in one sitting.
-4. **Press + creator outreach** (§4.1/§4.4) — target list, `/press` kit page, personalized
+3. **Press + creator outreach** (§4.1/§4.4) — target list, `/press` kit page, personalized
    drafts. **One feature ≈ months of our own posting.**
-5. **Reddit** (`launch-kit.md` §3) — ~20 min; do it once #1 is live so traffic lands on a site
+4. **Reddit** (`launch-kit.md` §3) — ~20 min; do it once #1 is live so traffic lands on a site
    that keeps earning.
 
 ## Decisions needed from the founder
@@ -117,6 +116,15 @@ Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batc
 ---
 
 ## Activity log (append-only — newest first)
+- **2026-08-03** — **SEO dropped (founder call); backlog re-ranked.** Reasoning in §4.3: the
+  searchable market is small and its intent is *how-to*, not shopping; this is a demand-
+  **generation** product (people see it and want it, they don't search for it); and the
+  "self-growing corpus" was thinner than assumed — measured **262 pieces across 203 distinct
+  movements**, only 9 with 3+ pieces, so per-movement pages would have been thin by construction.
+  **Brand-name SEO stays** (already shipped) because it captures recall from social rather than
+  betting on search volume. Backlog is now **#1 posting automation → #2 directories → #3
+  press/creators → #4 Reddit**, which makes **#1 the whole plan** — and it is blocked on the
+  founder creating the two vendor accounts. _(This PR.)_
 - **2026-08-03** — **Media rule added to `CLAUDE.md`; Lyria stays founder-owned.** An agent
   overstepped a docs request by *implementing* the §11.2 music bed — a generator script plus four
   committed MP3s (~2.7 MB). Reverted before merge (PR #78 closed, branch deleted), so **master's
