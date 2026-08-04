@@ -86,6 +86,39 @@ scale.
 |---|---|---|---|
 | _(nothing in flight)_ | | | |
 
+## 🧑‍💻 Founder TODO — social + aggregator accounts (pick up in its own session)
+
+**Self-contained: everything #1 waits on. No agent can do any of it** (identity, credentials,
+payment). Pinterest matters most — it's the channel the gallery landing pages were built for.
+
+**1. Brand social accounts** (none exist yet; the aggregators only *connect* accounts):
+- [ ] **Pinterest — business account** (free; convert or create). Highest priority.
+- [ ] **YouTube** — a channel on the brand's Google account.
+- [ ] **Instagram — Business or Creator, linked to a Facebook Page.** A personal account
+      cannot post via API; this linkage is the slow part.
+- [ ] **TikTok** — optional/last. Least durable for a desktop product.
+- Use the **same handle everywhere** — it feeds the brand-name search we deliberately kept (§4.3).
+
+**2. Aggregator accounts** (vendors chosen in §11.1):
+- [ ] **upload-post** → connect **Instagram + YouTube**. Free tier is 10 uploads/mo (~5 days at
+      nightly cadence), then $24/mo ($16 annual) unlimited. Treat free as a trial.
+- [ ] **Zernio** → connect **TikTok + Pinterest**. Free tier = exactly 2 accounts, so don't
+      spend a slot on IG/YT.
+- 💡 **Check first:** if one vendor covers **Pinterest + YouTube** on its free tier, start with
+      that vendor alone and skip the second entirely. §11.1 never enumerated Zernio's platform
+      list — verify at signup rather than assuming.
+
+**3. The one test that changes the plan:**
+- [ ] Post one clip to **TikTok via Zernio** and check whether it lands **public** or
+      **private/`SELF_ONLY`**. Zernio's TikTok audit status is undocumented; an unaudited API
+      client is forced to private. If private → move TikTok to upload-post (documented public
+      posting) and leave Zernio with Pinterest only.
+
+**4. Hand back to an agent:**
+- [ ] Put both API keys in `curation/.env` (gitignored) and report **the variable names, not the
+      values**, plus which accounts connected and the TikTok test result. An agent then wires
+      `make-social-assets.mjs` → the aggregator APIs off the nightly job (backlog #1).
+
 ## Next up (prioritized backlog)
 Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batched last.
 
