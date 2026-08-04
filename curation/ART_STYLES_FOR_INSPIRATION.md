@@ -70,6 +70,7 @@ When you add a new style, append it under the section it best fits.
 - Symbolism
 - Art Nouveau
 - Peredvizhniki / The Wanderers (Russian realist landscape, Levitan / Savrasov)
+- American Western Frontier Art (Remington / Russell — cowboys, cattle drives, river crossings, the Old West)
 
 ## Modern & conceptual art movements (late-19th century onward)
 
@@ -139,6 +140,7 @@ is the **AI-cliché** test in `PROMPT_GUIDANCE.md` ("Brand & taste"), not recenc
 - Light and Space (Turrell / Irwin — luminous colour-field environments)
 - Contemporary Stained Glass
 - Storybook / children's-book gouache illustration (warm, densely-composed narrative scenes)
+- Contemporary Surf / Coastal Painting (bold acrylic wave-and-surfer scenes, saturated planes of turquoise and coral)
 
 ## Techniques, media & cross-cutting visual styles
 
