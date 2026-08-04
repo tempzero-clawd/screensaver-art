@@ -18,6 +18,7 @@ When you add a new style, append it under the section it best fits.
 - Gothic Stained Glass
 - International Gothic (Limbourg brothers)
 - Illuminated Manuscript
+- Newlyn School (1880s British plein-air realism, Cornish fishing-village life)
 - Mille-fleurs Tapestry
 - Bayeux Tapestry (Norman narrative wool embroidery on linen)
 - Carolingian Illumination
@@ -78,6 +79,7 @@ When you add a new style, append it under the section it best fits.
 - Mexican Muralism (1920s–40s fresco, Rivera / Orozco / Siqueiros)
 - Harlem Renaissance Narrative (Jacob Lawrence — flat bold-colour migration & labour scenes)
 - Expressionism
+- Der Blaue Reiter (Munich Expressionism, Franz Marc / Kandinsky — bold cobalt-and-vermilion animals, arc-shaped landscapes)
 - Fauvism
 - Cubism
 - Futurism
@@ -159,6 +161,7 @@ is the **AI-cliché** test in `PROMPT_GUIDANCE.md` ("Brand & taste"), not recenc
 ## World & regional traditions (Asian, Islamic, African, Oceanic, indigenous, folk)
 
 - Chinese ink painting
+- Haitian Naïve Painting (flat bright folk-art, densely-packed Caribbean market & celebration scenes)
 - Dunhuang Mogao Cave Mural
 - Sumi-e Ink Wash
 - Balinese Kamasan Painting (earth pigment on cloth, Bali)
