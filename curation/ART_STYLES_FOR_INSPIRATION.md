@@ -141,6 +141,7 @@ is the **AI-cliché** test in `PROMPT_GUIDANCE.md` ("Brand & taste"), not recenc
 - Contemporary Stained Glass
 - Storybook / children's-book gouache illustration (warm, densely-composed narrative scenes)
 - Contemporary Surf / Coastal Painting (bold acrylic wave-and-surfer scenes, saturated planes of turquoise and coral)
+- Contemporary Urban Realism (large figurative city-genre oils — rooftop/street sport, stoops, subway, playgrounds)
 
 ## Techniques, media & cross-cutting visual styles
 
@@ -179,6 +180,7 @@ is the **AI-cliché** test in `PROMPT_GUIDANCE.md` ("Brand & taste"), not recenc
 - Nanga
 - Kano School Ink Painting
 - Lingnan School (early-20th-c Chinese — Gao Jianfu, ink-and-colour realism)
+- Chinese New Year folk woodblock print / nianhua (Suzhou Taohuawu, Yangliuqing — flat brilliant vermilion/green/gold, densely-packed festive scenes with bold black outlines)
 - Ukiyo-e
 - Ukiyo-e Japanese woodblock print
 - Shin-hanga (early-20th-c woodblock — Kawase Hasui, Yoshida Hiroshi)
