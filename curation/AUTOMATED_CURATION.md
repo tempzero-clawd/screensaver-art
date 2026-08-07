@@ -23,7 +23,7 @@ You must use the **nano-banana-pro** and **veo3-video-gen** skills. If you can't
 
 ## Steps to execute
 
-1.  **Gain Context:** Read the repo-root `README.md`. **Also read `curation/PROMPT_GUIDANCE.md`** — it holds prompt-quality rules distilled from human curation of past bad pieces. Follow it when writing the prompts below.
+1.  **Gain Context:** Read the repo-root `README.md`.
 
 2.  **Still Image Generation:**
     *   Pick a new theme/style, honouring **"Brand & taste"** and the **"Era mix"** cap in `curation/PROMPT_GUIDANCE.md`.
