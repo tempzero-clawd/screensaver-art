@@ -479,29 +479,6 @@
     "img": "https://screensaver-assets.living-art-asset.com/gallery/fayum_portrait_animated_hero.webp"
   },
   {
-    "src": "https://screensaver-assets.living-art-asset.com/gallery/art1.mp4",
-    "title": "Serene Mountain River - Song Dynasty Landscape Painting (AI Animated)",
-    "type": "video",
-    "date": "2026-03-25",
-    "tags": [
-      "Chinese & Korean"
-    ],
-    "image_prompt": "A serene mountain river in the style of Song Dynasty Landscape Painting",
-    "video_prompt": "A serene mountain river flowing gently in the style of Song Dynasty Landscape Painting"
-  },
-  {
-    "src": "https://screensaver-assets.living-art-asset.com/gallery/art3.mp4",
-    "title": "Detailed Interior Room - Early Netherlandish Oil Painting (AI Animated)",
-    "type": "video",
-    "date": "2026-03-25",
-    "tags": [
-      "Renaissance & Baroque"
-    ],
-    "image_prompt": "A detailed interior room in the style of Early Netherlandish Oil Painting",
-    "video_prompt": "A detailed interior room with flickering candlelight in the style of Early Netherlandish Oil Painting",
-    "free": true
-  },
-  {
     "src": "https://screensaver-assets.living-art-asset.com/gallery/goryeo_buddhist_1_animated.mp4",
     "title": "Goryeo Bodhisattva - Goryeo Buddhist Painting (AI Animated)",
     "type": "video",
@@ -1339,7 +1316,8 @@
     ],
     "og_img": "https://screensaver-assets.living-art-asset.com/gallery/cyber_gothic_cathedral_animated_720p.jpeg",
     "thumb": "https://screensaver-assets.living-art-asset.com/gallery/cyber_gothic_cathedral_animated_640w.webp",
-    "img": "https://screensaver-assets.living-art-asset.com/gallery/cyber_gothic_cathedral_animated_hero.webp"
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/cyber_gothic_cathedral_animated_hero.webp",
+    "free": true
   },
   {
     "src": "https://screensaver-assets.living-art-asset.com/gallery/mannerism_composition_animated.mp4",
