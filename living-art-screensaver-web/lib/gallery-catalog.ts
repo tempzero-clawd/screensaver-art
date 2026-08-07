@@ -19,7 +19,7 @@
 
 import { FREE_ITEM_COUNT, isItemFree, tagsOf, orderTags, type ArtItem } from '@screensaver-art/constants'
 import rawGallery from '../../gallery.json'
-import { LOCAL_POSTER_FILES, poster as gradientPoster } from './gallery-showcase'
+import { poster as gradientPoster } from './gallery-showcase'
 import { ERA_COPY, type EraCopy } from './era-copy'
 
 /**
@@ -43,8 +43,21 @@ export const INDEX_ART_PAGES = false
 
 /** Raw `gallery.json` entry — a superset of the client-facing `ArtItem`. */
 interface RawItem extends ArtItem {
-  /** Poster still on R2 (present on ~half the catalog). */
+  /**
+   * Website-only image derivatives on R2 — deliberately NOT part of the shared
+   * `ArtItem`, because the Electron app and screensaver never read them.
+   * All three are present for every piece (backfilled 2026-08-05; the nightly
+   * curation run emits them for new pieces).
+   *   img     2K WebP        the high-res still. Kept as data for future needs
+   *                          (4K clips, print); the site itself never needs more
+   *                          than 720p because that is the clips' resolution
+   *   og_img  1280x720 JPEG  social cards — JPEG because crawler WebP support
+   *                          is inconsistent and satori can't rasterize WebP
+   *   thumb   640w WebP      the /gallery grid
+   */
   img?: string
+  og_img?: string
+  thumb?: string
   image_prompt?: string
   video_prompt?: string
   looping?: boolean
@@ -61,8 +74,12 @@ export interface CatalogPiece {
   title: string
   /** MP4 on the R2 custom domain. */
   src: string
-  /** First-frame still, or null when the piece has none (77 of 262 today). */
+  /** Hero still (2K). Null only if a piece somehow lacks derivatives. */
   posterUrl: string | null
+  /** 640w grid tile — the right physical size at every breakpoint. */
+  thumbUrl: string | null
+  /** 1280x720 JPEG for og:image / twitter:image. */
+  cardUrl: string | null
   /** Deterministic CSS gradient shown under/instead of the poster. */
   gradient: string
   /** Era tag (the closed 15-value vocabulary in @screensaver-art/constants). */
@@ -146,22 +163,26 @@ export function parseTitle(title: string): { name: string; movement: string } {
 // ---------------------------------------------------------------------------
 
 /**
- * The still to paint before (and behind) the clip.
+ * The stills to paint before (and behind) the clip.
  *
- * Three tiers, in fidelity order:
- *  1. `img` on the piece — a 4K WebP on R2. 136 of 262 pieces.
- *  2. A pre-extracted first frame in `public/posters/` — 49 more, the pieces the
- *     marketing homepage already showcases.
- *  3. `null` — 77 pieces have no still at all, and the UI falls back to the
- *     deterministic gradient. **We do not generate the missing ones**: media
- *     never gets committed to this repo (CLAUDE.md → Repo rules), and posters
- *     belong on R2 with the URL written into `gallery.json`. That's a
- *     founder-approved step, so the pages are built to look finished without it.
+ * Every piece now carries all three derivatives on R2, so this is a plain read
+ * rather than the old three-tier fallback (own `img` -> a committed
+ * public/posters/ file -> gradient). The committed posters are gone: media is
+ * never committed to this repo (CLAUDE.md -> Repo rules), and R2 is where these
+ * belong. The gradient remains as the paint-before-load background and as the
+ * safety net if a field is ever missing.
  */
-function posterFor(item: RawItem): string | null {
-  if (item.img) return item.img
-  const file = (item.src.split('/').pop() ?? '').replace(/\.mp4$/i, '.webp')
-  return LOCAL_POSTER_FILES.has(file) ? `/posters/${file}` : null
+function postersFor(item: RawItem) {
+  return {
+    // The hero poster is og_img (1280x720), NOT img, deliberately: the clips are
+    // 720p, so a larger still is wasted bytes *and* shows a visible resolution
+    // drop the moment the video takes over. It also matters that `img` is the
+    // original 5504x3072 WebP (~3.2 MB) on the 140 pieces that had one before
+    // the backfill — that was the page's LCP element on mobile.
+    posterUrl: item.og_img ?? item.img ?? null,
+    thumbUrl: item.thumb ?? item.og_img ?? null,
+    cardUrl: item.og_img ?? item.img ?? null,
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -177,7 +198,7 @@ function toPiece(item: RawItem): CatalogPiece {
     movement,
     title: item.title,
     src: item.src,
-    posterUrl: posterFor(item),
+    ...postersFor(item),
     gradient: gradientPoster({ name: item.title }),
     era,
     eraSlug: slugForEra(era),

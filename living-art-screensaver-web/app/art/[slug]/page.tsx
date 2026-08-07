@@ -45,10 +45,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   const url = `${SITE_URL}/art/${piece.slug}`
   // Absolute, because the poster may live on R2 rather than this origin.
-  const image = piece.posterUrl
-    ? piece.posterUrl.startsWith('http')
-      ? piece.posterUrl
-      : `${SITE_URL}${piece.posterUrl}`
+  const image = piece.cardUrl
+    ? piece.cardUrl.startsWith('http')
+      ? piece.cardUrl
+      : `${SITE_URL}${piece.cardUrl}`
     : null
 
   return {
@@ -72,8 +72,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       // not ideal, a piece-specific card unfurls far better, but posters can't
       // be generated here (media is never committed to this repo, CLAUDE.md →
       // Repo rules) and a branded card beats no card at all.
+      // Dimensions matter: the old raw 5504x3072 still exceeded X's 4096px cap
+      // and was silently rejected. og_img is generated at exactly 1280x720.
       images: image
-        ? [{ url: image, alt: `${piece.name} — ${piece.movement}` }]
+        ? [{ url: image, width: 1280, height: 720, alt: `${piece.name} — ${piece.movement}` }]
         : [{ url: SITE_OG_IMAGE, width: 1200, height: 630 }],
       videos: [{ url: piece.src, type: 'video/mp4' }],
     },
