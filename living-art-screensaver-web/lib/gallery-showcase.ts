@@ -37,13 +37,20 @@ export function poster(it?: { name?: string }): string {
   return `radial-gradient(125% 95% at 30% 14%, hsl(${H} 44% 40%), hsl(${H2} 50% 22%) 74%)`
 }
 
-// The real-art poster image for a piece — the exact first frame of its clip,
-// pre-extracted to a ~50 KB WebP in public/posters/ (see
-// scripts/generate-posters.mjs). Painted under/before the video so visitors on
-// slow links see the artwork immediately instead of the gradient.
+// The real-art poster image for a piece — the exact first frame of its clip, as
+// a ~59 KB 640w WebP on R2 (`thumb` in gallery.json). Painted under/before the
+// video so visitors on slow links see the artwork immediately instead of the
+// gradient.
+//
+// Derived by string transform rather than looked up in gallery.json, because
+// this module is imported by client components and gallery.json is ~400 KB of
+// mostly prompts — it has no business in a browser bundle. The key is
+// deterministic: every clip has a sibling `<stem>_640w.webp` (scripts/
+// backfill-image-derivatives.mjs, and the nightly run in
+// curation/AUTOMATED_CURATION.md keeps it true for new pieces).
 export function posterImage(it?: { src?: string }): string {
   const file = it?.src?.split("/").pop() ?? ""
-  return "/posters/" + file.replace(/\.mp4$/, ".webp")
+  return R2_GALLERY + file.replace(/\.mp4$/i, "_640w.webp")
 }
 
 // The placard label, e.g. "Starry Coast · Post-Impressionism".
@@ -181,18 +188,3 @@ export const movements: Movement[] = [
   },
 ]
 
-// Which pieces actually have a committed first-frame WebP in public/posters/.
-// DERIVED from the showcase lists above rather than hand-listed, because
-// scripts/generate-posters.mjs generates a poster for exactly those pieces — so
-// this set can't drift from the files on disk when a showcase list is edited.
-//
-// The gallery landing pages (lib/gallery-catalog.ts) consult it as the
-// second-choice poster source, after a piece's own `img` on R2. It exists
-// because posters are the one asset the landing pages can't manufacture: media
-// is never committed to this repo (CLAUDE.md → Repo rules), so the 77 pieces
-// with neither `img` nor a file here render on their gradient instead.
-export const LOCAL_POSTER_FILES: ReadonlySet<string> = new Set(
-  [...heroReel, ...carousel, ...movements.flatMap((m) => m.pieces)].map((p) =>
-    (p.src.split("/").pop() ?? "").replace(/\.mp4$/i, ".webp"),
-  ),
-)

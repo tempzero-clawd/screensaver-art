@@ -98,7 +98,7 @@ export function PieceTile({ piece, priority = false, aspect = '16 / 10' }: Piece
   const rootRef = useRef<HTMLAnchorElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
   const [live, setLive] = useState(false)
-  const hasPoster = piece.posterUrl !== null
+  const hasPoster = piece.thumbUrl !== null
 
   // Poster-less tiles: earn a video by sitting on screen, then holding a slot.
   useEffect(() => {
@@ -177,12 +177,12 @@ export function PieceTile({ piece, priority = false, aspect = '16 / 10' }: Piece
         boxShadow: '0 0 0 1px rgba(255,255,255,0.09), 0 18px 34px -22px rgba(0,0,0,0.9)',
       }}
     >
-      {piece.posterUrl && (
+      {piece.thumbUrl && (
         // next/image, not a raw <img>: the R2 stills are 4K WebPs of 1.4–3.3 MB
         // and a tile is ~240px wide. `sizes` is what actually caps the bytes —
         // it tells the optimizer which variant to serve at each breakpoint.
         <Image
-          src={piece.posterUrl}
+          src={piece.thumbUrl}
           alt={`${piece.name} — ${piece.movement || piece.era}`}
           fill
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, (max-width: 1280px) 25vw, 20vw"
@@ -195,7 +195,7 @@ export function PieceTile({ piece, priority = false, aspect = '16 / 10' }: Piece
         <video
           ref={videoRef}
           src={piece.src}
-          poster={piece.posterUrl ?? undefined}
+          poster={piece.thumbUrl ?? undefined}
           muted
           loop
           playsInline
