@@ -3941,5 +3941,65 @@
     "looping": false,
     "og_img": "https://screensaver-assets.living-art-asset.com/gallery/dutch_marine_animated_720p.jpeg",
     "thumb": "https://screensaver-assets.living-art-asset.com/gallery/dutch_marine_animated_640w.webp"
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/avercamp_skaters_frozen_canal_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/avercamp_skaters_frozen_canal_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/avercamp_skaters_frozen_canal_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/avercamp_skaters_frozen_canal_640w.webp",
+    "title": "Skaters on the Frozen Canal - Dutch Golden Age Winter Landscape (AI Animated)",
+    "type": "video",
+    "date": "2026-08-07",
+    "tags": [
+      "Renaissance & Baroque"
+    ],
+    "image_prompt": "A Dutch Golden Age winter landscape in the style of Hendrick Avercamp, oil on panel, early 17th century. A wide frozen canal on a crisp bright winter morning, crowded with dozens of small brightly-dressed figures skating, sliding, playing kolf and pushing wooden sledges across the ice; warmly bundled townsfolk in red, blue, ochre and black winter coats, a horse-drawn sleigh, bare pollarded willows, and a small brick town with stepped gables and a church tower along the far bank; a flat pale-blue winter sky with soft high clouds. Fresh, brilliant unfaded colour, the painted surface smooth, clean and unbroken, as on the day it was finished. Crisp bright even daylight, luminous and evenly lit, high horizon with the whole icy expanse filling the lower two thirds. Viewed straight-on, flat to the picture plane. The scene fills the entire image edge to edge; no museum, no display case, no glass, no pedestal, no gallery wall, no spotlight, no museum label, no painted border, no mat, no decorative frame.",
+    "video_prompt": "A red-coated skater glides in long strokes from right to left across the frozen canal, arms swinging; nearby a man pushes a wooden kick-sledge and children slide across the ice, and the harnessed horse pulls its sleigh slowly across the frozen surface. The skaters keep their exact painted shapes, colours and count while they glide and stride; scarves and winter coats stir in the cold breeze, the bare pollarded willows sway slightly and thin high clouds drift across the pale blue sky. The brick town, church tower and the ice itself keep their exact painted forms. Bright even winter daylight, luminous throughout.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/regionalism_threshers_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/regionalism_threshers_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/regionalism_threshers_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/regionalism_threshers_640w.webp",
+    "title": "The Threshers - American Regionalism (AI Animated)",
+    "type": "video",
+    "date": "2026-08-07",
+    "tags": [
+      "Modern"
+    ],
+    "image_prompt": "An American Regionalist mural painting in the style of Thomas Hart Benton, egg tempera and oil, 1930s. A midsummer wheat harvest on rolling Midwestern farmland: muscular farmhands in blue overalls and rolled shirtsleeves pitching golden wheat sheaves onto a roaring steam threshing machine whose wide drive belt spins; a hay wagon drawn by two draft horses, sculptural rounded clouds boiling up over green-and-gold undulating hills, a red barn and windmill in the distance. Rhythmic sinuous Benton contours, rich saturated colour, the painted surface smooth, clean and unbroken. Bright even midday daylight, luminous and evenly lit. Viewed straight-on, flat to the picture plane. The scene fills the entire image edge to edge; no museum, no display case, no glass, no pedestal, no gallery wall, no spotlight, no museum label, no painted border, no mat, no decorative frame.",
+    "video_prompt": "The nearest farmhand swings his pitchfork and heaves a bound sheaf of golden wheat up toward the threshing machine while the man on the wagon lifts another sheaf. The threshing machine's wide leather drive belt runs and its big red flywheel spins steadily; the two draft horses shift their weight and toss their manes. The sculptural white clouds drift slowly and the golden wheat field ripples in the wind. The figures keep their exact painted shapes, colours and count as they work. Bright even midday daylight.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/peredvizhniki_winter_troika_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/peredvizhniki_winter_troika_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/peredvizhniki_winter_troika_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/peredvizhniki_winter_troika_640w.webp",
+    "title": "The Winter Troika - Peredvizhniki Realism (AI Animated)",
+    "type": "video",
+    "date": "2026-08-07",
+    "tags": [
+      "19th Century"
+    ],
+    "image_prompt": "A Russian Peredvizhniki realist winter landscape, oil on canvas, 1880s, in the spirit of the Wanderers. A troika of three horses at full gallop pulling an open sleigh across a vast snow-covered plain under a clear pale winter sky; a bearded coachman in a heavy sheepskin coat and fur hat leaning into the reins, two passengers wrapped in blankets, powder snow kicking up from the hooves and runners; birch trees and a small village with snow-laden roofs and a blue onion-domed church on the horizon, long blue shadows across sparkling snow, a rosy low winter sun. Rich naturalistic colour, the painted surface smooth, clean and unbroken. Bright, clear, evenly lit winter daylight. Viewed straight-on, flat to the picture plane. The scene fills the entire image edge to edge; no museum, no display case, no glass, no pedestal, no gallery wall, no spotlight, no museum label, no painted border, no mat, no decorative frame.",
+    "video_prompt": "The three harnessed horses gallop hard and the open sleigh rushes across the snowy plain, their legs extended, manes and tails streaming; powder snow sprays up from their hooves and the sleigh runners. The bearded coachman leans into the reins, his sheepskin coat flapping, and the two wrapped passengers rock with the moving sleigh. The birch branches sway and fine snow drifts through the cold air. The horses keep their exact painted shapes, colours and count; the distant village, birch trees and blue-domed church hold their forms. Bright, clear winter daylight.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/solarpunk_skybridge_tram_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/solarpunk_skybridge_tram_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/solarpunk_skybridge_tram_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/solarpunk_skybridge_tram_640w.webp",
+    "title": "The Skybridge Tram - Solarpunk (AI Animated)",
+    "type": "video",
+    "date": "2026-08-07",
+    "tags": [
+      "Contemporary"
+    ],
+    "image_prompt": "A solarpunk cityscape illustration, lush painterly gouache, bright and optimistic. Towering white terraced buildings draped in cascading greenery, vertical gardens, flowering vines and solar-glass canopies, connected by graceful arched skybridges; a sleek streamlined electric tram gliding along an elevated track between the green towers, people strolling across a planted pedestrian bridge, colourful banners and flowering trees, a spinning white rooftop wind turbine, songbirds in the air, a brilliant clear blue sky with soft clouds. Warm golden sunlight, saturated verdant greens with coral and teal accents, densely composed and full of detail, the painted surface smooth and clean. Bright, generous, even daylight. Viewed straight-on, flat to the picture plane. The scene fills the entire image edge to edge; no museum, no display case, no glass, no pedestal, no gallery wall, no spotlight, no museum label, no painted border, no mat, no decorative frame.",
+    "video_prompt": "The sleek white-and-teal electric tram glides smoothly forward along the elevated track between the green towers, a passenger waving from a window. The white rooftop wind turbine turns steadily, the hanging vines and colourful banners sway gently, songbirds flit across the blue sky, and a few pedestrians stroll along the planted skybridge. The buildings, vertical gardens and glass canopies keep their exact painted shapes and colours. Warm, bright, even daylight.",
+    "looping": false
   }
 ]
