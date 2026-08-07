@@ -19,7 +19,7 @@
 5. **Don't pivot to a wallpaper engine.** Bigger market, but commoditized to free/$5 and moated. Instead *distribute your content into it* (Option B).
 6. **Fix the funnel so traffic doesn't leak** — device-aware capture ("email me the Mac link"), a self-report platform-demand probe, great link previews, brand-name SEO.
 7. **Instrument everything.** You can't improve what you can't see. Set up analytics + a north-star metric before you pour traffic in.
-8. **The launch spikes are spent.** PH returned 5 upvotes (2026-07-26) and Show HN is closed to us — and neither can be re-fired soon, whatever the cause. The plan is now **automated + visual** channels: nightly auto-posting (§11), the gallery landing pages that channel needs (§4.3), directories, borrowed audiences. See §4.2.
+8. **The launch spikes are spent.** PH returned 5 upvotes (2026-07-26) and Show HN is closed to us — and neither can be re-fired soon, whatever the cause. The plan is now **automated + visual** channels: nightly auto-posting (§11), the gallery landing pages that channel needs (§4.3, shipped), directories, borrowed audiences. See §4.2.
 
 ---
 
@@ -37,9 +37,9 @@ and **the $15.99 lifetime tier shipped** (§10). **The launch bet was run and fa
 returned 5 upvotes, Show HN is closed to us (§4.2) — so the site still has **~zero traffic and
 zero conversion data**. The bottleneck remains **acquisition**, now attacked through
 **automated + visual** channels: nightly auto-posting (§11), the **gallery landing pages** that
-channel needs (§4.3), directories (§4.4), borrowed audiences (§4.1). Note the pages are
-*destinations for social*, **not** an SEO bet — nobody searches for a product they don't know
-exists, so demand here has to be *generated*, not captured.
+channel needs (§4.3, shipped 2026-08-03), directories (§4.4), borrowed audiences (§4.1). Note the
+pages are *destinations for social*, **not** an SEO bet — nobody searches for a product they
+don't know exists, so demand here has to be *generated*, not captured.
 
 > ⚠️ **Hard planning constraint (2026-08-02): founder marketing time ≈ 0 h/week.** Every
 > recommendation below must survive that filter. A tactic needing a daily or weekly human touch
@@ -184,7 +184,7 @@ variable was traffic, and it was zero. See *A note on validation* in §15.
 - **Anything one-shot is a bonus, not a bet.** The channels below are ranked on whether they
   keep producing after the day you ship them.
 
-### 4.3 Gallery pages — ⏭️ **reversed 2026-08-03: build them, as *social landing pages***
+### 4.3 Gallery pages — ✅ **shipped 2026-08-03, as *social landing pages***
 
 **Dropped, then un-dropped the same day.** The SEO case for these pages is weak and stays weak.
 The reason to build them is different and stronger: **the social channel has nowhere to send
@@ -226,6 +226,29 @@ R2 with the URL in `gallery.json`, and that's a founder-approved step, not an ag
 
 **Success metric: Pinterest → site UTM clicks, not rankings.** Sequencing: **build the
 destinations before the first pins go out** — pins can't be re-pointed later.
+
+**What shipped (2026-08-03).** 283 new static routes: 262 `/art/<slug>`, 15 `/era/<tag>`, and a
+6-page `/gallery` index, all prerendered from `gallery.json` at build time — so the nightly
+curation push to `master` grows the routes *and* the sitemap with no extra step. Three calls
+worth remembering:
+
+- **Slugs are permanent by construction.** Derived from the immutable R2 object key, never the
+  title (curation edits titles), and never from catalog position — because **a pin's destination
+  URL cannot be edited after posting**, so a slug that drifted would 404 every pin ever made. A
+  test over the real data fails the build if two keys ever collide.
+- **Indexing: `/gallery` + `/era/*` are indexable; `/art/*` ships `noindex, follow`.** Exactly
+  the "if destinations are the goal, Google's opinion is optional" call above — Pinterest doesn't
+  care, and 262 pages of generated art *and* generated prose is the shape scaled-content systems
+  demote. One constant (`INDEX_ART_PAGES` in `lib/gallery-catalog.ts`) flips the meta tag and the
+  sitemap together.
+- **Descriptions are templated, not written, and not prompt dumps.** Built from title/movement/
+  era/date plus 15 hand-written era paragraphs. The `image_prompt`/`video_prompt` fields are
+  deliberately unused: they're machine instructions ("static camera", "no morphing") and 61
+  pieces have none. Good per-piece prose needs an offline pass writing a `description` field into
+  `gallery.json` — **data, not a build-time model call.** Still open.
+
+**Still open:** the poster gap (77 pieces have no still anywhere, so their tiles render on a
+gradient — needs founder-approved stills on R2, not in git) and the per-piece prose above.
 
 ### 4.4 Press & directories (one-time work, permanent backlinks)
 Screensaver apps are rare enough to be newsworthy, and every listing is both a trickle of intent
@@ -566,7 +589,8 @@ old Phase 1 ("manual posting, then the launch spikes") is retired: the launch is
 once and never touched again.
 - ⏭️ **Posting automation** (§11 B/C) — clips have existed since 2026-07-12 and have **never been
   posted**. The item that most directly answers the 0 h/week constraint.
-- 🅿️ ~~SEO: intent pages + programmatic gallery corpus~~ — **dropped 2026-08-03** (§4.3).
+- ✅ **Gallery landing pages** (§4.3) — 262 `/art/<slug>` + 15 `/era/<tag>` + a paginated
+  `/gallery`, shipped 2026-08-03. Destinations for the pins, not an SEO bet.
 - ⏭️ **Directory submissions** (§4.4) — agent preps, founder pastes once.
 - ⏭️ **Press + creator outreach** (§4.1/§4.4) — reduce to "review and send."
 - ⏭️ **Reddit** — never run, ~20 min (`launch-kit.md` §3).

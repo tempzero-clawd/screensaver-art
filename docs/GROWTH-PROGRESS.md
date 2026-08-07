@@ -64,9 +64,9 @@ Legend: ✅ live · 🔨 built, not yet used · ⏭️ next · 🅿️ parked (n
 | **Daily social posting + aggregator** | ⏭️ **#1 — vendors chosen 2026-08-02** | §4.1 + §11 (B) — **upload-post** (IG + YT) + **Zernio** (TikTok + Pinterest), both start free. Glue script not written. Best fit for 0 h/week: build once, posts nightly forever. |
 | **Clip audio: Lyria music bed** | ⏭️ **founder-owned** | §11.2 — clips will be scored with **Lyria-generated music**; the founder is building it as a repo skill. **Agents: don't implement it, and don't commit audio** (`CLAUDE.md` → Repo rules). |
 | Brand-name / on-page SEO basics | ✅ live | 2026-07-17 (PRs #68, #69): keyword title, shared meta description, JSON-LD. |
-| **Gallery pages** (`/gallery`, `/art/<slug>`, `/era/<tag>`) | ⏭️ **#2 — in progress** | §4.3 — dropped then **reversed 2026-08-03**: justified as **social landing pages**, not SEO. Pinterest needs a destination per pin; today every clip can only link to the homepage. `/style/<movement>` deferred (158 singleton labels). |
-| **Directory submissions** | ⏭️ **#3** | §4.4 — alternativeto.net, MacUpdate, indie dirs. Agent preps the pack, founder pastes once. |
-| **Press + creator outreach** | ⏭️ **#4** | §4.1/§4.4 — highest-leverage *non-automatable* play; agent builds list + `/press` kit + drafts. |
+| **Gallery landing pages** (`/gallery`, `/art/<slug>`, `/era/<tag>`) | ✅ **shipped 2026-08-03** | §4.3 — dropped then **reversed** the same day, justified as **social landing pages, not SEO**. 262 piece pages + 15 era wings + a 6-page index + a self-growing sitemap, all prerendered from `gallery.json`. `/art/*` is `noindex, follow` behind one constant (`INDEX_ART_PAGES`); `/gallery` + `/era/*` are indexable. `/style/<movement>` still deferred (203 labels, 158 singletons). **Ready for #1's pins.** |
+| **Directory submissions** | ⏭️ **#2** | §4.4 — alternativeto.net, MacUpdate, indie dirs. Agent preps the pack, founder pastes once. |
+| **Press + creator outreach** | ⏭️ **#3** | §4.1/§4.4 — highest-leverage *non-automatable* play; agent builds list + `/press` kit + drafts. |
 | "Art of the week" email / newsletter | 🅿️ needs a send-path call | §4.6 — viable only if the send automates off the nightly job. |
 | Option B ecosystem art packs | 🅿️ later | Appendix A — one-time publish into a 20–50M-user surface; revisit after #1–#3. |
 | Retention / lifecycle email | 🅿️ later | §9 — needs users first. |
@@ -75,16 +75,49 @@ Legend: ✅ live · 🔨 built, not yet used · ⏭️ next · 🅿️ parked (n
 | Windows / Mac App Store build | 🅿️ pending demand-probe data | §8, §4.7 |
 | Paid ads | 🅿️ not now | §13 — only after a proven funnel |
 
-**One-liner:** foundation live, pricing closed, **still ~zero traffic and therefore zero
-conversion data**. Next: **social posting (#1) + the gallery landing pages it needs (#2)** →
-directories → press/creators → Reddit. ⚠️ **#1 waits on the founder creating the social +
-vendor accounts**; #2 is agent work that runs in parallel — **and must land before the first
-pins go out, since pins can't be re-pointed.**
+**One-liner:** foundation live, pricing closed, **the pins now have somewhere to land** (283 new
+gallery routes), **still ~zero traffic and therefore zero conversion data**. Next: **automated
+posting → directories → press/creators → Reddit.** ⚠️ **#1 is the entire plan and it's blocked on
+one founder chore** (create the two vendor accounts) — nothing else moves the needle at this
+scale.
 
 ## In progress (claim here before starting)
 | Task | Agent / branch / PR | Started | Notes |
 |---|---|---|---|
-| Gallery landing pages (`/gallery`, `/art/<slug>`, `/era/<tag>`) | subagent — branch `growth/gallery-landing-pages` | 2026-08-03 | Clear on merge. |
+| _(nothing in flight)_ | | | |
+
+## 🧑‍💻 Founder TODO — social + aggregator accounts (pick up in its own session)
+
+**Self-contained: everything #1 waits on. No agent can do any of it** (identity, credentials,
+payment). Pinterest matters most — it's the channel the gallery landing pages were built for.
+
+**1. Brand social accounts** (none exist yet; the aggregators only *connect* accounts):
+- [ ] **Pinterest — business account** (free; convert or create). Highest priority.
+- [ ] **YouTube** — a channel on the brand's Google account.
+- [ ] **Instagram — Business or Creator, linked to a Facebook Page.** A personal account
+      cannot post via API; this linkage is the slow part.
+- [ ] **TikTok** — optional/last. Least durable for a desktop product.
+- Use the **same handle everywhere** — it feeds the brand-name search we deliberately kept (§4.3).
+
+**2. Aggregator accounts** (vendors chosen in §11.1):
+- [ ] **upload-post** → connect **Instagram + YouTube**. Free tier is 10 uploads/mo (~5 days at
+      nightly cadence), then $24/mo ($16 annual) unlimited. Treat free as a trial.
+- [ ] **Zernio** → connect **TikTok + Pinterest**. Free tier = exactly 2 accounts, so don't
+      spend a slot on IG/YT.
+- 💡 **Check first:** if one vendor covers **Pinterest + YouTube** on its free tier, start with
+      that vendor alone and skip the second entirely. §11.1 never enumerated Zernio's platform
+      list — verify at signup rather than assuming.
+
+**3. The one test that changes the plan:**
+- [ ] Post one clip to **TikTok via Zernio** and check whether it lands **public** or
+      **private/`SELF_ONLY`**. Zernio's TikTok audit status is undocumented; an unaudited API
+      client is forced to private. If private → move TikTok to upload-post (documented public
+      posting) and leave Zernio with Pinterest only.
+
+**4. Hand back to an agent:**
+- [ ] Put both API keys in `curation/.env` (gitignored) and report **the variable names, not the
+      values**, plus which accounts connected and the TikTok test result. An agent then wires
+      `make-social-assets.mjs` → the aggregator APIs off the nightly job (backlog #1).
 
 ## Next up (prioritized backlog)
 Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batched last.
@@ -97,14 +130,11 @@ Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batc
    there's no per-post human step). **Include the audio bed** — clips ship silent today; mux a
    **Lyria-generated music track** (§11.2). Add §11 (C) captions in the same pass
    if cheap — templates at daily cadence read as spam. Founder: create 2 accounts + connect socials.
-2. **Gallery landing pages** (§4.3) — `/gallery`, `/art/<slug>` ×262, `/era/<tag>` ×15, plus a
-   self-growing sitemap. **Destinations for the social channel**, not an SEO play. Defer
-   `/style/<movement>`. Land it *before* the first pins.
-3. **Directory submissions** (§4.4) — agent builds a ready-to-paste pack (blurbs at each site's
+2. **Directory submissions** (§4.4) — agent builds a ready-to-paste pack (blurbs at each site's
    length limit, screenshots, categories, links); founder pastes in one sitting.
-4. **Press + creator outreach** (§4.1/§4.4) — target list, `/press` kit page, personalized
+3. **Press + creator outreach** (§4.1/§4.4) — target list, `/press` kit page, personalized
    drafts. **One feature ≈ months of our own posting.**
-5. **Reddit** (`launch-kit.md` §3) — ~20 min; do it once #1 is live so traffic lands on a site
+4. **Reddit** (`launch-kit.md` §3) — ~20 min; do it once #1 is live so traffic lands on a site
    that keeps earning.
 
 ## Decisions needed from the founder
@@ -113,6 +143,11 @@ Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batc
 - **One batched chore** — create the upload-post + Zernio accounts, connect IG/YT/TikTok/
   Pinterest; and check whether the PH launch was ever *featured* (unfeatured ⇒ near-invisible,
   which changes how we read 5 upvotes).
+- **Poster stills for 77 pieces** — approve generating first-frame stills and uploading them to
+  **R2** (never git — `CLAUDE.md` → Repo rules), with the URL written into `gallery.json`'s `img`.
+  Those 77 gallery tiles currently render on a colour gradient, and their social cards fall back
+  to the generic site card instead of the artwork. Cheapest fix: have the nightly curation job
+  write `img` for every new piece and backfill the old ones once.
 - ~~Aggregator choice~~ ✅ 2026-08-02 (§11 B) · ~~Pricing~~ ✅ **closed 2026-08-02** — lifetime
   shipped (PR #70) and the founder has **de-prioritized pricing**; don't reopen it without
   traffic (§10).
@@ -120,6 +155,25 @@ Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batc
 ---
 
 ## Activity log (append-only — newest first)
+- **2026-08-03** — **Gallery landing pages shipped — the social channel now has destinations.**
+  283 new prerendered routes: **262** `/art/<slug>`, **15** `/era/<tag>`, a **6-page** `/gallery`
+  index, plus a sitemap generated from `gallery.json` (so the nightly push to `master`, which
+  already auto-deploys, grows the routes and the sitemap by itself). Built as §4.3 argues —
+  **destinations for pins, not an SEO play**. Four calls worth knowing: **(1) slugs are permanent
+  by construction** — derived from the immutable R2 key, never the title or catalog position,
+  because a pin's URL can't be edited after posting; a test fails the build on any collision.
+  **(2) `/art/*` ships `noindex, follow`**, `/gallery` + `/era/*` are indexable — 262 pages of
+  generated art *and* generated prose is the shape Google's scaled-content systems demote, and a
+  penalty would hit brand-name search; Pinterest doesn't care. One constant, `INDEX_ART_PAGES`,
+  flips the meta tag and the sitemap together. **(3) Descriptions are templated from
+  title/movement/era/date plus 15 hand-written era paragraphs — never the `image_prompt`/
+  `video_prompt` fields**, which are machine instructions and missing on 61 pieces; real
+  per-piece prose is a follow-up that belongs in `gallery.json` as data, not a build-time model
+  call. **(4) Image optimisation had to be turned on**: the R2 `img` stills are 4K WebPs of
+  1.4–3.3 MB each, so a 48-tile grid was ~120 MB of images — now ~2 MB, and a full scroll fetches
+  **zero** video bytes (clips load on hover, or on dwell for the 77 poster-less pieces, capped at
+  4 at a time). **No media committed.** Open: the poster gap (founder decision above) and
+  richer per-piece prose. _(This PR.)_
 - **2026-08-03** — **SEO drop reversed — gallery pages are back, reframed.** A second opinion
   argued for `/art/<slug>` + `/style` + `/era`. Its numbers were half right (era tags **15** ✅,
   missing posters **126** ✅; but **262** pieces not 223, and **203** movement labels not ~60,
@@ -130,7 +184,7 @@ Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batc
   **social infrastructure**, with SEO as a free option — and they can be `noindex`ed if scaled
   AI content looks risky. Scope: `/gallery` + `/art/<slug>` (262) + `/era/<tag>` (15);
   `/style/<movement>` deferred until 203 labels are grouped. Posters stay out of git (R2, founder
-  step). **Must land before the first pins** — pins can't be re-pointed. _(This PR.)_
+  step). **Must land before the first pins** — pins can't be re-pointed. _(PR #82.)_
 - **2026-08-03** — **SEO dropped (founder call); backlog re-ranked.** Reasoning in §4.3: the
   searchable market is small and its intent is *how-to*, not shopping; this is a demand-
   **generation** product (people see it and want it, they don't search for it); and the

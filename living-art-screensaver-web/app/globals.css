@@ -32,6 +32,17 @@ html {
   display: none;
 }
 
+/* Soft edges on a horizontal scroll strip, so a cut-off pill reads as
+   "keep swiping" rather than as a clipped layout. Mobile only — above `sm` the
+   gallery's era pills wrap into rows instead of scrolling, and a mask there
+   would fade the ends of every row. */
+@media (width < 40rem) {
+  .lart-edge-fade {
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 22px, #000 calc(100% - 22px), transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 22px, #000 calc(100% - 22px), transparent);
+  }
+}
+
 :root {
   --background: oklch(0.08 0 0);
   --foreground: oklch(0.98 0 0);

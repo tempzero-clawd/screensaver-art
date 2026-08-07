@@ -21,10 +21,14 @@ export function Footer() {
 
         <div>
           <h4 className="m-0 mb-[16px] font-mono text-[13px] uppercase tracking-[1.5px] text-muted-foreground-subtle">Product</h4>
+          {/* Root-relative anchors (`/#…`, not `#…`) so the footer works
+              identically on the homepage and on the standalone gallery pages —
+              a bare `#gallery` there would just scroll to nothing. */}
           <div className="flex flex-col gap-[11px]">
-            <Link href="#gallery" className="text-[14.5px] text-muted-foreground no-underline transition-colors hover:text-foreground">Gallery</Link>
-            <Link href="#styles" className="text-[14.5px] text-muted-foreground no-underline transition-colors hover:text-foreground">Art Styles</Link>
-            <Link href="#pricing" className="text-[14.5px] text-muted-foreground no-underline transition-colors hover:text-foreground">Pricing</Link>
+            <Link href="/gallery" className="text-[14.5px] text-muted-foreground no-underline transition-colors hover:text-foreground">Browse all art</Link>
+            <Link href="/#gallery" className="text-[14.5px] text-muted-foreground no-underline transition-colors hover:text-foreground">The collection</Link>
+            <Link href="/#styles" className="text-[14.5px] text-muted-foreground no-underline transition-colors hover:text-foreground">Art Styles</Link>
+            <Link href="/#pricing" className="text-[14.5px] text-muted-foreground no-underline transition-colors hover:text-foreground">Pricing</Link>
             <PlatformInterest
               location="footer"
               label="Other platforms"
