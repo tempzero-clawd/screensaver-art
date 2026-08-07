@@ -29,7 +29,7 @@ You must use the **nano-banana-pro** and **veo3-video-gen** skills. If you can't
     *   Pick a new theme/style, honouring **"Brand & taste"** and the **"Era mix"** cap in `curation/PROMPT_GUIDANCE.md`.
     *   Generate a high-quality **4K** still with the **nano-banana-pro** skill — pass **`--size 4K`** (output is WebP by default, e.g. `--out gallery/<descriptive_name>_4k.webp`). Write the image prompt per the **Hard rules** in `curation/PROMPT_GUIDANCE.md`.
     *   **Self-review the still before animating it (vision gate).** Look at the generated image and judge it honestly, checking it against the **Hard rules**. Regenerate (revising the prompt) if it breaks any of them or simply **wouldn't look good framed on a wall**. Only proceed to animation once the still is genuinely gallery-worthy. This is cheap insurance — it's far better to reroll a still than to spend a video generation on a bad image.
-    *   Keep the 4K file — it is the first frame for the animation **and** the local source the publish step downsamples the web images from. (Generating at 4K and downsampling beats asking for a smaller image: the 4K render carries detail a 2K render never had.)
+    *   Keep the 4K file that **passes** — it is the first frame for the animation **and** the local source the publish step downsamples the web images from. (Generating at 4K and downsampling beats asking for a smaller image: the 4K render carries detail a 2K render never had.) **Delete every still you reroll past**, as you go — step 4 only cleans up the one you hand it.
 
 3.  **AI Animation:**
     *   Animate the still with the **veo3-video-gen** skill, feeding the 4K WebP as the first frame. Write the video prompt per the **Hard rules** in `curation/PROMPT_GUIDANCE.md`.
@@ -46,11 +46,14 @@ You must use the **nano-banana-pro** and **veo3-video-gen** skills. If you can't
       --tag "Modern" \
       --image-prompt "$IMG_PROMPT" --video-prompt "$VID_PROMPT"
     ```
-    It derives the three web images from the 4K still, **uploads the images and the video** to R2 (immutable cache headers, refusing to overwrite an existing key), appends the `gallery.json` entry with today's date, and deletes the local files. Reuse the same shell variables you passed to the two skills so the prompts are recorded verbatim.
+    It derives the three web images from the 4K still, **uploads the images and the video** to R2 (immutable cache headers, refusing to overwrite an existing key), appends the `gallery.json` entry with today's date, and cleans up. Reuse the same shell variables you passed to the two skills so the prompts are recorded verbatim.
     *   **`--tag` takes exactly one** museum "wing" from the closed list in `curation/PROMPT_GUIDANCE.md` ("Gallery tags") — it drives the Gallery filter pills, so **never invent a new value**. The script rejects anything off the list.
     *   `looping` is inferred from the video filename (`_looping.mp4` / `_animated.mp4`); pass `--looping` or `--no-looping` for any other name.
     *   If it reports that a key already exists, **pick a different name** and retry with `--stem <new_name>`. If an upload failed partway, re-run the identical command with `--resume`.
     *   The 4K master is **not** uploaded — the 2K derivative is the archival copy. Run with `--dry-run` first if you want to check the derivation and the entry without publishing.
+    *   **Local cleanup happens here, on success only.** The script deletes the 4K still, the video, veo's `<video>.mp4.json` sidecar, and the three derivatives, then prints what it removed. It also **lists anything left over in `gallery/`** — that is almost always a still the vision gate rejected, which it can't know about; **delete those yourself before starting the next piece.** Nothing is deleted on a failed upload or under `--dry-run`/`--keep`, so a retry still has its inputs.
+
+    At the end of the night `gallery/` should be **empty**. It is gitignored, so leftovers never reach a commit — they just pile up as multi-MB files on disk.
 
 5.  **Repeat:** Perform steps 2-4 a total of **4 times** to create 4 unique pieces. There is **no fixed loop quota** — a night of all non-looping pieces is fine.
 

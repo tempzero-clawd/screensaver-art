@@ -26,7 +26,7 @@
 // Requires: ffmpeg, and CLOUDFLARE_API_TOKEN via curation/with-secrets.sh.
 
 import { spawnSync } from 'node:child_process'
-import { existsSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs'
+import { existsSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -237,12 +237,27 @@ if (DRY) {
   process.stdout.write(`  appended to gallery.json (${items.length} pieces)\n`)
 }
 
-// 5. Clean up — generated media must never be left lying around (CLAUDE.md repo rules).
+// 5. Clean up — generated media must never be left lying around (CLAUDE.md repo
+//    rules), and a night of 4K stills adds up fast. `${video}.json` is
+//    veo3-video-gen's sidecar (the file URI it needs to extend a clip).
 if (!DRY && !KEEP) {
+  const removed = []
   for (const f of [still, video, `${video}.json`, ...derivatives.map((d) => d.file)]) {
+    if (!existsSync(f)) continue
     rmSync(f, { force: true })
+    removed.push(path.basename(f))
   }
-  process.stdout.write('  cleaned up local files\n')
+  process.stdout.write(`  cleaned up ${removed.length} local files: ${removed.join(', ')}\n`)
+
+  // Whatever is still sitting here is almost always a still the vision gate
+  // rejected and rerolled — this script only ever sees the one it was handed, so
+  // it flags the rest rather than deleting files nobody told it about.
+  const left = readdirSync(dir).filter((f) => !f.startsWith('.'))
+  if (left.length) {
+    process.stdout.write(
+      `  NOTE: ${left.length} file(s) left in ${path.relative(ROOT, dir) || dir} — ` +
+      `delete any rerolled stills before the next piece:\n    ${left.join('\n    ')}\n`)
+  }
 }
 
 process.stdout.write(`${DRY ? 'DRY RUN — nothing published' : 'done'}\n`)
