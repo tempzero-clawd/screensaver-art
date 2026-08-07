@@ -3,7 +3,7 @@
 Everything that fills and maintains `gallery.json` lives here. There are **two
 distinct pieces**, and together they form a feedback loop:
 
-1. **The nightly curation agent** — generates new AI art every night.
+1. **The nightly curation agent** — generates four new pieces every night.
 2. **The cleanup tool** (`cleanup-tool/`) — a human-in-the-loop pass that removes
    the misses and teaches the agent to make fewer of them.
 
@@ -13,7 +13,8 @@ night's batch better.
 
 ```
 curation/
-├── AUTOMATED_CURATION.md         # the nightly agent's runbook
+├── AUTOMATED_CURATION.md         # the nightly agent's runbook — the source of truth for §1
+├── publish-piece.mjs             # derive → upload → gallery.json entry, for one piece
 ├── PROMPT_GUIDANCE.md            # shared: written by cleanup, read by the agent
 ├── ART_STYLES_FOR_INSPIRATION.md # style ideas the agent draws from
 ├── with-secrets.sh               # loads + verifies curation/.env for the agent
@@ -21,21 +22,23 @@ curation/
 └── cleanup-tool/                 # the human-in-the-loop review tool (§2)
 ```
 
+**This file is a map.** The two runnable procedures are documented once each, and
+not repeated here:
+
+| To do this | Read |
+|---|---|
+| Run / change the nightly agent | [`AUTOMATED_CURATION.md`](AUTOMATED_CURATION.md) |
+| Process a round of human flags | [`.claude/skills/curate-gallery/SKILL.md`](../.claude/skills/curate-gallery/SKILL.md) |
+
 ---
 
 ## 1. The nightly curation agent
 
 A scheduled AI agent that commissions **four new pieces every night** so the
-gallery always has fresh art. Its full runbook is
-[`AUTOMATED_CURATION.md`](AUTOMATED_CURATION.md); in short, for each piece it:
-
-1. Picks a theme/style (any era, per the "Brand & taste" + "Era mix" rules).
-2. Generates a 4K still (text-to-image, Nano Banana Pro) and **self-reviews** it —
-   re-rolling anything that looks like a catalog photo, has AI artifacts, or
-   wouldn't look good framed (the "vision gate") *before* spending a video gen.
-3. Animates it (image-to-video, Veo 3.1) — the first two pieces play once, the
-   last two are seamless loops.
-4. Uploads the still + MP4 to Cloudflare R2 and appends the entry to `gallery.json`.
+gallery always has fresh art. For each piece it picks a theme, generates a 4K
+still, self-reviews it (the "vision gate") before spending a video generation,
+animates it, and publishes it with `publish-piece.mjs`. The step-by-step is
+[`AUTOMATED_CURATION.md`](AUTOMATED_CURATION.md) — **edit that, not this section.**
 
 **Inputs it depends on — all kept here at the `curation/` root:**
 
@@ -44,11 +47,12 @@ gallery always has fresh art. Its full runbook is
 | `AUTOMATED_CURATION.md` | The step-by-step runbook the agent follows. **Committed.** |
 | `PROMPT_GUIDANCE.md` | Accumulated prompt-quality rules. The agent reads this **before** writing prompts. **Committed.** |
 | `ART_STYLES_FOR_INSPIRATION.md` | A growing list of styles/themes to draw from. **Committed.** |
+| `publish-piece.mjs` | One command per finished piece: derives the three web images from the 4K still, uploads them + the video to R2 under never-overwritten keys, appends the `gallery.json` entry, cleans up the local files. **Committed.** |
 | `with-secrets.sh` | Loads `curation/.env`, verifies the named secret(s) exist, then runs the command. |
 | `.env` / `.env.example` | `GEMINI_API_KEY` (image/video) + `CLOUDFLARE_API_TOKEN` (R2 upload). `.env` is **gitignored**. |
 
-Secrets are required — the image/video skills and the R2 upload are all invoked
-through `with-secrets.sh` (see `AUTOMATED_CURATION.md` for exact commands).
+Secrets are required — the image/video skills and the R2 upload all go through
+`with-secrets.sh`. Also needs `ffmpeg` on `PATH`.
 
 ---
 
@@ -107,28 +111,11 @@ Return to Claude and say:
 
 > **process curation selections**
 
-Claude then:
-
-1. Runs `node curation/cleanup-tool/apply.mjs`, which:
-   - backs up the current `gallery.json` to `curation/cleanup-tool/.backups/`,
-   - **removes only the `undesirable` pieces** (the `great` ones stay — "great" is
-     a positive keep-signal),
-   - writes the removed items (with prompts + note) to
-     `curation/cleanup-tool/last-removed.json` and the kept-great items to
-     `curation/cleanup-tool/last-loved.json`.
-2. Builds **labeled contact sheets** of *both* kinds' first frames
-   (`node curation/cleanup-tool/contact-sheets.mjs`) so it can *see* the patterns —
-   dozens of videos are too many to view one-by-one, so their frames are tiled
-   4-per-image (sheets prefixed `undesirable_*` / `great_*`). It also writes each
-   frame at **full resolution** under `.analysis/frames/`, which Claude opens when
-   a note hinges on fine detail ("cracks on the faces") that a tile can't show.
-3. Cross-references each piece's **prompt + first frame** (leading with your
-   free-form **note** when you left one) in *both* directions — the failure
-   patterns to **avoid** (undesirable) and the traits to **make more of** (great) —
-   summarizes them, and appends a dated entry to
-   [`PROMPT_GUIDANCE.md`](PROMPT_GUIDANCE.md) with concrete new/reinforced rules
-   (adding repeat-worthy styles to `ART_STYLES_FOR_INSPIRATION.md` when the great
-   notes point at one).
+Claude applies the deletions (`apply.mjs`), builds labeled contact sheets of both
+kinds' first frames so it can *see* the patterns, and appends a dated round entry
+to [`PROMPT_GUIDANCE.md`](PROMPT_GUIDANCE.md). The exact procedure is
+[`.claude/skills/curate-gallery/SKILL.md`](../.claude/skills/curate-gallery/SKILL.md)
+— **edit that, not this section.**
 
 > The deletion is mechanical and safe (it's just `apply.mjs`); Claude's real
 > value is the prompt + frame pattern analysis. You can also run
