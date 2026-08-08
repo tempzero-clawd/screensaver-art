@@ -4001,5 +4001,65 @@
     "image_prompt": "A solarpunk cityscape illustration, lush painterly gouache, bright and optimistic. Towering white terraced buildings draped in cascading greenery, vertical gardens, flowering vines and solar-glass canopies, connected by graceful arched skybridges; a sleek streamlined electric tram gliding along an elevated track between the green towers, people strolling across a planted pedestrian bridge, colourful banners and flowering trees, a spinning white rooftop wind turbine, songbirds in the air, a brilliant clear blue sky with soft clouds. Warm golden sunlight, saturated verdant greens with coral and teal accents, densely composed and full of detail, the painted surface smooth and clean. Bright, generous, even daylight. Viewed straight-on, flat to the picture plane. The scene fills the entire image edge to edge; no museum, no display case, no glass, no pedestal, no gallery wall, no spotlight, no museum label, no painted border, no mat, no decorative frame.",
     "video_prompt": "The sleek white-and-teal electric tram glides smoothly forward along the elevated track between the green towers, a passenger waving from a window. The white rooftop wind turbine turns steadily, the hanging vines and colourful banners sway gently, songbirds flit across the blue sky, and a few pedestrians stroll along the planted skybridge. The buildings, vertical gardens and glass canopies keep their exact painted shapes and colours. Warm, bright, even daylight.",
     "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/horse_fair_realism_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/horse_fair_realism_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/horse_fair_realism_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/horse_fair_realism_640w.webp",
+    "title": "The Horse Fair - French Realism (AI Animated)",
+    "type": "video",
+    "date": "2026-08-08",
+    "tags": [
+      "19th Century"
+    ],
+    "image_prompt": "A grand 19th-century French Realist oil painting in the manner of Rosa Bonheur, oil on canvas, c.1855: a bustling open-air horse fair along a tree-lined Parisian boulevard on a bright overcast morning. Powerful muscular Percheron draft horses — dappled greys, glossy chestnuts and blacks — are led in a sweeping diagonal line by grooms in blue smocks and red neckerchiefs. In the centre a magnificent dappled-grey stallion rears up, forelegs pawing the air, thick mane and tail flying, as a broad-shouldered groom hauls on the halter and leans back against its weight. Other horses trot, toss their heads and stamp, harness brasses gleaming. Rows of tall plane trees and pale stone buildings behind, scattered spectators. Rich full polychrome palette, warm earth tones against cool grey sky, crisp naturalistic detail, freshly painted, pigments brilliant and unfaded, the painted surface smooth clean and unbroken as on the day it was finished. Bright even daylight filling the whole scene, luminous and evenly lit. The scene fills the entire image, extending to all four edges, viewed straight-on flat to the picture plane. No museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame around it.",
+    "video_prompt": "The central dappled-grey draft stallion rears up, forelegs pawing the air, then lowers its hooves and strides forward, its thick white mane and tail flying, keeping its exact painted shape, colours and dappled markings throughout. The groom in the blue smock leans back and hauls on the taut halter rope, feet braced. Around them the other draft horses trot forward, toss and bob their heads, and swish their tails, each keeping its own painted form and colour; the grooms lead them along, blue smocks and red neckerchiefs stirring. Fine dust rises from the churned ground under the hooves. The plane trees, stone buildings and standing spectators behind hold still. Bright even daylight, luminous and evenly lit. Slow steady camera, straight-on and flat to the picture plane, no camera skew.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/balloon_festival_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/balloon_festival_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/balloon_festival_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/balloon_festival_640w.webp",
+    "title": "Balloon Festival over the Valley - Contemporary Illustration (AI Animated)",
+    "type": "video",
+    "date": "2026-08-08",
+    "tags": [
+      "Contemporary"
+    ],
+    "image_prompt": "A contemporary flat editorial illustration in the style of a modern travel poster, clean crisp vector-like shapes with subtle grain and soft gradients, a rich saturated palette: a hot-air balloon festival rising over a patchwork green valley on a clear bright morning. Dozens of colourful hot-air balloons — bold stripes, chevrons, polka-dots and teardrop shapes in scarlet, tangerine, turquoise, magenta, sunflower-yellow and violet — float at many heights across a luminous pale-blue sky dotted with a few round clouds. In the foreground a large striped balloon lifts off, its wicker basket carrying tiny waving figures, the burner glowing. Below, a green valley of rolling fields, hedgerows, a winding river and a distant town, small crowds gathered on the launch field. Bright even morning daylight, luminous and evenly lit, cheerful and airy, dense colourful composition filling the sky. Freshly made, colours brilliant and clean, smooth flat surfaces. The scene fills the entire image, extending to all four edges, viewed straight-on flat to the picture plane. No museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame around it.",
+    "video_prompt": "The colourful hot-air balloons slowly drift and rise across the sky, each balloon keeping its exact painted shape, pattern and colours while it gently ascends and floats sideways at its own speed, so the sky stays full of balloons as some climb higher and others cross the frame. The large red-and-white balloon on the right rises slowly; its burner flame flares and flickers upward, and the passengers in its wicker basket wave their arms cheerfully. A few round clouds drift lazily. The green patchwork valley, river, distant town and the small crowd on the launch field below stay still, the tiny spectators waving. Bright even morning daylight, luminous, cheerful and airy. Slow steady gentle camera, straight-on and flat to the picture plane.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/geese_marsh_liljefors_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/geese_marsh_liljefors_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/geese_marsh_liljefors_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/geese_marsh_liljefors_640w.webp",
+    "title": "Geese Descending on the Marsh - Swedish Naturalism (AI Animated)",
+    "type": "video",
+    "date": "2026-08-08",
+    "tags": [
+      "19th Century"
+    ],
+    "image_prompt": "A late-19th-century Swedish naturalist wildlife oil painting in the manner of Bruno Liljefors, oil on canvas, c.1895: a skein of wild greylag geese descending onto a sunlit reedy marsh at the edge of a broad lake on a bright clear autumn morning. Several big grey-and-white geese are coming in to land — wings spread wide and cupped, webbed feet lowered, necks stretched — while a few have just splashed down onto the shining blue water, sending out ripples, and others still wheel in the luminous sky. Tall golden-tan reeds and rushes fill the foreground, a low green pine shoreline in the distance, soft white clouds. Rich naturalistic palette with real tonal range — warm ochre reeds, cool blue water, soft grey plumage with crisp barred feather detail, freshly painted, pigments brilliant and unfaded, the painted surface smooth clean and unbroken as on the day it was finished. Bright even morning daylight filling the whole scene, luminous and evenly lit. The scene fills the entire image, extending to all four edges, viewed straight-on flat to the picture plane. No museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame around it.",
+    "video_prompt": "The wild greylag geese come in to land: each descending goose beats its wide spread wings a few slow deep strokes, lowers its webbed feet and settles down onto the shining water, splashing as it touches down, keeping its exact painted shape, grey-and-white plumage and markings throughout. The two geese in the lower foreground finish braking with wings raised and splash onto the surface; the geese still aloft glide lower on set wings. The goose already on the water at the right swims forward with a small wake. Reeds and rushes sway very gently; the blue water ripples where the birds land. The distant pine shoreline, sky and drifting clouds stay calm. Bright even morning daylight, luminous and evenly lit. Slow steady camera, straight-on and flat to the picture plane.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/regatta_artdeco_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/regatta_artdeco_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/regatta_artdeco_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/regatta_artdeco_640w.webp",
+    "title": "The Regatta - Art Deco Travel Poster (AI Animated)",
+    "type": "video",
+    "date": "2026-08-08",
+    "tags": [
+      "Modern"
+    ],
+    "image_prompt": "A 1930s Art Deco travel poster in the manner of A.M. Cassandre, bold flat lithographic colour planes, streamlined geometric stylisation, crisp clean edges and elegant simplified forms: a yacht regatta racing across a sparkling sea under a brilliant midday sun. Three sleek racing sloops heel over sharply as they surge through stylised blue-and-white geometric swells, their tall triangular sails — bright white, crimson and deep-blue — swelling taut and full in a stiff breeze, bows throwing crisp fans of white spray. Taut rigging, colourful signal pennants streaming from the mastheads, tiny crew figures hiking out over the windward rail. A stylised golden sun with radiating rays and a few sharp Art Deco clouds in a clear turquoise sky, a hint of distant coastline. Rich saturated poster palette — cobalt and azure sea, scarlet and gold accents, brilliant white sails — dense dynamic diagonal composition, freshly printed, colours brilliant and clean, smooth flat surfaces. Bright even midday daylight, luminous and evenly lit. IMPORTANT: the sea, sky and sun bleed completely off all four edges of the image with absolutely no border, no margin, no keyline, no cream edge — the artwork is full-bleed and fills the entire image edge to edge, viewed straight-on flat to the picture plane. No text, no lettering, no typography, no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame around it.",
+    "video_prompt": "The three racing sailboats surge forward through the rolling swell, each yacht heeling over and rising and dipping as it cuts through the stylised waves, keeping its exact shape, colour and full taut sails throughout. Their bows throw crisp fans of white spray that fly and fall back. The tall triangular sails stay swollen and full in the stiff breeze; the colourful string of signal pennants flutters and ripples along the forestay; the crew figures stay hiked out over the windward rail. The blue and white geometric waves roll steadily beneath the hulls with white foam crests. The golden sun and the sharp clouds in the turquoise sky hold their place. Bright even midday daylight, luminous and evenly lit. Slow steady camera, straight-on and flat to the picture plane.",
+    "looping": false
   }
 ]

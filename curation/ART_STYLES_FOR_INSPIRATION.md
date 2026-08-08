@@ -57,6 +57,8 @@ When you add a new style, append it under the section it best fits.
 - Skagen School (Danish plein-air coastal painting — Michael Ancher, P.S. Krøyer)
 - Realism
 - Naturalism (French plein-air rural realism — Bastien-Lepage, peasant harvest & farm labour)
+- Animalier painting (Rosa Bonheur — French animal painting: horse fairs, cattle markets, working draft horses in motion)
+- Nordic Wildlife Painting (Bruno Liljefors — Swedish naturalist wildlife: geese landing, foxes, birds of prey set in bright marsh & forest)
 - Macchiaioli
 - Tonalism
 - Academic art
@@ -92,6 +94,7 @@ When you add a new style, append it under the section it best fits.
 - De Stijl
 - Bauhaus
 - Art Deco
+- Art Deco Travel Poster (Cassandre-style — bold flat lithographic colour planes, streamlined geometry: liners, trains, regattas, ski resorts)
 - Precisionism
 - Social Realism
 - Abstract art
@@ -142,6 +145,7 @@ is the **AI-cliché** test in `PROMPT_GUIDANCE.md` ("Brand & taste"), not recenc
 - Storybook / children's-book gouache illustration (warm, densely-composed narrative scenes)
 - Contemporary Surf / Coastal Painting (bold acrylic wave-and-surfer scenes, saturated planes of turquoise and coral)
 - Contemporary Urban Realism (large figurative city-genre oils — rooftop/street sport, stoops, subway, playgrounds)
+- Contemporary Flat Vector Illustration (modern editorial / travel-poster look — bold clean shapes, subtle grain & gradients, saturated colour planes; e.g. a balloon festival, a busy harbour)
 
 ## Techniques, media & cross-cutting visual styles
 
