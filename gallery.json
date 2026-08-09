@@ -4061,5 +4061,65 @@
     "image_prompt": "A 1930s Art Deco travel poster in the manner of A.M. Cassandre, bold flat lithographic colour planes, streamlined geometric stylisation, crisp clean edges and elegant simplified forms: a yacht regatta racing across a sparkling sea under a brilliant midday sun. Three sleek racing sloops heel over sharply as they surge through stylised blue-and-white geometric swells, their tall triangular sails — bright white, crimson and deep-blue — swelling taut and full in a stiff breeze, bows throwing crisp fans of white spray. Taut rigging, colourful signal pennants streaming from the mastheads, tiny crew figures hiking out over the windward rail. A stylised golden sun with radiating rays and a few sharp Art Deco clouds in a clear turquoise sky, a hint of distant coastline. Rich saturated poster palette — cobalt and azure sea, scarlet and gold accents, brilliant white sails — dense dynamic diagonal composition, freshly printed, colours brilliant and clean, smooth flat surfaces. Bright even midday daylight, luminous and evenly lit. IMPORTANT: the sea, sky and sun bleed completely off all four edges of the image with absolutely no border, no margin, no keyline, no cream edge — the artwork is full-bleed and fills the entire image edge to edge, viewed straight-on flat to the picture plane. No text, no lettering, no typography, no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame around it.",
     "video_prompt": "The three racing sailboats surge forward through the rolling swell, each yacht heeling over and rising and dipping as it cuts through the stylised waves, keeping its exact shape, colour and full taut sails throughout. Their bows throw crisp fans of white spray that fly and fall back. The tall triangular sails stay swollen and full in the stiff breeze; the colourful string of signal pennants flutters and ripples along the forestay; the crew figures stay hiked out over the windward rail. The blue and white geometric waves roll steadily beneath the hulls with white foam crests. The golden sun and the sharp clouds in the turquoise sky hold their place. Bright even midday daylight, luminous and evenly lit. Slow steady camera, straight-on and flat to the picture plane.",
     "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/rowing_crew_american_realism_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/rowing_crew_american_realism_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/rowing_crew_american_realism_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/rowing_crew_american_realism_640w.webp",
+    "title": "The Rowing Crew - American Realism (AI Animated)",
+    "type": "video",
+    "date": "2026-08-09",
+    "tags": [
+      "19th Century"
+    ],
+    "image_prompt": "A luminous 19th-century American Realist painting scene in the manner of Thomas Eakins, shown as if you are looking directly at the painted scene itself which completely fills the entire image to all four edges: a coxed four rowing shell of young oarsmen in white singlets pulling their oars in unison across a broad, sunlit river on a clear summer afternoon; a second racing shell further off, a low stone-arch bridge in the middle distance, green wooded banks and a few spectators in straw hats on the right bank. Crisp bright reflections on the water, blue sky with high scattered clouds, warm afternoon sunlight, precise draughtsmanship, realistic figures, rich naturalistic colour, bright and evenly lit.",
+    "video_prompt": "The four oarsmen in the near racing shell pull a full, powerful stroke in unison — the blades catch the water, their arms and backs draw back — and the wooden shell surges forward leaving a widening wake; the second crew rows steadily in the distance, the river surface ripples and reflects the sky, the spectators on the right bank shift and watch, leaves stir gently in the breeze. Bright warm afternoon daylight.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/rearing_horse_baroque_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/rearing_horse_baroque_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/rearing_horse_baroque_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/rearing_horse_baroque_640w.webp",
+    "title": "The Cavalier's Grey - Baroque Equestrian Portrait (AI Animated)",
+    "type": "video",
+    "date": "2026-08-09",
+    "tags": [
+      "Renaissance & Baroque"
+    ],
+    "image_prompt": "A grand Baroque oil painting: an elegant cavalier in a plumed hat and rich coat reining a dapple-grey horse that rears and prances in a sunlit palace courtyard, two liveried grooms and a pair of hounds around him, warm golden morning light across pale stone architecture, an ornamental balustrade and clipped trees, bright blue sky with soft clouds beyond. Dynamic diagonal composition, rich naturalistic colour, confident painterly brushwork, high finish, bright and evenly lit.",
+    "video_prompt": "The dapple-grey horse rears and prances on the spot, lifting and pawing its forelegs, mane and tail flowing, while the cavalier reins it in and settles firmly in the saddle; the groom at the bridle steadies the horse, the second attendant gestures with his hand, and the two hounds shift and sniff with tails wagging. Warm bright morning daylight across the pale stone courtyard, soft clouds drifting in the blue sky.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/autumn_farmers_market_contemporary_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/autumn_farmers_market_contemporary_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/autumn_farmers_market_contemporary_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/autumn_farmers_market_contemporary_640w.webp",
+    "title": "Autumn Market Morning - Contemporary Illustration (AI Animated)",
+    "type": "video",
+    "date": "2026-08-09",
+    "tags": [
+      "Contemporary"
+    ],
+    "image_prompt": "A warm contemporary editorial illustration, flat gouache-and-vector style with clean confident shapes and soft gradients: a lively autumn farmers' market on a sunny morning, rows of wooden stalls piled high with pumpkins, red apples, sunflowers and loaves of bread, striped awnings, strings of bunting and paper lanterns overhead, townsfolk in cozy sweaters and scarves strolling with woven baskets, a vendor leaning over a stall handing over produce, a dog trotting alongside. Bright golden daylight, rich autumnal palette of pumpkin-orange, deep red, mustard and forest green, densely detailed and full of life, cheerful and inviting, crisp and luminous.",
+    "video_prompt": "Shoppers stroll along the sunny market lane — the woman in the red coat and yellow scarf walks forward, the little dog trots ahead on its leash, the man in front carries his basket — while the bearded vendor on the right leans over his stall and hands a bunch of carrots across to a customer; overhead the paper lanterns and triangular bunting sway gently in the breeze, and a few autumn leaves drift slowly down. Bright golden morning daylight.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/spring_watermill_shinhanga_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/spring_watermill_shinhanga_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/spring_watermill_shinhanga_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/spring_watermill_shinhanga_640w.webp",
+    "title": "Watermill in Spring - Shin-hanga (AI Animated)",
+    "type": "video",
+    "date": "2026-08-09",
+    "tags": [
+      "Japanese"
+    ],
+    "image_prompt": "A luminous Japanese shin-hanga landscape scene in the colour and style of Kawase Hasui, bright clear spring daylight, shown full-bleed so the printed scene itself completely fills the entire image to all four edges: a large wooden waterwheel mill beside a clear rushing mountain stream, the great wheel caught mid-turn throwing bright droplets of water, a farmer in an indigo kimono and straw hat crossing a small plank bridge, blossoming pink cherry trees and fresh green willows on the banks, a thatched farmhouse roof, distant blue hills under a clear graded sky. Soft bokashi gradient skies, rich clean saturated colour, serene and beautifully composed, bright and evenly lit.",
+    "video_prompt": "The great wooden waterwheel turns steadily, its blades scooping and spilling bright water in continuous cascades down into the rushing stream below; the stream flows and foams over the rocks, the farmer in the indigo kimono and straw hat walks slowly across the little wooden plank bridge, and the willow fronds and pink cherry blossoms sway gently in the spring breeze. Bright clear spring daylight.",
+    "looping": false
   }
 ]

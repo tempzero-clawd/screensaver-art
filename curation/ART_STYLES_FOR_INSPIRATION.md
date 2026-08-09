@@ -73,6 +73,7 @@ When you add a new style, append it under the section it best fits.
 - Art Nouveau
 - Peredvizhniki / The Wanderers (Russian realist landscape, Levitan / Savrasov)
 - American Western Frontier Art (Remington / Russell — cowboys, cattle drives, river crossings, the Old West)
+- American Realism (Thomas Eakins / Winslow Homer — sober figurative realism: rowing crews, sport, coastal and everyday American life)
 
 ## Modern & conceptual art movements (late-19th century onward)
 
