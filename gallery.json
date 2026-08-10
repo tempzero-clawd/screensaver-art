@@ -4121,5 +4121,65 @@
     "image_prompt": "A luminous Japanese shin-hanga landscape scene in the colour and style of Kawase Hasui, bright clear spring daylight, shown full-bleed so the printed scene itself completely fills the entire image to all four edges: a large wooden waterwheel mill beside a clear rushing mountain stream, the great wheel caught mid-turn throwing bright droplets of water, a farmer in an indigo kimono and straw hat crossing a small plank bridge, blossoming pink cherry trees and fresh green willows on the banks, a thatched farmhouse roof, distant blue hills under a clear graded sky. Soft bokashi gradient skies, rich clean saturated colour, serene and beautifully composed, bright and evenly lit.",
     "video_prompt": "The great wooden waterwheel turns steadily, its blades scooping and spilling bright water in continuous cascades down into the rushing stream below; the stream flows and foams over the rocks, the farmer in the indigo kimono and straw hat walks slowly across the little wooden plank bridge, and the willow fronds and pink cherry blossoms sway gently in the spring breeze. Bright clear spring daylight.",
     "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/futurist_race_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/futurist_race_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/futurist_race_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/futurist_race_640w.webp",
+    "title": "The Grand Prix - Italian Futurism (AI Animated)",
+    "type": "video",
+    "date": "2026-08-10",
+    "tags": [
+      "Modern"
+    ],
+    "image_prompt": "A Futurist oil painting in the Italian Futurism style of Giacomo Balla and Luigi Russolo: a bright scarlet-red open-wheel Grand Prix race car hurtling forward at speed, the car clearly recognizable but energized with repeated force-lines, motion trails and fractured planes conveying velocity, dust and speed streaks radiating behind it, a grandstand crowd dissolved into rhythmic coloured arcs in the background, dynamic diagonal composition, vivid saturated palette of scarlet, cobalt blue, chrome yellow, orange and emerald, bold interlocking geometric fragments, freshly painted oil on canvas with brilliant unfaded pigments and a smooth clean surface. Bright even daylight, luminous and evenly lit across the whole scene. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge, viewed straight-on.",
+    "video_prompt": "Within a flat two-dimensional Futurist oil painting, the depicted scarlet open-wheel race car slides forward along the painted track, its spoked wheels turning, painted dust and speed streaks trailing behind it; the second car follows; the grandstand crowd of coloured arcs shimmers faintly. The picture stays a flat painted oil canvas at all times, keeping the bold flat brushwork, geometric facets and saturated painted colours; only the depicted subjects move within the painting. No 3D render, no photorealism, no glossy reflections. Bright even daylight. Camera stays locked and straight-on, no zoom. Physically plausible motion, no morphing, no melting.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/pointillist_circus_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/pointillist_circus_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/pointillist_circus_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/pointillist_circus_640w.webp",
+    "title": "The Circus Ring - Pointillism (AI Animated)",
+    "type": "video",
+    "date": "2026-08-10",
+    "tags": [
+      "19th Century"
+    ],
+    "image_prompt": "A Neo-Impressionist Pointillist oil painting in the divisionist style of Georges Seurat and Paul Signac: the interior of a circus big top, a graceful bareback acrobat in a white tutu balancing on one leg atop a cantering cream-white horse in the ring, a ringmaster with a whip and two tumbling clowns nearby, tiers of spectators in the curving stands behind, the entire surface built from tiny distinct dots of pure colour, luminous warm palette of gold, cream, rose, cobalt and emerald points of light, airy bright interior, dynamic sweeping curved composition, freshly painted with brilliant unfaded pigments and a smooth clean surface. Bright even light filling the tent, luminous and evenly lit. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge, viewed straight-on.",
+    "video_prompt": "The cream-white horse canters steadily around the circus ring, its legs striding and its mane and tail flowing, while the bareback acrobat holds her balance on its back with arms outstretched; the ringmaster raises and flicks his whip; the two clowns tumble on the sand; the seated audience shifts and stirs gently. Each figure keeps its exact painted pointillist shape and colours while it moves. Bright even light fills the tent. Camera holds straight-on. Physically plausible motion, no morphing, no melting.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/carousel_fair_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/carousel_fair_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/carousel_fair_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/carousel_fair_640w.webp",
+    "title": "The Carousel - Storybook Illustration (AI Animated)",
+    "type": "video",
+    "date": "2026-08-10",
+    "tags": [
+      "Contemporary"
+    ],
+    "image_prompt": "A contemporary storybook illustration of a vintage carousel merry-go-round turning at a summer fair: ornate hand-painted carousel horses rising and falling on twisted brass poles, cheerful children riding them, a striped conical canopy topped with fluttering triangular pennants, lush green trees and colourful fair stalls in the background, warm golden late-afternoon light, flat modern illustration with clean confident shapes and a gentle paper grain, warm saturated palette of teal, coral, cream, sunflower yellow and rich red, whimsical and inviting, a dense detailed composition filling the whole scene. Bright even daylight, luminous and evenly lit. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge, viewed straight-on.",
+    "video_prompt": "The carousel turns steadily on its axis, the ornate horses gently rising and falling on their brass poles as the children ride and wave their hands, the triangular pennants and canopy flags fluttering in the breeze, the two ferris wheels turning slowly far behind. Each horse and child keeps its exact painted shape and colours while the platform rotates. Bright even daylight, evenly lit. Camera holds straight-on. Physically plausible motion, no morphing, no melting.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/mughal_procession_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/mughal_procession_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/mughal_procession_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/mughal_procession_640w.webp",
+    "title": "Royal Procession - Mughal Miniature (AI Animated)",
+    "type": "video",
+    "date": "2026-08-10",
+    "tags": [
+      "South & Southeast Asian"
+    ],
+    "image_prompt": "An imperial Mughal miniature painting in opaque watercolour and gold on paper, 17th-century Mughal atelier style: a grand royal procession led by a richly caparisoned elephant striding forward, carrying a golden canopied howdah with a prince, attendants walking alongside waving fly-whisks and holding tall standards, colourful banners and pennants aloft, mounted horsemen and foot-soldiers, a walled sandstone palace and green gardens rising behind, a jewel-bright palette of crimson, emerald, gold, lapis blue and saffron, intricate dense ornamental detail across the whole scene, freshly painted with brilliant unfaded pigments and a smooth clean surface. Bright even daylight, luminous and evenly lit. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the painted scene fills the entire image edge to edge, viewed straight-on.",
+    "video_prompt": "The great caparisoned elephant strides slowly forward, its legs moving and trunk swaying, carrying the golden canopied howdah with the prince; the attendants walk alongside waving their white fly-whisks, the mounted horsemen advance at a walk, and the tall banners and pennants ripple in the breeze. Each figure, horse and elephant keeps its exact painted shape, colours and markings while it moves. Bright even daylight, evenly lit. Camera holds straight-on. Physically plausible motion, no morphing, no melting.",
+    "looping": false
   }
 ]
