@@ -19,6 +19,7 @@ When you add a new style, append it under the section it best fits.
 - International Gothic (Limbourg brothers)
 - Illuminated Manuscript
 - Newlyn School (1880s British plein-air realism, Cornish fishing-village life)
+- English Landscape (Gainsborough / Constable — 18th–19th-c. pastoral: hay wagons, wooded lanes, grazing sheep, luminous skies)
 - Mille-fleurs Tapestry
 - Bayeux Tapestry (Norman narrative wool embroidery on linen)
 - Carolingian Illumination
