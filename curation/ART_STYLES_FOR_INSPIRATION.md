@@ -63,6 +63,7 @@ When you add a new style, append it under the section it best fits.
 - Macchiaioli
 - Tonalism
 - Academic art
+- Orientalism (19th-c. academic genre — Gérôme / Roberts: sunlit bazaars, caravanserais, bustling souks, dense colour and pattern)
 - Pre-Raphaelite Brotherhood
 - Arts and Crafts Movement
 - Ashcan School
