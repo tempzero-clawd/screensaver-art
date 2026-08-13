@@ -4301,5 +4301,65 @@
     "image_prompt": "A 1930s American Regionalist scene painting in the rhythmic, muscular manner of Thomas Hart Benton — undulating sinuous forms, bold saturated colour, rolling Midwestern hills, painted in egg tempera, freshly finished with clean brilliant unfaded colour and a smooth surface. A small-town sandlot baseball game on a bright clear summer afternoon: the batter caught mid-swing at home plate, the pitcher following through on the mound, a runner sprinting hard toward first base, fielders crouched and leaning across the dusty diamond, a lively crowd of townsfolk in straw hats and summer dresses watching from a wooden bleacher. Behind them roll green and gold farm fields, red barns and a white church steeple under a big blue sky with a few sculpted white clouds. Warm saturated palette of emerald and ochre fields, red barns, blue sky and white uniforms, dynamic sweeping composition, luminous and evenly lit in full daylight, densely filled edge to edge. The scene fills the entire image, extending to all four edges, viewed straight-on. No museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame around it.",
     "video_prompt": "Bright, clear summer daylight over the sandlot diamond. The batter swings his bat through in a full follow-through arc and steps forward; on the right the runner sprints hard along the base path, legs pumping and arms driving; the pitcher on the mound completes his throwing follow-through, arm sweeping down; the crouched infielders shift their weight and lean, ready. In the wooden bleacher the seated crowd stirs — a few standing, clapping and waving straw hats. The sculpted white clouds drift slowly across the deep blue sky and the tall grass along the field edge sways in a light breeze. Each figure keeps its exact painted shape, proportions and colours as it moves; the red barns, white church steeple, fences, bleacher and rolling hills stay fixed. Slow, subtle camera push toward the diamond. Physically natural motion, no morphing, no melting, no distortion.",
     "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/double_dutch_looping.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/double_dutch_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/double_dutch_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/double_dutch_640w.webp",
+    "title": "Jump Rope on the Block - Contemporary Urban Realism (AI Animated)",
+    "type": "video",
+    "date": "2026-08-13",
+    "tags": [
+      "Contemporary"
+    ],
+    "image_prompt": "A large-scale contemporary urban-realist oil painting of two girls turning two long jump ropes on a sun-drenched city sidewalk while a third girl skips mid-jump between them, feet just off the ground. Warm-toned brownstone stoops and a colourful graffiti-tagged brick wall fill the background, potted plants on the steps, a red fire hydrant, bright summer afternoon light, saturated confident colour, bold clean shapes and crisp brushwork. Freshly painted, colours brilliant and unfaded, the painted surface smooth and clean. Densely composed, the figures filling the frame edge to edge. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge, viewed straight-on, in bright even daylight.",
+    "video_prompt": "The two girls at the ends keep turning the long rope in a steady continuous arc while the girl in the middle skips over it in place, rising and landing in a bouncing rhythm; the rope sweeps up, over and back down in complete rotations, her hair and blue dress bouncing with each jump. Each figure keeps its exact painted shape, clothing colours and features while it moves; the stoops, brick wall, potted geraniums and red hydrant stay put. Bright even afternoon daylight. One full turn-and-jump cycle that returns exactly to the opening pose.",
+    "looping": true
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/flower_market_looping.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/flower_market_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/flower_market_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/flower_market_640w.webp",
+    "title": "The Flower Market - Impressionism (AI Animated)",
+    "type": "video",
+    "date": "2026-08-13",
+    "tags": [
+      "19th Century"
+    ],
+    "image_prompt": "A bright Impressionist oil painting of a bustling Parisian flower market on a sunlit morning. Rows of stalls heaped with cut flowers — peonies, roses, tulips, lavender, sunflowers — in a brilliant patchwork of colour; well-dressed shoppers in summer dress stroll between the stalls, a flower-seller in a white apron lifts a wrapped bouquet, a wooden hand-cart piled with blooms stands at the kerb, plane trees and pale Haussmann façades behind. Loose broken brushwork, dappled sunlight, luminous high-key colour, full even morning daylight filling the whole scene. Freshly painted, pigments brilliant and unfaded, the painted surface smooth and clean. Densely composed, figures and flowers filling the frame edge to edge. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge, viewed straight-on, in bright even daylight.",
+    "video_prompt": "Shoppers stroll steadily through the market in a continuous stream — one group leaving the frame at the right as new figures enter from the left — while the flower-seller lifts and hands over a wrapped bouquet; parasols and skirts sway and a light breeze stirs the flower stems and the plane-tree leaves. Each figure, stall and cart keeps its exact painted shape and colours while it moves; the façades and trees stay put. Bright even morning daylight. A steady flow of passers-by so the overall scene looks the same at the end as at the beginning.",
+    "looping": true
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/fiesta_dance_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/fiesta_dance_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/fiesta_dance_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/fiesta_dance_640w.webp",
+    "title": "The Fiesta Dance - Mexican Muralism (AI Animated)",
+    "type": "video",
+    "date": "2026-08-13",
+    "tags": [
+      "Modern"
+    ],
+    "image_prompt": "A Mexican muralist painting in the monumental style of Diego Rivera: a lively village fiesta dance in a sunlit plaza. At the centre a woman in a bright embroidered folk skirt spins mid-dance, her wide skirt flaring into a great disc of red, green and white; her partner in white cotton clothes and a straw sombrero steps beside her; a semicircle of villagers and seated musicians with guitars and a trumpet look on, strings of papel-picado banners in fuchsia, yellow and blue strung overhead, a whitewashed church and clear blue sky behind. Bold flat monumental figures, rounded solid forms, warm earth palette lit by brilliant saturated accents, strong even midday sunlight across the whole scene. Freshly painted, colours brilliant and unfaded, the painted surface smooth and clean. Densely composed, figures filling the frame edge to edge. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge, viewed straight-on, in bright even daylight.",
+    "video_prompt": "The woman at the centre completes a full graceful spinning turn, her flared embroidered skirt swirling around her as her partner steps and turns with her; the ring of onlookers sways and claps, a seated guitarist strums, and the papel-picado banners ripple gently in the breeze. Each figure keeps its exact painted shape, costume colours and count while it moves; the church, plaza and banners' anchor points stay put. Bright even midday daylight. One continuous flowing dance.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/village_musicians_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/village_musicians_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/village_musicians_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/village_musicians_640w.webp",
+    "title": "The Village Musicians - Dutch Golden Age (AI Animated)",
+    "type": "video",
+    "date": "2026-08-13",
+    "tags": [
+      "Renaissance & Baroque"
+    ],
+    "image_prompt": "A Dutch Golden Age genre painting of a merry company making music in a bright village tavern. A standing fiddler plays his violin with the bow drawn across the strings; beside him a seated lute player and a woman in a red bodice lifting a stoneware jug, a long table of villagers laughing and singing, a small child and a spaniel on the black-and-white tiled floor, a hanging birdcage and pewter plates on a shelf. Broad clean daylight pours through a tall leaded window and fills the whole room evenly, warm ochres, clear reds, whites and soft browns, luminous even illumination across every face and the whole scene, crisp finely detailed realism. Freshly painted, colours brilliant and unfaded, the painted surface smooth and clean. Densely composed, figures filling the frame edge to edge. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge, viewed straight-on, in bright even daylight.",
+    "video_prompt": "The standing fiddler draws his bow steadily back and forth across the strings, his fingers working the neck and his foot tapping the tiled floor; the woman raises her stoneware jug, the seated company laugh and sway to the tune, and the spaniel wags its tail. Each figure keeps its exact painted shape, clothing colours and features while it moves; the window, table, shelf and walls stay put. Bright even daylight filling the room. A lively continuous music-making scene.",
+    "looping": false
   }
 ]
