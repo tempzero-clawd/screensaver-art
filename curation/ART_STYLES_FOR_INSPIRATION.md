@@ -44,6 +44,7 @@ When you add a new style, append it under the section it best fits.
 - Dutch Golden Age Winter Landscape (Avercamp — ice-skating genre scenes)
 - Baroque
 - Baroque Oil Painting
+- Flemish Baroque Still Life (Snyders / Beuckelaer — abundant market & larder scenes: heaped fish, game and fruit on a broad table, a fishwife or cook, a dog reaching up; bright window light, rich saturated colour)
 - Utrecht Caravaggism
 - Rococo
 - Neoclassicism
@@ -98,6 +99,7 @@ When you add a new style, append it under the section it best fits.
 - Bauhaus
 - Art Deco
 - Art Deco Travel Poster (Cassandre-style — bold flat lithographic colour planes, streamlined geometry: liners, trains, regattas, ski resorts)
+- Modern Circus Painting (Léger / vintage circus-poster idiom — bold saturated colour, confident stylized line, dynamic big-top action: trapeze flyers, acrobats, ring performers)
 - Precisionism
 - Social Realism
 - Abstract art

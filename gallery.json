@@ -4361,5 +4361,65 @@
     "image_prompt": "A Dutch Golden Age genre painting of a merry company making music in a bright village tavern. A standing fiddler plays his violin with the bow drawn across the strings; beside him a seated lute player and a woman in a red bodice lifting a stoneware jug, a long table of villagers laughing and singing, a small child and a spaniel on the black-and-white tiled floor, a hanging birdcage and pewter plates on a shelf. Broad clean daylight pours through a tall leaded window and fills the whole room evenly, warm ochres, clear reds, whites and soft browns, luminous even illumination across every face and the whole scene, crisp finely detailed realism. Freshly painted, colours brilliant and unfaded, the painted surface smooth and clean. Densely composed, figures filling the frame edge to edge. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge, viewed straight-on, in bright even daylight.",
     "video_prompt": "The standing fiddler draws his bow steadily back and forth across the strings, his fingers working the neck and his foot tapping the tiled floor; the woman raises her stoneware jug, the seated company laugh and sway to the tune, and the spaniel wags its tail. Each figure keeps its exact painted shape, clothing colours and features while it moves; the window, table, shelf and walls stay put. Bright even daylight filling the room. A lively continuous music-making scene.",
     "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/lifeboat_launch_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/lifeboat_launch_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/lifeboat_launch_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/lifeboat_launch_640w.webp",
+    "title": "The Lifeboat Launch - American Marine Realism (AI Animated)",
+    "type": "video",
+    "date": "2026-08-14",
+    "tags": [
+      "19th Century"
+    ],
+    "image_prompt": "A dramatic 19th-century American marine oil painting in the naturalist realist manner of the Atlantic coastal school, circa 1885: a sturdy wooden self-righting lifeboat crowded with oilskin-clad rescuers rowing hard through heavy grey-green Atlantic surf, long oars biting the water in unison, white spray bursting over the bow, a steersman leaning on the tiller. Bright overcast daylight floods the whole scene — a luminous silvery sky, foam gleaming white, the crew in glowing yellow and ochre oilskins set against deep sea-green swells. Freshly painted, pigments brilliant and unfaded, the painted surface smooth, clean and unbroken as on the day it was finished. Rich full colour, strong tonal range, densely composed with figures filling the boat. The scene fills the entire image, extending to all four edges, viewed straight-on and flat to the picture plane. No signature, no text, no artist name, no lettering anywhere. No museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame.",
+    "video_prompt": "In bright overcast daylight, the oilskin-clad crew pull their long oars back together in one powerful rowing stroke, the blades biting the sea and the wooden lifeboat surging forward. Heavy green swells heave and roll under the hull with real water physics, and white spray bursts over the bow. The men in their yellow oilskins and the boat keep their exact painted shapes, colours and count throughout — they row, they do not morph. The silvery sky drifts slowly. Camera holds straight-on with a very slow push-in.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/tea_harvest_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/tea_harvest_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/tea_harvest_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/tea_harvest_640w.webp",
+    "title": "The Tea Harvest - Contemporary Illustration (AI Animated)",
+    "type": "video",
+    "date": "2026-08-14",
+    "tags": [
+      "Contemporary"
+    ],
+    "image_prompt": "A contemporary illustrated landscape in a lush painterly modern style — clean confident linework, rich saturated gouache-like colour, the polished look of high-end travel illustration: an emerald-green terraced tea plantation on rolling hills in bright morning light, curving rows of neatly clipped tea bushes stepping down the slope. In the foreground a young tea picker in a conical straw hat and indigo tunic strides along a terrace path carrying a tall woven basket heaped with tender green leaves on her back; other pickers are scattered across the terraces plucking leaves. Bright clear morning daylight fills the whole scene, soft mist lifting off the distant valley, the sky luminous and pale gold. Rich full colour, high chroma, densely composed edge to edge. The scene fills the entire image, extending to all four edges, viewed straight-on. No signature, no text, no lettering. No museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame.",
+    "video_prompt": "In bright morning daylight, the young tea picker walks steadily forward along the terrace path, her stride natural and her heavy leaf basket swaying gently on her back. The other pickers bend and pluck tender leaves from the bushes; the tea rows sway softly in a light breeze and low mist drifts slowly through the distant valley. Every figure keeps its exact illustrated shape, colours and count — they move naturally, nothing morphs or duplicates. Camera holds straight-on with a very slow push-in.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/fish_market_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/fish_market_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/fish_market_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/fish_market_640w.webp",
+    "title": "The Fish Market - Flemish Baroque (AI Animated)",
+    "type": "video",
+    "date": "2026-08-14",
+    "tags": [
+      "Renaissance & Baroque"
+    ],
+    "image_prompt": "A sumptuous 17th-century Flemish Baroque market still life in the manner of Frans Snyders and Joachim Beuckelaer: a fishmongers stall heaped with glistening fresh fish — silver herring, pink salmon steaks, a great cod, crabs and lobsters, mussels in a basket — spread across a broad wooden table. A robust fishwife in a white cap and red bodice leans over the table hoisting up a large silver fish; a lively brown-and-white dog leaps up at the near edge of the table reaching toward a fish. Bright even daylight floods in from a large window at left, colours brilliant and saturated, the whole scene rich, dense and abundant. Freshly painted, pigments brilliant and unfaded, the painted surface smooth, clean and unbroken as on the day it was finished. The scene fills the entire image, extending to all four edges, viewed straight-on. No signature, no text, no lettering. No museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame.",
+    "video_prompt": "In bright even daylight from the left window, the brown-and-white dog stretches up on its hind legs against the table edge, tail wagging, and eagerly noses toward the silver herring just in front of it. The fishwife lifts and slowly turns the large silver salmon she is holding. In the far archway the market folk shift about naturally. The dog, the woman and every fish keep their exact painted shapes, colours and count — they move, nothing morphs or duplicates. Camera holds straight-on with a very slow push-in.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/flying_trapeze_looping.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/flying_trapeze_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/flying_trapeze_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/flying_trapeze_640w.webp",
+    "title": "The Flying Trapeze - Modern Circus (AI Animated)",
+    "type": "video",
+    "date": "2026-08-14",
+    "tags": [
+      "Modern"
+    ],
+    "image_prompt": "A vibrant early-20th-century Modern circus painting, bold saturated colour and confident stylized line reminiscent of vintage circus poster art and Fernand Leger: high under the big top, a lithe trapeze artist in a spangled scarlet costume swings out on a trapeze bar in a soaring arc, body extended and reaching toward a catcher who hangs by his knees from a second trapeze. Bright warm daylight pours through the striped canvas of the tent, filling the whole space with even glowing light; garlands of colourful bunting and pennant flags loop across the top, and far below a ring with tiny spectators. Rich full colour, high chroma, dynamic composition, densely detailed. Freshly painted, pigments brilliant and unfaded, the painted surface smooth, clean and unbroken. The scene fills the entire image, extending to all four edges, viewed straight-on. No signature, no text, no lettering. No museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame.",
+    "video_prompt": "In bright even daylight under the big top, the two trapezes swing together in one smooth gentle pendulum arc — carrying the scarlet-costumed flyer and the catcher a little to the side and then back to exactly where they began. The strings of colourful pennant flags and bunting flutter and sway in the moving air. Both acrobats keep their exact painted shapes, costumes, poses and count — they swing as one, nothing morphs, stretches or duplicates. The camera is locked off completely still — no zoom, no push-in, no pan; the framing never changes. The audience in the ring below stays put.",
+    "looping": true
   }
 ]
