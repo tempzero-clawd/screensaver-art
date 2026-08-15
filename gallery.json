@@ -4421,5 +4421,65 @@
     "image_prompt": "A vibrant early-20th-century Modern circus painting, bold saturated colour and confident stylized line reminiscent of vintage circus poster art and Fernand Leger: high under the big top, a lithe trapeze artist in a spangled scarlet costume swings out on a trapeze bar in a soaring arc, body extended and reaching toward a catcher who hangs by his knees from a second trapeze. Bright warm daylight pours through the striped canvas of the tent, filling the whole space with even glowing light; garlands of colourful bunting and pennant flags loop across the top, and far below a ring with tiny spectators. Rich full colour, high chroma, dynamic composition, densely detailed. Freshly painted, pigments brilliant and unfaded, the painted surface smooth, clean and unbroken. The scene fills the entire image, extending to all four edges, viewed straight-on. No signature, no text, no lettering. No museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame.",
     "video_prompt": "In bright even daylight under the big top, the two trapezes swing together in one smooth gentle pendulum arc — carrying the scarlet-costumed flyer and the catcher a little to the side and then back to exactly where they began. The strings of colourful pennant flags and bunting flutter and sway in the moving air. Both acrobats keep their exact painted shapes, costumes, poses and count — they swing as one, nothing morphs, stretches or duplicates. The camera is locked off completely still — no zoom, no push-in, no pan; the framing never changes. The audience in the ring below stays put.",
     "looping": true
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/collioure_boats_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/collioure_boats_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/collioure_boats_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/collioure_boats_640w.webp",
+    "title": "The Fishing Boats, Collioure - Fauvism (AI Animated)",
+    "type": "video",
+    "date": "2026-08-15",
+    "tags": [
+      "Modern"
+    ],
+    "image_prompt": "A Fauvist oil painting of a Mediterranean fishing harbour at Collioure, in the manner of André Derain and Henri Matisse. Bold, flat, non-naturalistic colour — vermilion, cobalt, emerald, chrome yellow, hot pink — laid down in broad confident brushstrokes. Brightly coloured fishing boats with lateen sails on turquoise water, pink and orange houses climbing the hillside, a bell tower, gulls in a luminous sky. Brilliant clear Mediterranean midday sunlight, high chroma, densely composed with colour filling every inch. Freshly painted, pigments brilliant and unfaded, the surface smooth clean and unbroken. The scene fills the entire image, extending to all four edges, viewed straight-on. No museum, no display case, no glass, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame.",
+    "video_prompt": "The flock of white gulls beats their wings and wheels slowly across the luminous harbour sky, while the brightly coloured fishing boats rock gently on the swell with their tall masts swaying, and the small white sailboat on the open sea at left glides slowly toward the harbour; the turquoise water ripples and the coloured reflections break and re-form beneath the hulls. Every boat, house and bird keeps its exact painted shape and bold Fauvist colours. Bright even Mediterranean daylight.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/drover_mob_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/drover_mob_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/drover_mob_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/drover_mob_640w.webp",
+    "title": "Turning the Mob - Australian Impressionism (AI Animated)",
+    "type": "video",
+    "date": "2026-08-15",
+    "tags": [
+      "19th Century"
+    ],
+    "image_prompt": "An Australian Impressionist plein-air oil painting in the Heidelberg School tradition (Tom Roberts, Frederick McCubbin). A mounted stockman on a bay horse gallops hard to turn a mob of running merino sheep on a sun-baked outback plain, a cloud of golden dust billowing up behind the flock. Scattered eucalyptus gum trees, dry ochre grass, a wide pale-blue summer sky, distant blue hills. Brilliant harsh Australian midday sunlight, warm ochres and dusty greens with bright highlights, loose confident brushwork, densely composed. Freshly painted, pigments brilliant and unfaded, the surface smooth clean and unbroken. The scene fills the entire image, extending to all four edges, viewed straight-on. No museum, no display case, no glass, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame.",
+    "video_prompt": "The bay horse gallops forward at full stride, its legs driving and mane and tail streaming, as the mob of merino sheep runs ahead of it and a golden cloud of dust billows up behind the flock; the eucalyptus leaves flutter in the hot dry wind. Horse, rider and every sheep keep their exact painted shape and colours while they run. Brilliant even midday daylight.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/safavid_hunt_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/safavid_hunt_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/safavid_hunt_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/safavid_hunt_640w.webp",
+    "title": "The Royal Hunt - Safavid Persian Miniature (AI Animated)",
+    "type": "video",
+    "date": "2026-08-15",
+    "tags": [
+      "Islamic"
+    ],
+    "image_prompt": "A Safavid Persian miniature painting, opaque watercolour, ink and gold on paper, Isfahan school, sixteenth century. A brilliant royal hunt across a flowering spring hillside: mounted archers in patterned robes on galloping horses, a spotted cheetah bounding after a fleeing gazelle, blossoming almond trees, jewel-like rocks and streams. Intense unfaded pigments — lapis lazuli blue, crimson, emerald green, turquoise, burnished gold. Extremely dense, richly patterned composition filling every inch of the picture, flat jewel-bright Persian colour, high viewpoint. Bright even daylight, luminous and evenly lit across the whole surface. Freshly painted, pigments brilliant and unfaded, the painted surface smooth, clean and unbroken, as on the day it was finished. The scene fills the entire image, extending to all four edges, viewed straight-on. No museum, no display case, no glass, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame.",
+    "video_prompt": "The spotted cheetah bounds after the fleeing gazelle across the centre of the flowering hillside, both leaping in full stride, as the central archer draws his bow on his walking horse; the blossoming almond branches sway gently and the turquoise streams ripple. The other mounted riders shift their weight and a few horses' tails and feathered pennants stir in the breeze. Everything keeps its exact painted shape and jewel-bright colours. Bright even daylight.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/valley_railcar_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/valley_railcar_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/valley_railcar_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/valley_railcar_640w.webp",
+    "title": "The Valley Line - Anime Landscape (AI Animated)",
+    "type": "video",
+    "date": "2026-08-15",
+    "tags": [
+      "Contemporary"
+    ],
+    "image_prompt": "A lush hand-painted anime landscape background in the Studio Ghibli tradition, soft gouache and watercolour with crisp painterly detail. A small bright-red single-carriage railcar crosses a tall grey stone viaduct spanning a deep green river valley; terraced rice paddies and wildflower meadows climb the hillsides, a clear river winds below, towering white cumulus clouds fill a brilliant blue summer sky. Saturated lush greens, blues and warm sunlight, nostalgic and luminous, densely detailed, evenly and brightly lit. The scene fills the entire image, extending to all four edges, viewed straight-on. No museum, no display case, no glass, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame.",
+    "video_prompt": "The little bright-red railcar moves steadily along the top of the stone viaduct from left to right, its wheels turning, while the towering white cumulus clouds drift slowly across the blue sky and the green rice paddies and wildflower meadows ripple in a light breeze; the winding river flows and glints in the sunlight below. The railcar and viaduct keep their exact shape and colours. Bright even summer daylight.",
+    "looping": false
   }
 ]
