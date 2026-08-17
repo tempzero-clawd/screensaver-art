@@ -4541,5 +4541,65 @@
     "image_prompt": "A vibrant 1930s Art Deco style painting of a grand fairground Ferris wheel turning against a brilliant summer-afternoon sky. The great wheel dominates the composition and its rim is cropped by the top edge, its slender steel spokes radiating from a bright glowing hub, colourful enclosed gondolas in cherry red, teal, cream and gold ringing the rim. Below it a bustling seaside amusement pier — striped bunting, flags, candy-coloured stalls and a small cheerful crowd of fairgoers in summer clothes. Bold streamlined Art Deco stylization: clean geometric shapes, strong confident outlines, bright flat saturated planes of colour with smooth graded skies, crisp and luminous, evenly and brightly lit by warm afternoon sunlight, freshly painted with smooth clean brilliant unfaded colour. The painted fairground scene bleeds off all four edges and completely fills the entire image corner to corner, viewed straight-on, with no margin. Absolutely no text, no lettering, no words, no signage. No border, no frame, no patterned edge, no decorative margin, no mat around the image; no museum, no display case, no glass, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background.",
     "video_prompt": "The great Ferris wheel turns steadily and smoothly, its colourful gondolas revolving around the rim, each gondola rising on one side and descending on the other while swinging gently on its pivot; the striped bunting and the little flags on their poles flutter in the breeze, and the cheerful crowd of fairgoers strolls and mingles along the sunlit pier below. Every gondola keeps its exact painted shape and colour as it revolves; the towers, stalls and pier stay put. Bright even afternoon daylight fills the whole scene. The camera holds steady, straight-on and flat to the picture plane. No morphing, no melting, no distortion.",
     "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/dragon_dance_nianhua_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/dragon_dance_nianhua_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/dragon_dance_nianhua_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/dragon_dance_nianhua_640w.webp",
+    "title": "The Dragon Dance - Chinese New Year Folk Print (AI Animated)",
+    "type": "video",
+    "date": "2026-08-17",
+    "tags": [
+      "Chinese & Korean"
+    ],
+    "image_prompt": "A Chinese New Year folk woodblock print (nianhua) in the Yangliuqing tradition, freshly printed, pigments brilliant and unfaded, the printed surface smooth, clean and unbroken as on the day it was made. A festive village street at midday under bright, clear, even daylight: a long sinuous golden dragon puppet held aloft on poles by a team of dancers in red and blue tunics, winding through a dense crowd of villagers in bright holiday clothes. Red lanterns strung overhead, plum blossoms, vermilion and gold everywhere, banners and paper decorations. Flat bold decorative folk-print style with strong black outlines, dense saturated color, rich ornamental detail filling every part of the composition. Viewed straight-on, flat to the picture plane. The scene fills the entire image, extending to all four edges. No museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame around it.",
+    "video_prompt": "The dragon-dance team runs and weaves in place, lifting and dipping their poles so the long golden dragon puppet undulates and ripples in a lively S-curve above their heads; the dancers red and blue tunics and sashes sway with their steps. The surrounding crowd of villagers shifts and claps, a few children wave their hands, and the strung red lanterns and hanging banners sway gently in the breeze. Everything keeps its exact printed shape, colours and bold black outlines; the buildings, plum trees and street stay fixed. Bright, clear, even midday daylight. Camera locked straight-on, flat to the print, no reframing.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/grand_boulevard_impressionism_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/grand_boulevard_impressionism_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/grand_boulevard_impressionism_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/grand_boulevard_impressionism_640w.webp",
+    "title": "The Grand Boulevard - French Impressionism (AI Animated)",
+    "type": "video",
+    "date": "2026-08-17",
+    "tags": [
+      "19th Century"
+    ],
+    "image_prompt": "A French Impressionist oil painting of a grand Parisian boulevard on a bright spring morning, in the manner of Camille Pissarro viewed from a high window looking down and along the avenue. Broad clear daylight fills the whole scene; a wide tree-lined avenue crowded with horse-drawn carriages and cabs, omnibuses, and streams of pedestrians in coats and hats moving along the wet, light-reflecting pavement. Bright fresh green chestnut trees in new leaf, cream-and-grey Haussmann buildings with rows of windows, red-and-blue awnings over shopfronts, a scatter of tiny bright figures. Loose broken brushstrokes, luminous high-key colour, vivid dabs of red, blue and green, sparkling light, freshly painted with brilliant unfaded pigments, the paint surface smooth and clean. Viewed straight-on, flat to the picture plane. The scene fills the entire image, extending to all four edges. No museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame around it.",
+    "video_prompt": "The horse-drawn carriages, cabs and yellow omnibuses roll steadily along the wet boulevard, the horses stepping and drawing them forward; pedestrians in dark coats and hats stroll along the pavements and cross the street, and a woman raises a parasol. The bright green chestnut trees stir gently in the spring breeze and light glints off the wet reflecting pavement. Everything keeps its exact painted shapes, colours and loose Impressionist brushwork; the Haussmann buildings and striped awnings stay fixed. Bright, clear, even spring daylight. Camera holds a steady straight-on view, no reframing.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/village_kermis_bruegel_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/village_kermis_bruegel_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/village_kermis_bruegel_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/village_kermis_bruegel_640w.webp",
+    "title": "The Village Kermis - Flemish Renaissance (AI Animated)",
+    "type": "video",
+    "date": "2026-08-17",
+    "tags": [
+      "Renaissance & Baroque"
+    ],
+    "image_prompt": "A Netherlandish Renaissance oil painting in the manner of Pieter Bruegel the Elder, a lively village kermis (outdoor peasant fair) on a bright summer afternoon under a broad luminous sky. In the foreground a ring of stout peasants in earthy red, ochre, white and blue costume dance a stamping round, hands linked, skirts and aprons swinging; a bagpiper plays on a barrel at the right. Behind them long trestle tables of feasting villagers, children running, a decorated maypole, timber-framed houses and a church tower, banners and a tavern with a jug hung out. Warm clear daylight fills the whole scene, brilliant unfaded pigments, crisp naturalistic detail, dense crowded composition packed with figures to every edge, the paint surface smooth and clean. Viewed straight-on, flat to the picture plane. The scene fills the entire image, extending to all four edges. No museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame around it.",
+    "video_prompt": "The linked ring of peasants dances a lively stamping round in the foreground, turning together hand-in-hand on the spot, their skirts, aprons and coats swinging with the steps; the bagpiper on the barrel puffs and plays, two children run and tug at the left, and the feasters at the trestle tables raise cups and lean in to talk. The hanging banners and the tavern jug-sign sway gently and white clouds drift across the bright blue sky. Every figure keeps its exact painted shape, costume colours and count; the timber houses, church tower and maypole stay fixed. Warm, bright, even summer daylight. Camera locked straight-on, no reframing.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/ski_descent_alpine_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/ski_descent_alpine_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/ski_descent_alpine_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/ski_descent_alpine_640w.webp",
+    "title": "The Ski Descent - Contemporary Alpine Illustration (AI Animated)",
+    "type": "video",
+    "date": "2026-08-17",
+    "tags": [
+      "Contemporary"
+    ],
+    "image_prompt": "A contemporary graphic illustration of a downhill skier carving a hard turn on a brilliant sunlit alpine slope, mid-century-modern travel-poster sensibility updated with clean modern vector shapes and rich flat colour. A single skier in a red-and-white jacket leans into a deep carving turn, throwing up a bright fan of powder snow; behind them a sweeping expanse of pristine white and pale-blue snowfields, dramatic jagged peaks under a deep clear cobalt sky, a scatter of dark pines and a distant chalet with a curl of chimney smoke. Bold confident shapes, crisp clean edges, luminous saturated colour, strong sunlight and long cool blue shadows on the snow, freshly made with brilliant unfaded colour, smooth clean surface. Viewed straight-on, flat to the picture plane. The scene fills the entire image, extending to all four edges. No museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame around it.",
+    "video_prompt": "The skier drives hard through the carving turn, ski edges biting and throwing up a big billowing fan of powder snow that sprays up and streams back on the wind before settling; the skier flexes lower into the turn, weight down, one pole planted. A thin curl of chimney smoke rises and drifts from the chalet, and a little loose snow skitters across the slope. Everything keeps its exact bold flat-vector shapes and saturated colours; the mountains, pines, chalet and sun stay fixed. Bright, clear alpine sunlight. Camera locked straight-on, no reframing.",
+    "looping": false
   }
 ]
