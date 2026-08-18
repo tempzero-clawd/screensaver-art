@@ -4601,5 +4601,65 @@
     "image_prompt": "A contemporary graphic illustration of a downhill skier carving a hard turn on a brilliant sunlit alpine slope, mid-century-modern travel-poster sensibility updated with clean modern vector shapes and rich flat colour. A single skier in a red-and-white jacket leans into a deep carving turn, throwing up a bright fan of powder snow; behind them a sweeping expanse of pristine white and pale-blue snowfields, dramatic jagged peaks under a deep clear cobalt sky, a scatter of dark pines and a distant chalet with a curl of chimney smoke. Bold confident shapes, crisp clean edges, luminous saturated colour, strong sunlight and long cool blue shadows on the snow, freshly made with brilliant unfaded colour, smooth clean surface. Viewed straight-on, flat to the picture plane. The scene fills the entire image, extending to all four edges. No museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame around it.",
     "video_prompt": "The skier drives hard through the carving turn, ski edges biting and throwing up a big billowing fan of powder snow that sprays up and streams back on the wind before settling; the skier flexes lower into the turn, weight down, one pole planted. A thin curl of chimney smoke rises and drifts from the chalet, and a little loose snow skitters across the slope. Everything keeps its exact bold flat-vector shapes and saturated colours; the mountains, pines, chalet and sun stay fixed. Bright, clear alpine sunlight. Camera locked straight-on, no reframing.",
     "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/futurism_cyclists_sprint_looping.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/futurism_cyclists_sprint_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/futurism_cyclists_sprint_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/futurism_cyclists_sprint_640w.webp",
+    "title": "The Sprint - Futurism (AI Animated)",
+    "type": "video",
+    "date": "2026-08-18",
+    "tags": [
+      "Modern"
+    ],
+    "image_prompt": "Italian Futurist oil painting of a pack of racing cyclists sprinting through a sunlit city boulevard. Fragmented faceted planes and radiating force-lines convey speed; overlapping transparent silhouettes of pumping legs and spinning wheels repeated in rhythmic sequence in the manner of Balla and Boccioni dynamism. Vivid saturated palette — scarlet, cobalt, ochre, emerald, violet — bright midday sunlight, luminous and evenly lit across the whole scene. The peloton fills the entire image edge to edge, riders bent low over their handlebars, wheels spinning, jerseys in bold colour blocks, a dense energetic composition with no empty ground. Freshly painted, pigments brilliant and unfaded, the painted surface smooth, clean and unbroken, as on the day it was finished. Straight-on frontal view parallel to the picture plane. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge, viewed straight-on.",
+    "video_prompt": "The pack of cyclists pedals hard and streams across the boulevard from right to left, legs pumping in rhythmic strokes and wheels spinning fast, a steady continuous stream of riders entering at the right as the leaders exit at the left so the overall arrangement of the peloton stays the same. Each cyclist keeps its exact painted shape, colours and faceted form while it translates across the frame; the force-lines and jerseys shimmer with speed. Bright even midday sunlight. The buildings and street stay fixed. Physically plausible motion only — no morphing, no melting, nothing appearing or disappearing.",
+    "looping": true
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/british_sporting_hunt_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/british_sporting_hunt_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/british_sporting_hunt_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/british_sporting_hunt_640w.webp",
+    "title": "The Morning Hunt - British Sporting Art (AI Animated)",
+    "type": "video",
+    "date": "2026-08-18",
+    "tags": [
+      "19th Century"
+    ],
+    "image_prompt": "A 19th-century British sporting oil painting of a mounted fox hunt galloping across open green countryside on a crisp bright morning. Red-coated huntsmen on glossy chestnut, bay and dapple-grey horses at full stride, a pack of tan-and-white foxhounds streaming ahead across the meadow, a low hedgerow and rolling hills beyond under a clear luminous blue sky with soft white clouds. Rich naturalistic palette — scarlet coats, gleaming horse coats, emerald turf, warm earth — bright, generous, even morning daylight filling the whole scene. The composition fills the entire image edge to edge, horses and hounds densely arranged in full motion with no empty ground. Freshly painted, pigments brilliant and unfaded, the painted surface smooth, clean and unbroken, as on the day it was finished. Straight-on frontal view parallel to the picture plane. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge, viewed straight-on.",
+    "video_prompt": "The horses gallop at full stride and the whole hunt sweeps across the meadow from left to right, legs reaching and hooves pounding the turf, the pack of foxhounds bounding ahead in a streaming run; the horses' manes and tails and the riders' scarlet coat-tails stream out in the wind of the charge. Each horse and hound keeps its exact painted shape, colours and markings while it strides forward. Bright even morning daylight; the grass, hedgerow and distant hills stay fixed. Physically plausible motion only — no morphing, no melting, nothing appearing or disappearing.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/naive_folk_skaters_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/naive_folk_skaters_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/naive_folk_skaters_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/naive_folk_skaters_640w.webp",
+    "title": "Skaters on the Frozen Pond - Naïve Folk Art (AI Animated)",
+    "type": "video",
+    "date": "2026-08-18",
+    "tags": [
+      "Contemporary"
+    ],
+    "image_prompt": "A charming naïve folk-art painting of villagers ice-skating on a frozen pond in a snowy village on a bright, clear winter day. Many small rounded figures in colourful coats — red, mustard, teal, plum, blue — skating, gliding and twirling across the white ice; snow-covered cottages with smoking chimneys, bare trees strung with a few birds, a little church with a steeple, a horse-drawn sleigh on the lane, and distant soft blue hills under a pale bright sky. Flattened folk perspective, clean cheerful high-key palette, crisp even winter daylight, luminous and bright across the whole scene. Densely composed, dozens of figures and small details filling the entire image edge to edge with no empty space. Freshly painted, pigments brilliant and unfaded, the painted surface smooth, clean and unbroken, as on the day it was finished. Straight-on frontal view parallel to the picture plane. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge, viewed straight-on.",
+    "video_prompt": "The skaters glide and swoop across the frozen pond, arms out for balance, some tracing long curving paths and a few spinning in place, their scarves and coat-tails fluttering; pale wood-smoke drifts upward from the cottage chimneys and a few loose snowflakes drift gently down. Each skater keeps its exact painted shape, colours and count while gliding across the ice — no figure appears or disappears. Bright even winter daylight; the cottages, trees, church and hills stay fixed. Physically plausible motion only — no morphing, no melting.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/dragon_boat_race_qing_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/dragon_boat_race_qing_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/dragon_boat_race_qing_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/dragon_boat_race_qing_640w.webp",
+    "title": "The Dragon Boat Race - Qing Dynasty Court Painting (AI Animated)",
+    "type": "video",
+    "date": "2026-08-18",
+    "tags": [
+      "Chinese & Korean"
+    ],
+    "image_prompt": "A Qing-dynasty Chinese court painting on silk depicting a lively dragon-boat race on a broad river during the summer festival. Several long narrow dragon boats with carved, brightly painted dragon heads and upturned tails, each crowded with rowers in bright matching uniforms pulling long oars in unison and a drummer standing at the prow; the river surface busy with churning wake and spray, spectators in colourful robes lining the far bank beneath tiled pavilions, red railings, green willow trees and fluttering banners. Brilliant polychrome palette — vermilion, malachite green, gold, azure, coral — bright, clear, generous daylight, luminous and evenly lit across the whole scene. Densely composed, boats, rowers and crowds filling the entire image edge to edge with no empty ground. Freshly painted on silk, pigments brilliant and unfaded, the painted surface smooth, clean and unbroken, as on the day it was finished. Straight-on frontal view parallel to the picture plane. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge, viewed straight-on.",
+    "video_prompt": "The rowers pull a full, hard oar-stroke in unison and the lead dragon boat surges forward across the river, oars dipping, sweeping back and lifting together, the drummers' arms rising and falling as they beat the drums, the water churning into white wake and spray behind the hulls; banners and willow fronds stir on the far bank. Each boat, rower and carved dragon-head keeps its exact painted shape and colours while it moves forward. Bright even daylight; the pavilions and riverbank stay fixed. Physically plausible motion only — no morphing, no melting, nothing appearing or disappearing.",
+    "looping": false
   }
 ]

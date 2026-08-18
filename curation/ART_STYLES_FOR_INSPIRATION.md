@@ -60,6 +60,7 @@ When you add a new style, append it under the section it best fits.
 - Realism
 - Naturalism (French plein-air rural realism — Bastien-Lepage, peasant harvest & farm labour)
 - Animalier painting (Rosa Bonheur — French animal painting: horse fairs, cattle markets, working draft horses in motion)
+- British Sporting Art (Ferneley / Alken / Herring — 18th–19th-c. English hunting & racing scenes: red-coated fox hunts galloping across green country, streaming foxhound packs, racehorses at full stride; bright naturalistic daylight)
 - Nordic Wildlife Painting (Bruno Liljefors — Swedish naturalist wildlife: geese landing, foxes, birds of prey set in bright marsh & forest)
 - Scottish Highland Romanticism (Landseer-style — red deer stags leaping the burn or standing in the glen, bright moorland of purple heather & golden bracken under blue-grey peaks)
 - Macchiaioli
