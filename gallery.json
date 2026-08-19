@@ -4661,5 +4661,65 @@
     "image_prompt": "A Qing-dynasty Chinese court painting on silk depicting a lively dragon-boat race on a broad river during the summer festival. Several long narrow dragon boats with carved, brightly painted dragon heads and upturned tails, each crowded with rowers in bright matching uniforms pulling long oars in unison and a drummer standing at the prow; the river surface busy with churning wake and spray, spectators in colourful robes lining the far bank beneath tiled pavilions, red railings, green willow trees and fluttering banners. Brilliant polychrome palette — vermilion, malachite green, gold, azure, coral — bright, clear, generous daylight, luminous and evenly lit across the whole scene. Densely composed, boats, rowers and crowds filling the entire image edge to edge with no empty ground. Freshly painted on silk, pigments brilliant and unfaded, the painted surface smooth, clean and unbroken, as on the day it was finished. Straight-on frontal view parallel to the picture plane. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge, viewed straight-on.",
     "video_prompt": "The rowers pull a full, hard oar-stroke in unison and the lead dragon boat surges forward across the river, oars dipping, sweeping back and lifting together, the drummers' arms rising and falling as they beat the drums, the water churning into white wake and spray behind the hulls; banners and willow fronds stir on the far bank. Each boat, rower and carved dragon-head keeps its exact painted shape and colours while it moves forward. Bright even daylight; the pavilions and riverbank stay fixed. Physically plausible motion only — no morphing, no melting, nothing appearing or disappearing.",
     "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/orphism_aviator_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/orphism_aviator_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/orphism_aviator_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/orphism_aviator_640w.webp",
+    "title": "The Aviator over Paris - Orphism (AI Animated)",
+    "type": "video",
+    "date": "2026-08-19",
+    "tags": [
+      "Modern"
+    ],
+    "image_prompt": "Orphism painting in the style of Robert Delaunay, oil on canvas, Paris 1913, simultaneous-contrast prismatic colour. A single red-and-yellow biplane banks in a wide turn high over the sunlit rooftops of Paris, the iron lattice of the Eiffel Tower rising at left and a great candy-coloured Ferris wheel at right. The whole sky is composed of overlapping concentric rings and discs of pure spectral colour — rose, cerulean, orange, violet, emerald — radiating outward like sunlight through a prism, brilliant and luminous. The biplane's rigging, wings and spinning propeller are crisply drawn against the colour wheels. Bright even midday daylight, saturated full-spectrum palette, dense joyful composition filling every part of the picture. Flat to the camera, viewed straight-on. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge.",
+    "video_prompt": "The red-and-yellow biplane flies steadily forward and banks in a slow wide turn over the Paris rooftops, its wings tilting as it crosses the frame, the propeller spinning as a translucent blur; the great Ferris wheel at right turns slowly on its axis. The biplane keeps its exact painted shape, colours and markings while it moves. The concentric prismatic colour rings of the sky shimmer very gently with light, as living paint. The Eiffel Tower, the rooftops and chimneys stay put. Bright even daylight, no camera shake, physically plausible motion, no morphing or melting.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/village_cricket_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/village_cricket_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/village_cricket_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/village_cricket_640w.webp",
+    "title": "The Village Cricket Match - Victorian English Pastoral (AI Animated)",
+    "type": "video",
+    "date": "2026-08-19",
+    "tags": [
+      "19th Century"
+    ],
+    "image_prompt": "A sunny Victorian English village cricket match, oil on canvas in the style of a 19th-century English pastoral genre painting, bright plein-air summer light. Players in white flannels on a broad green cricket ground: a bowler mid-run at one end, a batsman at the crease with his bat raised, a wicket-keeper crouched behind the stumps, fielders scattered across the grass. Beyond the boundary rope, a red-brick pavilion with a striped awning, spectators in colourful summer dress seated on benches and under parasols, bunting fluttering, leafy oak trees and a church spire in the distance under a clear blue sky with a few white clouds. Full generous midday daylight, luminous and evenly lit, rich green and warm brick tones, dense lively composition filling the whole scene. Viewed straight-on, flat to the camera. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge.",
+    "video_prompt": "The bowler completes his run-up and bowls: he strides in and swings his arm over to deliver the ball down the pitch, and the batsman drives his bat through the shot; the wicket-keeper stays crouched, ready. The players keep their exact painted shapes, white flannels and colours while they move. The red-white-and-blue bunting flutters in the breeze and the oak trees stir gently; a few seated spectators shift naturally. The pavilion, church spire, stumps and boundary rope stay put. Bright even summer daylight, natural physically plausible motion, no camera shake, no morphing or melting.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/whitewater_raft_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/whitewater_raft_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/whitewater_raft_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/whitewater_raft_640w.webp",
+    "title": "Shooting the Rapids - Contemporary Adventure Illustration (AI Animated)",
+    "type": "video",
+    "date": "2026-08-19",
+    "tags": [
+      "Contemporary"
+    ],
+    "image_prompt": "Shooting the rapids: a bright contemporary painterly outdoor-adventure illustration of a yellow inflatable raft plunging through the whitewater of a rushing mountain river gorge. Five paddlers in red life-jackets and helmets dig their blades into the churning water, leaning hard as the raft drops over a foaming rapid, spray exploding white over the bow. The river tumbles between huge boulders; steep forested canyon walls rise on both sides ablaze with autumn colour — golden aspen, orange maple, deep evergreen — under a clear bright blue sky with drifting clouds. Vivid saturated palette, crisp modern illustration with clean confident brushwork, dense energetic composition filling the whole scene, brilliant even daylight. Viewed straight-on, flat to the camera. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge.",
+    "video_prompt": "The yellow raft plunges forward over the foaming rapid: the five paddlers pull hard, digging their blades into the churning river in unison, leaning as the bow drops and whitewater explodes up over the front of the raft, spray flying. The fast river rushes and tumbles between the boulders, water surging downstream past the raft. The paddlers and the raft keep their exact painted shapes, red life-jackets and colours while they move. The autumn-forested canyon walls and boulders stay put; a few clouds drift slowly. Bright even daylight, dynamic but physically plausible water motion, no camera shake, no morphing or melting.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/joseon_ssireum_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/joseon_ssireum_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/joseon_ssireum_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/joseon_ssireum_640w.webp",
+    "title": "The Wrestling Match - Joseon Genre Painting (AI Animated)",
+    "type": "video",
+    "date": "2026-08-19",
+    "tags": [
+      "Chinese & Korean"
+    ],
+    "image_prompt": "A lively Korean Joseon-dynasty genre painting (pungsokhwa) in the warm humorous spirit of Kim Hong-do, ink and bright mineral colour on paper, a festival wrestling match (ssireum) on a sunlit fairground. At the centre two barefoot wrestlers grip each other belt-to-belt, locked in a straining throw, one heaving the other up off the ground. A large ring of villagers sits cross-legged all around on straw mats — men in white robes and black horsehair hats, women in colourful hanbok, children peering in, an old man laughing, a taffy-seller with his tray at the edge. Everyone leans in toward the two wrestlers. Clear bright open-air daylight, clean paper ground, warm reds, blues, greens and yellows, dense figures filling the composition. Viewed straight-on, flat to the camera, the painted surface fresh and clean. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge.",
+    "video_prompt": "The two wrestlers strain and heave against each other in the centre: gripping belt-to-belt, one wrestler drives forward, lifts his opponent up off the ground and begins to twist him over in a throw, their leg muscles taut. Around the ring the seated spectators react — clapping, leaning in, arms raised, laughing; the taffy-seller shifts his tray. The two wrestlers and every villager keep their exact painted shapes, hanbok colours and features while they move. The straw mats and open ground stay put. Bright even open-air daylight, natural physically plausible motion, no camera shake, no morphing or melting.",
+    "looping": false
   }
 ]

@@ -91,6 +91,7 @@ When you add a new style, append it under the section it best fits.
 - Der Blaue Reiter (Munich Expressionism, Franz Marc / Kandinsky — bold cobalt-and-vermilion animals, arc-shaped landscapes)
 - Fauvism
 - Cubism
+- Orphism (Robert / Sonia Delaunay — prismatic simultaneous-contrast colour discs; representational subjects like aeroplanes, the Eiffel Tower and Ferris wheels dissolving into rainbow rings)
 - Futurism
 - Dada
 - Surrealism
@@ -154,6 +155,7 @@ is the **AI-cliché** test in `PROMPT_GUIDANCE.md` ("Brand & taste"), not recenc
 - Contemporary Urban Realism (large figurative city-genre oils — rooftop/street sport, stoops, subway, playgrounds)
 - Contemporary Flat Vector Illustration (modern editorial / travel-poster look — bold clean shapes, subtle grain & gradients, saturated colour planes; e.g. a balloon festival, a busy harbour)
 - Mid-century Wildlife / National-Park Gouache Illustration (bright naturalist poster-gouache — a breaching whale, wheeling gulls, animals set in luminous flat-planed land- and seascapes; full-bleed, no lettering)
+- Contemporary Outdoor-Adventure Illustration (bold saturated painterly sports scenes — whitewater rafting, climbing, kayaking, skiing — with dynamic action, spray/dust and vivid landscape colour)
 
 ## Techniques, media & cross-cutting visual styles
 
