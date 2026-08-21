@@ -80,6 +80,7 @@ When you add a new style, append it under the section it best fits.
 - Peredvizhniki / The Wanderers (Russian realist landscape, Levitan / Savrasov)
 - American Western Frontier Art (Remington / Russell — cowboys, cattle drives, river crossings, the Old West)
 - American Realism (Thomas Eakins / Winslow Homer — sober figurative realism: rowing crews, sport, coastal and everyday American life)
+- Italian Divisionism (Segantini / Pellizza da Volpedo — Neo-Impressionist painting built from separated threads of pure complementary colour; Alpine pastoral and rural-labour subjects, brilliant clear mountain light)
 
 ## Modern & conceptual art movements (late-19th century onward)
 
@@ -261,6 +262,7 @@ is the **AI-cliché** test in `PROMPT_GUIDANCE.md` ("Brand & taste"), not recenc
 - Folk art
 - Outsider art
 - Naïve art
+- Ming/Qing "Hundred Children at Play" (百子图) — auspicious Chinese court folk painting on silk, dozens of children at play in a garden (kites, drums, hobby-horses, toy carts) in brilliant mineral pigments, dense edge-to-edge composition
 
 ## Ancient & archaeological art (antiquity & prehistory)
 
