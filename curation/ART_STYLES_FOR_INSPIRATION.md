@@ -52,6 +52,7 @@ When you add a new style, append it under the section it best fits.
 - Norwegian Romantic Landscape (Dahl)
 - English Romantic Landscape (Constable / Norwich School)
 - Venetian Veduta (Canaletto)
+- Venetian Rococo Genre (18th-c. everyday-life scenes — Pietro Longhi, Gabriel Bella; e.g. a Murano glassworks, a masked ridotto)
 - Hudson River School
 - Heidelberg School (Australian Impressionism — Streeton, Roberts)
 - Barbizon School
