@@ -64,7 +64,7 @@ Legend: ✅ live · 🔨 built, not yet used · ⏭️ next · 🅿️ parked (n
 | **Daily social posting + aggregator** | ⏭️ **#1 — vendors chosen 2026-08-02** | §4.1 + §11 (B) — **upload-post** (IG + YT) + **Zernio** (TikTok + Pinterest), both start free. Glue script not written. Best fit for 0 h/week: build once, posts nightly forever. |
 | **Clip audio: Lyria music bed** | ⏭️ **founder-owned** | §11.2 — clips will be scored with **Lyria-generated music**; the founder is building it as a repo skill. **Agents: don't implement it, and don't commit audio** (`CLAUDE.md` → Repo rules). |
 | Brand-name / on-page SEO basics | ✅ live | 2026-07-17 (PRs #68, #69): keyword title, shared meta description, JSON-LD. |
-| **Gallery landing pages** (`/gallery`, `/art/<slug>`, `/era/<tag>`) | ✅ **shipped 2026-08-03** | §4.3 — dropped then **reversed** the same day, justified as **social landing pages, not SEO**. 262 piece pages + 15 era wings + a 6-page index + a self-growing sitemap, all prerendered from `gallery.json`. `/art/*` is `noindex, follow` behind one constant (`INDEX_ART_PAGES`); `/gallery` + `/era/*` are indexable. `/style/<movement>` still deferred (203 labels, 158 singletons). **Ready for #1's pins.** |
+| **Gallery landing pages** (`/gallery`, `/art/<slug>`, `/era/<tag>`) | ✅ **shipped 2026-08-03** | §4.3 — dropped then **reversed** the same day, justified as **social landing pages, not SEO**. 262 piece pages + 15 era wings + a 6-page index + a self-growing sitemap, all prerendered from `gallery.json`. `/art/*` is `noindex, follow` behind one constant (`INDEX_ART_PAGES`); `/gallery` + `/era/*` are indexable. `/style/<movement>` still deferred (203 labels, 158 singletons). **Ready for #1's posts.** |
 | **Directory submissions** | ⏭️ **#2** | §4.4 — alternativeto.net, MacUpdate, indie dirs. Agent preps the pack, founder pastes once. |
 | **Press + creator outreach** | ⏭️ **#3** | §4.1/§4.4 — highest-leverage *non-automatable* play; agent builds list + `/press` kit + drafts. |
 | "Art of the week" email / newsletter | 🅿️ needs a send-path call | §4.6 — viable only if the send automates off the nightly job. |
@@ -89,14 +89,14 @@ scale.
 ## 🧑‍💻 Founder TODO — social + aggregator accounts (pick up in its own session)
 
 **Self-contained: everything #1 waits on. No agent can do any of it** (identity, credentials,
-payment). Pinterest matters most — it's the channel the gallery landing pages were built for.
+payment). All four channels are equal priority — connect them in whatever order is convenient.
 
 **1. Brand social accounts** (none exist yet; the aggregators only *connect* accounts):
-- [ ] **Pinterest — business account** (free; convert or create). Highest priority.
+- [ ] **Pinterest — business account** (free; convert or create).
 - [ ] **YouTube** — a channel on the brand's Google account.
 - [ ] **Instagram — Business or Creator, linked to a Facebook Page.** A personal account
       cannot post via API; this linkage is the slow part.
-- [ ] **TikTok** — optional/last. Least durable for a desktop product.
+- [ ] **TikTok** — a standard account is enough to connect.
 - Use the **same handle everywhere** — it feeds the brand-name search we deliberately kept (§4.3).
 
 **2. Aggregator accounts** (vendors chosen in §11.1):
@@ -104,9 +104,8 @@ payment). Pinterest matters most — it's the channel the gallery landing pages 
       nightly cadence), then $24/mo ($16 annual) unlimited. Treat free as a trial.
 - [ ] **Zernio** → connect **TikTok + Pinterest**. Free tier = exactly 2 accounts, so don't
       spend a slot on IG/YT.
-- 💡 **Check first:** if one vendor covers **Pinterest + YouTube** on its free tier, start with
-      that vendor alone and skip the second entirely. §11.1 never enumerated Zernio's platform
-      list — verify at signup rather than assuming.
+- 💡 **Check at signup:** which platforms each vendor actually covers on its free tier — §11.1
+      never enumerated Zernio's list. If one vendor covers more of the four, use it for more.
 
 **3. The one test that changes the plan:**
 - [ ] Post one clip to **TikTok via Zernio** and check whether it lands **public** or
@@ -155,6 +154,16 @@ Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batc
 ---
 
 ## Activity log (append-only — newest first)
+- **2026-08-23** — **Removed the platform rankings; all four social channels are now equal.**
+  The docs had ranked TikTok below Pinterest/YouTube on content "durability" and called
+  Reels/TikTok "viral lottery tickets". **Unsupported** — TikTok treats posts as evergreen (old
+  videos get re-tested and surface via search months later), and the cross-platform "half-life"
+  figures are meta-analyses of secondary sources, not measurements. The follow-on argument that
+  TikTok's mobile audience is a poor fit for a Mac-only download **also doesn't hold**: the
+  "email me the Mac link" flow (§5–6) is exactly the bridge for that, so a phone-first platform
+  is not a handicap. §4.1 now lists Pinterest / YouTube / Reels / TikTok as four equal channels
+  with different discovery mechanisms and **no ranking**, since we have zero data on which
+  converts for us — post to all four and let the UTM data decide. _(This PR.)_
 - **2026-08-03** — **Gallery landing pages shipped — the social channel now has destinations.**
   283 new prerendered routes: **262** `/art/<slug>`, **15** `/era/<tag>`, a **6-page** `/gallery`
   index, plus a sitemap generated from `gallery.json` (so the nightly push to `master`, which
