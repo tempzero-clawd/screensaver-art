@@ -61,7 +61,7 @@ Legend: ✅ live · 🔨 built, not yet used · ⏭️ next · 🅿️ parked (n
 | **Product Hunt launch** | ❌ **ran 2026-07-26 — flopped** | **5 upvotes, 2 comments, no badge, no measurable traffic.** Post-mortem → §4.2. Not re-runnable for months. |
 | **Show HN** | ❌ **dropped as a plan item** | Blocked at submission 2026-08-02 (HN not taking new Show HN posts). Copy stays loaded; **nothing may depend on it reopening.** |
 | Reddit (r/macapps + visual subs) | ⏭️ **never run** | Day-2 slot unused. Highest-fit free channel, ~20 min (`launch-kit.md` §3). |
-| **Daily social posting + aggregator** | ⏭️ **#1 — vendors chosen 2026-08-02** | §4.1 + §11 (B) — **upload-post** (IG + YT) + **Zernio** (TikTok + Pinterest), both start free. Glue script not written. Best fit for 0 h/week: build once, posts nightly forever. |
+| **Daily social posting + aggregator** | ⏭️ **#1 — vendors chosen 2026-08-02** | §4.1 + §11 (B) — vendors researched: **upload-post** + **Zernio**, both start free. The IG+YT / TikTok+Pinterest split assumed all four launch at once; **TikTok is now deferred**, so the free slots likely go to Pinterest + YouTube (Founder TODO). Glue script not written. Best fit for 0 h/week: build once, posts nightly forever. |
 | **Clip audio: Lyria music bed** | ⏭️ **founder-owned** | §11.2 — clips will be scored with **Lyria-generated music**; the founder is building it as a repo skill. **Agents: don't implement it, and don't commit audio** (`CLAUDE.md` → Repo rules). |
 | Brand-name / on-page SEO basics | ✅ live | 2026-07-17 (PRs #68, #69): keyword title, shared meta description, JSON-LD. |
 | **Gallery landing pages** (`/gallery`, `/art/<slug>`, `/era/<tag>`) | ✅ **shipped 2026-08-03** | §4.3 — dropped then **reversed** the same day, justified as **social landing pages, not SEO**. 262 piece pages + 15 era wings + a 6-page index + a self-growing sitemap, all prerendered from `gallery.json`. `/art/*` is `noindex, follow` behind one constant (`INDEX_ART_PAGES`); `/gallery` + `/era/*` are indexable. `/style/<movement>` still deferred (203 labels, 158 singletons). **Ready for #1's pins.** |
@@ -96,19 +96,24 @@ payment). Pinterest matters most — it's the channel the gallery landing pages 
 - [ ] **YouTube** — a channel on the brand's Google account.
 - [ ] **Instagram — Business or Creator, linked to a Facebook Page.** A personal account
       cannot post via API; this linkage is the slow part.
-- [ ] **TikTok** — optional/last. Least durable for a desktop product.
+- [ ] **TikTok** — do it last, and only if the rest is done. Not a judgement on the platform:
+      it's near-entirely mobile, which is the weakest fit for a Mac-only download (§6), and
+      **Zernio's TikTok audit status is undocumented** — an unaudited API client is forced to
+      private, so automated posting may not work there at all until tested.
 - Use the **same handle everywhere** — it feeds the brand-name search we deliberately kept (§4.3).
 
 **2. Aggregator accounts** (vendors chosen in §11.1):
 - [ ] **upload-post** → connect **Instagram + YouTube**. Free tier is 10 uploads/mo (~5 days at
       nightly cadence), then $24/mo ($16 annual) unlimited. Treat free as a trial.
-- [ ] **Zernio** → connect **TikTok + Pinterest**. Free tier = exactly 2 accounts, so don't
-      spend a slot on IG/YT.
-- 💡 **Check first:** if one vendor covers **Pinterest + YouTube** on its free tier, start with
-      that vendor alone and skip the second entirely. §11.1 never enumerated Zernio's platform
-      list — verify at signup rather than assuming.
+- [ ] **Zernio** → free tier = exactly **2 accounts**. §11.1 assigned those to TikTok +
+      Pinterest, but that assumed all four channels launch together. **If you defer TikTok
+      (above), spend the two slots on Pinterest + YouTube instead** — and then you may not need
+      upload-post at all yet.
+- 💡 **Check at signup:** whether Zernio actually covers **Pinterest + YouTube** on the free
+      tier. §11.1 never enumerated its platform list — verify rather than assume. If it does,
+      one vendor account gets the whole thing started.
 
-**3. The one test that changes the plan:**
+**3. The one test that changes the plan — only if you connect TikTok:**
 - [ ] Post one clip to **TikTok via Zernio** and check whether it lands **public** or
       **private/`SELF_ONLY`**. Zernio's TikTok audit status is undocumented; an unaudited API
       client is forced to private. If private → move TikTok to upload-post (documented public
@@ -123,10 +128,12 @@ payment). Pinterest matters most — it's the channel the gallery landing pages 
 Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batched last.
 
 1. **Wire the posting automation** (§11 B) — clips exist, nothing has ever been posted. Glue
-   `make-social-assets.mjs` → upload-post (IG + YT) + Zernio (TikTok + Pinterest), hung off the
-   nightly curation job. **Do first:** one live Zernio post to confirm TikTok isn't forced
-   `SELF_ONLY` (audit status undocumented) — if it is, move TikTok to upload-post. All four run
-   unattended (a platform trending sound is both licence-blocked and un-attachable via API, so
+   `make-social-assets.mjs` → the aggregator APIs, hung off the nightly curation job.
+   **Start with whichever channels the founder actually connected** (Pinterest first — it's what
+   the landing pages were built for); §11.1's upload-post/Zernio split assumed all four launch at
+   once, which the account TODO no longer does. If TikTok is connected, **first** confirm one
+   live post isn't forced `SELF_ONLY` (Zernio's audit status is undocumented) — if it is, move
+   TikTok to upload-post. Every connected channel runs unattended (a platform trending sound is both licence-blocked and un-attachable via API, so
    there's no per-post human step). **Include the audio bed** — clips ship silent today; mux a
    **Lyria-generated music track** (§11.2). Add §11 (C) captions in the same pass
    if cheap — templates at daily cadence read as spam. Founder: create 2 accounts + connect socials.
@@ -155,6 +162,19 @@ Ordered for **0 h/week**: runs-itself first, build-once second, human tasks batc
 ---
 
 ## Activity log (append-only — newest first)
+- **2026-08-23** — **Corrected an unfounded claim about TikTok, and resolved the split framing.**
+  The docs said TikTok content was "least durable" / a "viral lottery ticket" versus Pinterest and
+  YouTube. **That comparison isn't supported** — TikTok treats posts as evergreen (old videos are
+  re-tested and surface via search months later), and the widely-cited cross-platform "half-life"
+  numbers are meta-analyses of secondary sources, not measurements. All such comparisons are
+  removed from §4.1, §6 and the hub. What survives is founded and specific: TikTok is
+  near-entirely **mobile**, the weakest fit for a Mac-only download (§6), and **Zernio's TikTok
+  audit status is undocumented**, so automated posting may be forced private until tested.
+  Channel ranking now reads as *fit for our problem*, and query-driven (re-findable by search)
+  replaces "durable" as the distinction. Also fixed the two-minded plan: §11.1's
+  upload-post/Zernio split assumed four simultaneous channels, so with TikTok deferred, Zernio's
+  two free slots should go to **Pinterest + YouTube** — possibly removing the need for a second
+  vendor. _(This PR.)_
 - **2026-08-03** — **Gallery landing pages shipped — the social channel now has destinations.**
   283 new prerendered routes: **262** `/art/<slug>`, **15** `/era/<tag>`, a **6-page** `/gallery`
   index, plus a sitemap generated from `gallery.json` (so the nightly push to `master`, which
