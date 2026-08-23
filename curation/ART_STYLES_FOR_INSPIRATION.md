@@ -82,6 +82,8 @@ When you add a new style, append it under the section it best fits.
 - American Western Frontier Art (Remington / Russell — cowboys, cattle drives, river crossings, the Old West)
 - American Realism (Thomas Eakins / Winslow Homer — sober figurative realism: rowing crews, sport, coastal and everyday American life)
 - Italian Divisionism (Segantini / Pellizza da Volpedo — Neo-Impressionist painting built from separated threads of pure complementary colour; Alpine pastoral and rural-labour subjects, brilliant clear mountain light)
+- Flemish Renaissance (Pieter Bruegel the Elder — densely-composed peasant village life: kermis fairs, maypole and wedding dances, seasonal labour under bright even daylight)
+- Spanish Romanticism (Goya's Tauromaquia / Eugenio Lucas — sunlit bullring corridas, festivals and majas; loose confident brushwork, saturated vermilion-and-gold palette)
 
 ## Modern & conceptual art movements (late-19th century onward)
 
@@ -89,6 +91,7 @@ When you add a new style, append it under the section it best fits.
 - Group of Seven (Canadian landscape, Tom Thomson / A.Y. Jackson)
 - American Regionalism (1930s, Thomas Hart Benton / Grant Wood)
 - Mexican Muralism (1920s–40s fresco, Rivera / Orozco / Siqueiros)
+- Brazilian Modernism (Cândido Portinari / Tarsila do Amaral — monumental rounded stylised figures, bold flat saturated tropical colour with strong dark outlines; carnival, coffee harvest, favela and folk-festival subjects)
 - Harlem Renaissance Narrative (Jacob Lawrence — flat bold-colour migration & labour scenes)
 - Expressionism
 - Der Blaue Reiter (Munich Expressionism, Franz Marc / Kandinsky — bold cobalt-and-vermilion animals, arc-shaped landscapes)

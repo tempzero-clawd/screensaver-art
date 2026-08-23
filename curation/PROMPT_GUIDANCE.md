@@ -601,4 +601,34 @@ contemporary styles should go. Both are now encoded as rules above (*Era mix*;
   vision downsamples any image to ~1568px on its long edge, so per-tile detail is
   `1568/COLS` no matter what size the tiles are rendered at.
 
+### 2026-08-23 — nightly generation round (4 pieces added)
+
+Not a human-review round; no removals. Recording the batch for continuity. Four
+pieces, **all intact-medium** (0 archaeological — well within the ≤1 cap), leaning
+recent per the Era-mix rule, each with a legible primary mover:
+- **The Bullfight — Spanish Romanticism** (`19th Century`, non-looping) — matador's
+  cape pass, bull charges through, crowd waving fans/banners.
+- **The Maypole Dance — Flemish Renaissance** (`Renaissance & Baroque`, looping via
+  complete circular cycle) — Bruegel-esque ring dance around a beribboned pole.
+- **Carnival Parade — Brazilian Modernism** (`Modern`, non-looping) — Portinari/
+  Tarsila rounded forms, central samba dancer whirling, drummers striking.
+- **The Dog Park — Contemporary Illustration** (`Contemporary`, non-looping) — flat-
+  vector editorial look, a pack of dogs bounding after a thrown ball.
+
+**What worked (reinforcing existing rules):**
+- All four stills passed the vision gate on the **first** render — the standing
+  image rules (positive full-bleed phrasing, "freshly painted… smooth clean
+  unbroken surface", bright even daylight, the full negative block incl. no-easel)
+  are producing bright, dense, edge-to-edge frames with no museum-object / border /
+  patina failures. Median first-frame luminance well above the 133 norm.
+- All four videos accepted on the **first** render. The Veo-drift countermeasures
+  (motion "on the spot", "stays the same size and in the same place", explicit
+  camera-lock + the zoom/pan/reframing negative-prompt block) held drift to a mild
+  zoom in every case — no actors lost out of frame, no morphing/popping. Budget the
+  usual ~1 reroll/piece, but the current phrasing is landing clips first-try.
+- **Animals-as-mover works when count is pinned.** The dog-park pack (4 named dogs)
+  bounded freely and kept its exact count with `--no-looping` + "same count" in the
+  prompt + "extra dogs appearing / dogs disappearing" in the negatives — the
+  non-loop route the 2026-07-19 log prescribes for independent creatures.
+
 <!-- Claude appends new rounds above this line. -->
