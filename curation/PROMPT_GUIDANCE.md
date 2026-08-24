@@ -631,4 +631,44 @@ recent per the Era-mix rule, each with a legible primary mover:
   prompt + "extra dogs appearing / dogs disappearing" in the negatives — the
   non-loop route the 2026-07-19 log prescribes for independent creatures.
 
+### 2026-08-24 — nightly generation round (4 pieces added)
+
+Not a human-review round; no removals. Recording the batch for continuity. Four
+pieces spread across four wings, **all intact-medium** (0 archaeological — well
+within the ≤1 cap), leaning recent, each with a legible primary mover:
+- **The Tennis Match — Art Deco** (`Modern`, non-looping) — a Riviera sporting-poster
+  look; the server completes a serve on the spot (leap → strike → follow-through).
+- **The Cavalry Charge — Napoleonic Romanticism** (`19th Century`, non-looping) —
+  Géricault/Meissonier hussars galloping full charge, sabres up, pennant streaming.
+- **The Bon Odori Festival — Shin-hanga** (`Japanese`, non-looping) — a daytime ring
+  of yukata dancers stepping/swaying with fans, a taiko drummer atop the yagura.
+- **The City Marathon — Contemporary Illustration** (`Contemporary`, non-looping) —
+  flat-vector editorial look, a dense field of runners running in place toward camera.
+
+**What worked / reinforced:**
+- 3 of 4 stills passed the vision gate first try; all four videos accepted first try.
+  The standing image rules (positive full-bleed phrasing, "freshly made… smooth
+  clean unbroken surface", bright even daylight, full negative block incl.
+  no-easel) keep producing bright, dense, edge-to-edge frames. Veo drift stayed a
+  mild zoom in every clip with the "on the spot / same size / same place" +
+  camera-lock + zoom/pan negative block; no morphing, popping, or lost actors.
+- **"Advancing" movers → run/gallop *in place*.** For a marathon field and a cavalry
+  charge (both naturally advancing toward the camera), phrasing the motion as
+  cycling legs "on the spot… staying the same size within the frame" gave full
+  running/galloping strides without a runaway zoom. The mild residual zoom was the
+  only drift.
+- **New reject pattern — "poster" / "silkscreen poster" summons a poster *object*.**
+  The first City Marathon still (image prompt led with "contemporary silkscreen
+  sports poster") rendered as a **physical printed poster lying on a wooden desk** —
+  white paper margins, oblique 3/4 angle, wood-grain background, and baked-in
+  "CITY MARATHON / RACE DAY / OCT 26" headline **text**. Same family as the
+  museum-object failure: the word *poster* (like *frame*) is read as an object to
+  depict, and *poster* drags in title lettering. Reroll fix that worked: describe it
+  as "a contemporary editorial illustration… the illustrated scene itself fills the
+  entire image, viewed straight-on and flat to the camera," and add explicit
+  negatives — *no text, no lettering, no words, no numbers, no title; not a printed
+  sheet or poster object, no paper margins, no desk, no photograph of a print*.
+  Takeaway for future graphic/illustration picks: **say "illustration", not
+  "poster", and forbid text + the printed-sheet object.**
+
 <!-- Claude appends new rounds above this line. -->
