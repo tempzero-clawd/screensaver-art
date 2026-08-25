@@ -5021,5 +5021,65 @@
     "image_prompt": "A contemporary editorial illustration with bold flat vector shapes and a subtle screenprint grain: a big-city marathon pouring down a sunlit avenue on race morning, seen straight on at street level. A dense pack of runners in brightly coloured kit — vermilion, cobalt, lime, orange, white singlets and race bibs — surges toward the viewer in mid-stride, legs extended, arms pumping, a river of runners filling the whole street from edge to edge and receding into the distance. Crowds of spectators line the barriers cheering and waving, colourful bunting and plain rectangular banners strung between lampposts, glass city towers and a clear blue sky with a bright sun above. Bold flat saturated colour blocks, clean confident shapes, crisp graphic outlines, energetic palette, gentle screenprint texture. Bright even morning daylight filling the whole scene. The illustrated scene itself fills the entire image and extends to all four edges, viewed straight-on and flat to the camera. No text, no lettering, no words, no numbers, no title, no logo; not a printed sheet or poster object, no paper margins, no desk, no table, no photograph of a print; no museum, no display case, no pedestal, no gallery wall, no spotlight, no plain studio background, no easel, no studio, no painted border, no mat, no decorative frame.",
     "video_prompt": "The dense pack of marathon runners runs hard on the spot, legs cycling through full running strides and arms pumping in rhythm, singlets and race bibs bouncing slightly with each step, the whole field flowing forward but each runner staying the same size and in the same place within the frame. Along the barriers the spectators cheer, waving their raised arms and clapping. The colourful triangular bunting and the banners strung overhead flutter in the breeze, and the sun casts a soft shimmer between the glass towers. Every runner and spectator keeps its exact drawn shape, kit colours and the same count as they move; the street, barriers, lampposts, buildings and sky stay fixed in place. Bright even morning daylight throughout. Camera locked off, no zoom, no pan.",
     "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/rock_climbers_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/rock_climbers_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/rock_climbers_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/rock_climbers_640w.webp",
+    "title": "The Climbers' Ascent - Contemporary Illustration (AI Animated)",
+    "type": "video",
+    "date": "2026-08-25",
+    "tags": [
+      "Contemporary"
+    ],
+    "image_prompt": "A contemporary editorial illustration of rock climbers on a sunlit sandstone cliff. Flat-vector modern illustration style with clean bold shapes, warm confident colour, gentle cel-shading. Two climbers work up a towering orange-and-ochre sandstone wall that fills the whole image: the lead climber near the top reaches one arm high to a chalky hold, the second climber lower down braces on a ledge, ropes running between them. Bright turquoise sky, warm even midday sunlight, colourful gear — a red helmet, teal harness, yellow chalk bag, orange rope. Far below at the bottom edge, a small green canyon valley. Freshly made, colours brilliant and clean, smooth unbroken surfaces. The illustrated scene itself fills the entire image, extending to all four edges, viewed straight-on and flat to the camera. No text, no lettering, no words, no numbers, no title; not a printed sheet or poster object, no paper margins, no desk. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame.",
+    "video_prompt": "The upper climber reaches her right hand higher to the next chalky hold and pulls herself up a little; the lower climber shifts his weight and reaches up for a fresh grip; the ropes sway gently and faint puffs of chalk dust drift on a light breeze; the river and trees far below stay calm. The climbers keep their exact illustrated shapes, colours and count, staying the same size and in the same place within the frame, moving on the spot. The sandstone cliff, sky and canyon hold still. Bright even midday daylight. Camera locked, no zoom, no pan, no reframing.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/silk_weavers_courtyard_looping.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/silk_weavers_courtyard_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/silk_weavers_courtyard_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/silk_weavers_courtyard_640w.webp",
+    "title": "The Silk Weavers' Courtyard - Ming Gongbi Painting (AI Animated)",
+    "type": "video",
+    "date": "2026-08-25",
+    "tags": [
+      "Chinese & Korean"
+    ],
+    "image_prompt": "A Ming dynasty gongbi court painting on silk of women weaving in a bright open courtyard. Fine even ink outlines filled with brilliant mineral pigments — malachite green, azurite blue, cinnabar red, gold. In the centre a large wooden treadle loom with a woman seated at it, one hand on the shuttle mid-throw across the warp, the other on the beater; beside her a second woman turns a spoked silk-reeling wheel winding coloured thread, and skeins of red, green and blue silk hang on a rack. A blossoming plum tree, glazed roof tiles and a stone balustrade frame the courtyard. Bright clear daylight fills the whole scene, luminous and evenly lit. Freshly painted, pigments brilliant and unfaded, the painted surface smooth, clean and unbroken as on the day it was finished. Densely composed, figures and ornament filling the frame. The scene fills the entire image, extending to all four edges, viewed straight-on and flat to the camera. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame.",
+    "video_prompt": "Seamless loop. The seated weaver slides the shuttle across the warp and draws the beater, completing one full weaving cycle back to her starting pose; the second woman turns the spoked reeling wheel exactly one full turn, winding the coloured silk; the hanging silk skeins and the plum blossoms stir very gently; the two women at left watch calmly. Everyone keeps their exact painted shapes, colours, faces and count, staying in the same place, moving on the spot. The loom frame, architecture, balustrade and courtyard floor hold still. Bright even daylight. Camera locked, no zoom, no pan, no reframing. The final frame matches the first for a seamless loop.",
+    "looping": true
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/camel_caravan_oasis_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/camel_caravan_oasis_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/camel_caravan_oasis_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/camel_caravan_oasis_640w.webp",
+    "title": "The Caravan at the Oasis - Safavid Persian Miniature (AI Animated)",
+    "type": "video",
+    "date": "2026-08-25",
+    "tags": [
+      "Islamic"
+    ],
+    "image_prompt": "A Safavid Persian miniature painting of a camel caravan arriving at a lush oasis, opaque watercolour and gold on paper. Jewel-bright high-chroma palette — emerald green, lapis blue, saffron, coral red, burnished gold — in the flattened stacked-plane perspective of classic Persian miniatures. A line of laden Bactrian and dromedary camels with colourful patterned saddle-packs and bells plods across the middle of the scene, turbaned drivers walking alongside leading them; date palms, flowering shrubs and a domed tile-fronted caravanserai with a running stream frame the oasis. Densely composed with figures, animals and ornament filling the frame. Bright clear desert daylight, luminous and evenly lit across the whole surface. Freshly painted, pigments brilliant and unfaded, the painted surface smooth, clean and unbroken as on the day it was finished. The scene fills the entire image, extending to all four edges, viewed straight-on and flat to the camera. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame.",
+    "video_prompt": "The line of laden camels plods steadily forward across the oasis, legs striding one after another, harness bells and saddle tassels swaying; the turbaned drivers walk alongside leading them; the date-palm fronds sway gently and the stream water sparkles and ripples. The camels and people keep their exact painted shapes, colours, markings and count, staying the same size and in the same place within the frame, striding on the spot. The caravanserai, walls and ground hold still. Bright even daylight. Camera locked, no zoom, no pan, no reframing.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/speedboat_race_deco_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/speedboat_race_deco_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/speedboat_race_deco_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/speedboat_race_deco_640w.webp",
+    "title": "The Speedboat Race - Art Deco (AI Animated)",
+    "type": "video",
+    "date": "2026-08-25",
+    "tags": [
+      "Modern"
+    ],
+    "image_prompt": "An Art Deco illustration of a 1930s speedboat race on a brilliant blue lake. Streamlined machine-age styling: sleek varnished mahogany-and-chrome racing speedboats with bold flat colour fields, crisp geometric stylisation, strong sunlit highlights. Every boat hull is completely plain and unmarked — bare polished wood and painted panels only, with absolutely no names, numbers, letters or markings on them. The lead boat surges forward at the centre throwing a tall white rooster-tail of spray and a curling bow wave; a second boat cuts close behind, their wakes fanning across sparkling turquoise water. Along the top edge a sunlit spectator terrace with striped awnings, slim palms and colourful plain triangular pennants snapping in the breeze. Bright sunny daylight, luminous and evenly lit, saturated Riviera colour. Densely composed, filling the frame. The illustrated scene itself fills the entire image, extending to all four edges, viewed straight-on and flat to the camera. No text anywhere, no lettering, no words, no names, no numbers, no title, no signage, no writing on the boats or awnings; not a printed sheet or poster object, no paper margins, no desk. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame.",
+    "video_prompt": "The lead mahogany speedboat surges forward across the water, throwing a tall white rooster-tail of spray and pushing a curling bow wave; the second boat cuts close behind in its own spray; the wakes fan out and sparkle, and the colourful pennants and striped awnings snap in the breeze. The boats keep their exact illustrated shapes, colours and count, staying the same size and in the same place within the frame, planing on the spot. The terrace, palms and spectators hold still. Bright sunny daylight. Camera locked, no zoom, no pan, no reframing.",
+    "looping": false
   }
 ]

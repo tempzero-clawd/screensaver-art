@@ -671,4 +671,38 @@ within the ≤1 cap), leaning recent, each with a legible primary mover:
   Takeaway for future graphic/illustration picks: **say "illustration", not
   "poster", and forbid text + the printed-sheet object.**
 
+### 2026-08-25 — nightly generation round (4 pieces added)
+
+Not a human-review round; no removals. Recording the batch for continuity. Four
+pieces across four wings, **all intact-medium** (0 archaeological — within the ≤1
+cap), leaning bright/dense/colourful, each with a legible primary mover:
+- **The Climbers' Ascent — Contemporary Illustration** (`Contemporary`, non-looping) —
+  flat-vector editorial look; the lead climber reaches to the next hold and pulls up,
+  the lower climber shifts and reaches.
+- **The Silk Weavers' Courtyard — Ming Gongbi Painting** (`Chinese & Korean`, looping)
+  — the ideal shuttle-crosses-the-loom mover plus a spoked reeling wheel turning one
+  full cycle; loop closes via gentle oscillation.
+- **The Caravan at the Oasis — Safavid Persian Miniature** (`Islamic`, non-looping) —
+  a line of laden camels plods across a bright jewel-toned oasis, drivers alongside;
+  non-looping (the 07-19 prescription for a countable set of animals, to avoid the
+  seam pop).
+- **The Speedboat Race — Art Deco** (`Modern`, non-looping) — streamlined mahogany
+  racers throwing a rooster-tail of spray across a sunlit Riviera lake.
+
+**What worked / reinforced:**
+- 3 of 4 stills passed the vision gate first try; all four videos accepted first try.
+  Standing image rules keep producing bright (luma 128–169, all near/above the 133
+  norm), dense, edge-to-edge frames. Veo drift stayed a mild zoom in every clip with
+  the "on the spot / same size / same place" + camera-lock + zoom/pan negative block;
+  no morphing, popping, or lost actors. Camels strode in place, count preserved;
+  weaving/reeling movers read cleanly with no facial-uncanny.
+- **Reinforced — "poster"/racing subjects still summon baked-in text.** The first
+  speedboat still (Art Deco *racing* boats) rendered legible names on the hulls
+  ("THUNDER", "STARFIRE") despite a no-text clause. Same family as the
+  [[curation-poster-summons-object]] memory: competitive/vehicle subjects invite
+  hull numbers and names. Reroll fix that worked: state positively that **"every hull
+  is completely plain and unmarked — bare wood/paint only, no names, numbers or
+  letters"** and add an explicit "no writing on the boats or awnings" negative. The
+  vision gate caught it; cheap to reroll the still.
+
 <!-- Claude appends new rounds above this line. -->
