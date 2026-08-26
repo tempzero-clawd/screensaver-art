@@ -5081,5 +5081,65 @@
     "image_prompt": "An Art Deco illustration of a 1930s speedboat race on a brilliant blue lake. Streamlined machine-age styling: sleek varnished mahogany-and-chrome racing speedboats with bold flat colour fields, crisp geometric stylisation, strong sunlit highlights. Every boat hull is completely plain and unmarked — bare polished wood and painted panels only, with absolutely no names, numbers, letters or markings on them. The lead boat surges forward at the centre throwing a tall white rooster-tail of spray and a curling bow wave; a second boat cuts close behind, their wakes fanning across sparkling turquoise water. Along the top edge a sunlit spectator terrace with striped awnings, slim palms and colourful plain triangular pennants snapping in the breeze. Bright sunny daylight, luminous and evenly lit, saturated Riviera colour. Densely composed, filling the frame. The illustrated scene itself fills the entire image, extending to all four edges, viewed straight-on and flat to the camera. No text anywhere, no lettering, no words, no names, no numbers, no title, no signage, no writing on the boats or awnings; not a printed sheet or poster object, no paper margins, no desk. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame.",
     "video_prompt": "The lead mahogany speedboat surges forward across the water, throwing a tall white rooster-tail of spray and pushing a curling bow wave; the second boat cuts close behind in its own spray; the wakes fan out and sparkle, and the colourful pennants and striped awnings snap in the breeze. The boats keep their exact illustrated shapes, colours and count, staying the same size and in the same place within the frame, planing on the spot. The terrace, palms and spectators hold still. Bright sunny daylight. Camera locked, no zoom, no pan, no reframing.",
     "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/boxing_match_ashcan_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/boxing_match_ashcan_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/boxing_match_ashcan_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/boxing_match_ashcan_640w.webp",
+    "title": "The Boxing Match - Ashcan School (AI Animated)",
+    "type": "video",
+    "date": "2026-08-26",
+    "tags": [
+      "Modern"
+    ],
+    "image_prompt": "A vigorous early-twentieth-century American Ashcan School oil painting of a boxing match, in the bold realist style of George Bellows. Two muscular boxers at the centre of a roped ring, caught mid-exchange: one drives a right cross into the other, sweat flying, their bodies twisting with the impact, gloves and taut forearms rendered in confident loose brushwork. A dense crowd of spectators packs the ringside, faces upturned, a referee leaning in beside the fighters. Bright, even arena floodlight fills the whole scene from above, illuminating the white canvas of the ring, the fighters flushed skin and the colourful crowd clearly across the entire frame; luminous and evenly lit, colours vivid and fresh, the painted surface smooth, clean and unbroken as on the day it was finished. Rich full palette — warm skin tones, red and blue trunks, golden ring ropes, a sea of colourful faces and hats. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame, no text, no lettering, no numbers; the scene fills the entire image edge to edge, viewed straight-on and flat to the camera.",
+    "video_prompt": "The two boxers trade blows in the centre of the ring on the spot: the boxer in red trunks drives a right cross that snaps the blond fighter head back, sweat spraying, while the blond boxer twists his torso and steps to absorb the blow; both fighters keep their exact painted shapes, faces, skin tones and trunk colours, feet planted in the same spot within the frame. The referee leans in and shifts his weight; the ringside crowd stirs and reacts. Bright even arena floodlight holds steady over the white ring canvas. The camera is locked off and completely static; the fighters stay the same size and in the same place within the frame. Vigorous, physically plausible motion, real boxing footwork and impact.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/ploughing_team_naturalism_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/ploughing_team_naturalism_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/ploughing_team_naturalism_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/ploughing_team_naturalism_640w.webp",
+    "title": "The Ploughing Team - French Naturalism (AI Animated)",
+    "type": "video",
+    "date": "2026-08-26",
+    "tags": [
+      "19th Century"
+    ],
+    "image_prompt": "A luminous nineteenth-century French Naturalist oil painting of ploughing in the fields, in the vigorous animalier style of Rosa Bonheur. A powerful team of two great oxen, yoked side by side, strains forward as it drags a heavy iron plough through rich brown earth; the ploughman walks behind gripping the plough handles and leaning into the work, a driver striding alongside with a long goad. Freshly turned furrows curve across broad sunlit farmland under a wide blue sky with drifting white clouds; a few gulls wheel low over the turned soil. Bright, clear morning daylight fills the whole scene evenly, colours vivid and fresh — the glossy chestnut and cream hides of the oxen, the ploughman blue smock, green hedgerows and golden distant fields; luminous and evenly lit, the painted surface smooth, clean and unbroken as on the day it was finished. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame, no text, no lettering; the scene fills the entire image edge to edge, viewed straight-on and flat to the camera.",
+    "video_prompt": "The team of two oxen plods steadily forward in a slow heavy walking stride, hooves lifting and planting, heads nodding with the effort as they drag the iron plough; the shining ploughshare peels up a curl of fresh brown earth in a continuous furrow. The ploughman walks behind gripping the handles and leaning into the pull; the driver strides alongside with his goad. A few white gulls wheel and flap low over the turned soil behind them. The oxen and men keep their exact painted shapes, hides, colours and count, staying the same size and in the same place within the frame as they walk on the spot. Bright clear morning daylight, drifting white clouds overhead. The camera is locked off and completely static. Slow, powerful, physically plausible motion.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/ice_hockey_illustration_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/ice_hockey_illustration_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/ice_hockey_illustration_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/ice_hockey_illustration_640w.webp",
+    "title": "The Ice Hockey Game - Contemporary Illustration (AI Animated)",
+    "type": "video",
+    "date": "2026-08-26",
+    "tags": [
+      "Contemporary"
+    ],
+    "image_prompt": "A vibrant contemporary editorial illustration of an ice hockey game, in a clean flat-vector style with bold geometric shapes, crisp shadows and a bright saturated palette. At the centre an attacking player in a red-and-white jersey winds up for a powerful slapshot, stick cocked back, a burst of white ice-spray kicking up from his skates; a defender in blue lunges to block and the goaltender crouches ready in the crease. The illustrated scene fills the entire image edge to edge — the gleaming white rink with its red and blue lines, curved boards in clean blank colour panels, a packed stadium of tiny cheering fans rising in the bright background. Bright, even arena lighting, luminous and evenly lit, colours vivid and fresh, flat clean surfaces. Every jersey and board is completely plain and unmarked, bare colour only. no museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; no text, no lettering, no words, no numbers, no logos, no advertising on the boards, not a printed poster object, no paper margins; the illustrated scene itself fills the whole image, viewed straight-on and flat to the camera.",
+    "video_prompt": "The red-and-white attacker strides hard forward and snaps his stick through a shot on the spot, a bright fan of white ice-spray bursting from his skate blades; the blue defender lunges in with his stick to block; the goaltender shifts across the crease and drops into a low crouch. The stadium crowd throws their arms up and cheers. Every player keeps their exact painted flat-vector shape, jersey colours and count, staying the same size and in the same place within the frame as they skate on the spot. Bright even arena lighting, clean flat colours. The camera is locked off and completely static. Crisp, energetic, physically plausible hockey motion.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/yabusame_ukiyoe_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/yabusame_ukiyoe_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/yabusame_ukiyoe_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/yabusame_ukiyoe_640w.webp",
+    "title": "Yabusame, the Horseback Archer - Edo Ukiyo-e (AI Animated)",
+    "type": "video",
+    "date": "2026-08-26",
+    "tags": [
+      "Japanese"
+    ],
+    "image_prompt": "A dynamic Japanese Edo-period ukiyo-e woodblock print of yabusame mounted archery, in the bold heroic warrior-print musha-e style of Utagawa Kuniyoshi. A samurai archer in a brilliant patterned kimono and hunting attire gallops full-tilt on a spirited horse down the shrine course, rising in the stirrups and drawing a great bamboo bow to loose an arrow at a wooden target; his sleeves and the horse mane and tail stream in the wind. Bright autumn shrine grounds fill the whole scene — rows of red torii and fluttering banners, flaming red-and-gold maple trees, a crowd of spectators in colourful kimono lining the course, clear blue sky. Bold black key-lines, flat brilliant colour blocks, rich full ukiyo-e palette; luminous and evenly lit in clear bright daylight, the printed surface clean, crisp and unbroken as freshly pulled. no museum, no display case, no glass, no vitrine, no pedestal, no gallery wall, no spotlight, no museum label, no plain background, no painted border, no mat, no decorative frame, no cartouche, no text, no lettering, no calligraphy, no seals; the scene fills the entire image edge to edge, viewed straight-on and flat to the camera.",
+    "video_prompt": "The galloping horse races down the shrine course, its legs cycling in a full hard gallop on the spot, mane and tail streaming in the wind; the mounted samurai archer looses his arrow — the bowstring snaps forward and the arrow flies toward the wooden target on the right — his patterned sleeves and the coloured banners snapping in the wind, red and gold maple leaves fluttering down through the air. The crowd of spectators along the course sways and stirs. The horse and rider keep their exact printed shapes, colours, patterns and count, staying the same size and in the same place within the frame as the horse gallops on the spot. Bold ukiyo-e key-lines and flat brilliant colour, clear bright daylight. The camera is locked off and completely static. Fast, spirited, physically plausible motion.",
+    "looping": false
   }
 ]

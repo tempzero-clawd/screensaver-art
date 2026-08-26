@@ -705,4 +705,43 @@ cap), leaning bright/dense/colourful, each with a legible primary mover:
   letters"** and add an explicit "no writing on the boats or awnings" negative. The
   vision gate caught it; cheap to reroll the still.
 
+### 2026-08-26 — nightly generation round (4 pieces added)
+
+Not a human-review round; no removals. Recording the batch for continuity. Four
+pieces across four distinct wings, **all intact-medium** (0 archaeological — within
+the ≤1 cap), leaning bright/dense/colourful, each with a legible primary mover:
+- **The Boxing Match — Ashcan School** (`Modern`, non-looping) — a George Bellows
+  register; the boxer in red drives a right cross, both fighters twist with the
+  blow, the ringside crowd throws up their hands.
+- **The Ploughing Team — French Naturalism** (`19th Century`, non-looping) — a Rosa
+  Bonheur register; a yoked ox team plods forward dragging the plough, ploughman
+  behind, gulls wheeling over the fresh furrows.
+- **The Ice Hockey Game — Contemporary Illustration** (`Contemporary`, non-looping) —
+  clean flat-vector editorial look; the attacker drives and rips a shot, ice-spray
+  fans, defender and goalie react.
+- **Yabusame, the Horseback Archer — Edo Ukiyo-e** (`Japanese`, non-looping) — a
+  Kuniyoshi musha-e; the archer at full gallop looses an arrow at the target,
+  banners and maple leaves streaming, kimono crowd lining the shrine course.
+
+**What worked / reinforced:**
+- All four stills passed the vision gate **first try**; all four videos accepted
+  first try. The standing image rules (positive full-bleed phrasing, "smooth clean
+  unbroken surface … as on the day it was finished", bright even daylight, full
+  negative block) kept producing bright, dense, edge-to-edge frames with no
+  museum-object / border / patina failures. Veo drift stayed a **mild zoom/reframe**
+  in every clip with the "on the spot / same size / same place" + camera-lock +
+  zoom/pan negative block; no morphing, popping, or lost actors.
+- **"On the spot" tames advancing movers again.** The ploughing ox team and the
+  galloping yabusame horse (both naturally advancing) rode/plodded in place with
+  legs cycling — full stride, count preserved, only the usual mild residual zoom.
+  Same recipe as the 08-24 marathon/cavalry note.
+- **Reinforced — forbid the medium's baked-in text up front.** Following the
+  [[curation-poster-summons-object]] family: the ukiyo-e prompt pre-empted the
+  title *cartouche + artist seals* ("no cartouche, no calligraphy, no seals") and
+  the hockey prompt pre-empted *jersey numbers / board advertising* ("no numbers,
+  no logos, no advertising on the boards; every jersey and board plain and
+  unmarked"). Both came back clean — cheaper than a reroll. Only a faint jersey
+  marking slipped into the hockey clip's motion (negligible). Sports/vehicle and
+  print subjects still invite lettering; naming the specific text to forbid works.
+
 <!-- Claude appends new rounds above this line. -->

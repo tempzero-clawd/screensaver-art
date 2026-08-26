@@ -203,6 +203,7 @@ is the **AI-cliché** test in `PROMPT_GUIDANCE.md` ("Brand & taste"), not recenc
 - Chinese New Year folk woodblock print / nianhua (Suzhou Taohuawu, Yangliuqing — flat brilliant vermilion/green/gold, densely-packed festive scenes with bold black outlines)
 - Ukiyo-e
 - Ukiyo-e Japanese woodblock print
+- Musha-e (Edo warrior woodblock print — Kuniyoshi / Yoshitoshi; bold black key-lines and flat brilliant colour, dynamic samurai/horseback action, densely-composed)
 - Shin-hanga (early-20th-c woodblock — Kawase Hasui, Yoshida Hiroshi)
 - Kamakura Period Emakimono
 - Edo Period Byobu (Folding Screen)
