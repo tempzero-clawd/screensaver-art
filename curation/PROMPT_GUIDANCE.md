@@ -744,4 +744,44 @@ the ≤1 cap), leaning bright/dense/colourful, each with a legible primary mover
   marking slipped into the hockey clip's motion (negligible). Sports/vehicle and
   print subjects still invite lettering; naming the specific text to forbid works.
 
+### 2026-08-27 — nightly generation round (4 pieces added)
+
+Not a human-review round; no removals. Recording the batch for continuity. Four
+pieces across four distinct wings, **all intact-medium** (0 archaeological — within
+the ≤1 cap), leaning bright/dense/colourful, each with a legible primary mover:
+- **The Snake Boat Race — Kerala Mural** (`South & Southeast Asian`, non-looping) — a
+  chundan vallam full of oarsmen pulling one synchronized paddle stroke, helmsman at
+  the stern, spectators on both banks; brilliant flat Kerala temple-mural palette.
+- **The Mehter Band — Ottoman Miniature** (`Islamic`, non-looping) — a janissary band
+  playing in place: cymbals clashing, kettledrums struck, horsetail banners swaying,
+  on a dense Iznik-tiled courtyard.
+- **The Steeplechase — British Sporting Art** (`19th Century`, non-looping) — a
+  Herring/Alken register; the field gallops and clears the brushwood-hedge water jump
+  in mid-leap, water and turf flying, top-hatted crowd behind.
+- **The Skatepark Bowl — Contemporary Illustration** (`Contemporary`, non-looping) —
+  clean flat-vector editorial look; the hero skater completes an aerial and carves
+  down into the concrete bowl, two more skaters carving around.
+
+**What worked / reinforced:**
+- 3 of 4 stills passed the vision gate first try; all four videos accepted first try.
+  Standing image rules keep producing bright, dense, edge-to-edge frames; Veo drift
+  stayed a mild zoom/reframe in every clip with the "on the spot / same size / same
+  place" + camera-lock + zoom/pan negative block; no morphing, popping, or lost
+  actors. Synchronized oarsmen, drum/cymbal strikes, galloping-leap and skate-carve
+  all read cleanly.
+- **Reinforced — Ottoman/Persian *miniature* prompts default to a paper margin +
+  ruled border, and the margin arrives *aged*.** The first Mehter still rendered the
+  scene inside a gold-ruled border with cream, foxing-spotted paper margins down the
+  sides — both the [[curation-miniature-paper-border]] failure *and* a patina side
+  door (the aged paper, not the art, carried the 年代感). Reroll fix that worked:
+  lead with **"composed as an EXTREME full-bleed close crop so the painted scene
+  bleeds off all four edges"** and spell out the negatives — *no paper margin, no
+  cream/beige border, no ruled gold border line, no page edge* — plus "the courtyard
+  and figures are cropped by the image edges themselves." Came back edge-to-edge with
+  no aged margins (only a faint gold hairline the Veo zoom then crops). Takeaway:
+  **for any manuscript/miniature pick, pre-empt the margin up front** — the
+  full-bleed clause alone is not enough; name the border parts to forbid.
+- **"On the spot" tames advancing movers again** (steeplechase field, snake boat) —
+  gallop/row cycling in place gave full stride with only the usual mild residual zoom.
+
 <!-- Claude appends new rounds above this line. -->

@@ -222,6 +222,7 @@ is the **AI-cliché** test in `PROMPT_GUIDANCE.md` ("Brand & taste"), not recenc
 - Rajput Painting
 - Pahari Miniature
 - Deccan Painting (Bijapur / Golconda)
+- Kerala Mural (South Indian temple-mural tradition — brilliant ochre/red/emerald/turmeric flat colour, confident outlines, densely-packed festival & mythological scenes; e.g. a snake-boat race on the backwaters)
 - Gond painting
 - Gandharan Buddhist sculpture
 - Gupta Empire Mathura Sculpture
