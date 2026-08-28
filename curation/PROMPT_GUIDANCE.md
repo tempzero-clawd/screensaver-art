@@ -784,4 +784,56 @@ the ≤1 cap), leaning bright/dense/colourful, each with a legible primary mover
 - **"On the spot" tames advancing movers again** (steeplechase field, snake boat) —
   gallop/row cycling in place gave full stride with only the usual mild residual zoom.
 
+### 2026-08-28 — nightly generation round (4 pieces added)
+
+Not a human-review round; no removals. Recording the batch for continuity. Four
+pieces across four distinct wings, **all intact-medium** (0 archaeological — within
+the ≤1 cap), leaning recent/bright/dense — and a **deliberate mover-type rut-break**:
+the last several rounds were almost all sport/race/match/dance/festival movers, so
+this round picked four *different* kinds of primary mover instead:
+- **The Station — French Impressionism** (`19th Century`, non-looping) — a *machine*
+  mover: a dark-green steam locomotive eases forward into a glass-and-iron train shed
+  as steam billows up into the vault and a porter pushes a luggage cart down the
+  sunlit platform; Monet Gare-Saint-Lazare register.
+- **The River Market — Ming Dynasty Court Painting** (`Chinese & Korean`, non-looping)
+  — a *boat + crowd traversal*: a laden cargo junk drifts under a crowded arched
+  bridge in a dense full-polychrome Qiu-Ying "prosperous city" riverside town.
+- **The Apple Harvest — Contemporary Illustration** (`Contemporary`, non-looping) — a
+  *harvest/working* scene: a little red tractor rolls down the orchard lane, pickers
+  reach from ladders, a dog trots; clean flat-vector autumn palette.
+- **The Builders — Modern** (`Modern`, non-looping) — a *construction* mover: a red
+  steel girder rises on its cable while two workers haul the rope hand over hand and
+  one climbs the scaffold; bold Léger "The Builders" idiom, primary-colour planes.
+
+**What worked / reinforced:**
+- **All four stills passed the vision gate first try; all four videos accepted first
+  try.** Standing image rules kept producing bright (luma 113–147; three near/above
+  the 133 norm, the Léger a touch lower at 113 from its grey scaffolding/blue sky but
+  well above 100 and vividly saturated), dense, edge-to-edge frames — no
+  museum-object / border / patina failures.
+- **Mover-type variety is a cheap, high-value rut-break.** Machine (locomotive),
+  boat-under-bridge, tractor+harvest, hoisted girder all read as clearly as the
+  sport movers did, and diversify the gallery's *motion vocabulary* away from
+  "someone competes." Worth doing every few rounds when the recent batch skews one
+  way. No new rule needed — just a taste reminder.
+- **Full-colour Ming genre beats monochrome Song genre for a screensaver.** A
+  riverside-market handscroll was the pick; choosing the *Ming Qiu-Ying full mineral
+  colour* register (not the Song ink-and-light-tint one) gave a dense, saturated,
+  edge-to-edge frame that clears the palette-and-density floor, where a monochrome
+  Qingming-style ink scroll would have risked the "empty beige" thinness. The
+  full-bleed close-crop + "no paper margin / no ruled border / no page edge" clause
+  (per [[curation-miniature-paper-border]]) again killed the silk-margin border; only
+  the warm silk ground tone remained, reading as sky/water, not an empty margin.
+- **Veo drift note — flat-vector illustration drifted into a slow lateral pan.** With
+  the identical camera-lock + zoom/pan negative block that holds painterly pieces to a
+  mild zoom, the *Apple Harvest* flat-vector clip still turned "tractor drives toward
+  camera on the spot" into a smooth left-to-right pan across the orchard (new trees
+  entering frame). It's not a defect — a slow pan is explicitly allowed, no morphing
+  or popping, style rock-solid — but note that **the clean-vector illustration style
+  seems more prone to reading an advancing-mover cue as a whole-scene pan** than the
+  oil/gongbi styles, which stayed near-locked. The other three held to the usual mild
+  zoom. If a locked frame is essential for such a piece, consider dropping the
+  advancing-mover framing entirely (animate only in-place actions) rather than trusting
+  the negative block.
+
 <!-- Claude appends new rounds above this line. -->

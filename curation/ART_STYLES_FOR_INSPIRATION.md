@@ -109,6 +109,7 @@ When you add a new style, append it under the section it best fits.
 - Art Deco
 - Art Deco Travel Poster (Cassandre-style — bold flat lithographic colour planes, streamlined geometry: liners, trains, regattas, ski resorts)
 - Modern Circus Painting (Léger / vintage circus-poster idiom — bold saturated colour, confident stylized line, dynamic big-top action: trapeze flyers, acrobats, ring performers)
+- Machine-Age Figuration (Léger's "The Builders" idiom — monumental tubular figures with thick black outlines, primary-colour planes, industrial subjects: construction workers on scaffolding, girders, cranes and cables)
 - Precisionism
 - Social Realism
 - Abstract art
@@ -192,6 +193,7 @@ is the **AI-cliché** test in `PROMPT_GUIDANCE.md` ("Brand & taste"), not recenc
 - Gondarine Ethiopian Church Wall Painting (17th c., distemper on cloth)
 - Song Dynasty Landscape Painting
 - Song Dynasty Gongbi Figure/Genre Painting (court scenes — e.g. Sericulture / weaving handscrolls)
+- Ming Court Genre Handscroll (Qiu Ying "prosperous city" idiom — full mineral-colour fine-line genre on silk, densely packed riverside market towns: an arched bridge, cargo junks, crowds, shops and porters filling the frame)
 - Yuan Dynasty Landscape
 - Ming Dynasty Silk Painting
 - Ming Bird-and-Flower Painting
