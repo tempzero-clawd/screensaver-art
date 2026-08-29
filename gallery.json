@@ -5261,5 +5261,65 @@
     "image_prompt": "A modern figurative oil painting in the style of Fernand Leger's 'The Builders' — bold flat planes and rounded tubular forms, thick clean black outlines, a primary-colour palette of red, yellow, blue, white and grey. Muscular construction workers in overalls stand and climb on a lattice of steel girders and scaffolding high against a bright clear sky streaked with a few white clouds; ropes and cables cross the composition. One long steel beam is being hoisted upward on a cable while two workers haul the rope hand over hand and another climbs the scaffold. Machine-age monumental figures, crisp geometry, saturated colour, bright even daylight, dense and boldly composed filling the whole frame. Freshly painted, pigments brilliant and unfaded, the painted surface smooth clean and unbroken as on the day it was finished. no text, no lettering, no words, no numbers; no museum, no display case, no glass, no pedestal, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge, extending to all four edges, viewed straight-on and flat to the camera.",
     "video_prompt": "Animate this bold Leger-style construction painting. Primary action: the long red steel girder rises slowly and steadily upward on its cable while the two workers below haul the rope hand over hand, their arms pulling in rhythm; the man on the ladder climbs up one rung at a time; the ropes and cables go taut and sway slightly; the few white clouds drift across the bright blue sky behind the scaffolding. Every worker, girder, rope and steel beam keeps its exact painted shape, colour, thick black outline and count; the number of figures stays the same. Nothing morphs, melts, appears or disappears. The camera is locked on a tripod, completely static — no zoom, no pan, no push-in, no reframing; every subject stays the same size and in the same place within the frame. The painting keeps its exact flat Leger style, primary-colour palette and crisp geometry throughout.",
     "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/balloon_ascent_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/balloon_ascent_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/balloon_ascent_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/balloon_ascent_640w.webp",
+    "title": "The Balloon Ascent - 19th-Century Romanticism (AI Animated)",
+    "type": "video",
+    "date": "2026-08-29",
+    "tags": [
+      "19th Century"
+    ],
+    "image_prompt": "A grand 19th-century Romantic oil painting of a hot-air balloon ascension at a sunlit country fair. A huge brilliantly striped silk balloon — crimson, gold and deep-blue vertical gores — with a wicker gondola has just lifted off the green field and floats a few feet above the ground; shirt-sleeved ground crew lean back paying out the taut mooring ropes; a festive crowd of top-hatted gentlemen, ladies with bright parasols and excited children waves hats and handkerchiefs up at it. Rolling summer countryside, a distant church spire, tall poplars, a big luminous sky of soft cumulus. Rich saturated colour, warm clear bright daylight. The balloon is plain coloured stripes only — no letters, numbers, words or insignia on it. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge, viewed straight-on. Freshly painted, pigments brilliant and unfaded, the painted surface smooth, clean and unbroken, as on the day it was finished. Bright, even, generous daylight; luminous and evenly lit across the whole frame.",
+    "video_prompt": "In a bright 19th-century Romantic oil painting, the great striped hot-air balloon strains gently upward on the spot, hovering just off the ground: its silk envelope swells and sways a little in the breeze while the shirt-sleeved ground crew below lean back on the taut mooring ropes. The festive crowd waves hats, handkerchiefs and parasols; long pennants and ribbons flutter; soft cumulus clouds drift slowly behind. The balloon keeps its exact painted shape, colours and stripes, staying the same size and in the same place in the frame. Bright even daylight. Camera fully locked, no zoom, no pan, no reframing.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/ice_games_moat_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/ice_games_moat_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/ice_games_moat_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/ice_games_moat_640w.webp",
+    "title": "The Ice Games on the Palace Moat - Qing Court Painting (AI Animated)",
+    "type": "video",
+    "date": "2026-08-29",
+    "tags": [
+      "Chinese & Korean"
+    ],
+    "image_prompt": "Composed as an EXTREME full-bleed close crop: the painted winter scene bleeds off all four edges of the image and is cropped by the image edges themselves — there is NO silk margin, no cream or beige paper border, no ruled border line, no page edge, no scroll mounting anywhere. A vivid Qing-dynasty imperial court painting, fine-line gongbi in brilliant mineral pigments on silk, of the winter ice games on a frozen palace moat. Scores of Manchu bannermen in colourful padded winter uniforms — vermilion, azure, imperial-yellow and white — skate in a long sweeping serpentine formation across the pale jade-green ice; some glide with arms outspread, several carry tall dragon banners and imperial-yellow pennants streaming behind them, a few draw bows on their skates. Along the far bank rise snow-dusted vermilion palace walls and golden tiled roofs under a clear luminous winter sky. Densely composed edge to edge, brilliant saturated mineral colour, crisp fine detail, bright even daylight. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge, viewed straight-on. Freshly painted, pigments brilliant and unfaded, the painted surface smooth, clean and unbroken, as on the day it was finished. Bright, even, generous daylight; luminous and evenly lit across the whole frame.",
+    "video_prompt": "In a bright Qing court gongbi painting, the bannermen skate in place along their serpentine line — legs pushing in long steady skating strides, edging only slightly across the frozen moat — so the whole line stays roughly where it is. Their padded coats and coloured sashes ripple; the tall dragon banners and yellow pennants stream and snap in the cold wind; a little loose snow blows across the jade ice. The palace walls and golden roofs stay perfectly still. Each skater keeps his exact painted shape, colours and count while gliding. Bright even winter daylight. Camera fully locked, no zoom, no pan, no reframing.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/rice_terraces_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/rice_terraces_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/rice_terraces_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/rice_terraces_640w.webp",
+    "title": "The Rice Terraces - Balinese Painting (AI Animated)",
+    "type": "video",
+    "date": "2026-08-29",
+    "tags": [
+      "South & Southeast Asian"
+    ],
+    "image_prompt": "Composed as an EXTREME full-bleed close crop: the painted scene bleeds off all four edges of the image and is cropped by the image edges themselves — there is NO unpainted canvas margin, no white or cream canvas edge, no painted border, no mat, no frame anywhere; the terraces and figures run right off every edge. A vivid Balinese Ubud-school painting, bright tempera and fine ink, of emerald rice terraces at planting time. Curving flooded paddies step down the hillside, their still water mirroring a luminous blue tropical sky; a sturdy water buffalo wades through a flooded terrace pulling a wooden plough, throwing up bright sprays of water, a farmer guiding it from behind; a row of villagers in conical hats bend transplanting green seedlings; coconut palms and a carved stone temple gate rise beyond. Densely composed edge to edge, brilliant saturated greens, golds and blues, crisp detail, bright even midday daylight. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge, viewed straight-on. Freshly painted, pigments brilliant and unfaded, the painted surface smooth, clean and unbroken, as on the day it was finished. Bright, even, generous daylight; luminous and evenly lit across the whole frame.",
+    "video_prompt": "In a bright Balinese Ubud-school painting, the water buffalo plods steadily forward on the spot through the flooded paddy, legs lifting and pushing through the water and throwing up bright splashes and spreading ripples, the farmer walking the plough behind it. Along the terrace the row of villagers bend and rise in rhythm, pressing seedlings into the mud; the coconut palms sway gently; the mirror-still water shivers with reflections. Every figure and the buffalo keep their exact painted shape, colours and count while moving, staying the same size and place in the frame. Bright even daylight. Camera fully locked, no zoom, no pan, no reframing.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/assembly_line_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/assembly_line_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/assembly_line_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/assembly_line_640w.webp",
+    "title": "The Assembly Line - American Social Realism (AI Animated)",
+    "type": "video",
+    "date": "2026-08-29",
+    "tags": [
+      "Modern"
+    ],
+    "image_prompt": "A bold 1930s American Social-Realism industrial mural, flat saturated colour and muscular simplified figures, of an automobile assembly line inside a bright factory. A gleaming red car body rides along the overhead conveyor chain; rows of workers in blue overalls fit wheels, swing wrenches, hammer and weld along the line; a small bright shower of welding sparks arcs up; tall steel-framed skylight windows flood the whole shop with bright even daylight. Rhythmic dense composition edge to edge, bold primary colours — red, blue, yellow, steel-grey — every surface plain and unmarked, no text, no signage, no letters or numbers anywhere. no museum, no display case, no glass, no vitrine, no pedestal or plinth, no gallery wall, no spotlight, no museum label, no plain studio background, no painted border, no mat, no decorative frame; the scene fills the entire image edge to edge, viewed straight-on. Freshly painted, pigments brilliant and unfaded, the painted surface smooth, clean and unbroken, as on the day it was finished. Bright, even, generous daylight; luminous and evenly lit across the whole frame.",
+    "video_prompt": "In a bold 1930s Social-Realism factory mural, the row of workers labours in rhythm on the spot — arms swinging wrenches, hammering, and one welder's torch throwing a small steady shower of bright sparks — while the gleaming red car body edges slowly and evenly along the overhead conveyor chain. Drive belts turn, a hanging pulley rotates. The workers and machinery keep their exact painted shapes, colours and count while moving, staying the same size in the frame. Bright even factory daylight. Camera fully locked, no zoom, no pan, no reframing.",
+    "looping": false
   }
 ]

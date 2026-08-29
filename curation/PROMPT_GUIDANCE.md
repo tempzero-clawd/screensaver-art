@@ -836,4 +836,50 @@ this round picked four *different* kinds of primary mover instead:
   advancing-mover framing entirely (animate only in-place actions) rather than trusting
   the negative block.
 
+### 2026-08-29 — nightly generation round (4 pieces added)
+
+Not a human-review round; no removals. Recording the batch for continuity. Four
+pieces across four distinct wings, **all intact-medium** (0 archaeological — within
+the ≤1 cap), leaning bright/dense/colourful, each with a **deliberately different
+kind of primary mover** (continuing the 08-28 mover-type rut-break):
+- **The Balloon Ascent — 19th-Century Romanticism** (`19th Century`, non-looping) — a
+  *vehicle-lift-off + crowd* mover: a great striped hot-air balloon strains upward off
+  a sunlit fair field while shirt-sleeved crew haul the mooring ropes and a top-hatted
+  crowd waves hats and handkerchiefs.
+- **The Ice Games on the Palace Moat — Qing Court Painting** (`Chinese & Korean`,
+  non-looping) — a *human-formation traversal* mover: scores of
+  Manchu bannermen skate in a long serpentine across the frozen moat, dragon banners and
+  yellow pennants streaming, archers drawing bows on skates, snow-dusted Forbidden City
+  walls behind.
+- **The Rice Terraces — Balinese Painting** (`South & Southeast Asian`, non-looping) — an
+  *animal-labour* mover: a water buffalo plods through a flooded paddy pulling a wooden
+  plough (bright water splashes) while a row of villagers bend transplanting seedlings.
+- **The Assembly Line — American Social Realism** (`Modern`, non-looping) — an
+  *industrial-machine + workers* mover: line workers swing wrenches, hammer and weld
+  while a gleaming red car body edges along the overhead conveyor.
+
+**What worked / reinforced:**
+- All four **videos accepted first try**. Veo drift stayed a mild-to-moderate *zoom-out*
+  on the two crowd scenes (balloon, ice games) and mild elsewhere, with the "on the spot
+  / same size / same place" + camera-lock + zoom/pan negative block; no morphing,
+  popping, or lost actors. The **"on the spot" trick tamed the skaters** (advancing
+  movers → skate in place, legs cycling), same recipe as the 08-24/26 marathon/cavalry
+  notes. The assembly-line conveyor correctly *advanced* (a new car body entered frame)
+  — reads as "the line is running," a clean traversal, not a defect.
+- **New/reinforced reject pattern — the margin/border failure is not just
+  miniatures; ANY "painting on [support]" style can render its physical support with
+  margins.** 2 of 4 stills needed a reroll, both for the *same* failure: the Qing
+  gongbi-**on-silk** came back inside a cream silk-scroll margin, and the Balinese
+  tempera-**on-canvas** came back as a painting floating on a wide unpainted canvas edge.
+  This extends [[curation-miniature-paper-border]] beyond manuscripts/miniatures — naming
+  a support ("on silk", "on canvas", "on panel") invites the model to depict that support
+  *with its margins*. **Identical fix worked for both:** lead the image prompt with
+  *"Composed as an EXTREME full-bleed close crop: the painted scene bleeds off all four
+  edges and is cropped by the image edges themselves"* and name the specific parts to
+  forbid — *no silk margin / no scroll mounting* (silk) or *no unpainted canvas margin /
+  no white or cream canvas edge* (canvas), plus the standing "no painted border, no mat,
+  no frame." Both rerolled edge-to-edge first try. Takeaway: **for any style you anchor
+  as "on canvas/silk/paper", pre-empt the support margin up front**, exactly as for
+  manuscripts. The vision gate caught both cheaply.
+
 <!-- Claude appends new rounds above this line. -->
