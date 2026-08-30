@@ -882,4 +882,57 @@ kind of primary mover** (continuing the 08-28 mover-type rut-break):
   as "on canvas/silk/paper", pre-empt the support margin up front**, exactly as for
   manuscripts. The vision gate caught both cheaply.
 
+### 2026-08-30 — nightly generation round (4 pieces added)
+
+Not a human-review round; no removals. Recording the batch for continuity. Four
+pieces across four distinct wings, **all intact-medium** (0 archaeological — within
+the ≤1 cap), leaning bright/dense/colourful, and continuing the 08-28/08-29
+**mover-type rut-break** — four *different* kinds of primary mover:
+- **The Carousel — Fauvism** (`Modern`, **looping**) — a *rotating-machine* mover: a
+  grand fairground carousel turns one full smooth rotation, painted wooden horses
+  rising and falling on their poles, children riding; bold Derain/Dufy Fauve colour.
+  Loop closes via a **complete rotation cycle** (start == end frame) — the clean way
+  to loop a machine, no oscillation-ripple rut.
+- **The Kite Festival — Kishangarh Miniature** (`South & Southeast Asian`,
+  non-looping) — a *flying-objects + line-haul* mover: dozens of small kites dive and
+  climb across a radiant turquoise sky while rooftop figures haul their strings and a
+  boy runs the parapet, pigeons wheeling; brilliant Kishangarh mineral palette.
+- **The Fishermen's Catch — Dutch Golden Age** (`Renaissance & Baroque`, non-looping)
+  — a *synchronized-human-labour-on-water* mover: six fishermen heave a bulging net
+  and the silver herring cascades onto the quay, gulls wheeling, fishwives haggling;
+  luminous Van de Velde/Bakhuizen silvery marine daylight.
+- **The Village Potters — Contemporary Illustration** (`Contemporary`, non-looping) —
+  a *craft-rotation* mover: a potter draws up a tall vessel on a spinning kick-wheel,
+  an apprentice centres a bowl on a second wheel, a woman traverses with a stack of
+  pots, kiln smoking; clean flat-vector editorial look, warm saturated palette.
+
+**What worked / reinforced:**
+- **All four stills passed the vision gate first try; all four videos accepted first
+  try.** Standing image rules kept producing bright, dense, edge-to-edge frames with
+  no museum-object / border / patina failures. The **full-bleed close-crop +
+  "no paper margin / no ruled gold border / no page edge" clause worked again** for
+  the Kishangarh miniature ([[curation-miniature-paper-border]]) — came back
+  edge-to-edge with no cream margin. The Contemporary-illustration piece led with
+  "editorial illustration … not a printed sheet or poster object, no paper margins,
+  no desk" + "no text/numbers" ([[curation-poster-summons-object]]) and came back
+  clean, no baked-in lettering.
+- **Rotation is a clean, under-used loop mechanism.** The carousel looped via a full
+  rotation cycle (first==last frame) and returned exactly to its opening state with
+  real, legible movement (horses bobbing, ring revolving) — no oscillation-ripple
+  degeneration. A rotating machine is a good answer to "how do I get a loop with
+  actual motion in it," alongside traversal and action-cycle.
+- **The net-haul (Fishermen's Catch) is a standout dramatic mover** — the catch
+  visibly pours out of the lifted net onto the quay mid-clip, exactly the kind of
+  legible primary action the 07-19 rules ask for, with the camera near-locked.
+- **Veo drift** stayed a **mild zoom** in all four with the "on the spot / same size /
+  same place" + camera-lock + zoom/pan negative block; no morphing, popping, or lost
+  actors. Notably the flat-vector *Village Potters* clip did **not** drift into a
+  whole-scene lateral pan this round (the 08-28 caution) — only a mild zoom, with the
+  intended woman-traversal reading correctly. The reinforced negative block (adding
+  "whole-scene pan" for the illustration piece) may have helped; keep it for
+  flat-vector picks.
+- **Mover-type variety remains a cheap, high-value rut-break.** Rotating carousel,
+  flying kites, net-haul, potter's wheel all read as clearly as sport/dance movers and
+  keep diversifying the gallery's motion vocabulary. Worth doing every few rounds.
+
 <!-- Claude appends new rounds above this line. -->
