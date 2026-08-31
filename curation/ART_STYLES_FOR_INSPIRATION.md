@@ -111,6 +111,7 @@ When you add a new style, append it under the section it best fits.
 - Modern Circus Painting (Léger / vintage circus-poster idiom — bold saturated colour, confident stylized line, dynamic big-top action: trapeze flyers, acrobats, ring performers)
 - Machine-Age Figuration (Léger's "The Builders" idiom — monumental tubular figures with thick black outlines, primary-colour planes, industrial subjects: construction workers on scaffolding, girders, cranes and cables)
 - Precisionism
+- American Scene Painting (1920s–40s urban realism, Reginald Marsh / Isaac Soyer — crowded, bustling everyday scenes with bold rounded figures and warm saturated colour: public pools & lidos, beaches, subways, dance halls, boardwalks)
 - Social Realism
 - Abstract art
 - Abstract Expressionism

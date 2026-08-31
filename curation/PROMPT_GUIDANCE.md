@@ -935,4 +935,76 @@ the ≤1 cap), leaning bright/dense/colourful, and continuing the 08-28/08-29
   flying kites, net-haul, potter's wheel all read as clearly as sport/dance movers and
   keep diversifying the gallery's motion vocabulary. Worth doing every few rounds.
 
+### 2026-08-31 — nightly generation round (4 pieces added)
+
+Not a human-review round; no removals. Recording the batch for continuity. Four
+pieces across four distinct wings, **all intact-medium** (0 archaeological — within
+the ≤1 cap), leaning bright/dense/colourful, and continuing the 08-28→08-30
+**mover-type rut-break** with four *different* kinds of primary mover — and a
+deliberate step **away from Contemporary flat-vector illustration** (which had grown
+very heavy in recent rounds, ~20 titles):
+- **The High Dive — American Scene Painting** (`Modern`, non-looping) — a *human
+  leap/arc* mover: a diver springs off a tall high board and arcs down into a big
+  splash in a crowded 1930s municipal pool; bold Reginald Marsh / Isaac Soyer figures.
+- **The Log Drive — American Realism** (`19th Century`, non-looping) — a *riding-
+  rushing-water* mover: a red-flannel river-man leaps from one rolling log to the next
+  on a white-water spring log drive, peavey braced, spray flying; Winslow-Homer register.
+- **The Tightrope Walker — Joseon Genre Painting** (`Chinese & Korean`, non-looping) —
+  a *balance-walk* mover: a jultagi rope-walker springs along a single taut rope, fan
+  and sash fluttering, a dense laughing crowd and drum/piri musicians below; Kim Hong-do
+  (Danwon) register.
+- **The Elephant Bath — Pahari (Kangra) Miniature** (`South & Southeast Asian`,
+  non-looping) — an *animal water-play* mover: a royal elephant curls its trunk up and
+  blows a brilliant arc of water over its own back while mahouts scrub it in a jewel-
+  toned river.
+
+**What worked / reinforced:**
+- All four **videos accepted first try**; Veo drift stayed a **mild zoom** in every
+  clip with the "on the spot / same size / same place" + camera-lock + zoom/pan
+  negative block — no morphing, popping, or lost actors. The diver completed a full
+  spring→arc→splash action cycle; the log-driver's leap-and-land, the rope-walker's
+  springing step, and the elephant's trunk-spray all read cleanly. The mild zoom is a
+  quiet ally here: it **cropped the extreme-corner artefacts** out of the log-drive clip.
+- **Mover-type variety + dropping Contemporary-illustration for a round = a good
+  rut-break.** Leap/dive, water-riding, balance-walk and animal-spray diversify the
+  motion vocabulary, and four painterly registers (WPA oil, Homer oil, Joseon ink-and-
+  colour, Pahari gouache) read fresher than yet another flat-vector editorial piece.
+- **The margin/border pre-empt still needed for BOTH Asian picks, and worked.** Per
+  [[curation-miniature-paper-border]]: the first Pahari elephant still came back with a
+  gold/yellow **ruled border + margin down the left edge**; the reroll led with
+  "EXTREME full-bleed close crop … cropped by the image edges themselves" and named the
+  parts to forbid (*no gold or yellow ruled border line, no cream/beige margin, no page
+  edge*) and came back edge-to-edge (only a thin dark hairline at the extreme right that
+  the Veo zoom crops). The Joseon genre still used the same clause up front and was clean
+  first try.
+
+**New reject pattern — naming a real artist summons a real (or faux) SIGNATURE.**
+The Log Drive was the whole story this round. First still: image prompt named
+*"Winslow Homer"* as the register → the model painted a legible red **"Winslow Homer"
+signature** in the bottom-right corner (a real artist's name reproduced *and* forbidden
+text). Reroll with the artist's name **removed** (described as *"plein-air outdoor-
+realism of the Maine and Adirondack north woods"* instead) still produced a red
+**faux-cursive signature squiggle** in the same corner — the *painting-genre itself*
+(19th-c. sporting/realist oil) carries a signed-canvas prior, exactly the baked-in-text
+family as [[curation-poster-summons-object]]. Takeaways, folded into practice:
+- **Never name a real artist in an image prompt.** Anchor the register by
+  period + medium + place + technique (school, not signature). Naming the artist is what
+  put the name on the canvas.
+- **For any easel-painting genre (oil/sporting/portrait/still-life), pre-empt the
+  signature up front** the way we pre-empt poster text and miniature margins: add
+  *"the painting is completely unsigned, clean bare paint in every corner; no signature,
+  no autograph, no cursive mark, no lettering in any corner"* to the negatives. (As with
+  "frame"/"cracks", keep it a positive-plus-negative; it did reduce but not fully kill it.)
+- **Salvaging a signed-but-otherwise-perfect still:** the Nano-Banana *edit* endpoint was
+  down (repeated 503s during a high-demand window — generation itself also intermittently
+  503'd/timed out this round, so budget for retries), and a naive local rectangle-paste
+  over the corner left an obvious seam. What worked was a **feathered mirror patch** in
+  Pillow: paste a horizontally-flipped copy of the region just left of the corner box
+  (mirroring continues the log/water textures across the vertical join) over a box that
+  fully covers the artefact, composited through a Gaussian-blurred mask so the inner
+  edges blend — no hard rectangle. The Veo zoom then crops the corner anyway. Cheap,
+  API-free, good enough for a busy corner. (Keep rejects in the scratchpad per
+  [[curation-keep-rejected-renders]] — the seam happened partly because the pre-patch
+  still was overwritten.)
+
 <!-- Claude appends new rounds above this line. -->

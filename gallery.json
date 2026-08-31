@@ -5381,5 +5381,65 @@
     "image_prompt": "A clean contemporary flat-vector editorial illustration of a sunlit village pottery courtyard, in a bright modern picture-book / New Yorker cover style — flat matte shapes, warm saturated palette (terracotta, teal, mustard, cream, olive), crisp clean outlines, gentle geometric stylisation, no photographic texture. The illustrated scene fills the whole image: in the foreground a potter sits at a spinning kick-wheel drawing up a tall clay vase between his hands, a young apprentice beside him centring a bowl on a second wheel; around the sunny courtyard women carry stacks of bright painted bowls and jars, rows of finished terracotta pots dry on wooden shelves, a domed wood-fired kiln gently smokes at the back, potted plants and a curled-up cat. Bright, even, cheerful daylight, luminous and colourful, dense composition filling the frame. The illustrated scene itself fills the entire image, extending to all four edges, viewed straight-on and flat to the camera; not a printed sheet or poster object, no paper margins, no desk, no photograph of a print; no painted border, no mat, no frame; no text, no lettering, no words, no numbers, no signage; no museum, no gallery wall, no plain studio background.",
     "video_prompt": "The potter's kick-wheel spins steadily and the tall clay vessel rises and gently narrows between his moving hands as he shapes it on the spot; beside him the apprentice's hands work his own spinning bowl, a woman crossing the courtyard carries her stack of bright bowls, the domed kiln breathes a thin curl of rising smoke, the cat's tail flicks. Each figure, pot and shelf keeps its exact shape and colours and stays the same size and in the same place; the courtyard, shelves and kiln hold still; nothing enters or leaves the frame. The camera is locked off, completely static and level — absolutely no zoom, no pan, no dolly, no tracking, no reframing. Bright even daylight.",
     "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/high_dive_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/high_dive_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/high_dive_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/high_dive_640w.webp",
+    "title": "The High Dive - American Scene Painting (AI Animated)",
+    "type": "video",
+    "date": "2026-08-31",
+    "tags": [
+      "Modern"
+    ],
+    "image_prompt": "A vibrant American Scene / WPA-era oil painting of a crowded municipal open-air swimming pool on a hot summer afternoon. A tall white diving tower rises at the right; a lone diver in a red swimsuit springs off the high board at the top, body arched, poised to plunge toward the sparkling turquoise pool below. The pool is packed with bathers in bright 1930s wool bathing suits splashing, floating and sitting on the tiled edge, with sunbathers on towels along the deck. Bold rounded Reginald Marsh / Isaac Soyer figures, warm sunlight, clear blue sky, saturated poster-like palette. Freshly painted, pigments brilliant and unfaded, the painted surface smooth clean and unbroken. Bright even daylight fills the whole scene. The scene fills the entire image edge to edge, viewed straight-on; no painted border, no easel, no studio, no canvas edge; no museum, no glass, no pedestal, no gallery wall, no spotlight, no label; no text.",
+    "video_prompt": "The diver in the red swimsuit at the top of the tower springs off the high board and arcs downward through the air, arms extended, body arching into a clean dive above the pool. In the pool below, swimmers splash and stroke through the sparkling turquoise water, ripples spreading; bathers along the deck shift and turn to watch. Bright even summer daylight, clear blue sky. The camera is locked off on a fixed tripod: the diving tower, poolhouse and crowd stay the same size and in the same place; only the diver, swimmers and water move.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/log_drive_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/log_drive_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/log_drive_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/log_drive_640w.webp",
+    "title": "The Log Drive - American Realism (AI Animated)",
+    "type": "video",
+    "date": "2026-08-31",
+    "tags": [
+      "19th Century"
+    ],
+    "image_prompt": "A luminous 19th-century American Realist oil painting of a spring log drive on a rushing northern river, plein-air outdoor-realism of the Maine and Adirondack north woods. Pale freshly-cut pine logs jam and surge down the white-water river; a rugged log driver in a red plaid flannel shirt and suspenders balances on a floating log mid-stream, a long peavey pole in hand, caught mid-stride leaping from one rolling log to the next, spray flying around his boots. More drivers work the logs along the sunlit rocky banks, forested green hills and a bright blue sky with white clouds behind, foam and churning water everywhere. Freshly painted, pigments brilliant and unfaded, the painted surface smooth clean and unbroken. Bright clear daylight. The scene fills the entire image edge to edge, viewed straight-on; no painted border, no easel, no studio, no canvas edge; no museum, no glass, no pedestal, no gallery wall, no spotlight, no label; no signature, no text.",
+    "video_prompt": "The log driver in the red plaid shirt completes his stride, springing from one rolling log to the next and landing with his peavey pole braced, spray bursting around his boots. The freshly cut pine logs bob and roll in the churning white-water river, foam surging downstream and spray flying up; the other drivers along the rocky banks lean into their poles. Bright clear daylight, blue sky with drifting clouds. The camera is locked off on a fixed tripod: the riverbanks, trees and sky stay the same size and in the same place; only the driver, the rolling logs and the rushing water move.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/tightrope_walker_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/tightrope_walker_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/tightrope_walker_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/tightrope_walker_640w.webp",
+    "title": "The Tightrope Walker - Joseon Genre Painting (AI Animated)",
+    "type": "video",
+    "date": "2026-08-31",
+    "tags": [
+      "Chinese & Korean"
+    ],
+    "image_prompt": "An 18th-century Korean Joseon-dynasty genre painting in the lively register of Kim Hong-do (Danwon): a village jultagi tightrope performance on a bright festival day. Composed as an EXTREME full-bleed close crop so the painted scene bleeds off all four edges. A nimble rope-walker in a pale hanbok and black gat balances mid-stride on a single taut rope stretched across the scene, one leg lifted, a folding fan open in his hand for balance, sash fluttering. Below him a dense seated ring of villagers in white, blue and coral hanbok watch and laugh, and a small group of musicians play a drum and piri. Confident ink outlines with fresh mineral colour filling the frame, warm sandy ground, bright even daylight. Freshly painted, pigments brilliant and unfaded, the painted surface smooth clean and unbroken. The painted scene fills the entire image edge to edge; no paper margin, no cream or beige border, no ruled border line, no page edge, no painted border, no mat, no decorative frame; no museum, no glass, no pedestal, no gallery wall, no spotlight, no label; no text, no calligraphy, no seals.",
+    "video_prompt": "The tightrope walker takes a light springing step along the single taut rope, his raised foot lowering to the rope and his body dipping and rising with the bounce of the line, the open folding fan in his hand tilting for balance and his pale-blue robe and sash fluttering. Below him the seated ring of villagers laugh, clap and sway; the two seated musicians strike the barrel drum and play the bamboo flute. Bright even daylight, clear pale sky. The camera is locked off on a fixed tripod: the crowd, the sandy ground and the rope posts stay the same size and in the same place; every figure keeps its exact painted shape and count; only the walker, the fan, the robe and the crowd move.",
+    "looping": false
+  },
+  {
+    "src": "https://screensaver-assets.living-art-asset.com/gallery/elephant_bath_animated.mp4",
+    "img": "https://screensaver-assets.living-art-asset.com/gallery/elephant_bath_2k.webp",
+    "og_img": "https://screensaver-assets.living-art-asset.com/gallery/elephant_bath_720p.jpeg",
+    "thumb": "https://screensaver-assets.living-art-asset.com/gallery/elephant_bath_640w.webp",
+    "title": "The Elephant Bath - Pahari Miniature (AI Animated)",
+    "type": "video",
+    "date": "2026-08-31",
+    "tags": [
+      "South & Southeast Asian"
+    ],
+    "image_prompt": "An 18th-century Indian Pahari (Kangra) miniature painting: elephants being bathed at a river on a radiant day. Composed as an EXTREME full-bleed close crop: the painted river scene bleeds off all four edges. In a clear green river below flowering mango trees, two great grey royal elephants stand chest-deep; the nearer elephant curls its trunk up and blows a brilliant arc of water over its own back, droplets scattering, while mahouts in bright turbans and dhotis scrub its flanks and a rider sits on its neck. Lush riverbank with peacocks and blossoming trees, jewel-toned mineral palette of emerald, saffron, coral and lapis, bright even daylight. Freshly painted, pigments brilliant and unfaded, the painted surface smooth clean and unbroken. The painted scene completely fills the image with no border of any kind: no gold or yellow ruled border line, no cream or beige margin, no page edge, no painted border, no mat, no decorative frame; no museum, no glass, no pedestal, no gallery wall, no spotlight, no label; no text, no calligraphy.",
+    "video_prompt": "The near elephant curls its trunk up and blows a brilliant arc of water high over its own back; the water sprays out and cascades down its flank in glittering droplets, rippling the green river. The bare-chested attendants standing in the river scrub its side with brushes, the mahout on its neck sways with the motion, and the second elephant behind shifts and dips its trunk to the water. Peacocks step along the flowering riverbank. Bright even daylight. The camera is locked off on a fixed tripod: the riverbank, flowering trees and both elephants stay the same size and in the same place; each elephant keeps its exact painted shape and colours; only the arc of water, the attendants and the trunks move.",
+    "looping": false
   }
 ]
