@@ -1007,4 +1007,73 @@ family as [[curation-poster-summons-object]]. Takeaways, folded into practice:
   [[curation-keep-rejected-renders]] — the seam happened partly because the pre-patch
   still was overwritten.)
 
+### 2026-09-01 — nightly generation round (4 pieces added)
+
+Not a human-review round; no removals. Recording the batch for continuity. Four
+pieces across four distinct wings, **all intact-medium** (0 archaeological — within
+the ≤1 cap), leaning bright/dense/colourful, and continuing the 08-28→08-31
+**mover-type rut-break** with four *different* kinds of primary mover — and a second
+consecutive round **skipping Contemporary flat-vector illustration** (still heavy):
+- **The Paddle Steamer — American Luminism** (`19th Century`, non-looping) — a
+  *rotating-machine-on-water* mover: a Mississippi sidewheel paddle steamer steams
+  down a bright river, the big red paddlewheel churning white foam, smoke and steam
+  billowing from the stacks. (New style added to `ART_STYLES_FOR_INSPIRATION.md`.)
+- **The Printing House — Dutch Golden Age** (`Renaissance & Baroque`, non-looping) — a
+  *machine + coordinated-labour* mover: a master printer hauls the long wooden bar of
+  an oak hand press (platen screws down), an apprentice inks the type with leather
+  ink-balls, a boy carries a sheet to the drying line; bright leaded-window daylight.
+- **The Rodeo — American Regionalism** (`Modern`, non-looping) — an *animal-buck*
+  mover: a cowboy rides a wildly bucking chestnut bronco, hind legs kicking high, dust
+  flying, a mounted pickup rider behind, dense grandstand crowd; Benton-esque rolling
+  forms, luminous prairie sky.
+- **Mochi Pounding at the New Year — Shin-hanga** (`Japanese`, non-looping) — a
+  *rhythmic alternating-strike* mover: two men swing kine mallets in turn onto the
+  white rice in the usu mortar while a woman folds the dough between strikes; bright
+  festive village courtyard with kadomatsu and plum blossom.
+
+**What worked / reinforced:**
+- **All four videos accepted first try.** Veo drift stayed a mild-to-moderate zoom in
+  every clip with the "on the spot / same size / same place" + camera-lock + zoom/pan
+  negative block; no morphing, popping, lost actors, or count changes. The paddlewheel
+  churn, the press bar-pull → platen → tympan cycle, the full bronco buck cycle
+  (rear → land → forward), and the two-man alternating mochi pounding all read
+  cleanly as legible primary actions.
+- **Two-actor coordinated strikes (mochi) held up** — the alternating mallets and the
+  woman's hands darting into the mortar between strikes did not collide or morph, with
+  "extra arms / extra mallets / hands passing through the mallet / figures merging" in
+  the negative block. A good template for coordinated-tool movers.
+- **Reinforced — "on canvas / oil painting" summons a raw canvas margin, not just a
+  border.** The first Rodeo still (led with "American Regionalist **oil painting**")
+  came back floating inside a **frayed, unpainted tan canvas edge on all four sides**
+  — the [[curation-miniature-paper-border]] failure extended to plain easel oil, exactly
+  the 08-29 "any painting-on-[support] style renders its support with margins" note.
+  Reroll fix that worked: lead with **"Composed as an EXTREME full-bleed close crop:
+  the painted scene bleeds off all four edges and is cropped by the image edges
+  themselves"** + name the parts to forbid (*no unpainted canvas margin, no raw or
+  frayed canvas edge, no tan/cream border strip, no visible edge of the canvas*).
+  Came back edge-to-edge first try. Takeaway: **use the full-bleed close-crop clause on
+  EVERY painterly pick, not only miniatures/silk/print** — "oil painting" alone is
+  enough to summon a canvas edge.
+- **Reinforced — Shin-hanga / woodblock prints summon a signature block + red hanko
+  seals AND coat kanji.** The first mochi still (despite a standing no-cartouche/seal
+  clause) put **vertical calligraphy + two red hanko seals in the bottom-right corner**
+  *and* **kanji lettering on the lead pounder's happi coat** ([[curation-poster-summons-object]]
+  family). Because one text zone was on the *primary mover* (a patch there would not
+  survive Veo), a **reroll beat patching** — added *"every garment is plain solid colour
+  with NO characters/kanji/writing on it"* + *"absolutely no red seal stamp, no hanko,
+  no artist seal, no signature block in any corner or margin."* Came back fully clean
+  first try. Takeaway: **for ukiyo-e/Shin-hanga picks, forbid clothing text explicitly,
+  not just the corner cartouche/seal** — happi coats and banners carry a kanji prior.
+- **Patch salvage worked for a background-only text element (printing house).** A framed
+  broadsheet of gibberish text hung on the back wall (an easy, static, non-mover zone);
+  a feathered Pillow paste of a flat sampled wall/paper tone through a Gaussian-blurred
+  mask erased the text to a blank framed panel — no reroll needed. Rule of thumb this
+  round: **background/static text → cheap feathered patch; text on a moving actor →
+  reroll.** (Note: sample the fill colour from *inside* the blank paper, not the frame —
+  a first sample hit the wooden frame and painted a brown blotch.)
+- **Transient-503 note:** `gemini-3-pro-image` was under heavy load all night —
+  most stills needed 1–3 built-in retries and two full re-invocations after the
+  wrapper exhausted its retries. Budget extra wall-clock time; the generations
+  themselves were fine once they landed.
+
 <!-- Claude appends new rounds above this line. -->
