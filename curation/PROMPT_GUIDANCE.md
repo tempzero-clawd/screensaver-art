@@ -1076,4 +1076,63 @@ consecutive round **skipping Contemporary flat-vector illustration** (still heav
   wrapper exhausted its retries. Budget extra wall-clock time; the generations
   themselves were fine once they landed.
 
+### 2026-09-02 — nightly generation round (4 pieces added)
+
+Not a human-review round; no removals. Recording the batch for continuity. Four
+pieces across four distinct wings, **all intact-medium** (0 archaeological — within
+the ≤1 cap), leaning bright/dense/colourful, continuing the **mover-type rut-break**
+with four *different* kinds of primary mover — and a deliberate push into **two
+under-used wings** (`Medieval & Byzantine`, empty until now; `Islamic`):
+- **The Joust — International Gothic** (`Medieval & Byzantine`, non-looping) — a
+  *combat / horse-charge* mover: two armoured knights gallop the tilt and the near
+  lance shatters into flying splinters; caparisoned destriers, a timber gallery of
+  scarf-waving lords and ladies, heralds' trumpet pennants. Jewel-bright
+  illuminated-manuscript register on vellum (intact-medium, not archaeological).
+- **The Festival Acrobats — Ottoman Miniature** (`Islamic`, non-looping) — an
+  *acrobatics/tumbling* mover: a central acrobat somersaults over a carpet while two
+  tumblers roll, a janissary kettledrum-and-cymbal band keeping the beat; dense
+  Iznik-tiled palace courtyard, festival lamps, Levni/Surname register.
+- **The Sailing Regatta — American Impressionism** (`19th Century`, non-looping) — a
+  *wind-sailing* mover: a fleet of gaff-rigged sloops heels and surges in a fresh
+  breeze, spray off the bows, signal-flag lines streaming; sparkling high-key
+  Hassam-esque coastal light. (New style added to `ART_STYLES_FOR_INSPIRATION.md`.)
+- **The Roller Coaster — American Scene Painting** (`Modern`, non-looping) — a
+  *machine-thrill plunge* mover: a wooden coaster train plunges the first drop,
+  riders' arms up and hair flying, a turning Ferris wheel and striped fairground
+  behind; bold Marsh/Coney-Island Regionalist realism.
+
+**What worked / reinforced:**
+- **All four stills passed the vision gate first try; all four videos accepted first
+  try.** Standing image rules kept producing bright, dense, edge-to-edge frames with
+  no museum-object / border / patina failures. The full-bleed close-crop + margin/
+  border pre-empt held the manuscript (joust) and miniature (acrobats) edge-to-edge
+  with no vellum/paper margin ([[curation-miniature-paper-border]]), and the
+  unsigned/plain pre-empt kept both oil pieces free of a signature or hull/sail
+  lettering ([[curation-artist-name-summons-signature]], [[curation-poster-summons-object]]).
+- **Under-used wings are a cheap, high-value rut-break too** — same idea as mover-type
+  variety, applied to the *wing* axis. `Medieval & Byzantine` was empty and
+  `Islamic` sparse; both took bright, dense, jewel-toned intact-medium pieces
+  (International Gothic manuscript, Ottoman court miniature) that clear the palette-
+  and-density floor easily — the manuscript/miniature look is "old" but pristine and
+  colourful, **not** the worn-out archaeological register the reviewer dislikes.
+  Worth checking the wing distribution, not just the mover distribution, each round.
+- **Multi-acrobat extreme poses animated cleanly when anchored to a reliable
+  rhythmic mover.** The acrobats still had three figures in inverted/tumbling poses
+  (normally a collision/morph risk); pinning the count ("exactly three acrobats, no
+  extra limbs/arms/heads") and leaning the clip on the drum-and-cymbal band (a safe
+  mechanical strike, like the mochi/mehter movers) gave a legible "acrobats tumble
+  while the band plays" with figures completing their rolls and no soup. Template for
+  risky-body picks: **give the clip a low-risk mechanical anchor and pin the count.**
+- **Veo drift** stayed a mild zoom in all four with the "on the spot / same size /
+  same place" + camera-lock + zoom/pan negative block; no morphing, popping, or lost
+  actors. The **coaster plunge read as a clean traversal** — the front train rushed
+  down and off the bottom while a fresh train crested the hill (new cars entering,
+  none popping), the trestle and Ferris wheel rock-solid; a good template for a
+  fast-advancing vehicle that can't stay "on the spot" (let it traverse and refill
+  rather than fighting the motion).
+- **ffmpeg-libwebp gotcha recurred** ([[curation-ffmpeg-no-libwebp]]) — `publish-piece.mjs`
+  webp derivation failed on the system ffmpeg; prepending `curation/.ffmpeg-shim` to
+  PATH (Pillow-backed webp encode) and re-running with `--resume` fixed it. Do this
+  from the first publish next round.
+
 <!-- Claude appends new rounds above this line. -->

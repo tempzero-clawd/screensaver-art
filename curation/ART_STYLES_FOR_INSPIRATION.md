@@ -75,6 +75,7 @@ When you add a new style, append it under the section it best fits.
 - Ashcan School
 - Impressionism
 - Impressionist landscape
+- American Impressionism (Childe Hassam / The Ten — sunlit New England summers, regattas, gardens and flag-hung streets; sparkling broken colour, high-key luminous palette)
 - Spanish Luminism (Sorolla — sun-drenched beach & garden scenes, dazzling coastal light)
 - Post-Impressionism
 - Symbolism
