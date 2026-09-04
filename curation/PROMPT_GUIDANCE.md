@@ -1160,4 +1160,62 @@ unsigned/no-text pre-empt, bright even daylight, "on the spot / same size / same
 + locked camera). Recorded from the committed prompts for continuity; per-piece reroll
 notes were lost with the interrupted run.
 
+### 2026-09-04 — nightly generation round (4 pieces added)
+
+Not a human-review round; no removals. (This run first **recovered the interrupted
+2026-09-03 round** — 3 already-published pieces committed, see the entry above — then
+generated the 4 below.) Four pieces across four distinct wings, **all intact-medium**
+(0 archaeological — within the ≤1 cap), leaning bright/dense/colourful, continuing the
+**mover-type rut-break** with four *different* kinds of primary mover, and hitting the
+**most under-used wing** (`Arts of Africa & Oceania`, only 3 pieces before this):
+- **The Masquerade — Contemporary West African Painting** (`Arts of Africa & Oceania`,
+  non-looping) — a *whirling-dance* mover: a great Egungun masquerade spins on the spot,
+  its layered cloth-strip costume flaring out, while drummers strike talking drums and a
+  bright wax-print crowd claps. Vivid modern Nigerian/Ghanaian festival-painting register
+  (new style added to `ART_STYLES_FOR_INSPIRATION.md`).
+- **The Highland Games — Victorian Scottish Genre Painting** (`19th Century`,
+  non-looping) — a *heavy-throw* mover: a kilted athlete heaves the caber and the great
+  pole flips end over end; piper, Highland dancers, tartan crowd, tents, castle behind
+  (new style added).
+- **The Speedway — Art Deco** (`Modern`, non-looping) — a *machine-slide* mover: four
+  leaned-over riders broadside their motorcycles round the cinder bend, back wheels
+  throwing huge fan-tails of dust, packed Deco grandstand.
+- **The Cheese Market — Dutch Golden Age** (`Renaissance & Baroque`, non-looping) — a
+  *coordinated-human-traversal* mover: pairs of white-clad porters trot in step with
+  loaded cheese-barrows swaying between them across a sunlit square carpeted with golden
+  cheeses, weigh-house and canal barge behind.
+
+**What worked / reinforced:**
+- **All four stills passed the vision gate first try; all four videos accepted first
+  try.** Standing image rules kept producing bright, dense, edge-to-edge frames with no
+  museum-object / border / patina failures. Veo drift stayed a mild zoom/reframe in every
+  clip with the "on the spot / same size / same place" + camera-lock + zoom/pan negative
+  block; no morphing, popping, lost actors, or count changes.
+- **Caber toss = a clean rigid-object throw mover.** The tapering pole flipped end over
+  end holding its exact straight rigid shape (no bending/rubberiness), completed the toss
+  and dropped out of frame as it landed while the thrower followed through — the mild
+  reframe read as "the toss finishing." A good template for a *heavy thrown object* action
+  (name the object rigid, let it leave frame on landing).
+- **Speedway: fast small vehicles animate cleanly when told to hold form + ride "on the
+  spot around the bend."** Four rigid motorcycles kept their shape and count through the
+  corner slide (no merging), wheels spun and threw dramatic dust fan-tails, only a mild
+  zoom. Pre-empting the racing-numbers/lettering up front worked again
+  ([[curation-poster-summons-object]]): anchored as an "Art Deco sporting **painting**"
+  (not "poster"), with "every bike/suit plain and unmarked, no numbers/logos" + "not a
+  printed poster object" — came back with zero baked-in text.
+- **Under-used-wing rut-break again** (per the 09-02 note): `Arts of Africa & Oceania`
+  was the sparsest wing (3), and a bright contemporary West African **festival painting**
+  filled it with a jewel-bright, dense, intact-medium piece that clears the palette/density
+  floor and dodges the worn archaeological register entirely. Check the wing distribution,
+  not just the mover distribution, each round — the low wings that work best are the
+  *pristine-and-colourful* ones (manuscript, miniature, contemporary regional painting),
+  not the excavated ones.
+- **The full-title grep ([[curation-check-full-title-list]]) earned its keep hard this
+  round.** The gallery is now ~387 pieces, and *most* of the first-draft picks were
+  already taken — Egyptian marsh-fowling (×3!), Dutch windmills (×3), wrestling (×2),
+  Grand Prix Futurism, a Flying Trapeze, a polo match, the Glassblowers of Murano, an
+  ocean liner — plus Safavid Persian miniature is now over-used (8). Lesson reinforced:
+  at this catalog size, grep the **whole** `gallery.json` for every candidate subject +
+  a few synonyms *before* writing a prompt; a "fresh" idea is more likely taken than not.
+
 <!-- Claude appends new rounds above this line. -->

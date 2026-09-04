@@ -66,6 +66,7 @@ When you add a new style, append it under the section it best fits.
 - English Coaching Print (Regency hand-coloured aquatint — Pollard / Alken road scenes: four-horse mail & stage coaches at full gallop up to a country coaching inn, ostlers and travellers, crisp linework and luminous washes, bright daylight)
 - Nordic Wildlife Painting (Bruno Liljefors — Swedish naturalist wildlife: geese landing, foxes, birds of prey set in bright marsh & forest)
 - Scottish Highland Romanticism (Landseer-style — red deer stags leaping the burn or standing in the glen, bright moorland of purple heather & golden bracken under blue-grey peaks)
+- Victorian Scottish Sporting/Genre Painting (bright detailed oil realism of a Highland Games gathering — caber toss, hammer throw, tug-o'-war, Highland dancers, a full-dress piper, kilted competitors in many clan tartans, a dense summer crowd, marquee tents and clan banners, green hills and a castle behind; luminous even daylight, dense colourful tartan)
 - Macchiaioli
 - Tonalism
 - Academic art
@@ -189,6 +190,7 @@ is the **AI-cliché** test in `PROMPT_GUIDANCE.md` ("Brand & taste"), not recenc
 
 - Chinese ink painting
 - Haitian Naïve Painting (flat bright folk-art, densely-packed Caribbean market & celebration scenes)
+- Contemporary West African Narrative Painting (modern Nigerian/Ghanaian festival painting — bold saturated opaque colour, confident dark outlines, richly patterned wax-print cloth; densely-packed village festivals, masquerade dances, drummers and markets; painterly, NOT flat-vector)
 - Dunhuang Mogao Cave Mural
 - Sumi-e Ink Wash
 - Balinese Kamasan Painting (earth pigment on cloth, Bali)
