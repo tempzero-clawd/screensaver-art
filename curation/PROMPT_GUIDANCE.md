@@ -1135,4 +1135,29 @@ under-used wings** (`Medieval & Byzantine`, empty until now; `Islamic`):
   PATH (Pillow-backed webp encode) and re-running with `--resume` fixed it. Do this
   from the first publish next round.
 
+### 2026-09-03 — interrupted round, 3 pieces recovered (committed 2026-09-04)
+
+Not a human-review round; no removals. **This run was interrupted after publishing
+3 of the intended 4 pieces** — the three below were already uploaded to R2 (verified
+live) and appended to `gallery.json`, but the run never committed, never wrote this
+log entry, and never produced a 4th piece. Recovered and committed on 2026-09-04 (the
+next nightly run found the uncommitted work). No 4th piece was backfilled — that round
+is closed; a full fresh 4-piece round follows for 2026-09-04. The three, all
+intact-medium (0 archaeological), each with a legible primary mover:
+- **The Tug of War — Joseon Genre Painting** (`Chinese & Korean`, non-looping) — a
+  *synchronized two-team pull* mover: two village teams haul a colossal straw rope in
+  opposite directions at a juldarigi festival, bodies leaning back, drummer and banner.
+- **The Barn Raising — American Regionalism** (`Modern`, non-looping) — a
+  *coordinated-labour lift* mover: a rural crew hauls a great timber barn-wall frame up
+  toward vertical on ropes and pike poles; Benton-esque rounded Midwestern realism.
+- **The Sledding Hill — Contemporary Illustration** (`Contemporary`, non-looping) — a
+  *downhill-slide* mover: bundled children ride toboggans and saucer sleds down a sunny
+  snowy hill, powder spraying. Deliberately a **gouache-and-coloured-pencil** editorial
+  register (explicitly "NOT flat vector") to vary the heavy recent flat-vector look.
+
+All three prompts follow the standing rules (full-bleed close-crop margin pre-empt,
+unsigned/no-text pre-empt, bright even daylight, "on the spot / same size / same place"
++ locked camera). Recorded from the committed prompts for continuity; per-piece reroll
+notes were lost with the interrupted run.
+
 <!-- Claude appends new rounds above this line. -->
