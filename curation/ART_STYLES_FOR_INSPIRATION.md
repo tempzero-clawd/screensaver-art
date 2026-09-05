@@ -243,6 +243,7 @@ is the **AI-cliché** test in `PROMPT_GUIDANCE.md` ("Brand & taste"), not recenc
 - Javanese Borobudur Relief
 - Thai Sukhothai Buddha
 - Rattanakosin Temple Mural (Thai)
+- Contemporary Thai Folk Painting (bright naïve genre style — richly saturated flat acrylic colour, confident outlines, dense edge-to-edge composition; canal/floating-market, festival and rice-country scenes packed with people, boats, fruit and temple spires; brighter and denser than the muted Vietnamese silk register)
 - Vietnamese Silk Painting (tranh lụa — Nguyễn Phan Chánh, Lê Phổ)
 - Islamic geometric art
 - Fatimid Rock Crystal Carving
@@ -263,6 +264,7 @@ is the **AI-cliché** test in `PROMPT_GUIDANCE.md` ("Brand & taste"), not recenc
 - Ife Sculpture
 - Asante Goldwork
 - Fante Asafo Flag (Ghanaian appliqué banner)
+- Tingatinga Painting (Tanzanian enamel painting, Dar es Salaam school — brilliant high-gloss bicycle-enamel flat colour, bold naïve stylization, densely-packed African wildlife: flamingo lakes, savanna herds, birds and big cats filling the whole surface edge to edge; vivid, cheerful, pristine and intact-medium)
 - Dogon Sculpture
 - Ethiopian Illuminated Manuscript
 - Lalibela Rock-Hewn Church Architecture

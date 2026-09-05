@@ -1218,4 +1218,77 @@ generated the 4 below.) Four pieces across four distinct wings, **all intact-med
   at this catalog size, grep the **whole** `gallery.json` for every candidate subject +
   a few synonyms *before* writing a prompt; a "fresh" idea is more likely taken than not.
 
+### 2026-09-05 — nightly generation round (4 pieces added)
+
+Not a human-review round; no removals. Recording the batch for continuity. Four
+pieces across four distinct wings, **all intact-medium** (0 archaeological — within
+the ≤1 cap), leaning bright/dense/colourful, continuing the **mover-type rut-break**
+with four *different* kinds of primary mover, and again hitting an **under-used
+wing** (`Arts of Africa & Oceania`, only 4 before this):
+- **The Flamingo Lake — Tingatinga Painting** (`Arts of Africa & Oceania`,
+  non-looping) — a *birds-take-flight* mover: a flock of pink flamingos beats its
+  wings and lifts off a brilliant turquoise soda lake while hundreds more wade and
+  feed. Vivid high-gloss enamel Tanzanian Tingatinga register (new style added to
+  `ART_STYLES_FOR_INSPIRATION.md`).
+- **The Ski Jump — Art Deco** (`Modern`, non-looping) — a *human-flight/soar* mover:
+  a lone ski jumper springs off the take-off ramp and soars forward in the flight
+  position over a dazzling snow slope, crowd waving pennants below; streamlined 1930s
+  Art Deco sporting register.
+- **The Archery Contest — Flemish Baroque** (`Renaissance & Baroque`, non-looping) —
+  a *draw-and-loose* mover: a guild archer at a village popinjay-shoot (papegaai-
+  schieten) looses his arrow up at the wooden bird atop a tall pole and the crowd
+  throws up their hands; bright Teniers-tradition festival square.
+- **The Floating Market — Thai Folk Painting** (`South & Southeast Asian`,
+  non-looping) — a *boat-traversal* mover: fruit vendors paddle laden sampans through
+  a crowded klong past teak stilt-houses and a gilded chedi; bright, extremely dense,
+  saturated contemporary Thai folk register (new style added — deliberately brighter
+  and denser than the muted Vietnamese-silk register, which is already used twice and
+  would risk the palette/density floor).
+
+**What worked / reinforced:**
+- **All four videos accepted** (archery on a retry — see below); Veo drift stayed a
+  mild zoom in every clip with the "on the spot / same size / same place" +
+  camera-lock + zoom/pan negative block. No morphing, popping, lost actors, or count
+  changes. The flamingo flock lifted off cleanly (birds keep shape/markings), the ski
+  jumper held his rigid flight shape (one jumper, skis intact), the archer completed a
+  legible draw→release→arrow-in-flight→crowd-reacts cycle, and the market boats/water
+  moved gently — a legible boat-traversal, not bare ambient shimmer.
+- **New reject pattern — "enamel/paint on board" (Tingatinga) summons the painted
+  *object*, tilted in 3D against a real background.** The first Flamingo Lake still
+  rendered as a **physical glossy board propped at an oblique angle in a garden** —
+  visible board top/right edges, blurred trees behind it — the museum-object /
+  support-margin failure, triggered here by "high-gloss enamel **on smooth board**"
+  (the model's prior for Tingatinga is a photo of the painted panel). This is the
+  [[curation-miniature-paper-border]] family widened once more: a *glossy enamel
+  board* photographs as an object just like silk/canvas/paper margins do. Reroll fix
+  that worked first try: drop the "on board" object cue, lead with **"THE PAINTED
+  SCENE ITSELF FILLS THE ENTIRE IMAGE, flat and straight-on … viewed perfectly
+  straight-on and flat to the camera"** and name the object to forbid — *"this is NOT
+  a photograph of a painting: no board, no panel, no easel, no visible edge of any
+  board, no oblique/tilted angle, no background behind the artwork, no garden, no
+  grass or trees around it."* Takeaway: **for any bright folk style named by its
+  physical support (enamel-on-board, tempera-on-cloth, lacquer-on-panel), pre-empt
+  the painted *object/3D-tilt* up front, not just the margin.**
+- **Banner/flag text — cheap feathered patch on a static banner.** The archery still
+  came back with the word **"GUILD"** lettered on two static guild banners
+  ([[curation-poster-summons-object]] family — heraldic banners carry a text prior).
+  Both banners are background, non-mover zones, so a Pillow feathered patch
+  (column-fill from the clean banner row just above the text, composited through a
+  Gaussian-blurred mask) erased both words to plain banner field with no seam — no
+  reroll needed. **Gotcha:** feather radius must be *small* relative to the box height
+  (a 14 px feather on a ~60 px-tall box never reached full opacity, so the text bled
+  through; feather 6 fixed it). Rule of thumb holds: **background/static text → cheap
+  feathered patch; text on a moving actor → reroll.**
+- **Veo returned an empty result once (`generated_videos` was None → TypeError).** The
+  archery clip failed on the first call (~70 s in) with no video — a transient/empty
+  response (possibly the safety filter on an aimed bow). A plain retry with the verb
+  softened slightly ("releases … a slender arrow rises" instead of "looses … streaks")
+  succeeded first try. Budget for the occasional empty Veo response; retry (and, for
+  weapon/combat subjects, soften the violence verbs) rather than abandoning the piece.
+- **Under-used-wing + mover-type variety remain the cheap rut-breaks** (per 09-02/09-04):
+  `Arts of Africa & Oceania` (the second-sparsest wing) took a jewel-bright,
+  intact-medium Tingatinga piece that clears the density floor easily, and the four
+  movers (bird flight / human soar / draw-and-loose / boat traversal) were all distinct
+  from each other and from the recent sport-heavy batches.
+
 <!-- Claude appends new rounds above this line. -->
