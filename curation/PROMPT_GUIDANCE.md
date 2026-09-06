@@ -1291,4 +1291,77 @@ wing** (`Arts of Africa & Oceania`, only 4 before this):
   movers (bird flight / human soar / draw-and-loose / boat traversal) were all distinct
   from each other and from the recent sport-heavy batches.
 
+### 2026-09-06 — nightly generation round (4 pieces added)
+
+Not a human-review round; no removals. Recording the batch for continuity. Four
+pieces across four distinct wings, **all intact-medium** (0 archaeological — within
+the ≤1 cap), leaning bright/dense/colourful, continuing the **mover-type rut-break**
+with four *deliberately different* kinds of primary mover, and a global spread
+(India / Japan / Ottoman / Australia) that touches the under-used `Islamic` wing:
+- **Holi, the Festival of Colours — Rajput Painting** (`South & Southeast Asian`,
+  non-looping) — a *powder/liquid-throw* mover: courtyard revellers fling bursting
+  clouds of magenta/saffron/green gulal and squirt brass pichkari water-jets; dholak
+  drummers, marble pavilions, peacocks. A genuinely fresh mover class — nothing else
+  in the gallery throws powder — and an extremely bright, dense, saturated frame.
+- **The Mikoshi Procession — Shin-hanga** (`Japanese`, non-looping) — a
+  *coordinated-crowd-hoist* mover: a dense crowd heaves and bounces a great golden
+  mikoshi (portable shrine) on shoulder-poles through a lantern-strung summer street.
+- **The Carpet Bazaar — Ottoman Miniature** (`Islamic`, non-looping) — a *cloth-unfurl*
+  mover: two merchants flap a big medallion carpet open mid-air, a kneeler smooths a
+  rug, tea pours, pigeons flutter; jewel-toned rugs fill the arcaded stalls. Fills the
+  sparse `Islamic` wing with a bright pristine piece and a non-horse mover (Islamic
+  kept pushing toward horse-charge/caravan/night-fire — all used — so a carpet-market
+  was the fresh escape).
+- **The Shearing Shed — Australian Impressionism** (`19th Century`, non-looping) — a
+  *shearing/blade-work* mover: a Heidelberg-School woolshed, foreground shearer running
+  the blades so the fleece peels off, rouseabout boy carrying the fleece, back row
+  bent to their sheep. A work-scene contrast to the three festival/market crowds.
+
+**What worked / reinforced:**
+- **3 of 4 stills passed the vision gate first try; all 4 videos accepted** (mikoshi
+  video on one retry — see below). Standing image rules kept producing bright, dense,
+  edge-to-edge frames; the full-bleed close-crop + margin/border pre-empt held the
+  Rajput gouache-on-paper and Ottoman miniature-on-paper edge-to-edge with no
+  paper margin ([[curation-miniature-paper-border]]). Veo drift stayed a mild
+  zoom/reframe in every clip with the "on the spot / same size / same place" +
+  camera-lock + zoom/pan negative block; no morphing, popping, or lost actors. The
+  gulal clouds burst and bloomed as a legible primary action (a strong new mover),
+  the carpet visibly billowed open mid-clip, the shearer's fleece peeled, and the
+  mikoshi crowd heaved and bounced the shrine.
+- **Reinforced hard — Shin-hanga/matsuri scenes summon dense kanji on the moving
+  bearer crowd; when the text is on the primary movers, RE-ROLL, don't patch.** The
+  first mikoshi still came back with big white back-crest kanji on nearly every
+  happi coat, small repeating-character textile patterns on the coats and sashes,
+  and kanji on background shop signs/noren — the [[curation-poster-summons-object]] /
+  09-01 mochi-coat family, but far denser because the coats *are* the whole animated
+  crowd (a patch there would not survive Veo). A standing "no characters on coats"
+  clause was **not enough**. The reroll that worked stated the coats positively as
+  *"a plain happi coat in a single flat solid colour … a completely blank flat colour
+  field"* AND piled on an explicit exhaustive block — *"ABSOLUTELY NO writing of any
+  kind: no kanji, no Japanese characters … no shop signs, no banners with writing, no
+  noren with text; every happi coat, sash, headband, lantern, wall and sign completely
+  blank with no characters, no crest and no repeating character pattern."* Came back
+  fully clean (only a small decorative circular *mon* on one background noren, which
+  is a crest emblem, not writing — left as-is). Takeaway: **for matsuri/happi-coat
+  picks, describe the coats as plain flat solid colour AND forbid the repeating-kanji
+  textile pattern + back crest + all signage explicitly, not just "no text".**
+- **Signature on a plain-floor corner → cheap feathered patch (not a reroll).** The
+  Shearing Shed oil (a realist/sporting easel genre, the
+  [[curation-artist-name-summons-signature]] prior) came back with a faint reddish
+  cursive signature at the extreme bottom edge on plain floorboards — a static,
+  non-mover zone. A feathered Pillow patch (copy the floorboard strip just above,
+  paste over the box through a Gaussian-blurred mask) erased it with only a faint
+  board-on-board seam the Veo zoom crops. Confirms the rule of thumb: **corner
+  signature on a static area → patch; text on a moving actor → reroll.**
+- **Veo empty-result retry recurred** (per 09-05): the mikoshi video failed the first
+  call with `'NoneType' object is not subscriptable` (empty `generated_videos`) — a
+  transient empty response on a benign crowd scene. A plain retry (verbs softened
+  slightly to "gently bouncing and rocking") succeeded first try. Budget for the
+  occasional empty Veo response and just retry.
+- **Under-used-wing + mover-type variety remain the cheap rut-breaks** (per 09-02→09-05).
+  `Islamic` (15, sparse among the favoured wings) took a bright pristine carpet-bazaar
+  miniature, and the four movers (powder-throw / crowd-hoist / cloth-unfurl / shearing)
+  were all distinct from each other and from the recent sport/race-heavy batches. The
+  powder-throw (Holi) is a genuinely new mover class worth reusing.
+
 <!-- Claude appends new rounds above this line. -->
